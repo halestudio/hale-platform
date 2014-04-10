@@ -294,10 +294,9 @@ platform {
 //	}
 	
 	// HALE FME plugin
-	//TODO update! version is no longer compatible!
-	bundle 'de.fhg.igd.hale:fme-common:1.0.1'
-	bundle 'de.fhg.igd.hale:fme-ui:1.0.2.201402131717'
-	bundle 'de.fhg.igd.hale:fme-doc:1.0.1.201311131025'
+	bundle 'de.fhg.igd.hale:fme-exec:1.1.0'
+	bundle 'de.fhg.igd.hale:fme-ui:1.1.0'
+	bundle 'de.fhg.igd.hale:fme-doc:1.1.0'
 }
 
 dependencies {
