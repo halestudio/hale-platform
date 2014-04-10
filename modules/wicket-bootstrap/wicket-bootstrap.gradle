@@ -1,0 +1,61 @@
+def wbVersion = '0.8.4'
+def containerVersion = project.version
+
+dependencies {
+	platform group: 'de.agilecoders.wicket', name: 'wicket-bootstrap-core', version: wbVersion, {
+		// exclude default wicket-webjars dependency
+		exclude group: 'de.agilecoders.wicket.webjars', module: 'wicket-webjars'
+	}
+	platform group: 'de.agilecoders.wicket', name: 'wicket-bootstrap-less', version: wbVersion, {
+		// exclude default wicket-webjars dependency
+		exclude group: 'de.agilecoders.wicket.webjars', module: 'wicket-webjars'
+	}
+	platform group: 'de.agilecoders.wicket', name: 'wicket-bootstrap-themes', version: wbVersion, {
+		// exclude default wicket-webjars dependency
+		exclude group: 'de.agilecoders.wicket.webjars', module: 'wicket-webjars'
+	}
+	platform group: 'de.agilecoders.wicket', name: 'wicket-bootstrap-extensions', version: wbVersion, {
+		// exclude default wicket-webjars dependency
+		exclude group: 'de.agilecoders.wicket.webjars', module: 'wicket-webjars'
+	}
+}
+
+platform {
+	// custom wicket-webjars build with OSGi fixes
+	bundle new File(thisDir, 'wicket-webjars-0.2.1-SNAPSHOT.jar'), {
+		bnd {
+			symbolicName = 'de.agilecoders.wicket.webjars'
+		}
+	}
+	
+	// webjars locator version compatible to custom wicket-webjars build
+	bundle group: 'org.webjars', name: 'webjars-locator', version: '0.1'
+	
+	// specify symbolic name (needs to match for fragment association)
+	bnd group: 'org.webjars', name: 'webjars-locator', {
+		symbolicName = 'org.webjars.locator'
+	}
+	
+	// merge all webjars into a fragment
+	//XXX alternative would be turning each into a fragment 
+	merge {
+		match {
+			it.group == 'org.webjars' && it.name != 'webjars-locator'
+		}
+		
+		bnd {
+			bundleName = 'Fragment with webjars'
+			symbolicName = 'eu.esdihumboldt.hale.server.webjars'
+			version = containerVersion
+			instruction 'Fragment-Host', 'org.webjars.locator'
+		}
+	}
+	
+	// adapt guava imports to use minimal versions
+	bnd group: 'de.agilecoders.wicket', name: 'wicket-bootstrap-core', {
+		prependImport 'com.google.common.*;version=14'
+	}
+	bnd group: 'de.agilecoders.wicket', name: 'wicket-bootstrap-extensions', {
+		prependImport 'com.google.common.*;version=14'
+	}
+}

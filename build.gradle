@@ -1,0 +1,312 @@
+buildscript {
+	repositories {
+		mavenCentral()
+		mavenLocal()
+	}
+	dependencies {
+		classpath 'org.standardout:gradle-include-plugin:0.1'
+		classpath 'org.standardout:bnd-platform:0.4-SNAPSHOT'
+	}
+}
+
+apply plugin: 'platform'
+apply plugin: 'include'
+apply plugin: 'eclipse'
+
+defaultTasks 'clean', 'updateSiteZip'
+
+repositories {
+	maven { // HALE artifactory
+		url 'http://artifactory.esdi-humboldt.eu:8070/artifactory/libs-release/'
+	}
+}
+
+// platform version
+version = '2.9.3'
+
+ext {
+	geotoolsVersion = '8.0'
+	wicketVersion = '6.10.0'
+}
+
+include {
+	// shared modules
+	
+	from 'modules/shared/default.gradle'
+	
+	from 'modules/shared/adaptions' // all adaptions
+	
+	from('modules/shared/geotools.gradle') {
+		geotools geotoolsVersion, [
+			'gt-api',
+			'gt-cql',
+			'gt-epsg-hsql',
+			'gt-geojson',
+			'gt-main',
+			'gt-shapefile',
+			'gt-render',
+			'gt-wfs'
+		]
+		// additional bundles are defined later
+	}
+	
+	from('modules/shared/spring.gradle') {
+		def v = '3.1.1.RELEASE' 
+		spring v, [
+			'spring-beans',
+			'spring-context',
+			'spring-context-support',
+			'spring-web',
+			'spring-webmvc'
+		]
+		security v, [
+			'spring-security-core',
+			'spring-security-config',
+			'spring-security-web',
+			'spring-security-cas',
+			'spring-security-openid',
+			'spring-security-ldap'
+		]
+	}
+	
+	from('modules/shared/logging.gradle') {
+		slf4jAndLogback '1.7.5', '1.0.13'
+	}
+	
+	from 'modules/shared/orientdb.gradle', {
+		orientGraphDB '1.5.1'
+	}
+	
+	from 'modules/shared/poi.gradle', {
+		poi('3.9')
+	}
+	
+	from('modules/shared/postgis.gradle') {
+		postgis(
+			'2.0.1', // PostGIS driver version
+			'9.2-1002-jdbc4', // PostgreSQL driver version
+			[
+				// buddies
+				'eu.esdihumboldt.hale.io.jdbc',
+				'net.sourceforge.schemacrawler'
+			]
+		)
+	}
+	
+	from 'modules/shared/gemini-blueprint.gradle'
+	
+	from('modules/shared/wicket.gradle') {
+		wicket(wicketVersion, [
+			'wicket-core',
+			'wicket-request',
+			'wicket-util',
+			'wicket-spring',
+			'wicket-extensions'
+		])
+	}
+	
+	// ensures that always a fixed version of groovy-all is used as groovy dependency
+	from 'modules/shared/groovy.gradle', {
+		groovyAll '2.1.5', true, 'groovy'
+	}
+	
+	// HALE specific modules
+
+	from 'modules/schemacrawler.gradle'
+	from 'modules/groovy-sandbox'
+	from 'modules/zest' // Zest 2 Snapshot - TODO instead use official release
+	from 'modules/wicket-bootstrap'
+	
+	// CS3D dependencies
+	
+	from 'modules/cs3d-map'
+	from 'modules/cs3d-util'
+	
+	// support bundles for jetty 8/9
+	from 'modules/jetty-support'
+}
+
+configurations {
+	// exclude bundles conflicting with JRE-provided packages
+	platform.exclude group: 'javax.xml'
+	platform.exclude group: 'javax.xml.bind'
+	platform.exclude group: 'javax.activation'
+	
+	/*
+	 * They have to be excluded as just removing the version constraint on
+	 * corresponding package imports is not enough - bundles that only have
+	 * optional imports may still bind to them, as they have no explicit
+	 * dependency on the system bundle.
+	 */
+	
+	
+	// fix OrientDB 1.5.1 dependenies (which were manually added to the artifactory)
+	// the original verions are snapshots that no longer work with OrientDB 1.5.1
+	platform {
+		resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+			if (
+					(details.requested.group == 'com.tinkerpop.blueprints' &&
+						(details.requested.name == 'blueprints-core' || details.requested.name == 'blueprints-orient-graph')) ||
+					(details.requested.group == 'com.tinkerpop.gremlin' &&
+						(details.requested.name == 'gremlin-groovy' || details.requested.name == 'gremlin-java')) ||
+					(details.requested.group == 'com.tinkerpop' && details.requested.name == 'pipes')
+				) {
+				// use custom version
+				details.useVersion '2.5.0-orientDB151'
+			}
+		}
+	}
+}
+
+platform {
+	fetchSources = true
+	determineImportVersions = true
+	importVersionStrategy = MAJOR
+	auxVersionedSymbolicNames = true
+	featureId = 'eu.esdihumboldt.hale.platform'
+	featureName = 'HALE Target Platform Libraries'
+	
+	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
+	override {
+		optionalImport(
+			// no version requirement for certain JRE provided packages
+			// use wildcards to not enforce imports
+			// use optional imports as otherwise we suddenly get errors in Eclipse while resolving seemingly random optional(!) package imports
+			'javax.xml.*',
+			'org.w3c.dom.*',
+			'org.xml.sax.*',
+			'javax.activation.*',
+			'com.sun.xml.internal.*',
+			// also make JUnit optional everywhere - so we can exclude it from products
+			'junit.framework.*',
+			'org.junit.*'
+		)
+	}
+	
+	// geotools additional bundles not in the default group
+	bundle group: 'org.geotools.xsd', name: 'gt-xsd-core', version: geotoolsVersion
+	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml2', version: geotoolsVersion
+	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
+	
+	// security
+	bundle 'org.jasig.cas:cas-client:3.1.10'
+	
+	// utilities
+	bundle 'com.google.guava:guava:15.0'
+	bundle 'net.sf.trove4j:trove4j:2.0.4' // with version 3 some packages have changed
+	bundle 'commons-io:commons-io:2.4'
+	bundle 'net.sf.ehcache:ehcache-core:2.6.6'
+	bundle 'org.apache.velocity:velocity:1.6.2'
+	bundle 'org.apache.xmlbeans:xmlbeans:2.4.0'
+	bundle 'com.iabcinc:jmep:0.1.0'
+	bundle 'com.google.code.findbugs:jsr305:2.0.3'
+	bundle 'eu.esdihumboldt.hale:prefixmapper:1.0.1'
+	bundle 'cglib:cglib:2.2.2'
+	bundle 'joda-time:joda-time:2.3'
+
+	// pegdown	
+	bundle group: 'org.pegdown', name: 'pegdown', version: '1.4.2'
+	// parboiled must be able to access pegdown
+	bnd group: 'org.parboiled', name: 'parboiled-core', {
+		instructions 'Eclipse-BuddyPolicy': 'registered'
+	}
+	bnd group: 'org.pegdown', name: 'pegdown', {
+		instructions(
+			'Require-Bundle': 'org.parboiled.core',
+			'Eclipse-RegisterBuddy': 'org.parboiled.core'
+		)
+	}
+	
+	// web stuff
+	bundle 'commons-fileupload:commons-fileupload:1.3.1'
+	bundle 'org.openid4java:openid4java:0.9.8'
+	bundle 'net.tanesha.recaptcha4j:recaptcha4j:0.0.8'
+	bundle "org.wicketstuff:wicketstuff-html5:$wicketVersion"
+	bundle 'org.codehaus.groovy.modules.http-builder:http-builder:0.6'
+	
+	// quartz scheduler
+	bundle 'org.quartz-scheduler:quartz:1.7.3'
+	
+	// XML
+//	bundle 'org.apache.ws.xmlschema:xmlschema-core:2.0.2'
+	bundle 'org.apache.ws.commons.schema:XmlSchema:1.4.7'
+	bundle 'org.codehaus.castor:castor-xml:1.3.2'
+	bundle 'org.codehaus.castor:castor-core:1.3.2'
+	bundle 'com.sun.xml.bind:jaxb-core:2.2.7'
+	
+	// jackson 1
+	bundle 'org.codehaus.jackson:jackson-core-asl:1.9.13', {
+		bnd {
+			symbolicName = 'org.codehaus.jackson'
+		}
+	}
+	bundle 'org.codehaus.jackson:jackson-mapper-asl:1.9.13', {
+		bnd {
+			symbolicName = 'org.codehaus.jackson.mapper'
+		}
+	}
+	// jackson 2
+	bundle 'com.fasterxml.jackson.core:jackson-core:2.3.0'
+	bundle 'com.fasterxml.jackson.core:jackson-databind:2.3.0'
+	
+	// spring osgi legacy
+	bundle 'de.cs3d.thirdparty:springframework-osgi-web-mini:2.0.0.M1'
+	
+	// CSV
+	bundle 'net.sf.opencsv:opencsv:2.3'
+	
+	// resources
+	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.citygml', version: '1.0.0.20120927'
+	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.opengis.net', version: '1.0.0.201202131112'
+	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.inspire', version: '1.0.0.20120927'
+	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.test', version: '1.0.0.201205101531'
+	
+	/*
+	 * XXX Orient graph DB hack
+	 * 
+	 * The tinkerpop blueprints implementation for OrientDB (at least in version 1.5.1 of OrientDB)
+	 * is not compatible with the OrientDB version itself - probably because it is a SNAPSHOT.
+	 * As workaround for resolving the packages we remove the version contraints on its orient imports.
+	 * FIXME Instead rather specific versions of the tinkerpop libraries or a local snapshot that
+	 * is guaranteed to be compatible should be used.
+	 */
+	bnd(group: 'com.tinkerpop.blueprints', name: 'blueprints-orient-graph') {
+		instruction 'Import-Package', 'com.orientechnologies.*,' + (properties['Import-Package']?:'*')
+	}
+	
+	bnd 'org.ow2.asm:asm', {
+		/*
+		 * Override bundle symbolic name (org.objectweb.asm) as it collides with a
+		 * bundle provided via an Eclipse update site, and both versions cannot be
+		 * included in the product if the symbolic name is the same.
+		 */
+		symbolicName = 'org.objectweb.asm.core'
+	}
+	
+	imports 'com.google.guava:guava', {
+		versionStrategy = MINIMUM
+	}
+	
+	// servlet 3 API (needed for Jetty 8/9)
+	//XXX the JAR provided here seems to miss some stuff, e.g. javax.servlet.resources
+//	bundle 'javax.servlet:javax.servlet-api:3.1.0', {
+//		symbolicName = 'javax.servlet3'
+//	}
+	
+	// HALE FME plugin
+	//TODO update! version is no longer compatible!
+	bundle 'de.fhg.igd.hale:fme-common:1.0.1'
+	bundle 'de.fhg.igd.hale:fme-ui:1.0.2.201402131717'
+	bundle 'de.fhg.igd.hale:fme-doc:1.0.1.201311131025'
+}
+
+dependencies {
+	// additional versions of Google Guava
+	//XXX Guava is too basic, multiple versions result in a bunch of package uses conflicts
+//	platformaux 'com.google.guava:guava:14.0.1'
+//	platformaux 'com.google.guava:guava:11.0.2'
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}

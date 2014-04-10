@@ -1,0 +1,3 @@
+[submodule "modules/shared"]
+	path = modules/shared
+	url = git@github.com:igd-geo/shared-platform.git

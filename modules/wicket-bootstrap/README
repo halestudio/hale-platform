@@ -1,0 +1,4 @@
+wicket-webjars
+
+Custom including OSGi specific patches built from
+https://github.com/stempler/wicket-webjars/commit/753b1da0dc36004331063acd5bbfe845e22b5191

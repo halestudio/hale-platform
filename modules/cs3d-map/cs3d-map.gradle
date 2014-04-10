@@ -1,0 +1,35 @@
+platform {
+	// add existing bundle jars
+	bundle fileTree(thisDir) {
+		include '*.jar'
+	}
+	
+	// customize bundle imports
+	bnd(fileTree(thisDir) { include 'de.cs3d.common.metamodel_*.jar' }) {
+		optionalImport(
+			'com.sun.*',
+			'javolution.context',
+			'org.geotiff.*',
+			'org.jscience.mathematics.*',
+			'org.libtiff.*'
+		)
+		instruction 'Require-Bundle', 'com.sun.imageio.jai.tools;resolution:=optional' // override required bundles (to remove com.sun.imageio.jai.tools)
+		addQualifier = true
+	}
+	bnd(fileTree(thisDir) { include 'de.cs3d.util.helper_*.jar' }) {
+		optionalImport(
+			'org.jscience.mathematics.*',
+		)
+		addQualifier = true
+	}
+	
+	// transitive dependencies of the added bundles
+	bundle 'com.google.code.findbugs:annotations:2.0.3'
+	bundle 'org.swinglabs:swingx:1.0', {
+		bnd {
+			symbolicName = 'org.jdesktop.swingx'
+		}
+	}
+	bundle 'joda-time:joda-time:1.6'
+	bundle 'org.springframework:spring-core:3.1.1.RELEASE'
+}
