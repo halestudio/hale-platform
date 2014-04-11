@@ -5,7 +5,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.1'
-		classpath 'org.standardout:bnd-platform:0.4-SNAPSHOT'
+		classpath 'org.standardout:bnd-platform:0.4'
 	}
 }
 
@@ -278,7 +278,7 @@ platform {
 		/*
 		 * Override bundle symbolic name (org.objectweb.asm) as it collides with a
 		 * bundle provided via an Eclipse update site, and both versions cannot be
-		 * included in the product if the symbolic name is the same.
+		 * included in the (plugin-based) product if the symbolic name is the same.
 		 */
 		symbolicName = 'org.objectweb.asm.core'
 	}
@@ -289,9 +289,15 @@ platform {
 	
 	// servlet 3 API (needed for Jetty 8/9)
 	//XXX the JAR provided here seems to miss some stuff, e.g. javax.servlet.resources
-//	bundle 'javax.servlet:javax.servlet-api:3.1.0', {
-//		symbolicName = 'javax.servlet3'
-//	}
+//	bundle 'javax.servlet:javax.servlet-api:3.1.0'
+	
+	// servlet 2 API (needed for Jetty providing help)
+	bundle 'javax.servlet:servlet-api:2.5', {
+		bnd {
+			// change name so Eclipse is able to create the run configurations for HALE and Infocenter properly
+			symbolicName = 'javax.servlet2'
+		}
+	}
 	
 	// HALE FME plugin
 	bundle 'de.fhg.igd.hale:fme-exec:1.1.0'
