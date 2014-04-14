@@ -1,0 +1,159 @@
+//
+// Build bundles with online resources for fast access in HALE.
+//
+// It should be executed manually to update the resource bundles from time to
+// time, e.g. using this command from the repository root:
+// > ./gradlew -p modules/resources/
+//
+
+apply plugin: 'download-task'
+
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'de.undercouch:gradle-download-task:1.0'
+	}
+}
+
+defaultTasks 'clean', 'resourceBundles'
+
+ext {
+	// where inspire schemas are downloaded to
+	inspireSchemas = new File(buildDir, 'inspire-schemas.zip')
+}
+
+task clean << {
+	buildDir.deleteDir()
+}
+
+task resourceBundles << {
+}
+
+/*
+ * Creates a resource bundle from ZIP archive provided on schemas.opengis.net
+ */
+
+task opengisBundle(type: ResourceBundleTask) {
+	bundleId = 'schemas.opengis.net'
+	host = 'schemas.opengis.net'
+	archiveUrl = 'http://schemas.opengis.net/SCHEMAS_OPENGIS_NET.zip'
+	destDir = projectDir
+}
+
+resourceBundles.dependsOn('opengisBundle')
+
+/*
+ * Creates a resource bundle from schemas provided in INSPIRE schema repository
+ */
+
+// download schema files based on directory listing (requires wget)
+task downloadInspireSchemas << {
+	exec {
+		workingDir = temporaryDir
+		executable = 'wget'
+		args '-r', '--no-parent', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/schemas/'
+	}
+	exec {
+		workingDir = temporaryDir
+		executable = 'wget'
+		args '-r', '--no-parent', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/draft-schemas/'
+	}
+	ant.zip(
+		destfile: inspireSchemas, 
+		basedir: new File(temporaryDir, 'inspire.ec.europa.eu'))
+}
+
+// create the bundle
+task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSchemas) {
+	bundleId = 'schemas.inspire'
+	host = 'inspire.ec.europa.eu'
+	archive = inspireSchemas
+	destDir = projectDir
+}
+
+resourceBundles.dependsOn('inspireSchemasBundle')
+
+/*
+ * Common task definition
+ */
+
+class ResourceBundleTask extends DefaultTask {
+	// the host that the resource bundle mirrors resources from
+	def host
+	// the remote URL to retrieve the resource ZIP archive from
+	def archiveUrl
+	// the local ZIP archive file containing the resources
+	def archive
+	// the prefix for the symbolic name
+	def symbolicNamePrefix = 'eu.esdihumboldt.util.resource'
+	// the bundle identifier (is appended to prefix sepearate by a dot)
+	def bundleId
+	// the served resource type
+	def resourceType = 'xmlSchema'
+	// the destination dir
+	def destDir = project.buildDir
+	
+	@TaskAction
+	def createBundle() {
+		assert host
+		assert archiveUrl || archive
+		assert bundleId
+		assert symbolicNamePrefix
+		assert resourceType
+		assert destDir
+		
+		// schemas from schemas.opengis.net
+		def stamp = new Date().format('yyyy.MM.dd')
+		def version = stamp //"1.0.0.$stamp"
+		def symbolicName = "$symbolicNamePrefix.$bundleId"
+		File bundle = new File(destDir, "${symbolicName}_${version}.jar")
+		
+		File tmpDir = temporaryDir //File.createTempFile('resources', 'bundle')
+		tmpDir.delete()
+		tmpDir.mkdir()
+		
+		File tmpSchemas
+		if (archive) {
+			// use existing schema archive
+			tmpSchemas = archive as File
+		}
+		else {
+			// download schema archive
+			tmpSchemas = new File(tmpDir, 'schemas.zip')
+			project.download {
+				src archiveUrl
+				dest tmpSchemas
+			}
+		}
+		
+		// create plugin.xml
+		File tmpPluginXml = new File(tmpDir, 'plugin.xml')
+		tmpPluginXml.withWriter {
+			it << '<?xml version="1.0"?>\n'
+			it << '<?eclipse version="3.4"?>\n'
+			def xml = new groovy.xml.MarkupBuilder(it)
+			xml.plugin {
+				extension(point: 'eu.esdihumboldt.util.resource') {
+					resolver(id: bundleId, resourceType: resourceType) {
+						xml.host(name: host)
+						bundleResolver()
+					}
+				}
+			}
+		}
+		
+		// build jar
+		ant.jar(destfile: bundle) {
+			zipfileset (src: tmpSchemas, excludes: '**/*.zip')
+			fileset (dir: tmpPluginXml.parentFile, includes: tmpPluginXml.name)
+			manifest {
+				attribute(name: 'Bundle-Version', value: version)
+				attribute(name: 'Bundle-Name', value: "Resources from $host")
+				attribute(name: 'Bundle-ManifestVersion', value: 2)
+				attribute(name: 'Bundle-SymbolicName', value: "$symbolicName;singleton:=true")
+			}
+		}
+	}
+}
