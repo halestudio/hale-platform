@@ -22,6 +22,8 @@ defaultTasks 'clean', 'resourceBundles'
 ext {
 	// where inspire schemas are downloaded to
 	inspireSchemas = new File(buildDir, 'inspire-schemas.zip')
+	// where w3 schemas are downloaded to
+	w3Schemas = new File(buildDir, 'w3-schemas.zip')
 }
 
 task clean << {
@@ -50,6 +52,12 @@ resourceBundles.dependsOn('opengisBundle')
 
 // download schema files based on directory listing (requires wget)
 task downloadInspireSchemas << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing schema archive
+	inspireSchemas.delete()
+	
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
@@ -74,6 +82,43 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 }
 
 resourceBundles.dependsOn('inspireSchemasBundle')
+
+/*
+ * Creates a resource bundle from schemas provided on www.w3.org (which can be very slow to access)
+ */
+
+// download schema files individually (requires wget)
+task downloadW3Schemas << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing schema archive
+	w3Schemas.delete()
+	
+	def downloadSchema = { path ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '--force-directories', '--no-host-directories', "http://www.w3.org/$path"
+		}
+	}
+	downloadSchema('1999/xlink.xsd')
+	downloadSchema('2001/xml.xsd')
+	downloadSchema('2001/XMLSchema.xsd')
+	ant.zip(
+		destfile: w3Schemas,
+		basedir: temporaryDir)
+}
+
+// create the bundle
+task w3SchemasBundle(type: ResourceBundleTask, dependsOn: downloadW3Schemas) {
+	bundleId = 'w3.org'
+	host = 'www.w3.org'
+	archive = w3Schemas
+	destDir = projectDir
+}
+
+resourceBundles.dependsOn('w3SchemasBundle')
 
 /*
  * Common task definition
