@@ -36,6 +36,8 @@ include {
 	
 	from 'modules/shared/adaptions' // all adaptions
 	
+	from 'modules/resources' // resource bundles
+	
 	from('modules/shared/geotools.gradle') {
 		geotools geotoolsVersion, [
 			'gt-api',
@@ -255,10 +257,10 @@ platform {
 	// CSV
 	bundle 'net.sf.opencsv:opencsv:2.3'
 	
-	// resources
+	// resources (partly replaced by resources module)
 	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.citygml', version: '1.0.0.20120927'
-	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.opengis.net', version: '1.0.0.201202131112'
-	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.inspire', version: '1.0.0.20120927'
+	//bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.opengis.net', version: '1.0.0.201202131112'
+	//bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.inspire', version: '1.0.0.20120927'
 	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.test', version: '1.0.0.201205101531'
 	
 	/*

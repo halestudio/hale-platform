@@ -1,0 +1,6 @@
+platform {
+	// add resource bundle jars
+	bundle fileTree(thisDir) {
+		include '*.jar'
+	}
+}
