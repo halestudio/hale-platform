@@ -163,7 +163,9 @@ configurations {
 platform {
 	fetchSources = true
 	determineImportVersions = true
-	importVersionStrategy = MAJOR
+	importVersionStrategy = { v ->
+		"[${v.major}.${v.minor},${v.major + 1}.0)"
+	}
 	auxVersionedSymbolicNames = true
 	featureId = 'eu.esdihumboldt.hale.platform'
 	featureName = 'HALE Target Platform Libraries'
