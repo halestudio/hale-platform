@@ -226,6 +226,9 @@ platform {
 	bundle "org.wicketstuff:wicketstuff-html5:$wicketVersion"
 	bundle 'org.codehaus.groovy.modules.http-builder:http-builder:0.6'
 	
+	// fluent HTTP client API
+	bundle 'org.apache.httpcomponents:fluent-hc:4.3.3'
+	
 	// quartz scheduler
 	bundle 'org.quartz-scheduler:quartz:1.7.3'
 	
