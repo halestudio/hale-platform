@@ -17,7 +17,7 @@ defaultTasks 'clean', 'updateSiteZip'
 
 repositories {
 	maven { // HALE artifactory
-		url 'http://artifactory.esdi-humboldt.eu:8070/artifactory/libs-release/'
+		url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
 	}
 }
 
