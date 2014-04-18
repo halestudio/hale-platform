@@ -5,8 +5,8 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.1'
-		classpath 'org.standardout:bnd-platform:0.4'
-		classpath 'org.standardout:gradle-versioneye-plugin:0.1-SNAPSHOT'
+		classpath 'org.standardout:bnd-platform:1.0'
+		classpath 'org.standardout:gradle-versioneye-plugin:0.1'
 	}
 }
 
@@ -165,9 +165,6 @@ configurations {
 platform {
 	fetchSources = true
 	determineImportVersions = true
-	importVersionStrategy = { v ->
-		"[${v.major}.${v.minor},${v.major + 1}.0)"
-	}
 	auxVersionedSymbolicNames = true
 	featureId = 'eu.esdihumboldt.hale.platform'
 	featureName = 'HALE Target Platform Libraries'

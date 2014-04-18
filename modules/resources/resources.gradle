@@ -1,6 +1,9 @@
 platform {
 	// add resource bundle jars
-	bundle fileTree(thisDir) {
-		include '*.jar'
+	bundle(fileTree(thisDir) { include '*.jar' }) {
+		bnd {
+			// prevent package exports
+			instruction 'Export-Package', '!'
+		}
 	}
 }
