@@ -6,12 +6,14 @@ buildscript {
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.1'
 		classpath 'org.standardout:bnd-platform:0.4'
+		classpath 'org.standardout:gradle-versioneye-plugin:0.1-SNAPSHOT'
 	}
 }
 
 apply plugin: 'platform'
 apply plugin: 'include'
 apply plugin: 'eclipse'
+apply plugin: 'versioneye'
 
 defaultTasks 'clean', 'updateSiteZip'
 
