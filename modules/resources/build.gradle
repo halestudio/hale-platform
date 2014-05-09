@@ -61,16 +61,22 @@ task downloadInspireSchemas << {
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-r', '--no-parent', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/schemas/'
+		args '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/schemas/'
 	}
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-r', '--no-parent', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/draft-schemas/'
+		args '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/draft-schemas/'
+	}
+	// add fixups
+	copy {
+		from new File(projectDir, 'inspire-fixup')
+		into temporaryDir
+		include '**/*'
 	}
 	ant.zip(
 		destfile: inspireSchemas, 
-		basedir: new File(temporaryDir, 'inspire.ec.europa.eu'))
+		basedir: temporaryDir)
 }
 
 // create the bundle
