@@ -22,6 +22,8 @@ defaultTasks 'clean', 'resourceBundles'
 ext {
 	// where inspire schemas are downloaded to
 	inspireSchemas = new File(buildDir, 'inspire-schemas.zip')
+	// inspire application schemas index file
+	applicationSchemasFile = new File(buildDir, 'applicationSchemas.xml')
 	// where w3 schemas are downloaded to
 	w3Schemas = new File(buildDir, 'w3-schemas.zip')
 }
@@ -57,7 +59,8 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 	new URL('http://inspire.ec.europa.eu/applicationschema/applicationschema.en.json').withReader { reader ->
 		registry = new groovy.json.JsonSlurper().parse(reader)
 	}
-	def schemaIds = registry.register.containeditems*.applicationschema*.id
+	def appSchemas = []
+	registry.register.containeditems*.applicationschema.each { appSchemas << [id: it.id, name: it.label.text, theme: it.theme.label.text] }
 	
 	def inspireShortIdRegex = '^http://inspire.ec.europa.eu/applicationschema/([^/]*)$'
 	
@@ -65,12 +68,12 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 		it << '<?xml version="1.0"?>\n'
 		def xml = new groovy.xml.MarkupBuilder(it)
 		xml.applicationSchemas {
-			schemaIds.each { String id ->
-				xml.applicationSchema(id: id) {
+			appSchemas.each { appSchema ->
+				xml.applicationSchema(id: appSchema.id, name: appSchema.name, theme: appSchema.theme) {
 					// find corresponding schema files
 					
 					// extract short identifier
-					def matcher = ( id =~ inspireShortIdRegex )
+					def matcher = ( appSchema.id =~ inspireShortIdRegex )
 					def shortId = matcher[0][1]
 					
 					folders.each { File folder ->
@@ -81,7 +84,7 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 								versionDir.eachFileMatch(~/.*\.xsd/) { File xsd ->
 									xml.schema(
 										version: versionDir.name,
-										url: "http://inspire.ec.europa.eu/${folder.name}/${asDir.name}/${versionDir.name}/${xsd.name}" 
+										url: "http://inspire.ec.europa.eu/${folder.name}/${asDir.name}/${versionDir.name}/${xsd.name}"
 									)
 								}
 							}
@@ -118,9 +121,15 @@ task downloadInspireSchemas << {
 		include '**/*'
 	}
 	// generate schema index file
-	inspireSchemaIndex(project, new File(temporaryDir, 'applicationSchemas.xml'),
+	inspireSchemaIndex(project, applicationSchemasFile,
 		[new File(temporaryDir, 'schemas')]
 	)
+	// copy to be included in bundle
+	copy {
+		from buildDir
+		into temporaryDir
+		include 'applicationSchemas.xml'
+	}
 	// create ZIP archive
 	ant.zip(
 		destfile: inspireSchemas, 
@@ -133,6 +142,30 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 	host = 'inspire.ec.europa.eu'
 	archive = inspireSchemas
 	destDir = projectDir
+	pluginExtra = { xml ->
+		// read application schemas file
+		def appSchemas = new groovy.util.XmlSlurper().parse(applicationSchemasFile)
+		
+		xml.extension(point: 'eu.esdihumboldt.hale.ui.schema.presets') {
+			println appSchemas
+			appSchemas.applicationSchema.each { appSchema ->
+				def id = appSchema.@id
+				
+				appSchema.schema.each { schema ->
+					xml.schema(
+						description: "GML Application Schema from the INSPIRE Data Specification on ${appSchema.@theme}.",
+						icon: 'icons/inspire.gif',
+						id: id,
+						name: "INSPIRE ${appSchema.@name}",
+//						tag: 'Bundled',
+						version: schema.@version
+					) {
+						xml.uri(value: schema.@url)
+					}
+				}
+			}
+		}
+	}
 }
 
 resourceBundles.dependsOn('inspireSchemasBundle')
@@ -193,6 +226,8 @@ class ResourceBundleTask extends DefaultTask {
 	def resourceType = 'xmlSchema'
 	// the destination dir
 	def destDir = project.buildDir
+	// extra content for the plugin.xml - must be a closure taking a markup builder as argument
+	def pluginExtra
 	
 	@TaskAction
 	def createBundle() {
@@ -239,6 +274,9 @@ class ResourceBundleTask extends DefaultTask {
 						xml.host(name: host)
 						bundleResolver()
 					}
+				}
+				if (pluginExtra != null) {
+					pluginExtra.call(xml)
 				}
 			}
 		}
