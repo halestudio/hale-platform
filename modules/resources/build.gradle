@@ -50,6 +50,49 @@ resourceBundles.dependsOn('opengisBundle')
  * Creates a resource bundle from schemas provided in INSPIRE schema repository
  */
 
+// create application schema index file
+def inspireSchemaIndex(def project, File target, List<File> folders) {
+	// get application schemas from INSPIRE registry
+	def registry
+	new URL('http://inspire.ec.europa.eu/applicationschema/applicationschema.en.json').withReader { reader ->
+		registry = new groovy.json.JsonSlurper().parse(reader)
+	}
+	def schemaIds = registry.register.containeditems*.applicationschema*.id
+	
+	def inspireShortIdRegex = '^http://inspire.ec.europa.eu/applicationschema/([^/]*)$'
+	
+	target.withWriter {
+		it << '<?xml version="1.0"?>\n'
+		def xml = new groovy.xml.MarkupBuilder(it)
+		xml.applicationSchemas {
+			schemaIds.each { String id ->
+				xml.applicationSchema(id: id) {
+					// find corresponding schema files
+					
+					// extract short identifier
+					def matcher = ( id =~ inspireShortIdRegex )
+					def shortId = matcher[0][1]
+					
+					folders.each { File folder ->
+						File asDir = new File(folder, shortId)
+						if (asDir.exists()) {
+							// find version subfolders
+							asDir.eachDir { File versionDir ->
+								versionDir.eachFileMatch(~/.*\.xsd/) { File xsd ->
+									xml.schema(
+										version: versionDir.name,
+										url: "http://inspire.ec.europa.eu/${folder.name}/${asDir.name}/${versionDir.name}/${xsd.name}" 
+									)
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 // download schema files based on directory listing (requires wget)
 task downloadInspireSchemas << {
 	// need a clean tmp dir
@@ -74,6 +117,11 @@ task downloadInspireSchemas << {
 		into temporaryDir
 		include '**/*'
 	}
+	// generate schema index file
+	inspireSchemaIndex(project, new File(temporaryDir, 'applicationSchemas.xml'),
+		[new File(temporaryDir, 'schemas')]
+	)
+	// create ZIP archive
 	ant.zip(
 		destfile: inspireSchemas, 
 		basedir: temporaryDir)
