@@ -1,6 +1,10 @@
 platform {
 	// add existing bundle jars
-	bundle fileTree(thisDir) {
-		include '*.jar'
+	bundle(fileTree(thisDir) { include '*.jar' })
+	
+	bnd(fileTree(thisDir) { include 'org.eclipse.zest.core_*.jar' }) {
+		// no version restriction
+		instruction 'Import-Package', 'com.ibm.icu.text'
+		addQualifier = true
 	}
 }
