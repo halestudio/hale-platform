@@ -207,8 +207,10 @@ platform {
 	bundle 'com.iabcinc:jmep:0.1.0'
 	bundle 'com.google.code.findbugs:jsr305:2.0.3'
 	bundle 'eu.esdihumboldt.hale:prefixmapper:1.0.1'
-	bundle 'cglib:cglib:2.2.2'
 	bundle 'joda-time:joda-time:2.3'
+	
+	bundle 'cglib:cglib:2.2.2'
+	bundle 'asm:asm-util:3.3.1' // optional dependency to cglib
 
 	// pegdown	
 	bundle group: 'org.pegdown', name: 'pegdown', version: '1.4.2'
