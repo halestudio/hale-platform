@@ -211,6 +211,7 @@ platform {
 	
 	bundle 'cglib:cglib:2.2.2'
 	bundle 'asm:asm-util:3.3.1' // optional dependency to cglib
+	bundle 'asm:asm-analysis:3.3.1'
 
 	// pegdown	
 	bundle group: 'org.pegdown', name: 'pegdown', version: '1.4.2'
