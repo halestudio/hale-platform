@@ -286,13 +286,20 @@ platform {
 		instruction 'Import-Package', 'com.orientechnologies.*,' + (properties['Import-Package']?:'*')
 	}
 	
-	bnd 'org.ow2.asm:asm', {
-		/*
-		 * Override bundle symbolic name (org.objectweb.asm) as it collides with a
-		 * bundle provided via an Eclipse update site, and both versions cannot be
-		 * included in the (plugin-based) product if the symbolic name is the same.
-		 */
-		symbolicName = 'org.objectweb.asm.core'
+	/*
+	 * Override bundle symbolic names (e.g. org.objectweb.asm) as they collide with
+	 * bundles provided via an Eclipse update site, and both versions cannot be
+	 * included in the (plugin-based) product if the symbolic name is the same.
+	 * 
+	 * The problem seems to persist with feature-based products as well, even
+	 * as the Tycho build seems to be able to handle it given fixed versions in
+	 * the feature, Eclipse will not create the Run Configuration accordingly and
+	 * will not validate the product correctly.
+	 */
+	bnd group: 'org.ow2.asm', {
+		// -> use versioned symbolic names
+		def ov = org.osgi.framework.Version.parseVersion(version)
+		symbolicName = symbolicName + '-' + ov.major
 	}
 	
 	imports 'com.google.guava:guava', {
