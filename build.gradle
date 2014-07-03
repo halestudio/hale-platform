@@ -306,18 +306,6 @@ platform {
 		versionStrategy = MINIMUM
 	}
 	
-	// servlet 3 API (needed for Jetty 8/9)
-	//XXX the JAR provided here seems to miss some stuff, e.g. javax.servlet.resources
-//	bundle 'javax.servlet:javax.servlet-api:3.1.0'
-	
-	// servlet 2 API (needed for Jetty providing help)
-	bundle 'javax.servlet:servlet-api:2.5', {
-		bnd {
-			// change name so Eclipse is able to create the run configurations for HALE and Infocenter properly
-			symbolicName = 'javax.servlet2'
-		}
-	}
-	
 	// HALE FME plugin
 	bundle 'de.fhg.igd.hale:fme-exec:1.1.0'
 	bundle 'de.fhg.igd.hale:fme-ui:1.1.0'
