@@ -3,8 +3,12 @@ platform {
 	// add existing bundle jars
 	bundle fileTree(thisDir) {
 		include '*.jar'
+	}, {
+		bnd {
+			symbolicName = 'javax.servlet'
+		}
 	}
-	
+
 	// customize bundles
 	//XXX deactivate as renaming causes other problems
 //	bnd(fileTree(thisDir) { include 'javax.servlet_3*.jar' }) {
