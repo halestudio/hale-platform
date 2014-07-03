@@ -1,25 +1,15 @@
-// bundles from http://download.eclipse.org/jetty/orbit/
+// Adapted bundles
+//
+// - javax.servlet 3 from http://download.eclipse.org/jetty/orbit/
+// - javax.servlet 3.1 augmented with resources package
+// - jetty patched to work with Luna (see https://github.com/stempler/jetty.project/tree/osgifix)
 platform {
 	// add existing bundle jars
 	bundle fileTree(thisDir) {
 		include '*.jar'
-	}, {
-		bnd {
-			symbolicName = 'javax.servlet'
-		}
 	}
 
-	// customize bundles
-	//XXX deactivate as renaming causes other problems
-//	bnd(fileTree(thisDir) { include 'javax.servlet_3*.jar' }) {
-//		/*
-//		 * use different name so we don't get problems w/ Eclipse run
-//		 * configurations.
-//		 * We have some products that need version 2.5, some that need version 3,
-//		 * even if the correct version is given in the product file, the created
-//		 * run configuration may include the wrong version if they have the same
-//		 * name (as it seems to always use the newest version anyway). 
-//		 */
-//		symbolicName = 'javax.servlet3'
-//	}
+	bnd(fileTree(thisDir) { include 'javax.servlet*.jar' }) {
+		symbolicName = 'javax.servlet'
+	}
 }
