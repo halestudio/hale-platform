@@ -1,9 +1,0 @@
-platform {
-	// add existing bundle jars
-	bundle fileTree(thisDir) {
-		include '*.jar'
-	}
-	
-	// transitive dependencies of the added bundles
-	bundle 'com.google.code.findbugs:annotations:2.0.3'
-}

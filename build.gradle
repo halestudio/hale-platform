@@ -123,11 +123,10 @@ include {
 	from 'modules/groovy-sandbox'
 	from 'modules/zest' // Zest 2 Snapshot - TODO instead use official release
 	from 'modules/wicket-bootstrap'
+	from 'modules/slf4jplus-config'
 	
-	// CS3D dependencies
-	
+	// CS3D dependencies for Styled Map View
 	from 'modules/cs3d-map'
-	from 'modules/cs3d-util'
 	
 	// support bundles for jetty 8/9
 	from 'modules/jetty-support'
@@ -308,8 +307,16 @@ platform {
 	
 	// HALE FME plugin
 	bundle 'de.fhg.igd.hale:fme-exec:1.1.0'
-	bundle 'de.fhg.igd.hale:fme-ui:1.1.0'
+	bundle 'de.fhg.igd.hale:fme-ui:1.2.0'
 	bundle 'de.fhg.igd.hale:fme-doc:1.1.0'
+}
+
+dependencies {
+  platform 'de.fhg.igd:osgi-util:1.0', {
+    // exclude OSGi dependencies (we include Equinox/Eclipse through separate update site)
+    exclude module: 'org.eclipse.osgi'
+    exclude module: 'org.osgi.compendium'
+  }
 }
 
 dependencies {
