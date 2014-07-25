@@ -1,29 +1,35 @@
 // Adapted jetty related bundles
 platform {
-	// add existing bundle jars
-	// - javax.servlet 3 from http://download.eclipse.org/jetty/orbit/
-	// - javax.servlet 3.1 augmented with resources package
-	// - jetty patched to work with Luna (see https://github.com/stempler/jetty.project/tree/osgifix)
-	bundle fileTree(thisDir) {
-		include '*.jar'
-	}
-
-	bnd(fileTree(thisDir) { include 'javax.servlet_3.0.0*.jar' }) {
-		symbolicName = 'javax.servlet3'
+	def jettyVersion = '9.2.1.v20140609'
+	def jettyGroup = 'org.eclipse.jetty'
+	
+	feature id: 'eu.esdihumboldt.hale.platform.jetty',
+			name: 'Jetty for OSGi based webapps',
+			version: jettyVersion, {
+		// add existing bundle jars
+		// - javax.servlet 3 from http://download.eclipse.org/jetty/orbit/
+		// - javax.servlet 3.1 augmented with resources package
+		// - jetty patched to work with Luna (see https://github.com/stempler/jetty.project/tree/osgifix)
+		bundle fileTree(thisDir) {
+			include '*.jar'
+		}
+	
+		bnd(fileTree(thisDir) { include 'javax.servlet_3.0.0*.jar' }) {
+			symbolicName = 'javax.servlet3'
+		}
+		
+		// Jetty 9 bundles for server applications
+		bundle group: jettyGroup, name: 'jetty-continuation', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-http', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-io', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-security', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-server', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-servlet', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-util', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-deploy', version: jettyVersion
+		bundle group: jettyGroup, name: 'jetty-xml', version: jettyVersion
 	}
 	
-	// Jetty 9 bundles for server applications
-	def jettyVersion = '9.2.1.v20140609'
-	def jettyGroup = 'org.eclipse.jetty' 
-	bundle group: jettyGroup, name: 'jetty-continuation', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-http', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-io', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-security', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-server', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-servlet', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-util', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-deploy', version: jettyVersion
-	bundle group: jettyGroup, name: 'jetty-xml', version: jettyVersion
 	/*
 	 * We get problems in Eclipse with multiple bundles with different versions
 	 * if the multiple versions or the lower version must be used in products.

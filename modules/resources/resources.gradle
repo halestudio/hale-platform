@@ -1,9 +1,12 @@
 platform {
-	// add resource bundle jars
-	bundle(fileTree(thisDir) { include '*.jar' }) {
-		bnd {
-			// prevent package exports
-			instruction 'Export-Package', '!'
+	feature id: 'eu.esdihumboldt.hale.platform.resources',
+			name: 'Cached resources bundles (e.g. schemas)', {
+		// add resource bundle jars
+		bundle(fileTree(thisDir) { include '*.jar' }) {
+			bnd {
+				// prevent package exports
+				instruction 'Export-Package', '!'
+			}
 		}
 	}
 }
