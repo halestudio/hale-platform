@@ -248,12 +248,14 @@ task inspireCodeListsBundleGeneric(type: ResourceBundleTask, dependsOn: download
 	host = 'inspire.ec.europa.eu'
 	archive = inspireCodeListsGeneric
 	destDir = projectDir
+	resourceType = 'xmlCodeList'
 }
 task inspireCodeListsBundleFixed(type: ResourceBundleTask, dependsOn: downloadInspireCodeLists) {
 	bundleId = 'codelists.inspire'
 	host = 'inspire.ec.europa.eu'
 	archive = inspireCodeListsFixed
 	destDir = projectDir
+	resourceType = 'xmlCodeList'
 }
 
 resourceBundles.dependsOn('inspireCodeListsBundleGeneric')
@@ -324,7 +326,7 @@ class ResourceBundleTask extends DefaultTask {
 		assert archiveUrl || archive
 		assert bundleId
 		assert symbolicNamePrefix
-		assert resourceType
+		assert resourceType // the primary resource type
 		assert destDir
 		
 		// schemas from schemas.opengis.net
