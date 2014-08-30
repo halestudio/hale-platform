@@ -1,12 +1,20 @@
 platform {
 	feature id: 'eu.esdihumboldt.hale.platform.resources',
 			name: 'Cached resources bundles (e.g. schemas)', {
-		// add resource bundle jars
-		bundle(fileTree(thisDir) { include '*.jar' }) {
+		// add resource bundle jars (exclude code lists)
+		bundle(fileTree(thisDir) { include '*.jar'; exclude '*codelist*' }) {
 			bnd {
 				// prevent package exports
 				instruction 'Export-Package', '!'
 			}
+		}
+	}
+			
+	// code list resources bundles (should not be part in general, useful for demos)
+	bundle(fileTree(thisDir) { include '*codelist*.jar' }) {
+		bnd {
+			// prevent package exports
+			instruction 'Export-Package', '!'
 		}
 	}
 }
