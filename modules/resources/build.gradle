@@ -29,6 +29,8 @@ ext {
 	// where inspire code lists are stored after download
 	inspireCodeListsFixed = new File(buildDir, 'inspire-codelists-fixed.zip')
 	inspireCodeListsGeneric = new File(buildDir, 'inspire-codelists-generic.zip')
+	// where schemas from portele.de are stored after download
+	porteleSchemas = new File(buildDir, 'portele-schemas.zip')
 }
 
 task clean << {
@@ -297,6 +299,41 @@ task w3SchemasBundle(type: ResourceBundleTask, dependsOn: downloadW3Schemas) {
 }
 
 resourceBundles.dependsOn('w3SchemasBundle')
+
+/*
+ * Creates a resource bundle from schemas provided on portele.de (which are needed by some INSPIRE schemas)
+ */
+
+// download schema files individually (requires wget)
+task downloadPorteleSchemas << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing schema archive
+	porteleSchemas.delete()
+	
+	def downloadSchema = { path ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '--force-directories', '--no-host-directories', "http://portele.de/$path"
+		}
+	}
+	downloadSchema('ShapeChangeAppinfo.xsd')
+	ant.zip(
+		destfile: porteleSchemas,
+		basedir: temporaryDir)
+}
+
+// create the bundle
+task porteleSchemasBundle(type: ResourceBundleTask, dependsOn: downloadPorteleSchemas) {
+	bundleId = 'schemas.portele.de'
+	host = 'portele.de'
+	archive = porteleSchemas
+	destDir = projectDir
+}
+
+resourceBundles.dependsOn('porteleSchemasBundle')
 
 /*
  * Common task definition
