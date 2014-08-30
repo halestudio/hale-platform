@@ -26,6 +26,9 @@ ext {
 	applicationSchemasFile = new File(buildDir, 'applicationSchemas.xml')
 	// where w3 schemas are downloaded to
 	w3Schemas = new File(buildDir, 'w3-schemas.zip')
+	// where inspire code lists are stored after download
+	inspireCodeListsFixed = new File(buildDir, 'inspire-codelists-fixed.zip')
+	inspireCodeListsGeneric = new File(buildDir, 'inspire-codelists-generic.zip')
 }
 
 task clean << {
@@ -169,6 +172,92 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 }
 
 resourceBundles.dependsOn('inspireSchemasBundle')
+
+/*
+ * Creates a resource bundle from code lists provided in INSPIRE code list registry
+ */
+
+// download code list files based on registry (requires wget, XML content type)
+task downloadInspireCodeLists << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing archives
+	inspireCodeListsFixed.delete()
+	inspireCodeListsGeneric.delete()
+	
+	// determine resources to retrieve from registry
+	def registry
+	new URL('http://inspire.ec.europa.eu/codelist/codelist.en.json').withReader { reader ->
+		registry = new groovy.json.JsonSlurper().parse(reader)
+	}
+	
+	def languages = ['en', 'bg', 'cs', 'hr', 'da', 'de', 'el', 'es', 'et', 'fi', 'fr',
+		'hu', 'it', 'lt', 'lv', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv']
+	
+	def genericUrls = []
+	def fixedUrls = []
+	registry.register.containeditems*.codelist.id.each { id ->
+		// the ID is the URI to retrieve the code list by default
+		genericUrls << id
+		// extract code list name
+		def regex = '/([^/]*)$'
+		def matcher = ( id =~ regex )
+		def name = matcher[0][1]
+		// add fixed urls TODO in all languages?
+		fixedUrls << "${id}/${name}.en.xml"
+		fixedUrls << "${id}/${name}.en.json"
+	}
+	
+	// problem is, we can't download both generic and fixed,
+	// because the fixed URLs require a directory with the name
+	// of the generic URL -> so we create two archives/bundles
+	 
+	def genericDir = new File(temporaryDir, "generic")
+	genericDir.mkdirs()
+	genericUrls.each { url ->
+		exec {
+			workingDir = genericDir 
+			executable = 'wget'
+			args '--force-directories', '--no-host-directories', "--header=Accept: application/xml", url
+		}
+	}
+	
+	def fixedDir = new File(temporaryDir, "fixed")
+	fixedDir.mkdirs()
+	fixedUrls.each { url ->
+		exec {
+			workingDir = fixedDir
+			executable = 'wget'
+			args '--force-directories', '--no-host-directories', url
+		}
+	}
+	
+	// create ZIP archives
+	ant.zip(
+		destfile: inspireCodeListsGeneric,
+		basedir: genericDir)
+	ant.zip(
+		destfile: inspireCodeListsFixed,
+		basedir: fixedDir)
+}
+
+// create the bundles
+task inspireCodeListsBundleGeneric(type: ResourceBundleTask, dependsOn: downloadInspireCodeLists) {
+	bundleId = 'codelists.inspire.accept-xml'
+	host = 'inspire.ec.europa.eu'
+	archive = inspireCodeListsGeneric
+	destDir = projectDir
+}
+task inspireCodeListsBundleFixed(type: ResourceBundleTask, dependsOn: downloadInspireCodeLists) {
+	bundleId = 'codelists.inspire'
+	host = 'inspire.ec.europa.eu'
+	archive = inspireCodeListsFixed
+	destDir = projectDir
+}
+
+resourceBundles.dependsOn('inspireCodeListsBundleGeneric')
+resourceBundles.dependsOn('inspireCodeListsBundleFixed')
 
 /*
  * Creates a resource bundle from schemas provided on www.w3.org (which can be very slow to access)
