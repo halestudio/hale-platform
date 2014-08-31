@@ -398,7 +398,7 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
  * Merge with old update site in hale-build-support to prevent unnecessary
  * pollution of the hale-build-support repository. 
  */
-task mergeOldSite(dependsOn: [tasks.bundles, tasks.additionalFeatures]) << {
+task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) << {
 	// bundles
 	File newBundles = new File(project.buildDir, 'plugins')
 	File oldBundles = new File(updateSiteMergeDir, 'plugins')
