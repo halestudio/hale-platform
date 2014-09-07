@@ -13,6 +13,7 @@ buildscript {
 		classpath 'org.standardout:bnd-platform:1.2.0'
 		classpath 'org.standardout:gradle-versioneye-plugin:1.0.0'
 		classpath 'zipdiff:zipdiff:0.4'
+		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
 	}
 }
 
