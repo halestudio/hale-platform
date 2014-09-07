@@ -9,7 +9,7 @@ buildscript {
 		}
 	}
 	dependencies {
-		classpath 'org.standardout:gradle-include-plugin:0.1'
+		classpath 'org.standardout:gradle-include-plugin:0.2.0'
 		classpath 'org.standardout:bnd-platform:1.1-SNAPSHOT'
 		classpath 'org.standardout:gradle-versioneye-plugin:1.0.0'
 		classpath 'zipdiff:zipdiff:0.4'
@@ -17,8 +17,8 @@ buildscript {
 }
 
 apply plugin: 'platform'
-apply plugin: 'include'
 apply plugin: 'eclipse'
+apply plugin: 'org.standardout.include'
 apply plugin: 'org.standardout.versioneye'
 
 defaultTasks 'clean', 'updateSiteZip'
