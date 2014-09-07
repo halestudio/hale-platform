@@ -425,5 +425,5 @@ task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) << {
 tasks.updateSite.dependsOn mergeOldSite
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '2.0'
+    gradleVersion = '1.11'
 }
