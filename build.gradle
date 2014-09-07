@@ -4,7 +4,6 @@ buildscript {
 			url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
 		}
 		mavenCentral()
-		mavenLocal()
 		maven {
 			url 'http://oss.sonatype.org/content/repositories/snapshots/'
 		}
@@ -12,7 +11,7 @@ buildscript {
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.1'
 		classpath 'org.standardout:bnd-platform:1.1-SNAPSHOT'
-		classpath 'org.standardout:gradle-versioneye-plugin:0.1.1'
+		classpath 'org.standardout:gradle-versioneye-plugin:1.0.0'
 		classpath 'zipdiff:zipdiff:0.4'
 	}
 }
@@ -20,7 +19,7 @@ buildscript {
 apply plugin: 'platform'
 apply plugin: 'include'
 apply plugin: 'eclipse'
-apply plugin: 'versioneye'
+apply plugin: 'org.standardout.versioneye'
 
 defaultTasks 'clean', 'updateSiteZip'
 
