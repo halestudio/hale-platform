@@ -1,16 +1,11 @@
 platform {
-  // manually defined/adapted version (because there are only major versions in the CS3D version strategy)
-  def mapVersion = '6.0.1'
-
-	feature(id: 'eu.esdihumboldt.hale.platform.cs3d-map',
+  feature(id: 'eu.esdihumboldt.hale.platform.cs3d-map',
 			name: 'CityServer3D map component and dependencies',
-			version: mapVersion) {
+			version: '6.0.0') {
 			
 		// add existing bundle jars
-		bundle (fileTree(thisDir) { include '*.jar' }) {
-		  bnd {
-			  version = mapVersion
-			}
+		bundle fileTree(thisDir) {
+      include '*.jar'
 		}
 		
 		// customize bundle imports
