@@ -33,58 +33,6 @@ repositories {
 // platform version
 version = '3.0.0'
 
-// jaxb projects
-subprojects { subproject ->
-  if (subproject.parent?.name == "jaxb") { 
-    apply plugin: 'java'
-    apply plugin: 'osgi'
-    
-    repositories {
-      maven { // HALE artifactory
-        url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
-      }
-    }
-	
-	configurations {
-		jaxb
-	}
-
-    dependencies { 
-      jaxb 'com.sun.xml.bind:jaxb-xjc:2.1.17'
-    }
-    
-	def generatedSources = subproject.file('src/main/java')
-	
-	task cleanSrc() << {
-		generatedSources.deleteDir()
-	}
-	
-	task xjc << {
-		generatedSources.mkdirs()
-		ant.taskdef(name: 'xjc', classname: 'com.sun.tools.xjc.XJCTask', classpath: configurations.jaxb.asPath)
-		ant.xjc(destdir: generatedSources) {
-			schema(dir: subproject.file('schema'), includes: '*.xsd')
-			binding(dir: subproject.file('schema'), includes: 'bindings.xml')
-		} 
-	}
-    
-    tasks.xjc.dependsOn('cleanSrc')
-    tasks.clean.dependsOn('cleanSrc')
-    tasks.compileJava.dependsOn('xjc')
-    
-    // let main project depend on jar task
-    rootProject.tasks.bundles.dependsOn(tasks.jar)
-    
-    // add produced jar to platform
-    def jars = tasks.jar.outputs.files
-    configure(rootProject) {
-      platform {
-        bundle(jars)
-      }
-    }
-  }
-}
-
 ext {
 	geotoolsVersion = '8.0'
 	wicketVersion = '6.10.0'
@@ -380,6 +328,58 @@ dependencies {
 	//XXX Guava is too basic, multiple versions result in a bunch of package uses conflicts
 //	platformaux 'com.google.guava:guava:14.0.1'
 //	platformaux 'com.google.guava:guava:11.0.2'
+}
+
+// build jaxb projects
+subprojects { subproject ->
+  if (subproject.parent?.name == "jaxb") {
+	apply plugin: 'java'
+	apply plugin: 'osgi'
+	
+	repositories {
+	  maven { // HALE artifactory
+		url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
+	  }
+	}
+	
+	configurations {
+		jaxb
+	}
+
+	dependencies {
+	  jaxb 'com.sun.xml.bind:jaxb-xjc:2.1.17'
+	}
+	
+	def generatedSources = subproject.file('src/main/java')
+	
+	task cleanSrc() << {
+		generatedSources.deleteDir()
+	}
+	
+	task xjc << {
+		generatedSources.mkdirs()
+		ant.taskdef(name: 'xjc', classname: 'com.sun.tools.xjc.XJCTask', classpath: configurations.jaxb.asPath)
+		ant.xjc(destdir: generatedSources) {
+			schema(dir: subproject.file('schema'), includes: '*.xsd')
+			binding(dir: subproject.file('schema'), includes: 'bindings.xml')
+		}
+	}
+	
+	tasks.xjc.dependsOn('cleanSrc')
+	tasks.clean.dependsOn('cleanSrc')
+	tasks.compileJava.dependsOn('xjc')
+	
+	// let main project depend on jar task
+	rootProject.tasks.bundles.dependsOn(tasks.jar)
+	
+	// add produced jar to platform
+	def jars = tasks.jar.outputs.files
+	configure(rootProject) {
+	  platform {
+		bundle(jars)
+	  }
+	}
+  }
 }
 
 project.ext {
