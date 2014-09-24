@@ -7,6 +7,9 @@ buildscript {
 		maven {
 			url 'http://oss.sonatype.org/content/repositories/snapshots/'
 		}
+		maven { 
+      url 'http://dl.bintray.com/content/djmijares/gradle-plugins' 
+    }
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.2.0'
@@ -14,6 +17,7 @@ buildscript {
 		classpath 'org.standardout:gradle-versioneye-plugin:1.0.0'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
+		classpath 'org.gradle.jacobo.plugins:gradle-jaxb-plugin:1.3.2'
 	}
 }
 
@@ -32,6 +36,53 @@ repositories {
 
 // platform version
 version = '3.0.0'
+
+// jaxb projects
+subprojects { subproject ->
+  if (subproject.parent?.name == "jaxb") { 
+    apply plugin: 'jaxb'
+    apply plugin: 'java'
+    apply plugin: 'osgi'
+    
+    repositories {
+      maven { // HALE artifactory
+        url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
+      }
+    }
+
+    dependencies { 
+      jaxb 'com.sun.xml.bind:jaxb-xjc:2.2.7'
+      jaxb 'com.sun.xml.bind:jaxb-impl:2.2.7'
+      jaxb 'javax.xml.bind:jaxb-api:2.2.7'
+    }
+    
+    task cleanSrc() << {
+      file('src').deleteDir()
+    }
+    
+    jaxb {
+      xsdDir = rootDir.toPath().relativize(file('schema').toPath())
+      bindingsDir = rootDir.toPath().relativize(file('schema').toPath())
+      episodesDir = rootDir.toPath().relativize(new File(buildDir, 'episodes').toPath())
+      bindings = ['bindings.xml']
+    }
+    
+    tasks.xjc.dependsOn('cleanSrc')
+    tasks.clean.dependsOn('cleanSrc')
+    tasks.compileJava.dependsOn('xjc')
+    
+    // let main project depend on jar task
+    rootProject.tasks.bundles.dependsOn(tasks.jar)
+    
+    // add produced jar to platform
+    def jars = tasks.jar.outputs.files
+    configure(rootProject) {
+      platform {
+        bundle(jars)
+      }
+    }
+  }
+}
 
 ext {
 	geotoolsVersion = '8.0'

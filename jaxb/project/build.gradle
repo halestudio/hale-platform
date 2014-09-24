@@ -1,0 +1,12 @@
+// increase the version number with every schema change!
+version = '2.9.0'
+
+jar {
+	// OSGi manifest
+	manifest {
+		name = 'HALE Project Format Model'
+		symbolicName = 'eu.esdihumboldt.hale.common.core.io.project.model.jaxb'
+		license = 'http://www.gnu.org/licenses/lgpl.html;description=Lesser General Public License (LGPL) Version 3'
+		instruction 'Bundle-Vendor', 'data harmonisation panel'
+	}
+}

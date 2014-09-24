@@ -1,0 +1,10 @@
+// increase the version number with every schema change!
+version = '2.9.0'
+
+jar {
+	// OSGi manifest
+	manifest {
+		name = 'Ontology Mapping Language Model'
+		symbolicName = 'eu.esdihumboldt.hale.io.oml.model.jaxb'
+	}
+}
