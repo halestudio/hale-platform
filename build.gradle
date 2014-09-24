@@ -365,14 +365,23 @@ subprojects { subproject ->
 		}
 	}
 	
+	// package source into a jar file
+	task packageSources(type: Jar, dependsOn: 'xjc') {
+		from sourceSets.main.allSource
+		classifier = 'sources'
+	}
+	
 	tasks.xjc.dependsOn('cleanSrc')
 	tasks.clean.dependsOn('cleanSrc')
 	tasks.compileJava.dependsOn('xjc')
 	
 	// let main project depend on jar task
 	rootProject.tasks.bundles.dependsOn(tasks.jar)
+	// ...and on packaged sources
+	rootProject.tasks.bundles.dependsOn(tasks.packageSources)
 	
 	// add produced jar to platform
+	// sources jars will be automatically detected by bnd-platform
 	def jars = tasks.jar.outputs.files
 	configure(rootProject) {
 	  platform {
