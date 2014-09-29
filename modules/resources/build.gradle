@@ -65,7 +65,7 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 		registry = new groovy.json.JsonSlurper().parse(reader)
 	}
 	def appSchemas = []
-	registry.register.containeditems*.applicationschema.each { appSchemas << [id: it.id, name: it.label.text, theme: it.theme.label.text] }
+	registry.register.containeditems*.applicationschema.each { appSchemas << [id: it.id, name: it.label.text, theme: it.theme?.label?.text] }
 	
 	def inspireShortIdRegex = '^http://inspire.ec.europa.eu/applicationschema/([^/]*)$'
 	
@@ -80,6 +80,9 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 					// extract short identifier
 					def matcher = ( appSchema.id =~ inspireShortIdRegex )
 					def shortId = matcher[0][1]
+
+					// replace abandoned(?) Geology schema with Geology core
+					if (shortId == 'ge') shortId = 'ge-core'
 					
 					folders.each { File folder ->
 						File asDir = new File(folder, shortId)
@@ -157,8 +160,10 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 				def id = appSchema.@id
 				
 				appSchema.schema.each { schema ->
+					def theme = appSchema.@theme as String
+					def descr = theme ? "GML Application Schema from the INSPIRE Data Specification on ${theme}." : "Application Schema from the INSPIRE Data Specifications (not associated to a theme)."
 					xml.schema(
-						description: "GML Application Schema from the INSPIRE Data Specification on ${appSchema.@theme}.",
+						description: descr,
 						icon: 'icons/inspire.gif',
 						id: id,
 						name: "INSPIRE ${appSchema.@name}",
