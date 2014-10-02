@@ -31,6 +31,8 @@ ext {
 	inspireCodeListsGeneric = new File(buildDir, 'inspire-codelists-generic.zip')
 	// where schemas from portele.de are stored after download
 	porteleSchemas = new File(buildDir, 'portele-schemas.zip')
+	// where inspire feature concept files are downloaded to
+	inspireFeatureConcepts = new File(buildDir, 'inspire-feature-concepts.zip')
 }
 
 task clean << {
@@ -304,6 +306,43 @@ task w3SchemasBundle(type: ResourceBundleTask, dependsOn: downloadW3Schemas) {
 }
 
 resourceBundles.dependsOn('w3SchemasBundle')
+
+/*
+ * Creates a resource bundle including the FeatureConcept information from the
+ * INSPIRE registry, which is used in HALE when generating an INSPIRE Dataset Feed. 
+ */
+
+// download JSON representation (requires wget)
+task downloadInspireFeatureConcepts << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing schema archive
+	inspireFeatureConcepts.delete()
+	
+	def downloadFile = { path ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '--force-directories', '--no-host-directories', "http://inspire.ec.europa.eu/featureconcept/$path"
+		}
+	}
+	downloadFile('featureconcept.en.json')
+	ant.zip(
+		destfile: inspireFeatureConcepts,
+		basedir: temporaryDir)
+}
+
+// create the bundle
+task inspireFeatureConceptsBundle(type: ResourceBundleTask, dependsOn: downloadInspireFeatureConcepts) {
+	bundleId = 'featureconcepts.inspire'
+	host = 'inspire.ec.europa.eu'
+	archive = inspireFeatureConcepts
+	destDir = projectDir
+	//TODO resource type?
+}
+
+resourceBundles.dependsOn('inspireFeatureConceptsBundle')
 
 /*
  * Creates a resource bundle from schemas provided on portele.de (which are needed by some INSPIRE schemas)
