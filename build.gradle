@@ -393,6 +393,12 @@ subprojects { subproject ->
 
 project.ext {
 	updateSiteMergeDir = file('../hale-build-support/updatesites/platform')
+	mergeBasedOnVersion = [
+		// regular expressions matched against the file name
+		
+		// generated jaxb sources
+		/^eu\.esdihumboldt\.hale\..+\.jaxb\.source_\d+\.\d+.\d+\.jar$/
+	]
 }
 
 def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, boolean bndFallback) {
@@ -404,14 +410,20 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
 		// if there is an old bundle with the same name
 		File ob = new File(referenceFolder, nb.name)
 		if (ob.exists()) {
+			boolean replace = project.ext.mergeBasedOnVersion.any {
+				ob.name ==~ it
+			}
+			if (replace) {
+				logger.warn("Using previously created version of $nb.name without difference check")
+			}
+			
 			// compare files
 			def diffcal = new zipdiff.DifferenceCalculator(ob, nb)
 			diffcal.ignoreTimestamps = true
 			diffcal.compareCRCValues = true
 			def diff = diffcal.differences
 			
-			boolean replace
-			if (diff.hasDifferences()) {
+			if (!replace && diff.hasDifferences()) {
 				if (bndFallback) {
 					// use bnd diff that does a real diff on the manifest headers
 					def diffPlugin = new aQute.bnd.differ.DiffPluginImpl()
