@@ -118,7 +118,7 @@ include {
 	
 	// ensures that always a fixed version of groovy-all is used as groovy dependency
 	from 'modules/shared/groovy.gradle', {
-		groovyAll '2.1.5', true, 'groovy'
+		groovyAll '2.3.7', true, 'groovy'
 	}
 	
 	// HALE specific modules
