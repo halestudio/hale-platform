@@ -34,7 +34,7 @@ repositories {
 version = '3.0.0'
 
 ext {
-	geotoolsVersion = '8.0'
+	geotoolsVersion = '12.2'
 	wicketVersion = '6.10.0'
 }
 
@@ -306,6 +306,11 @@ platform {
 		// -> use versioned symbolic names
 		def ov = org.osgi.framework.Version.parseVersion(version)
 		symbolicName = symbolicName + '-' + ov.major
+	}
+	
+	// force package export versions for hsqldb
+	bnd group: 'org.hsqldb', name: 'hsqldb', {
+		instruction 'Export-Package', "*;version=$version"
 	}
 	
 	imports 'com.google.guava:guava', {
