@@ -117,12 +117,12 @@ task downloadInspireSchemas << {
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/schemas/'
+		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/schemas/'
 	}
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/draft-schemas/'
+		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/draft-schemas/'
 	}
 	// add fixups
 	copy {
