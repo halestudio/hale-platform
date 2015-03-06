@@ -1,11 +1,12 @@
-def schemacrawlerVersion = '8.16'
+def schemacrawlerVersion = '12.04.02'
 
 platform {
 	feature id: 'eu.esdihumboldt.hale.platform.schemacrawler',
 			name: 'Schemacrawler',
 			version: schemacrawlerVersion, {
-		bundle "net.sourceforge.schemacrawler:schemacrawler:$schemacrawlerVersion", {
+		bundle "us.fatehi:schemacrawler:$schemacrawlerVersion", {
 			bnd {
+				symbolicName = 'net.sourceforge.schemacrawler'
 				// optional imports
 				optionalImport 'freemarker.*', 'org.springframework.context', 'org.springframework.context.*',
 					'org.apache.velocity', 'org.apache.velocity.*' 
