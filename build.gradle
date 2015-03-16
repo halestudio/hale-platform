@@ -10,7 +10,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.2.0'
-		classpath 'org.standardout:bnd-platform:1.2.0'
+		classpath 'org.standardout:bnd-platform:1.3.0-SNAPSHOT'
 		classpath 'org.standardout:gradle-versioneye-plugin:1.0.0'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
@@ -81,7 +81,7 @@ include {
 	}
 	
 	from('modules/shared/logging.gradle') {
-		slf4jAndLogback '1.7.5', '1.0.13'
+		slf4jAndLogback '1.7.10', '1.0.13'
 	}
 	
 	from 'modules/shared/orientdb.gradle', {
@@ -165,6 +165,13 @@ configurations {
 				details.useVersion '2.5.0-orientDB151'
 			}
 		}
+		
+		// sshj: group name changed to com.hieronymous from net.schmizz (from version 11.0)
+		resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+			if (details.requested.name == 'sshj' && details.requested.group == 'net.schmizz') {
+				details.useTarget "com.hierynomus:sshj:${details.requested.version}"
+			}
+		}
 	}
 }
 
@@ -186,6 +193,10 @@ platform {
 			'org.xml.sax.*',
 			'javax.activation.*',
 			'com.sun.xml.internal.*',
+			// cal10n.api
+			'javax.tools.*',
+			'javax.lang.model.*',
+			'javax.annotation.processing.*',
 			// also make JUnit optional everywhere - so we can exclude it from products
 			'junit.framework.*',
 			'org.junit.*'
@@ -321,6 +332,29 @@ platform {
 	bundle 'de.fhg.igd.hale:fme-exec:1.1.0'
 	bundle 'de.fhg.igd.hale:fme-ui:1.3.0'
 	bundle 'de.fhg.igd.hale:fme-doc:1.1.0'
+	
+	// Overcast
+	def overcastVersion = '2.5.1'
+	feature(id: 'com.xebialabs.cloud.overcast', name: 'Overcast and dependencies', version: overcastVersion) {
+		plugin(group: 'com.xebialabs.cloud', name: 'overcast', version: overcastVersion) {
+			exclude group: 'org.libvirt', module: 'libvirt'
+			exclude group: 'com.amazonaws', module: 'aws-java-sdk'
+			bnd {
+				optionalImport 'org.libvirt.*', 'com.amazonaws.*'
+			}
+		}
+	}
+	// force package export versions
+	bnd group: 'com.hierynomus', name: 'sshj', {
+		instruction 'Export-Package', "*;version=$version"
+	}
+	bnd group: 'ch.qos.cal10n', name: 'cal10n-api', {
+		instruction 'Export-Package', "*;version=$version"
+	}
+	// optional import for docker client
+	bnd group: 'com.spotify', name: 'docker-client', {
+		optionalImport 'javax.ws.rs.*'
+	}
 }
 
 dependencies {
