@@ -1,7 +1,7 @@
 platform {
   feature(id: 'eu.esdihumboldt.hale.platform.cs3d-map',
 			name: 'CityServer3D map component and dependencies',
-			version: '6.0.0') {
+			version: '8.0.0') {
 			
 		// add existing bundle jars
 		bundle fileTree(thisDir) {
