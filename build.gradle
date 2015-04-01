@@ -40,13 +40,13 @@ ext {
 
 include {
 	// shared modules
-	
+
 	from 'modules/shared/default.gradle'
-	
+
 	from 'modules/shared/adaptions' // all adaptions
-	
+
 	from 'modules/resources' // resource bundles
-	
+
 	from('modules/shared/geotools.gradle') {
 		geotools geotoolsVersion, [
 			'gt-api',
@@ -60,9 +60,9 @@ include {
 		]
 		// additional bundles are defined later
 	}
-	
+
 	from('modules/shared/spring.gradle') {
-		def v = '3.1.1.RELEASE' 
+		def v = '3.1.1.RELEASE'
 		spring v, [
 			'spring-beans',
 			'spring-context',
@@ -79,19 +79,19 @@ include {
 			'spring-security-ldap'
 		]
 	}
-	
+
 	from('modules/shared/logging.gradle') {
 		slf4jAndLogback '1.7.10', '1.0.13'
 	}
-	
+
 	from 'modules/shared/orientdb.gradle', {
 		orientGraphDB '1.5.1'
 	}
-	
+
 	from 'modules/shared/poi.gradle', {
 		poi('3.9')
 	}
-	
+
 	from('modules/shared/postgis.gradle') {
 		postgis(
 			'2.0.1', // PostGIS driver version
@@ -103,9 +103,9 @@ include {
 			]
 		)
 	}
-	
+
 	from 'modules/shared/gemini-blueprint.gradle'
-	
+
 	from('modules/shared/wicket.gradle') {
 		wicket(wicketVersion, [
 			'wicket-core',
@@ -115,12 +115,12 @@ include {
 			'wicket-extensions'
 		])
 	}
-	
+
 	// ensures that always a fixed version of groovy-all is used as groovy dependency
 	from 'modules/shared/groovy.gradle', {
 		groovyAll '2.3.7', true, 'groovy'
 	}
-	
+
 	// HALE specific modules
 
 	from 'modules/schemacrawler.gradle'
@@ -128,10 +128,10 @@ include {
 	from 'modules/zest' // Zest 2 Snapshot - TODO instead use official release
 	from 'modules/wicket-bootstrap'
 	from 'modules/slf4jplus-config'
-	
+
 	// CS3D dependencies for Styled Map View
 	from 'modules/cs3d-map'
-	
+
 	// support bundles for jetty 8/9
 	from 'modules/jetty-support'
 }
@@ -141,15 +141,15 @@ configurations {
 	platform.exclude group: 'javax.xml'
 	platform.exclude group: 'javax.xml.bind'
 	platform.exclude group: 'javax.activation'
-	
+
 	/*
 	 * They have to be excluded as just removing the version constraint on
 	 * corresponding package imports is not enough - bundles that only have
 	 * optional imports may still bind to them, as they have no explicit
 	 * dependency on the system bundle.
 	 */
-	
-	
+
+
 	// fix OrientDB 1.5.1 dependenies (which were manually added to the artifactory)
 	// the original verions are snapshots that no longer work with OrientDB 1.5.1
 	platform {
@@ -165,7 +165,7 @@ configurations {
 				details.useVersion '2.5.0-orientDB151'
 			}
 		}
-		
+
 		// sshj: group name changed to com.hieronymous from net.schmizz (from version 11.0)
 		resolutionStrategy.eachDependency { DependencyResolveDetails details ->
 			if (details.requested.name == 'sshj' && details.requested.group == 'net.schmizz') {
@@ -181,7 +181,9 @@ platform {
 	auxVersionedSymbolicNames = true
 	featureId = 'eu.esdihumboldt.hale.platform'
 	featureName = 'HALE Target Platform Libraries'
-	
+	hashQualifierMap = file('version-history.json')
+	defaultQualifierMapFixedDatePattern = 'yyyyMMddHHmm' // to have a fixed length, minutes should be enough
+
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
 		optionalImport(
@@ -202,15 +204,15 @@ platform {
 			'org.junit.*'
 		)
 	}
-	
+
 	// geotools additional bundles not in the default group
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-core', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml2', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
-	
+
 	// security
 	bundle 'org.jasig.cas:cas-client:3.1.10'
-	
+
 	// utilities
 	bundle 'com.google.guava:guava:15.0'
 	bundle 'net.sf.trove4j:trove4j:2.0.4' // with version 3 some packages have changed
@@ -222,12 +224,12 @@ platform {
 	bundle 'com.google.code.findbugs:jsr305:2.0.3'
 	bundle 'eu.esdihumboldt.hale:prefixmapper:1.0.1'
 	bundle 'joda-time:joda-time:2.3'
-	
+
 	bundle 'cglib:cglib:2.2.2'
 	bundle 'asm:asm-util:3.3.1' // optional dependency to cglib
 	bundle 'asm:asm-analysis:3.3.1'
 
-	// pegdown	
+	// pegdown
 	bundle group: 'org.pegdown', name: 'pegdown', version: '1.4.2'
 	// parboiled must be able to access pegdown
 	bnd group: 'org.parboiled', name: 'parboiled-core', {
@@ -239,30 +241,30 @@ platform {
 			'Eclipse-RegisterBuddy': 'org.parboiled.core'
 		)
 	}
-	
+
 	// web stuff
 	bundle 'commons-fileupload:commons-fileupload:1.3.1'
 	bundle 'org.openid4java:openid4java:0.9.8'
 	bundle 'net.tanesha.recaptcha4j:recaptcha4j:0.0.8'
 	bundle "org.wicketstuff:wicketstuff-html5:$wicketVersion"
 	bundle 'org.codehaus.groovy.modules.http-builder:http-builder:0.6'
-	
+
 	// fluent HTTP client API
 	bundle 'org.apache.httpcomponents:fluent-hc:4.3.6'
 
 	// Async HTTP client
 //	bundle 'com.ning:async-http-client:1.8.15'
-	
+
 	// quartz scheduler
 	bundle 'org.quartz-scheduler:quartz:1.7.3'
-	
+
 	// XML
 //	bundle 'org.apache.ws.xmlschema:xmlschema-core:2.0.2'
 	bundle 'org.apache.ws.commons.schema:XmlSchema:1.4.7'
 	bundle 'org.codehaus.castor:castor-xml:1.3.2'
 	bundle 'org.codehaus.castor:castor-core:1.3.2'
 	bundle 'com.sun.xml.bind:jaxb-core:2.2.7'
-	
+
 	// jackson 1
 	bundle 'org.codehaus.jackson:jackson-core-asl:1.9.13', {
 		bnd {
@@ -277,22 +279,22 @@ platform {
 	// jackson 2
 	bundle 'com.fasterxml.jackson.core:jackson-core:2.3.0'
 	bundle 'com.fasterxml.jackson.core:jackson-databind:2.3.0'
-	
+
 	// spring osgi legacy
 	bundle 'de.cs3d.thirdparty:springframework-osgi-web-mini:2.0.0.M1'
-	
+
 	// CSV
 	bundle 'net.sf.opencsv:opencsv:2.3'
-	
+
 	// resources (partly replaced by resources module)
 	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.citygml', version: '1.0.0.20120927'
 	//bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.opengis.net', version: '1.0.0.201202131112'
 	//bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.inspire', version: '1.0.0.20120927'
 	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.test', version: '1.0.0.201205101531'
-	
+
 	/*
 	 * XXX Orient graph DB hack
-	 * 
+	 *
 	 * The tinkerpop blueprints implementation for OrientDB (at least in version 1.5.1 of OrientDB)
 	 * is not compatible with the OrientDB version itself - probably because it is a SNAPSHOT.
 	 * As workaround for resolving the packages we remove the version contraints on its orient imports.
@@ -302,12 +304,12 @@ platform {
 	bnd(group: 'com.tinkerpop.blueprints', name: 'blueprints-orient-graph') {
 		instruction 'Import-Package', 'com.orientechnologies.*,' + (properties['Import-Package']?:'*')
 	}
-	
+
 	/*
 	 * Override bundle symbolic names (e.g. org.objectweb.asm) as they collide with
 	 * bundles provided via an Eclipse update site, and both versions cannot be
 	 * included in the (plugin-based) product if the symbolic name is the same.
-	 * 
+	 *
 	 * The problem seems to persist with feature-based products as well, even
 	 * as the Tycho build seems to be able to handle it given fixed versions in
 	 * the feature, Eclipse will not create the Run Configuration accordingly and
@@ -318,21 +320,21 @@ platform {
 		def ov = org.osgi.framework.Version.parseVersion(version)
 		symbolicName = symbolicName + '-' + ov.major
 	}
-	
+
 	// force package export versions for hsqldb
 	bnd group: 'org.hsqldb', name: 'hsqldb', {
 		instruction 'Export-Package', "*;version=$version"
 	}
-	
+
 	imports 'com.google.guava:guava', {
 		versionStrategy = MINIMUM
 	}
-	
+
 	// HALE FME plugin
 	bundle 'de.fhg.igd.hale:fme-exec:1.1.0'
 	bundle 'de.fhg.igd.hale:fme-ui:1.3.0'
 	bundle 'de.fhg.igd.hale:fme-doc:1.1.0'
-	
+
 	// Overcast
 	def overcastVersion = '2.5.1'
 	feature(id: 'com.xebialabs.cloud.overcast', name: 'Overcast and dependencies', version: overcastVersion) {
@@ -377,13 +379,13 @@ subprojects { subproject ->
   if (subproject.parent?.name == "jaxb") {
 	apply plugin: 'java'
 	apply plugin: 'osgi'
-	
+
 	repositories {
 	  maven { // HALE artifactory
 		url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
 	  }
 	}
-	
+
 	configurations {
 		jaxb
 	}
@@ -391,13 +393,13 @@ subprojects { subproject ->
 	dependencies {
 	  jaxb 'com.sun.xml.bind:jaxb-xjc:2.1.17'
 	}
-	
+
 	def generatedSources = subproject.file('src/main/java')
-	
+
 	task cleanSrc() << {
 		generatedSources.deleteDir()
 	}
-	
+
 	task xjc << {
 		generatedSources.mkdirs()
 		ant.taskdef(name: 'xjc', classname: 'com.sun.tools.xjc.XJCTask', classpath: configurations.jaxb.asPath)
@@ -406,22 +408,22 @@ subprojects { subproject ->
 			binding(dir: subproject.file('schema'), includes: 'bindings.xml')
 		}
 	}
-	
+
 	// package source into a jar file
 	task packageSources(type: Jar, dependsOn: 'xjc') {
 		from sourceSets.main.allSource
 		classifier = 'sources'
 	}
-	
+
 	tasks.xjc.dependsOn('cleanSrc')
 	tasks.clean.dependsOn('cleanSrc')
 	tasks.compileJava.dependsOn('xjc')
-	
+
 	// let main project depend on jar task
 	rootProject.tasks.bundles.dependsOn(tasks.jar)
 	// ...and on packaged sources
 	rootProject.tasks.bundles.dependsOn(tasks.packageSources)
-	
+
 	// add produced jar to platform
 	// sources jars will be automatically detected by bnd-platform
 	def jars = tasks.jar.outputs.files
@@ -437,7 +439,7 @@ project.ext {
 	updateSiteMergeDir = file('../hale-build-support/updatesites/platform')
 	mergeBasedOnVersion = [
 		// regular expressions matched against the file name
-		
+
 		// generated jaxb sources
 		/^eu\.esdihumboldt\.hale\..+\.jaxb\.source_\d+\.\d+.\d+\.jar$/
 	]
@@ -446,7 +448,7 @@ project.ext {
 def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, boolean bndFallback) {
 	def numReplaced = 0
 	def numRetained = 0
-	
+
 	// test all new bundles
 	targetFolder.eachFile(groovy.io.FileType.FILES) { File nb ->
 		// if there is an old bundle with the same name
@@ -458,13 +460,13 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
 			if (replace) {
 				logger.warn("Using previously created version of $nb.name without difference check")
 			}
-			
+
 			// compare files
 			def diffcal = new zipdiff.DifferenceCalculator(ob, nb)
 			diffcal.ignoreTimestamps = true
 			diffcal.compareCRCValues = true
 			def diff = diffcal.differences
-			
+
 			if (!replace && diff.hasDifferences()) {
 				if (bndFallback) {
 					// use bnd diff that does a real diff on the manifest headers
@@ -472,7 +474,7 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
 					def otree = diffPlugin.tree(ob)
 					def ntree = diffPlugin.tree(nb)
 					def bndDiff = ntree.diff(otree)
-					
+
 					switch (bndDiff.delta) {
 						case aQute.bnd.service.diff.Delta.IGNORED:
 						case aQute.bnd.service.diff.Delta.UNCHANGED:
@@ -487,7 +489,7 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
 			else {
 				replace = true
 			}
-			
+
 			if (replace) {
 				// replace new file with old/reference file
 				ant.copy(file: ob, tofile: nb, overwrite: true)
@@ -504,20 +506,20 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
 			numRetained++
 		}
 	}
-	
+
 	println "Replaced $numReplaced ${resourceName}s with version (with equal content) from reference update site"
 	println "Retained $numRetained ${resourceName}s that have changes compared to the current update site version"
 }
 
 /*
  * Merge with old update site in hale-build-support to prevent unnecessary
- * pollution of the hale-build-support repository. 
+ * pollution of the hale-build-support repository.
  */
 task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) << {
 	// bundles
 	File newBundles = new File(project.buildDir, 'plugins')
 	File oldBundles = new File(updateSiteMergeDir, 'plugins')
-	
+
 	if (oldBundles.exists()) {
 		logger.warn("Attempting to merge existing update site at $oldBundles, may replace bundles with previously created bundles")
 		mergeOldJars(newBundles, oldBundles, 'bundle', true)
@@ -525,11 +527,11 @@ task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) << {
 	else {
 		logger.warn("Skipping merge with current update site content, as directory $oldBundles was not found")
 	}
-	
+
 	// features
 	File newFeatures = new File(project.buildDir, 'features')
 	File oldFeatures = new File(updateSiteMergeDir, 'features')
-	
+
 	if (oldFeatures.exists()) {
 		logger.warn("Attempting to merge existing update site at $oldFeatures, may replace features with previously created features")
 		mergeOldJars(newFeatures, oldFeatures, 'feature', false)
