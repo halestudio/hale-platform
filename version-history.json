@@ -2,1429 +2,1436 @@
     "bundle": {
         "antlr": {
             "2.7.7": {
-                "i201504011709": "jXKsKg"
+                "i20150402": "jXKsKg"
             }
         },
         "aopalliance": {
             "1.0.0": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "args4j": {
             "2.0.16": {
-                "i201504011709": "3CasUw"
+                "i20150402": "3CasUw"
             }
         },
         "asm": {
             "3.3.1": {
-                "i201504011709": "fnSsIQ"
+                "i20150402": "fnSsIQ"
             }
         },
         "asm.asm-analysis": {
             "3.3.1": {
-                "i201504011709": "9hi6tQ"
+                "i20150402": "9hi6tQ"
             }
         },
         "asm.asm-tree": {
             "3.3.1": {
-                "i201504011709": "IQvJjQ"
+                "i20150402": "IQvJjQ"
             }
         },
         "asm.asm-util": {
             "3.3.1": {
-                "i201504011709": "9hi6tQ"
+                "i20150402": "9hi6tQ"
             }
         },
         "bcpkix": {
             "1.51.0": {
-                "i201504011709": "suR2nw"
+                "i20150402": "suR2nw"
             }
         },
         "bcprov": {
             "1.51.0": {
-                "i201504011709": "Y9mBYQ"
+                "i20150402": "Y9mBYQ"
             }
         },
         "cal10n.api": {
             "0.8.1": {
-                "i201504011709": "TErfg"
+                "i20150402": "TErfg"
             }
         },
         "cglib": {
             "2.2.2": {
-                "i201504011709": "HwHJjA"
+                "i20150402": "HwHJjA"
             }
         },
         "ch.qos.logback.classic": {
             "1.0.13": {
-                "i201504011709": "Or0Yig"
+                "i20150402": "Or0Yig"
             }
         },
         "ch.qos.logback.core": {
             "1.0.13": {
-                "i201504011709": "oGZBqQ"
+                "i20150402": "oGZBqQ"
             }
         },
         "colt": {
             "1.2.0": {
-                "i201504011709": "LWLSJQ"
+                "i20150402": "LWLSJQ"
             }
         },
         "com.fasterxml.jackson.core.jackson-annotations": {
             "2.3.0": {
-                "i201504011709": "PADd8Q"
+                "i20150402": "PADd8Q"
             }
         },
         "com.fasterxml.jackson.core.jackson-core": {
             "2.3.0": {
-                "i201504011709": "DJNRrw"
+                "i20150402": "DJNRrw"
             }
         },
         "com.fasterxml.jackson.core.jackson-databind": {
             "2.3.0": {
-                "i201504011709": "GIflmg"
+                "i20150402": "GIflmg"
             }
         },
         "com.fasterxml.jackson.dataformat.jackson-dataformat-yaml": {
             "2.2.3": {
-                "i201504011709": "V5E7UQ"
+                "i20150402": "V5E7UQ"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-guava": {
             "2.2.3": {
-                "i201504011709": "azKdeA"
+                "i20150402": "azKdeA"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-json-org": {
             "2.1.2": {
-                "i201504011709": "0Pxc8A"
+                "i20150402": "0Pxc8A"
             }
         },
         "com.fasterxml.jackson.jaxrs.jackson-jaxrs-base": {
             "2.2.3": {
-                "i201504011709": "YMHc7w"
+                "i20150402": "YMHc7w"
             }
         },
         "com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider": {
             "2.2.3": {
-                "i201504011709": "3mJmRQ"
+                "i20150402": "3mJmRQ"
             }
         },
         "com.fasterxml.jackson.module.jackson-module-jaxb-annotations": {
             "2.2.3": {
-                "i201504011709": "YMHc7w"
+                "i20150402": "YMHc7w"
             }
         },
         "com.github.sommeri.less4j": {
             "1.0.4": {
-                "i201504011709": "s7YJOQ"
+                "i20150402": "s7YJOQ"
             }
         },
         "com.google.code.findbugs.jsr305": {
             "2.0.3": {
-                "i201504011709": "PLKTg"
+                "i20150402": "PLKTg"
             }
         },
         "com.google.guava": {
             "17.0.0": {
-                "i201504011709": "L862bg"
+                "i20150402": "L862bg"
             }
         },
         "com.google.inject": {
             "2.0.0": {
-                "i201504011709": "3HXMpA"
+                "i20150402": "3HXMpA"
             }
         },
         "com.google.javascript.closure-compiler": {
             "20130603.0.0": {
-                "i201504011709": "6WGfA"
+                "i20150402": "6WGfA"
             }
         },
         "com.google.protobuf.java": {
             "2.4.1": {
-                "i201504011709": "fnKsIQ"
+                "i20150402": "fnKsIQ"
             }
         },
         "com.googlecode.json-simple": {
             "1.1.0": {
-                "i201504011709": "dhasHA"
+                "i20150402": "dhasHA"
             }
         },
         "com.hierynomus.sshj": {
             "0.11.0": {
-                "i201504011709": "5eWAAA"
+                "i20150402": "5eWAAA"
             }
         },
         "com.iabcinc.jmep": {
             "0.1.0": {
-                "i201504011709": "dGisGw"
+                "i20150402": "dGisGw"
             }
         },
         "com.jcraft.jzlib": {
             "1.1.3": {
-                "i201504011709": "exSsHw"
+                "i20150402": "exSsHw"
             }
         },
         "com.jhlabs.filters": {
             "2.0.235": {
-                "i201504011709": "O9Cshg"
-            }
-        },
-        "com.orientechnologies.common": {
-            "1.5.1": {
-                "i201504011711": "pOBKQ"
+                "i20150402": "O9Cshg"
             }
         },
         "com.orientechnologies.orient-commons": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-client": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-core": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-enterprise": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-graphdb": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-nativeos": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-object": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-server": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.orientechnologies.orientdb-tools": {
             "1.5.1": {
-                "i201504011709": "3FfdEw"
+                "i20150402": "3FfdEw"
             }
         },
         "com.spotify.docker-client": {
             "2.4.2": {
-                "i201504011709": "ydptLQ"
+                "i20150402": "ydptLQ"
             }
         },
         "com.sun.istack.commons-runtime": {
             "2.16.0": {
-                "i201504011709": "aWVFtg"
+                "i20150402": "aWVFtg"
             }
         },
         "com.sun.jersey.client": {
             "1.18.1": {
-                "i201504011709": "NKHDVw"
+                "i20150402": "NKHDVw"
             }
         },
         "com.sun.jersey.core": {
             "1.18.1": {
-                "i201504011709": "d7Qdw"
+                "i20150402": "d7Qdw"
             }
         },
         "com.sun.jna": {
             "3.5.2": {
-                "i201504011709": "7pG78w"
+                "i20150402": "7pG78w"
             }
         },
         "com.sun.xml.bind.jaxb-core": {
             "2.2.7": {
-                "i201504011709": "vJLXqw"
+                "i20150402": "vJLXqw"
             }
         },
         "com.tinkerpop.blueprints.core": {
             "2.5.0.orientDB151": {
-                "i201504011709": "qbwqeQ"
+                "i20150402": "qbwqeQ"
             }
         },
         "com.tinkerpop.blueprints.orient-graph": {
             "2.5.0.orientDB151": {
-                "i201504011709": "6sJ1qQ"
+                "i20150402": "6sJ1qQ"
             }
         },
         "com.tinkerpop.gremlin.groovy": {
             "2.5.0.orientDB151": {
-                "i201504011709": "R0AntA"
+                "i20150402": "R0AntA"
             }
         },
         "com.tinkerpop.gremlin.java": {
             "2.5.0.orientDB151": {
-                "i201504011709": "9KaZFQ"
+                "i20150402": "9KaZFQ"
             }
         },
         "com.tinkerpop.pipes": {
             "2.5.0.orientDB151": {
-                "i201504011709": "WEQPeg"
+                "i20150402": "WEQPeg"
             }
         },
         "com.typesafe.config": {
             "1.2.1": {
-                "i201504011709": "orDDlg"
+                "i20150402": "orDDlg"
             }
         },
         "com.vividsolutions.jts": {
             "1.13.0": {
-                "i201504011709": "1YOsTw"
+                "i20150402": "1YOsTw"
             }
         },
         "com.xebialabs.cloud.overcast": {
             "2.5.1": {
-                "i201504011709": "sguDMQ"
+                "i20150402": "sguDMQ"
             }
         },
         "com.xebialabs.overthere": {
             "2.4.4": {
-                "i201504011709": "RhxebA"
+                "i20150402": "RhxebA"
             }
         },
         "commons-beanutils.commons-beanutils-core": {
             "1.8.0": {
-                "i201504011709": "kKru4A"
+                "i20150402": "kKru4A"
             }
         },
         "commons-digester": {
             "1.8.0": {
-                "i201504011709": "I9Ictw"
+                "i20150402": "I9Ictw"
             }
         },
         "commons-httpclient": {
             "3.1.0": {
-                "i201504011709": "LgAlBg"
+                "i20150402": "LgAlBg"
             }
         },
         "concurrent": {
             "1.3.4": {
-                "i201504011709": "gBasIg"
+                "i20150402": "gBasIg"
             }
         },
         "de.cs3d.common.metamodel": {
             "8.0.0": {
-                "i201504011710": "ZgLVeQ"
+                "i20150402": "ZgLVeQ"
             }
         },
         "de.cs3d.util.helper": {
             "8.0.0": {
-                "i201504011710": "SF4Czw"
+                "i20150402": "SF4Czw"
             }
         },
         "de.fhg.igd.hale.fme": {
             "1.1.0": {
-                "i201504011709": "0xTx8A"
+                "i20150402": "0xTx8A"
             }
         },
         "de.fhg.igd.hale.fme.doc": {
             "1.1.0": {
-                "i201504011709": "pSajuA"
+                "i20150402": "pSajuA"
             }
         },
         "de.fhg.igd.hale.fme.ui": {
             "1.3.0": {
-                "i201504011709": "p6MEng"
+                "i20150402": "p6MEng"
             }
         },
         "de.fhg.igd.osgi.util": {
             "1.0.0": {
-                "i201504011709": "OM9h3w"
+                "i20150402": "OM9h3w"
             }
         },
         "de.schlichtherle.truezip.driver-file": {
             "7.3.4": {
-                "i201504011709": "WIuUug"
+                "i20150402": "WIuUug"
             }
         },
         "de.schlichtherle.truezip.driver-zip": {
             "7.3.4": {
-                "i201504011709": "LGIrwQ"
+                "i20150402": "LGIrwQ"
             }
         },
         "de.schlichtherle.truezip.file": {
             "7.3.4": {
-                "i201504011709": "cHm7VA"
+                "i20150402": "cHm7VA"
             }
         },
         "de.schlichtherle.truezip.kernel": {
             "7.3.4": {
-                "i201504011709": "1GrMWw"
+                "i20150402": "1GrMWw"
             }
         },
         "de.schlichtherle.truezip.swing": {
             "7.3.4": {
-                "i201504011709": "1GrMWw"
+                "i20150402": "1GrMWw"
             }
         },
         "dom4j": {
             "1.6.1": {
-                "i201504011709": "RHq6ig"
+                "i20150402": "RHq6ig"
             }
         },
         "eu.esdihumboldt.hale.prefixmapper": {
             "1.0.1": {
-                "i201504011709": "MosLw"
-            }
-        },
-        "eu.esdihumboldt.hale.server.webjars": {
-            "3.0.0": {
-                "i201504011711": "cGe5KA"
+                "i20150402": "MosLw"
             }
         },
         "eu.esdihumboldt.util.resource.schemas.citygml": {
             "1.0.0.20120927": {
-                "i201504011709": "cU6ZOQ"
+                "i20150402": "cU6ZOQ"
             }
         },
         "eu.esdihumboldt.util.resource.schemas.test": {
             "1.0.0.201205101531": {
-                "i201504011709": "cU6ZOQ"
+                "i20150402": "cU6ZOQ"
             }
         },
         "findbugs.annotations": {
             "1.0.0": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "findbugsAnnotations": {
             "2.0.3": {
-                "i201504011709": "vXWsJw"
+                "i20150402": "vXWsJw"
             }
         },
         "gnu.trove": {
             "2.0.4": {
-                "i201504011709": "yVw5Q"
+                "i20150402": "yVw5Q"
             }
         },
         "groovy": {
             "2.3.7": {
-                "i201504011709": "fjwdVg"
+                "i20150402": "fjwdVg"
             }
         },
         "it.geosolutions.imageio-ext.tiff": {
             "1.1.10": {
-                "i201504011709": "BmPUrw"
+                "i20150402": "BmPUrw"
             }
         },
         "it.geosolutions.imageio-ext.utilities": {
             "1.1.10": {
-                "i201504011709": "2hOtQA"
+                "i20150402": "2hOtQA"
             }
         },
         "java3d.vecmath": {
             "1.3.2": {
-                "i201504011709": "fMKsIA"
+                "i20150402": "fMKsIA"
             }
         },
         "javassist": {
             "3.12.1.GA": {
-                "i201504011709": "2NsUQ"
+                "i20150402": "2NsUQ"
             }
         },
         "javax.inject.javax.inject": {
             "1.0.0": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "javax.mail": {
             "1.4.0": {
-                "i201504011709": "IDnOMw"
+                "i20150402": "IDnOMw"
             }
         },
         "javax.media.jai_codec": {
             "1.1.3": {
-                "i201504011709": "exSsHw"
+                "i20150402": "exSsHw"
             }
         },
         "javax.media.jai_core": {
             "1.1.3": {
-                "i201504011709": "exSsHw"
+                "i20150402": "exSsHw"
             }
         },
         "javax.media.jai_imageio": {
             "1.1.0": {
-                "i201504011709": "dhasHA"
+                "i20150402": "dhasHA"
             }
         },
         "javax.servlet": {
             "3.1.0": {
-                "i201504011709": "lWxTCg"
+                "i20150402": "lWxTCg"
             }
         },
         "javax.servlet.api": {
             "2.4.0": {
-                "i201504011709": "fMisIA"
+                "i20150402": "fMisIA"
             }
         },
         "javax.ws.rs.jsr311-api": {
             "1.1.1": {
-                "i201504011709": "uSAEaA"
+                "i20150402": "uSAEaA"
             }
         },
         "jaxen": {
             "1.1.6": {
-                "i201504011709": "WWQA3Q"
+                "i20150402": "WWQA3Q"
             }
         },
         "jcifs": {
             "1.3.17": {
-                "i201504011709": "T1HUhQ"
+                "i20150402": "T1HUhQ"
             }
         },
         "jcl.over.slf4j": {
             "1.7.10": {
-                "i201504011709": "v87YXg"
+                "i20150402": "v87YXg"
             }
         },
         "jgridshift": {
             "1.0.0": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "jline": {
             "0.9.94": {
-                "i201504011709": "RzvJQ"
+                "i20150402": "RzvJQ"
             }
         },
         "joda-time": {
             "2.3.0": {
-                "i201504011709": "MjvWsg"
+                "i20150402": "MjvWsg"
             }
         },
         "jul.to.slf4j": {
             "1.7.10": {
-                "i201504011709": "LLjOrw"
+                "i20150402": "LLjOrw"
             }
         },
         "log4j.over.slf4j": {
             "1.7.10": {
-                "i201504011709": "kYH0yw"
+                "i20150402": "kYH0yw"
             }
         },
         "net.java.dev.jna.platform": {
             "3.5.2": {
-                "i201504011709": "sUUSaQ"
+                "i20150402": "sUUSaQ"
             }
         },
         "net.java.dev.jsr-275": {
             "1.0.0.beta-2": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "net.sf.ehcache.core": {
             "2.6.6": {
-                "i201504011709": "ymTNHw"
+                "i20150402": "ymTNHw"
             }
         },
         "net.sf.ezmorph": {
             "1.0.6": {
-                "i201504011709": "uKVGhw"
+                "i20150402": "uKVGhw"
             }
         },
         "net.sf.json-lib": {
             "2.3.0": {
-                "i201504011709": "LL9Gw"
+                "i20150402": "LL9Gw"
             }
         },
         "net.sf.opencsv": {
             "2.3.0": {
-                "i201504011709": "exysHw"
+                "i20150402": "exysHw"
             }
         },
         "net.sourceforge.nekohtml": {
             "1.9.16": {
-                "i201504011709": "8TIKEQ"
+                "i20150402": "8TIKEQ"
             }
         },
         "net.sourceforge.schemacrawler": {
             "12.4.2": {
-                "i201504011709": "Fs5TrQ"
+                "i20150402": "Fs5TrQ"
             }
         },
         "net.tanesha.recaptcha4j": {
             "0.0.8": {
-                "i201504011709": "gAysIg"
+                "i20150402": "gAysIg"
             }
         },
         "nl.javadude.scannit": {
             "1.2.1": {
-                "i201504011709": "V86PMA"
+                "i20150402": "V86PMA"
             }
         },
         "org.antlr": {
             "3.4.0": {
-                "i201504011709": "zgw2jA"
+                "i20150402": "zgw2jA"
             }
         },
         "org.antlr.ST4": {
             "4.0.4": {
-                "i201504011709": "dEvlow"
+                "i20150402": "dEvlow"
             }
         },
         "org.antlr.runtime": {
             "3.4.0": {
-                "i201504011709": "OOB1Pw"
+                "i20150402": "OOB1Pw"
             }
         },
         "org.antlr.stringtemplate": {
             "3.2.1": {
-                "i201504011709": "Mi1AeQ"
+                "i20150402": "Mi1AeQ"
             }
         },
         "org.apache.ant": {
             "1.8.3": {
-                "i201504011709": "sk8lA"
+                "i20150402": "sk8lA"
             }
         },
         "org.apache.ant.launcher": {
             "1.8.3": {
-                "i201504011709": "hsisJg"
+                "i20150402": "hsisJg"
             }
         },
         "org.apache.commons.beanutils": {
             "1.8.3": {
-                "i201504011709": "SLkwKw"
+                "i20150402": "SLkwKw"
             }
         },
         "org.apache.commons.codec": {
             "1.6.0": {
-                "i201504011709": "TowmDw"
+                "i20150402": "TowmDw"
             }
         },
         "org.apache.commons.collections": {
             "3.2.1": {
-                "i201504011709": "W82V4w"
+                "i20150402": "W82V4w"
             }
         },
         "org.apache.commons.compress": {
             "1.8.1": {
-                "i201504011709": "LXV9eg"
+                "i20150402": "LXV9eg"
             }
         },
         "org.apache.commons.configuration": {
             "1.6.0": {
-                "i201504011709": "nCUuuw"
+                "i20150402": "nCUuuw"
             }
         },
         "org.apache.commons.fileupload": {
             "1.3.1": {
-                "i201504011709": "JyNANw"
+                "i20150402": "JyNANw"
             }
         },
         "org.apache.commons.io": {
             "2.4.0": {
-                "i201504011709": "pLpzmQ"
+                "i20150402": "pLpzmQ"
             }
         },
         "org.apache.commons.jxpath": {
             "1.3.0": {
-                "i201504011709": "0n4xVw"
+                "i20150402": "0n4xVw"
             }
         },
         "org.apache.commons.lang": {
             "2.6.0": {
-                "i201504011709": "kn1hrA"
+                "i20150402": "kn1hrA"
             }
         },
         "org.apache.commons.net": {
             "2.0.0": {
-                "i201504011709": "KfYJag"
+                "i20150402": "KfYJag"
             }
         },
         "org.apache.commons.pool": {
             "1.5.4": {
-                "i201504011709": "L7PxQ"
+                "i20150402": "L7PxQ"
             }
         },
         "org.apache.httpcomponents.fluent-hc": {
             "4.3.6": {
-                "i201504011709": "hdFWTQ"
+                "i20150402": "hdFWTQ"
             }
         },
         "org.apache.httpcomponents.httpclient": {
             "4.3.6": {
-                "i201504011709": "ScUVCQ"
+                "i20150402": "ScUVCQ"
             }
         },
         "org.apache.httpcomponents.httpcore": {
             "4.3.3": {
-                "i201504011709": "g3asJA"
+                "i20150402": "g3asJA"
             }
         },
         "org.apache.ivy": {
             "2.3.0.final_20130110142753": {
-                "i201504011709": "Ild2Fg"
+                "i20150402": "Ild2Fg"
             }
         },
         "org.apache.poi": {
             "3.9.0": {
-                "i201504011711": "Qw6jQ"
+                "i20150402": "GaAC5Q"
             }
         },
         "org.apache.poi.ooxml": {
             "3.9.0": {
-                "i201504011709": "FNnVTQ"
+                "i20150402": "FNnVTQ"
             }
         },
         "org.apache.poi.ooxml-schemas": {
             "3.9.0": {
-                "i201504011709": "f6cyQ"
+                "i20150402": "f6cyQ"
             }
         },
         "org.apache.velocity": {
             "1.6.2": {
-                "i201504011709": "LWuSyA"
+                "i20150402": "LWuSyA"
             }
         },
         "org.apache.wicket.core": {
             "6.10.0": {
-                "i201504011709": "pCc9iA"
+                "i20150402": "pCc9iA"
             }
         },
         "org.apache.wicket.extensions": {
             "6.10.0": {
-                "i201504011709": "9RXr0w"
+                "i20150402": "9RXr0w"
             }
         },
         "org.apache.wicket.ioc": {
             "6.10.0": {
-                "i201504011709": "C5tRpA"
+                "i20150402": "C5tRpA"
             }
         },
         "org.apache.wicket.request": {
             "6.10.0": {
-                "i201504011709": "sTYRsA"
+                "i20150402": "sTYRsA"
             }
         },
         "org.apache.wicket.spring": {
             "6.10.0": {
-                "i201504011709": "ggKVjA"
+                "i20150402": "ggKVjA"
             }
         },
         "org.apache.wicket.util": {
             "6.10.0": {
-                "i201504011709": "Ui50Q"
+                "i20150402": "Ui50Q"
             }
         },
         "org.apache.ws.commons.schema.XmlSchema": {
             "1.4.7": {
-                "i201504011709": "j8yI6w"
+                "i20150402": "j8yI6w"
             }
         },
         "org.apache.xml.commons-resolver": {
             "1.2.0": {
-                "i201504011709": "d8KsHQ"
+                "i20150402": "d8KsHQ"
             }
         },
         "org.apache.xmlbeans": {
             "2.4.0": {
-                "i201504011709": "1iu6Eg"
+                "i20150402": "1iu6Eg"
             }
         },
         "org.codehaus.castor.core": {
             "1.3.2": {
-                "i201504011709": "BZhX0Q"
+                "i20150402": "BZhX0Q"
             }
         },
         "org.codehaus.castor.xml": {
             "1.3.2": {
-                "i201504011709": "v05SCg"
+                "i20150402": "v05SCg"
             }
         },
         "org.codehaus.groovy.modules.http-builder": {
             "0.6.0": {
-                "i201504011709": "OTZpA"
+                "i20150402": "OTZpA"
             }
         },
         "org.codehaus.jackson": {
             "1.9.13": {
-                "i201504011709": "1VB6nQ"
+                "i20150402": "1VB6nQ"
             }
         },
         "org.codehaus.jackson.mapper": {
             "1.9.13": {
-                "i201504011709": "t0i4ig"
+                "i20150402": "t0i4ig"
             }
         },
         "org.codehaus.jettison.jettison": {
             "1.3.3": {
-                "i201504011709": "W2YQWg"
+                "i20150402": "W2YQWg"
             }
         },
         "org.eclipse.emf.common": {
             "2.6.0.v20100914-1218": {
-                "i201504011709": "hcbsyQ"
+                "i20150402": "hcbsyQ"
             }
         },
         "org.eclipse.emf.ecore": {
             "2.6.1.v20100914-1218": {
-                "i201504011709": "RZlMIA"
+                "i20150402": "RZlMIA"
             }
         },
         "org.eclipse.gemini.blueprint.core": {
             "1.0.0.RELEASE": {
-                "i201504011709": "ynJNng"
+                "i20150402": "ynJNng"
             }
         },
         "org.eclipse.gemini.blueprint.extender": {
             "1.0.0.RELEASE": {
-                "i201504011709": "BsQkXw"
+                "i20150402": "BsQkXw"
             }
         },
         "org.eclipse.gemini.blueprint.io": {
             "1.0.0.RELEASE": {
-                "i201504011709": "mDV2Q"
+                "i20150402": "mDV2Q"
             }
         },
         "org.eclipse.jetty.continuation-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "JcT1lg"
+                "i20150402": "JcT1lg"
             }
         },
         "org.eclipse.jetty.deploy-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "K7jdJQ"
+                "i20150402": "K7jdJQ"
             }
         },
         "org.eclipse.jetty.http-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "9pIxVg"
+                "i20150402": "9pIxVg"
             }
         },
         "org.eclipse.jetty.io-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "R26ugA"
+                "i20150402": "R26ugA"
             }
         },
         "org.eclipse.jetty.security-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "5US5NQ"
+                "i20150402": "5US5NQ"
             }
         },
         "org.eclipse.jetty.server-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "zdtOvg"
+                "i20150402": "zdtOvg"
             }
         },
         "org.eclipse.jetty.servlet-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "BoUvHQ"
+                "i20150402": "BoUvHQ"
             }
         },
         "org.eclipse.jetty.util-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "YeJiJw"
+                "i20150402": "YeJiJw"
             }
         },
         "org.eclipse.jetty.webapp-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "IBNsg"
+                "i20150402": "IBNsg"
             }
         },
         "org.eclipse.jetty.xml-9": {
             "9.2.1.v20140609": {
-                "i201504011709": "0eRi5Q"
+                "i20150402": "0eRi5Q"
             }
         },
         "org.eclipse.xsd": {
             "2.6.0.v20100914-1218": {
-                "i201504011709": "liXRZg"
+                "i20150402": "liXRZg"
             }
         },
         "org.eclipse.zest.core": {
             "2.0.0.201204272302": {
-                "i201504011710": "Lnb4A"
+                "i20150402": "Lnb4A"
             }
         },
         "org.fusesource.jansi": {
             "1.5.0": {
-                "i201504011709": "4RPZOg"
-            }
-        },
-        "org.geotools": {
-            "12.2.0.combined": {
-                "i201504011710": "q98trQ"
+                "i20150402": "4RPZOg"
             }
         },
         "org.geotools.gt-api": {
             "12.2.0": {
-                "i201504011709": "eNcOnw"
+                "i20150402": "eNcOnw"
             }
         },
         "org.geotools.gt-coverage": {
             "12.2.0": {
-                "i201504011709": "Gk1LNg"
+                "i20150402": "Gk1LNg"
             }
         },
         "org.geotools.gt-cql": {
             "12.2.0": {
-                "i201504011709": "DVIyxw"
+                "i20150402": "DVIyxw"
             }
         },
         "org.geotools.gt-data": {
             "12.2.0": {
-                "i201504011709": "DVIyxw"
+                "i20150402": "DVIyxw"
             }
         },
         "org.geotools.gt-epsg-hsql": {
             "12.2.0": {
-                "i201504011709": "Dk1LBw"
+                "i20150402": "Dk1LBw"
             }
         },
         "org.geotools.gt-geojson": {
             "12.2.0": {
-                "i201504011709": "vdNfg"
+                "i20150402": "vdNfg"
             }
         },
         "org.geotools.gt-graph": {
             "12.2.0": {
-                "i201504011709": "DVIyxw"
+                "i20150402": "DVIyxw"
             }
         },
         "org.geotools.gt-main": {
             "12.2.0": {
-                "i201504011709": "7tF7bA"
+                "i20150402": "7tF7bA"
             }
         },
         "org.geotools.gt-metadata": {
             "12.2.0": {
-                "i201504011709": "T2Ynfw"
+                "i20150402": "T2Ynfw"
             }
         },
         "org.geotools.gt-referencing": {
             "12.2.0": {
-                "i201504011709": "rv5Pag"
+                "i20150402": "rv5Pag"
             }
         },
         "org.geotools.gt-render": {
             "12.2.0": {
-                "i201504011709": "JwSggA"
+                "i20150402": "JwSggA"
             }
         },
         "org.geotools.gt-shapefile": {
             "12.2.0": {
-                "i201504011709": "CsEYQ"
+                "i20150402": "CsEYQ"
             }
         },
         "org.geotools.gt-wfs": {
             "12.2.0": {
-                "i201504011709": "ujXDYQ"
+                "i20150402": "ujXDYQ"
             }
         },
         "org.geotools.gt-xml": {
             "12.2.0": {
-                "i201504011709": "YZVDYQ"
+                "i20150402": "YZVDYQ"
             }
         },
         "org.geotools.ogc.net.opengis.fes": {
             "12.2.0": {
-                "i201504011709": "LHq9Pg"
+                "i20150402": "LHq9Pg"
             }
         },
         "org.geotools.ogc.net.opengis.ows": {
             "12.2.0": {
-                "i201504011709": "aF6Tag"
+                "i20150402": "aF6Tag"
             }
         },
         "org.geotools.ogc.net.opengis.wfs": {
             "12.2.0": {
-                "i201504011709": "V2BmFg"
+                "i20150402": "V2BmFg"
             }
         },
         "org.geotools.ogc.org.w3.xlink": {
             "12.2.0": {
-                "i201504011709": "udu0Q"
+                "i20150402": "udu0Q"
             }
         },
         "org.geotools.xsd.gt-xsd-core": {
             "12.2.0": {
-                "i201504011709": "6PvRMg"
+                "i20150402": "6PvRMg"
             }
         },
         "org.geotools.xsd.gt-xsd-fes": {
             "12.2.0": {
-                "i201504011709": "o2VUlw"
+                "i20150402": "o2VUlw"
             }
         },
         "org.geotools.xsd.gt-xsd-filter": {
             "12.2.0": {
-                "i201504011709": "8zRGjQ"
+                "i20150402": "8zRGjQ"
             }
         },
         "org.geotools.xsd.gt-xsd-gml2": {
             "12.2.0": {
-                "i201504011709": "Fk5Hpg"
+                "i20150402": "Fk5Hpg"
             }
         },
         "org.geotools.xsd.gt-xsd-gml3": {
             "12.2.0": {
-                "i201504011709": "nXFlHA"
+                "i20150402": "nXFlHA"
             }
         },
         "org.geotools.xsd.gt-xsd-ows": {
             "12.2.0": {
-                "i201504011709": "VmdwBg"
+                "i20150402": "VmdwBg"
             }
         },
         "org.geotools.xsd.gt-xsd-wfs": {
             "12.2.0": {
-                "i201504011709": "ZmiPA"
+                "i20150402": "ZmiPA"
             }
         },
         "org.hibernate.javax.persistence.hibernate-jpa-2.0-api": {
             "1.0.0.Final": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "org.hsqldb.hsqldb": {
             "2.2.8": {
-                "i201504011709": "cDkYw"
+                "i20150402": "cDkYw"
             }
         },
         "org.iq80.snappy": {
             "0.3.0": {
-                "i201504011709": "d8CsHQ"
+                "i20150402": "d8CsHQ"
             }
         },
         "org.jaitools.jt-utils": {
             "1.3.1": {
-                "i201504011709": "Imx8Fg"
+                "i20150402": "Imx8Fg"
             }
         },
         "org.jaitools.jt-zonalstats": {
             "1.3.1": {
-                "i201504011709": "DMJPrA"
+                "i20150402": "DMJPrA"
             }
         },
         "org.jasig.cas.client.cas-client-core": {
             "3.1.12": {
-                "i201504011709": "BITOiw"
+                "i20150402": "BITOiw"
             }
         },
         "org.javassist": {
             "3.16.1.GA": {
-                "i201504011709": "34sVQ"
+                "i20150402": "34sVQ"
             }
         },
         "org.jdesktop.swingx": {
             "1.0.0": {
-                "i201504011709": "hnbuw"
+                "i20150402": "hnbuw"
             }
         },
         "org.jdom": {
             "1.1.3": {
-                "i201504011709": "exSsHw"
+                "i20150402": "exSsHw"
             }
         },
         "org.jdom.2": {
             "2.0.5": {
-                "i201504011709": "fmqsIQ"
+                "i20150402": "fmqsIQ"
             }
         },
         "org.json": {
             "20090211.0.0": {
-                "i201504011709": "CSGteQ"
+                "i20150402": "CSGteQ"
             }
         },
         "org.objectweb.asm-4": {
             "4.1.0": {
-                "i201504011709": "sgDEsw"
+                "i20150402": "sgDEsw"
             }
         },
         "org.objectweb.asm.analysis-4": {
             "4.1.0": {
-                "i201504011709": "Y0DoHA"
+                "i20150402": "Y0DoHA"
             }
         },
         "org.objectweb.asm.tree-4": {
             "4.1.0": {
-                "i201504011709": "pezNPA"
+                "i20150402": "pezNPA"
             }
         },
         "org.objectweb.asm.util-4": {
             "4.1.0": {
-                "i201504011709": "Z3Qeqw"
+                "i20150402": "Z3Qeqw"
             }
         },
         "org.opengis": {
             "12.2.0": {
-                "i201504011709": "cxz64A"
+                "i20150402": "cxz64A"
             }
         },
         "org.openid4java": {
             "0.9.8": {
-                "i201504011709": "s66wyA"
+                "i20150402": "s66wyA"
             }
         },
         "org.parboiled.core": {
             "1.1.6": {
-                "i201504011709": "uNKPzw"
+                "i20150402": "uNKPzw"
             }
         },
         "org.parboiled.java": {
             "1.1.6": {
-                "i201504011709": "gr1cg"
+                "i20150402": "gr1cg"
             }
         },
         "org.pegdown": {
             "1.4.2": {
-                "i201504011709": "bhDzXg"
+                "i20150402": "bhDzXg"
             }
         },
         "org.postgis.jdbc": {
             "2.0.1": {
-                "i201504011709": "VlnJw"
+                "i20150402": "VlnJw"
             }
         },
         "org.postgresql": {
             "9.2.0.1002-jdbc4": {
-                "i201504011709": "hTKsJQ"
-            }
-        },
-        "org.postgresql.jdbc": {
-            "9.2.0.1002-jdbc4_postgis-2_0_1": {
-                "i201504011711": "5Odejw"
+                "i20150402": "hTKsJQ"
             }
         },
         "org.quartz-scheduler.quartz": {
             "1.7.3": {
-                "i201504011709": "nwPOXw"
+                "i20150402": "nwPOXw"
             }
         },
         "org.reflections": {
             "0.9.8": {
-                "i201504011709": "fEburg"
+                "i20150402": "fEburg"
             }
         },
         "org.springframework.aop": {
             "3.1.1.RELEASE": {
-                "i201504011709": "Yu8mfw"
+                "i20150402": "Yu8mfw"
             }
         },
         "org.springframework.asm": {
             "3.1.1.RELEASE": {
-                "i201504011709": "O93tbw"
+                "i20150402": "O93tbw"
             }
         },
         "org.springframework.beans": {
             "3.1.1.RELEASE": {
-                "i201504011709": "W9qmkA"
+                "i20150402": "W9qmkA"
             }
         },
         "org.springframework.context": {
             "3.1.1.RELEASE": {
-                "i201504011709": "onJa6Q"
+                "i20150402": "onJa6Q"
             }
         },
         "org.springframework.context.support": {
             "3.1.1.RELEASE": {
-                "i201504011709": "7DEI2w"
+                "i20150402": "7DEI2w"
             }
         },
         "org.springframework.core": {
             "3.1.1.RELEASE": {
-                "i201504011709": "H783uA"
+                "i20150402": "H783uA"
             }
         },
         "org.springframework.expression": {
             "3.1.1.RELEASE": {
-                "i201504011709": "2hJWA"
+                "i20150402": "2hJWA"
             }
         },
         "org.springframework.jdbc": {
             "3.1.1.RELEASE": {
-                "i201504011709": "vXqF4w"
+                "i20150402": "vXqF4w"
             }
         },
         "org.springframework.ldap.spring-ldap-core": {
             "1.3.1.RELEASE": {
-                "i201504011709": "tPGu5g"
+                "i20150402": "tPGu5g"
             }
         },
         "org.springframework.osgi.web.mini": {
             "2.0.0.M1": {
-                "i201504011709": "5uTrWQ"
+                "i20150402": "5uTrWQ"
             }
         },
         "org.springframework.security.cas": {
             "3.1.1.RELEASE": {
-                "i201504011709": "ENxZQg"
+                "i20150402": "ENxZQg"
             }
         },
         "org.springframework.security.config": {
             "3.1.1.RELEASE": {
-                "i201504011709": "PCGc6A"
+                "i20150402": "PCGc6A"
             }
         },
         "org.springframework.security.core": {
             "3.1.1.RELEASE": {
-                "i201504011709": "w1Vjw"
+                "i20150402": "w1Vjw"
             }
         },
         "org.springframework.security.ldap": {
             "3.1.1.RELEASE": {
-                "i201504011709": "lVEcw"
+                "i20150402": "lVEcw"
             }
         },
         "org.springframework.security.openid": {
             "3.1.1.RELEASE": {
-                "i201504011709": "eJR8aQ"
+                "i20150402": "eJR8aQ"
             }
         },
         "org.springframework.security.web": {
             "3.1.1.RELEASE": {
-                "i201504011709": "ranmg"
+                "i20150402": "ranmg"
             }
         },
         "org.springframework.transaction": {
             "3.1.1.RELEASE": {
-                "i201504011709": "JoG7KQ"
+                "i20150402": "JoG7KQ"
             }
         },
         "org.springframework.web": {
             "3.1.1.RELEASE": {
-                "i201504011709": "4UnEMg"
+                "i20150402": "4UnEMg"
             }
         },
         "org.springframework.web.servlet": {
             "3.1.1.RELEASE": {
-                "i201504011709": "sxomg"
+                "i20150402": "sxomg"
             }
         },
         "org.swinglabs.swing-worker": {
             "1.1.0": {
-                "i201504011709": "dhasHA"
+                "i20150402": "dhasHA"
             }
         },
         "org.webjars.bootstrap": {
             "2.3.2": {
-                "i201504011709": "fnCsIQ"
+                "i20150402": "fnCsIQ"
             }
         },
         "org.webjars.jquery": {
             "1.9.0": {
-                "i201504011709": "g3asJA"
+                "i20150402": "g3asJA"
             }
         },
         "org.webjars.jquerypp": {
             "1.0.0.b2": {
-                "i201504011709": "dGqsGw"
+                "i20150402": "dGqsGw"
             }
         },
         "org.webjars.locator": {
             "0.1.0": {
-                "i201504011709": "6MexDw"
+                "i20150402": "6MexDw"
             }
         },
         "org.webjars.modernizr": {
             "2.6.2.1": {
-                "i201504011709": "g3SsJA"
+                "i20150402": "g3SsJA"
             }
         },
         "org.wicketstuff.html5": {
             "6.10.0": {
-                "i201504011709": "2OqsUQ"
+                "i20150402": "2OqsUQ"
             }
         },
         "oro": {
             "2.0.8": {
-                "i201504011709": "g2isJA"
+                "i20150402": "g2isJA"
             }
         },
         "picocontainer": {
             "1.2.0": {
-                "i201504011709": "O0S6hQ"
+                "i20150402": "O0S6hQ"
             }
         },
         "slf4j.api": {
             "1.7.10": {
-                "i201504011709": "PI7NQ"
+                "i20150402": "PI7NQ"
             }
         },
         "slf4j.ext": {
             "1.7.10": {
-                "i201504011709": "kBvtvA"
+                "i20150402": "kBvtvA"
             }
         },
         "stax": {
             "1.2.0": {
-                "i201504011709": "d8KsHQ"
+                "i20150402": "d8KsHQ"
             }
         },
         "stax.stax-api": {
             "1.0.1": {
-                "i201504011709": "dhSsHA"
+                "i20150402": "dhSsHA"
             }
         },
         "wicket-bootstrap-core": {
             "0.8.4": {
-                "i201504011709": "iBuTHA"
+                "i20150402": "iBuTHA"
             }
         },
         "wicket-bootstrap-extensions": {
             "0.8.4": {
-                "i201504011709": "So2OIA"
+                "i20150402": "So2OIA"
             }
         },
         "wicket-bootstrap-less": {
             "0.8.4": {
-                "i201504011709": "mSkYMw"
+                "i20150402": "mSkYMw"
             }
         },
         "wicket-bootstrap-themes": {
             "0.8.4": {
-                "i201504011709": "4AbS9w"
+                "i20150402": "4AbS9w"
             }
         },
         "xerces.xercesImpl": {
             "2.9.1": {
-                "i201504011709": "hs6sJg"
+                "i20150402": "hs6sJg"
             }
         },
         "xml-apis": {
             "1.0.0.b2": {
-                "i201504011709": "tCq1OA"
+                "i20150402": "tCq1OA"
             }
         },
         "xml-resolver": {
             "1.2.0": {
-                "i201504011709": "d8KsHQ"
+                "i20150402": "d8KsHQ"
             }
         },
         "xmlpull": {
             "1.1.3.1": {
-                "i201504011709": "exSsHw"
+                "i20150402": "exSsHw"
             }
         },
         "xpp3.xpp3_min": {
             "1.1.4.c": {
-                "i201504011709": "fL6sIA"
+                "i20150402": "fL6sIA"
             }
         },
         "xstream": {
             "1.4.5": {
-                "i201504011709": "Av9gXA"
+                "i20150402": "Av9gXA"
             }
         }
     },
     "feature": {
         "com.xebialabs.cloud.overcast": {
             "2.5.1": {
-                "i201504011712": "zWxxMw"
+                "i20150402": "xhOQw"
             }
         },
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
-                "i201504011712": "yzegQ"
+                "i20150402": "6hhrmw"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
             "8.0.1": {
-                "i201504011712": "83u8pg"
+                "i20150402": "Qa3Bg"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
             "1.6.0.hale": {
-                "i201504011712": "3AYWiw"
+                "i20150402": "3AYWiw"
             }
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
-                "i201504011712": "tETcbQ"
+                "i20150402": "AQTTfQ"
             }
         },
         "eu.esdihumboldt.hale.platform.resources": {
             "3.0.0": {
-                "i201504011712": "sCOcrw"
+                "i20150402": "sCOcrw"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
             "12.4.2": {
-                "i201504011712": "eUyYg"
+                "i20150402": "PN8vIg"
             }
         },
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
             "0.8.4": {
-                "i201504011712": "ZMPVyw"
+                "i20150402": "Vh5Yg"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
             "2.0.0.201204272302": {
-                "i201504011712": "hOy6ZQ"
+                "i20150402": "d8y5nQ"
             }
         },
         "platform.shared.gemini-blueprint": {
             "1.0.0.RELEASE": {
-                "i201504011712": "nTpEJA"
+                "i20150402": "5IJBtA"
             }
         },
         "platform.shared.geotools": {
             "12.2.0": {
-                "i201504011712": "wSSQaA"
+                "i20150402": "Rd3QA"
             }
         },
         "platform.shared.groovy-all": {
             "2.3.7": {
-                "i201504011712": "rXoQAg"
+                "i20150402": "dEPMg"
             }
         },
         "platform.shared.orientdb.core": {
             "1.5.1": {
-                "i201504011712": "c2oq7A"
+                "i20150402": "UOspUw"
             }
         },
         "platform.shared.orientdb.graphdb": {
             "1.5.1": {
-                "i201504011712": "ZeUg"
+                "i20150402": "GNxQA"
             }
         },
         "platform.shared.poi": {
             "3.9.0": {
-                "i201504011712": "0JEKw"
+                "i20150402": "do8Ug"
             }
         },
         "platform.shared.postgis": {
             "3.0.0": {
-                "i201504011712": "S38cqQ"
+                "i20150402": "444b4A"
             }
         },
         "platform.shared.slf4jlogback": {
             "1.7.10": {
-                "i201504011712": "PoVCcw"
+                "i20150402": "5U9kw"
             }
         },
         "platform.shared.spring.core": {
             "3.1.1.RELEASE": {
-                "i201504011712": "F0EZMQ"
+                "i20150402": "vN0YYQ"
             }
         },
         "platform.shared.spring.modules": {
             "3.1.1.RELEASE": {
-                "i201504011712": "nLbRkQ"
+                "i20150402": "9G3HBw"
             }
         },
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
-                "i201504011712": "lrc4Q"
+                "i20150402": "u4PFVw"
             }
         },
         "platform.shared.wicket": {
             "6.10.0": {
-                "i201504011712": "JqJ9tQ"
+                "i20150402": "C4x1lQ"
+            }
+        }
+    },
+    "mergedBundle": {
+        "com.orientechnologies.common": {
+            "1.5.1": {
+                "i20150402": "pOBKQ"
+            }
+        },
+        "eu.esdihumboldt.hale.server.webjars": {
+            "3.0.0": {
+                "i20150402": "cGe5KA"
+            }
+        },
+        "org.apache.poi": {
+            "3.9.0": {
+                "i20150402": "Qw6jQ"
+            }
+        },
+        "org.geotools": {
+            "12.2.0.combined": {
+                "i20150402": "q98trQ"
+            }
+        },
+        "org.postgresql.jdbc": {
+            "9.2.0.1002-jdbc4_postgis-2_0_1": {
+                "i20150402": "5Odejw"
             }
         }
     }

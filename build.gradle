@@ -182,7 +182,7 @@ platform {
 	featureId = 'eu.esdihumboldt.hale.platform'
 	featureName = 'HALE Target Platform Libraries'
 	hashQualifierMap = file('version-history.json')
-	defaultQualifierMapFixedDatePattern = 'yyyyMMddHHmm' // to have a fixed length, minutes should be enough
+	defaultQualifierMap.baseDate = DAY // to have a rather short default length, that seldom has to be exceeded
 
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
