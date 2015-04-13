@@ -186,6 +186,9 @@ platform {
 
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
+		// ensure javax.annotation imports are w/o version
+		prependImport('javax.annotation.*')
+		
 		optionalImport(
 			// no version requirement for certain JRE provided packages
 			// use wildcards to not enforce imports
@@ -321,6 +324,12 @@ platform {
 		def ov = org.osgi.framework.Version.parseVersion(version)
 		symbolicName = symbolicName + '-' + ov.major
 	}
+	bnd group: 'org.ow2.asm', name: 'asm-commons', {
+    // -> use versioned symbolic names
+    def ov = org.osgi.framework.Version.parseVersion(version)
+    // and fix problem with null symbolic name
+		symbolicName = 'org.ow2.asm.commons-' + ov.major
+	}
 
 	// force package export versions for hsqldb
 	bnd group: 'org.hsqldb', name: 'hsqldb', {
@@ -345,11 +354,14 @@ platform {
 		instruction 'Export-Package', "*;version=$version"
 	}
 	
-	//bundle for docker client and typesafe lib
-	bundle group:'com.spotify', name:'docker-client', version:'2.7.7'
-	bundle group:'com.typesafe' , name:'config' , version:'1.2.1'
+	//bundle for docker client
+	def dockerClientVersion = '2.7.7'
+	feature(id: 'com.spotify.docker-client', name: 'Spotify docker client and dependencies', version: dockerClientVersion) {
+    plugin group:'com.spotify', name:'docker-client', version: dockerClientVersion
+	}
 	
-
+	// typesafe configuration library
+	bundle group:'com.typesafe', name:'config', version:'1.2.1'
 }
 
 dependencies {
