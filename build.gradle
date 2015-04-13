@@ -206,6 +206,7 @@ platform {
 	}
 
 	// geotools additional bundles not in the default group
+	bundle group: 'org.geotools.jdbc', name: 'gt-jdbc-oracle', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-core', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml2', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
@@ -335,17 +336,7 @@ platform {
 	bundle 'de.fhg.igd.hale:fme-ui:1.3.0'
 	bundle 'de.fhg.igd.hale:fme-doc:1.1.0'
 
-	// Overcast
-	def overcastVersion = '2.5.1'
-	feature(id: 'com.xebialabs.cloud.overcast', name: 'Overcast and dependencies', version: overcastVersion) {
-		plugin(group: 'com.xebialabs.cloud', name: 'overcast', version: overcastVersion) {
-			exclude group: 'org.libvirt', module: 'libvirt'
-			exclude group: 'com.amazonaws', module: 'aws-java-sdk'
-			bnd {
-				optionalImport 'org.libvirt.*', 'com.amazonaws.*'
-			}
-		}
-	}
+	
 	// force package export versions
 	bnd group: 'com.hierynomus', name: 'sshj', {
 		instruction 'Export-Package', "*;version=$version"
@@ -353,10 +344,12 @@ platform {
 	bnd group: 'ch.qos.cal10n', name: 'cal10n-api', {
 		instruction 'Export-Package', "*;version=$version"
 	}
-	// optional import for docker client
-	bnd group: 'com.spotify', name: 'docker-client', {
-		optionalImport 'javax.ws.rs.*'
-	}
+	
+	//bundle for docker client and typesafe lib
+	bundle group:'com.spotify', name:'docker-client', version:'2.7.7'
+	bundle group:'com.typesafe' , name:'config' , version:'1.2.1'
+	
+
 }
 
 dependencies {
