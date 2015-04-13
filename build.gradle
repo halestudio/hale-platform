@@ -368,6 +368,26 @@ platform {
 	
 	// typesafe configuration library
 	bundle group:'com.typesafe', name:'config', version:'1.2.1'
+	
+	merge {
+		// merged bundle for javax.annotation packages
+		// because otherwise only one fragment seems to be used to provide
+		// the javax.annotation package resulting in missing classes
+		match {
+			// merge all artifacts in org.geotools group, but not gt-opengis
+			(it.group == 'javax.annotation' && it.name == 'javax.annotation-api') ||
+			(it.group == 'com.google.code.findbugs' && it.name == 'jsr305')
+		}
+
+		bnd {
+			symbolicName = 'javax.annotation.extensions'
+			bundleName = 'javax.annotation Extensions'
+			version = '1.2' // version should be equal to javax.annotation-api module version
+			instruction 'Fragment-Host', 'system.bundle;extension:=framework'
+			instruction 'Export-Package', "javax.annotation.*;version=$version"
+			instruction 'Import-Package', '*'
+		}
+	}
 }
 
 dependencies {
