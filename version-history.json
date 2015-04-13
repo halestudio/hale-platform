@@ -1685,6 +1685,7 @@
             "2.7.7": {
                 "i201504131603": "kXvQvg",
                 "i201504131443": "tGXP9g",
+                "i201504131740": "lFHEbQ",
                 "i20150413": "u2TPKw"
             }
         },
@@ -1698,6 +1699,7 @@
                 "i201504131603": "M7du3g",
                 "i201504131443": "p3drvg",
                 "i20150402": "6hhrmw",
+                "i201504131740": "YzFUhw",
                 "i20150413": "ACpokA"
             }
         },
@@ -1732,6 +1734,7 @@
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
             "0.8.4": {
                 "i20150402": "Vh5Yg",
+                "i201504131740": "5fOqyA",
                 "i20150413": "Lje5rg"
             }
         },
@@ -1826,6 +1829,11 @@
             "3.0.0": {
                 "i20150402": "cGe5KA",
                 "i20150413": "cbvALw"
+            }
+        },
+        "javax.annotation.extensions": {
+            "1.2.0": {
+                "i20150413": "IcTEmA"
             }
         },
         "org.apache.poi": {
