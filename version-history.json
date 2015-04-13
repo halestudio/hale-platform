@@ -547,7 +547,8 @@
                 "i20150413": "5izWA"
             },
             "3.18.1.GA": {
-                "i20150413": "twTvmA"
+                "i20150413": "twTvmA",
+                "i201504131601": "a9L8sA"
             }
         },
         "javax.annotation-api": {
@@ -1682,6 +1683,7 @@
     "feature": {
         "com.spotify.docker-client": {
             "2.7.7": {
+                "i201504131603": "kXvQvg",
                 "i201504131443": "tGXP9g",
                 "i20150413": "u2TPKw"
             }
@@ -1693,6 +1695,7 @@
         },
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
+                "i201504131603": "M7du3g",
                 "i201504131443": "p3drvg",
                 "i20150402": "6hhrmw",
                 "i20150413": "ACpokA"
@@ -1764,6 +1767,7 @@
         },
         "platform.shared.orientdb.graphdb": {
             "1.5.1": {
+                "i201504131603": "nF1w8g",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg"
             }

@@ -330,6 +330,12 @@ platform {
     // and fix problem with null symbolic name
 		symbolicName = 'org.ow2.asm.commons-' + ov.major
 	}
+	
+	// ensure optional jdi imports for javassist
+	// not sure why bnd-platform adds those
+	bnd group: 'org.javassist', name: 'javassist', {
+    optionalImport 'com.sun.jdi.*'
+	}
 
 	// force package export versions for hsqldb
 	bnd group: 'org.hsqldb', name: 'hsqldb', {
