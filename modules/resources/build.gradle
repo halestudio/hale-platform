@@ -182,7 +182,7 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 						def matcher = ( themeId =~ themeShortIdRegex )
 						def shortId = matcher[0][1]
 
-						iconPath = "icons/themes/${shortId}.png"
+						iconPath = "icons/themes/16_${shortId}.png"
 					}
 
 					xml.schema(
