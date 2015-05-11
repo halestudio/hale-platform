@@ -164,6 +164,8 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 		// read application schemas file
 		def appSchemas = new groovy.util.XmlSlurper().parse(applicationSchemasFile)
 
+		def themeShortIdRegex = '^http://inspire.ec.europa.eu/theme/([^/]*)$'
+
 		xml.extension(point: 'eu.esdihumboldt.hale.ui.schema.presets') {
 			println appSchemas
 			appSchemas.applicationSchema.each { appSchema ->
@@ -172,9 +174,20 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 				appSchema.schema.each { schema ->
 					def theme = appSchema.@theme as String
 					def descr = theme ? "GML Application Schema from the INSPIRE Data Specification on ${theme}." : "Application Schema from the INSPIRE Data Specifications (not associated to a theme)."
+
+					def themeId = appSchema.@themeId as String
+					def iconPath = 'icons/inspire.gif'
+					if (themeId) {
+						// extract short identifier
+						def matcher = ( themeId =~ themeShortIdRegex )
+						def shortId = matcher[0][1]
+
+						iconPath = "icons/themes/${shortId}.png"
+					}
+
 					xml.schema(
 						description: descr,
-						icon: 'icons/inspire.gif',
+						icon: iconPath,
 						id: id,
 						name: "INSPIRE ${appSchema.@name}",
 //						tag: 'Bundled',
