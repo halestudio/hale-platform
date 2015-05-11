@@ -67,25 +67,33 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 		registry = new groovy.json.JsonSlurper().parse(reader)
 	}
 	def appSchemas = []
-	registry.register.containeditems*.applicationschema.each { appSchemas << [id: it.id, name: it.label.text, theme: it.theme?.label?.text] }
-	
+	registry.register.containeditems*.applicationschema.each {
+		def theme = it.theme
+		if (!theme) {
+			theme = it.themes?.getAt(0)?.theme
+		}
+
+		appSchemas << [id: it.id, name: it.label.text, theme: theme?.label?.text, themeId: theme?.id]
+	}
+
 	def inspireShortIdRegex = '^http://inspire.ec.europa.eu/applicationschema/([^/]*)$'
-	
+
 	target.withWriter {
 		it << '<?xml version="1.0"?>\n'
 		def xml = new groovy.xml.MarkupBuilder(it)
 		xml.applicationSchemas {
 			appSchemas.each { appSchema ->
-				xml.applicationSchema(id: appSchema.id, name: appSchema.name, theme: appSchema.theme) {
+				xml.applicationSchema(id: appSchema.id, name: appSchema.name, theme: appSchema.theme,
+						themeId: appSchema.themeId) {
 					// find corresponding schema files
-					
+
 					// extract short identifier
 					def matcher = ( appSchema.id =~ inspireShortIdRegex )
 					def shortId = matcher[0][1]
 
 					// replace abandoned(?) Geology schema with Geology core
 					if (shortId == 'ge') shortId = 'ge-core'
-					
+
 					folders.each { File folder ->
 						File asDir = new File(folder, shortId)
 						if (asDir.exists()) {
@@ -113,7 +121,7 @@ task downloadInspireSchemas << {
 	temporaryDir.mkdir()
 	// delete existing schema archive
 	inspireSchemas.delete()
-	
+
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
@@ -142,7 +150,7 @@ task downloadInspireSchemas << {
 	}
 	// create ZIP archive
 	ant.zip(
-		destfile: inspireSchemas, 
+		destfile: inspireSchemas,
 		basedir: temporaryDir)
 }
 
@@ -155,12 +163,12 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 	pluginExtra = { xml ->
 		// read application schemas file
 		def appSchemas = new groovy.util.XmlSlurper().parse(applicationSchemasFile)
-		
+
 		xml.extension(point: 'eu.esdihumboldt.hale.ui.schema.presets') {
 			println appSchemas
 			appSchemas.applicationSchema.each { appSchema ->
 				def id = appSchema.@id
-				
+
 				appSchema.schema.each { schema ->
 					def theme = appSchema.@theme as String
 					def descr = theme ? "GML Application Schema from the INSPIRE Data Specification on ${theme}." : "Application Schema from the INSPIRE Data Specifications (not associated to a theme)."
@@ -194,16 +202,16 @@ task downloadInspireCodeLists << {
 	// delete existing archives
 	inspireCodeListsFixed.delete()
 	inspireCodeListsGeneric.delete()
-	
+
 	// determine resources to retrieve from registry
 	def registry
 	new URL('http://inspire.ec.europa.eu/codelist/codelist.en.json').withReader { reader ->
 		registry = new groovy.json.JsonSlurper().parse(reader)
 	}
-	
+
 	def languages = ['en', 'bg', 'cs', 'hr', 'da', 'de', 'el', 'es', 'et', 'fi', 'fr',
 		'hu', 'it', 'lt', 'lv', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv']
-	
+
 	def genericUrls = []
 	def fixedUrls = []
 	registry.register.containeditems*.codelist.id.each { id ->
@@ -217,21 +225,21 @@ task downloadInspireCodeLists << {
 		fixedUrls << "${id}/${name}.en.xml"
 		fixedUrls << "${id}/${name}.en.json"
 	}
-	
+
 	// problem is, we can't download both generic and fixed,
 	// because the fixed URLs require a directory with the name
 	// of the generic URL -> so we create two archives/bundles
-	 
+
 	def genericDir = new File(temporaryDir, "generic")
 	genericDir.mkdirs()
 	genericUrls.each { url ->
 		exec {
-			workingDir = genericDir 
+			workingDir = genericDir
 			executable = 'wget'
 			args '--force-directories', '--no-host-directories', "--header=Accept: application/xml", url
 		}
 	}
-	
+
 	def fixedDir = new File(temporaryDir, "fixed")
 	fixedDir.mkdirs()
 	fixedUrls.each { url ->
@@ -241,7 +249,7 @@ task downloadInspireCodeLists << {
 			args '--force-directories', '--no-host-directories', url
 		}
 	}
-	
+
 	// create ZIP archives
 	ant.zip(
 		destfile: inspireCodeListsGeneric,
@@ -281,7 +289,7 @@ task downloadW3Schemas << {
 	temporaryDir.mkdir()
 	// delete existing schema archive
 	w3Schemas.delete()
-	
+
 	def downloadSchema = { path ->
 		exec {
 			workingDir = temporaryDir
@@ -309,7 +317,7 @@ resourceBundles.dependsOn('w3SchemasBundle')
 
 /*
  * Creates a resource bundle including the FeatureConcept information from the
- * INSPIRE registry, which is used in HALE when generating an INSPIRE Dataset Feed. 
+ * INSPIRE registry, which is used in HALE when generating an INSPIRE Dataset Feed.
  */
 
 // download JSON representation (requires wget)
@@ -319,7 +327,7 @@ task downloadInspireFeatureConcepts << {
 	temporaryDir.mkdir()
 	// delete existing schema archive
 	inspireFeatureConcepts.delete()
-	
+
 	def downloadFile = { path ->
 		exec {
 			workingDir = temporaryDir
@@ -355,7 +363,7 @@ task downloadPorteleSchemas << {
 	temporaryDir.mkdir()
 	// delete existing schema archive
 	porteleSchemas.delete()
-	
+
 	def downloadSchema = { path ->
 		exec {
 			workingDir = temporaryDir
@@ -400,7 +408,7 @@ class ResourceBundleTask extends DefaultTask {
 	def destDir = project.buildDir
 	// extra content for the plugin.xml - must be a closure taking a markup builder as argument
 	def pluginExtra
-	
+
 	@TaskAction
 	def createBundle() {
 		assert host
@@ -409,17 +417,17 @@ class ResourceBundleTask extends DefaultTask {
 		assert symbolicNamePrefix
 		assert resourceType // the primary resource type
 		assert destDir
-		
+
 		// schemas from schemas.opengis.net
 		def stamp = new Date().format('yyyy.MM.dd')
 		def version = stamp //"1.0.0.$stamp"
 		def symbolicName = "$symbolicNamePrefix.$bundleId"
 		File bundle = new File(destDir, "${symbolicName}_${version}.jar")
-		
+
 		File tmpDir = temporaryDir //File.createTempFile('resources', 'bundle')
 		tmpDir.delete()
 		tmpDir.mkdir()
-		
+
 		File tmpSchemas
 		if (archive) {
 			// use existing schema archive
@@ -433,7 +441,7 @@ class ResourceBundleTask extends DefaultTask {
 				dest tmpSchemas
 			}
 		}
-		
+
 		// create plugin.xml
 		File tmpPluginXml = new File(tmpDir, 'plugin.xml')
 		tmpPluginXml.withWriter {
@@ -452,7 +460,7 @@ class ResourceBundleTask extends DefaultTask {
 				}
 			}
 		}
-		
+
 		// build jar
 		ant.jar(destfile: bundle) {
 			zipfileset (src: tmpSchemas, excludes: '**/*.zip')
