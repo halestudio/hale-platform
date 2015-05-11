@@ -1697,6 +1697,7 @@
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
                 "i201504131603": "M7du3g",
+                "i20150511": "J4VUyw",
                 "i201504131443": "p3drvg",
                 "i20150402": "6hhrmw",
                 "i201504131740": "YzFUhw",
@@ -1716,12 +1717,14 @@
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
+                "i20150511": "ZDfkgA",
                 "i20150402": "AQTTfQ",
                 "i20150413": "HlPTkw"
             }
         },
         "eu.esdihumboldt.hale.platform.resources": {
             "3.0.0": {
+                "i20150511": "xD6c8w",
                 "i20150402": "sCOcrw"
             }
         },
