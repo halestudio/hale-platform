@@ -18,10 +18,18 @@
 					<xs:attribute name="location" type="xs:anyURI" use="required" />
 				</xs:complexType>
 			</xs:element>
+			<xs:element name="customFunction" minOccurs="0" maxOccurs="unbounded" type="CustomFunctionType" />
 			<xs:choice minOccurs="0" maxOccurs="unbounded">
 				<xs:element ref="cell" minOccurs="1" />
 				<xs:element ref="modifier" minOccurs="1" />
 			</xs:choice>
+		</xs:sequence>
+	</xs:complexType>
+
+	<!-- Custom function -->
+	<xs:complexType name="CustomFunctionType">
+		<xs:sequence>
+			<xs:any processContents="skip" minOccurs="1" />
 		</xs:sequence>
 	</xs:complexType>
 	
