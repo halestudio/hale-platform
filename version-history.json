@@ -781,6 +781,7 @@
         },
         "org.apache.commons.dbcp": {
             "1.4.0": {
+                "i20150610": "JVylDw",
                 "i20150413": "MVycRg"
             }
         },
@@ -1696,6 +1697,7 @@
         },
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
+                "i20150610": "ZUdUzQ",
                 "i201504131603": "M7du3g",
                 "i20150511": "J4VUyw",
                 "i20150523": "3c1U0Q",
@@ -1756,6 +1758,7 @@
         },
         "platform.shared.geotools": {
             "12.2.0": {
+                "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q"
             }
