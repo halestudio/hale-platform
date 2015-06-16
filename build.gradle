@@ -233,6 +233,9 @@ platform {
 	bundle 'asm:asm-util:3.3.1' // optional dependency to cglib
 	bundle 'asm:asm-analysis:3.3.1'
 
+	// ivy with at least 2.4 because of bug in IvySettings
+	bundle 'org.apache.ivy:ivy:2.4.0'
+
 	// pegdown
 	bundle group: 'org.pegdown', name: 'pegdown', version: '1.4.2'
 	// parboiled must be able to access pegdown
