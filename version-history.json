@@ -117,7 +117,8 @@
         "com.fasterxml.jackson.datatype.jackson-datatype-guava": {
             "2.2.3": {
                 "i20150402": "azKdeA",
-                "i20150413": "Lqkfw"
+                "i20150413": "Lqkfw",
+                "i20151027": "i2kfw"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-json-org": {
@@ -157,12 +158,14 @@
         },
         "com.github.jnr.enxio": {
             "0.5.0": {
-                "i20150413": "Q8fazQ"
+                "i20150413": "Q8fazQ",
+                "i20151027": "Y5azQ"
             }
         },
         "com.github.jnr.ffi": {
             "2.0.0": {
-                "i20150413": "76dBHA"
+                "i20150413": "76dBHA",
+                "i20151027": "7TFBHA"
             }
         },
         "com.github.jnr.jffi": {
@@ -172,12 +175,14 @@
         },
         "com.github.jnr.posix": {
             "3.0.8": {
-                "i20150413": "hvXa0w"
+                "i20150413": "hvXa0w",
+                "i20151027": "ps3a0w"
             }
         },
         "com.github.jnr.unixsocket": {
             "0.4.0": {
-                "i20150413": "cnsKSQ"
+                "i20150413": "cnsKSQ",
+                "i20151027": "klMKSQ"
             }
         },
         "com.github.jnr.x86asm": {
@@ -188,7 +193,8 @@
         "com.github.sommeri.less4j": {
             "1.0.4": {
                 "i20150402": "s7YJOQ",
-                "i20150413": "zgwQQA"
+                "i20150413": "zgwQQA",
+                "i20151027": "k6oQQA"
             }
         },
         "com.google.code.findbugs.jsr305": {
@@ -212,7 +218,8 @@
         "com.google.javascript.closure-compiler": {
             "20130603.0.0": {
                 "i20150402": "6WGfA",
-                "i20150413": "CuWqKA"
+                "i20150413": "CuWqKA",
+                "i20151027": "XZKqKA"
             }
         },
         "com.google.protobuf.java": {
@@ -305,7 +312,8 @@
         },
         "com.spotify.docker-client": {
             "2.7.7": {
-                "i20150413": "yoE1eA"
+                "i20150413": "yoE1eA",
+                "i20151027": "jLU1eA"
             },
             "2.4.2": {
                 "i20150402": "ydptLQ"
@@ -342,19 +350,22 @@
         "com.tinkerpop.blueprints.core": {
             "2.5.0.orientDB151": {
                 "i20150402": "qbwqeQ",
-                "i20150413": "DMcxgA"
+                "i20150413": "DMcxgA",
+                "i20151027": "AD0xgA"
             }
         },
         "com.tinkerpop.blueprints.orient-graph": {
             "2.5.0.orientDB151": {
                 "i20150402": "6sJ1qQ",
-                "i20150413": "GIJ8sA"
+                "i20150413": "GIJ8sA",
+                "i20151027": "3RR8sA"
             }
         },
         "com.tinkerpop.gremlin.groovy": {
             "2.5.0.orientDB151": {
                 "i20150402": "R0AntA",
-                "i20150413": "fEuuw"
+                "i20150413": "fEuuw",
+                "i20151027": "suguuw"
             }
         },
         "com.tinkerpop.gremlin.java": {
@@ -526,13 +537,15 @@
         "it.geosolutions.imageio-ext.tiff": {
             "1.1.10": {
                 "i20150402": "BmPUrw",
-                "i20150413": "7ijbtg"
+                "i20150413": "7ijbtg",
+                "i20151027": "7vDbtg"
             }
         },
         "it.geosolutions.imageio-ext.utilities": {
             "1.1.10": {
                 "i20150402": "2hOtQA",
-                "i20150413": "oJy0Rw"
+                "i20150413": "oJy0Rw",
+                "i20151027": "oWS0Rw"
             }
         },
         "java3d.vecmath": {
@@ -553,8 +566,8 @@
         },
         "javax.annotation-api": {
             "1.2.0": {
-                "i201504131442": "MUzy9A",
-                "i20150413": "35EGiA"
+                "i20150413": "35EGiA",
+                "i201504131442": "MUzy9A"
             }
         },
         "javax.inject.javax.inject": {
@@ -681,7 +694,8 @@
         "net.sf.json-lib": {
             "2.3.0": {
                 "i20150402": "LL9Gw",
-                "i20150413": "wakEMQ"
+                "i20150413": "wakEMQ",
+                "i20151027": "Vu0EMQ"
             }
         },
         "net.sf.opencsv": {
@@ -824,13 +838,15 @@
         "org.apache.httpcomponents.fluent-hc": {
             "4.3.6": {
                 "i20150402": "hdFWTQ",
-                "i20150413": "F4FdVA"
+                "i20150413": "F4FdVA",
+                "i20151027": "F7ddVA"
             }
         },
         "org.apache.httpcomponents.httpclient": {
             "4.3.6": {
                 "i20150402": "ScUVCQ",
-                "i20150413": "ldscEA"
+                "i20150413": "ldscEA",
+                "i20151027": "kE0cEA"
             }
         },
         "org.apache.httpcomponents.httpcore": {
@@ -929,19 +945,22 @@
         "org.codehaus.castor.core": {
             "1.3.2": {
                 "i20150402": "BZhX0Q",
-                "i20150413": "SEFe2A"
+                "i20150413": "SEFe2A",
+                "i20151027": "Qvte2A"
             }
         },
         "org.codehaus.castor.xml": {
             "1.3.2": {
                 "i20150402": "v05SCg",
-                "i20150413": "5wFZEQ"
+                "i20150413": "5wFZEQ",
+                "i20151027": "s0lZEQ"
             }
         },
         "org.codehaus.groovy.modules.http-builder": {
             "0.6.0": {
                 "i20150402": "OTZpA",
-                "i20150413": "1mXgqw"
+                "i20150413": "1mXgqw",
+                "i20151027": "62Tgqw"
             }
         },
         "org.codehaus.jackson": {
@@ -1079,7 +1098,8 @@
         "org.geotools.gt-coverage": {
             "12.2.0": {
                 "i20150402": "Gk1LNg",
-                "i20150413": "MxdSPQ"
+                "i20150413": "MxdSPQ",
+                "i20151027": "OatSPQ"
             }
         },
         "org.geotools.gt-cql": {
@@ -1097,13 +1117,15 @@
         "org.geotools.gt-epsg-hsql": {
             "12.2.0": {
                 "i20150402": "Dk1LBw",
-                "i20150413": "YZSDg"
+                "i20150413": "YZSDg",
+                "i20151027": "39SDg"
             }
         },
         "org.geotools.gt-geojson": {
             "12.2.0": {
                 "i20150402": "vdNfg",
-                "i20150413": "x1tUhQ"
+                "i20150413": "x1tUhQ",
+                "i20151027": "Kp9UhQ"
             }
         },
         "org.geotools.gt-graph": {
@@ -1114,13 +1136,15 @@
         },
         "org.geotools.gt-jdbc": {
             "12.2.0": {
-                "i20150413": "J4GjrA"
+                "i20150413": "J4GjrA",
+                "i20151027": "eUujrA"
             }
         },
         "org.geotools.gt-main": {
             "12.2.0": {
                 "i20150402": "7tF7bA",
-                "i20150413": "KueCcw"
+                "i20150413": "KueCcw",
+                "i20151027": "MZ2Ccw"
             }
         },
         "org.geotools.gt-metadata": {
@@ -1132,90 +1156,105 @@
         "org.geotools.gt-referencing": {
             "12.2.0": {
                 "i20150402": "rv5Pag",
-                "i20150413": "fQRWcQ"
+                "i20150413": "fQRWcQ",
+                "i20151027": "BAxWcQ"
             }
         },
         "org.geotools.gt-render": {
             "12.2.0": {
                 "i20150402": "JwSggA",
-                "i20150413": "Gtunhw"
+                "i20150413": "Gtunhw",
+                "i20151027": "KGnhw"
             }
         },
         "org.geotools.gt-shapefile": {
             "12.2.0": {
                 "i20150402": "CsEYQ",
-                "i20150413": "XeEgAA"
+                "i20150413": "XeEgAA",
+                "i20151027": "Qp8gAA"
             }
         },
         "org.geotools.gt-wfs": {
             "12.2.0": {
                 "i20150402": "ujXDYQ",
-                "i20150413": "YHKaA"
+                "i20150413": "YHKaA",
+                "i20151027": "LfLKaA"
             }
         },
         "org.geotools.gt-xml": {
             "12.2.0": {
                 "i20150402": "YZVDYQ",
-                "i20150413": "yG9KaA"
+                "i20150413": "yG9KaA",
+                "i20151027": "edZKaA"
             }
         },
         "org.geotools.jdbc.gt-jdbc-oracle": {
             "12.2.0": {
-                "i20150413": "sxcQQ"
+                "i20150413": "sxcQQ",
+                "i20151027": "FK1cQQ"
             }
         },
         "org.geotools.ogc.net.opengis.fes": {
             "12.2.0": {
                 "i20150402": "LHq9Pg",
-                "i20150413": "R33ERQ"
+                "i20150413": "R33ERQ",
+                "i20151027": "fDERQ"
             }
         },
         "org.geotools.ogc.net.opengis.ows": {
             "12.2.0": {
                 "i20150402": "aF6Tag",
-                "i20150413": "5ViacQ"
+                "i20150413": "5ViacQ",
+                "i20151027": "llacQ"
             }
         },
         "org.geotools.ogc.net.opengis.wfs": {
             "12.2.0": {
                 "i20150402": "V2BmFg",
-                "i20150413": "0FFtHQ"
+                "i20150413": "0FFtHQ",
+                "i20151027": "wOttHQ"
             }
         },
         "org.geotools.ogc.org.w3.xlink": {
             "12.2.0": {
                 "i20150402": "udu0Q",
-                "i20150413": "5mV12A"
+                "i20150413": "5mV12A",
+                "i20151027": "GIh12A"
             }
         },
         "org.geotools.xsd.gt-xsd-core": {
             "12.2.0": {
                 "i20150402": "6PvRMg",
-                "i20150413": "aeHYOQ"
+                "i20150413": "aeHYOQ",
+                "i20151027": "SEnYOQ"
             }
         },
         "org.geotools.xsd.gt-xsd-fes": {
             "12.2.0": {
                 "i20150402": "o2VUlw",
-                "i20150413": "Dt1bng"
+                "i20150413": "Dt1bng",
+                "i20151027": "p9bng"
             }
         },
         "org.geotools.xsd.gt-xsd-filter": {
             "12.2.0": {
                 "i20150402": "8zRGjQ",
-                "i20150413": "N3dNlA"
+                "i20150413": "N3dNlA",
+                "i20151027": "Vh5NlA"
             }
         },
         "org.geotools.xsd.gt-xsd-gml2": {
             "12.2.0": {
                 "i20150402": "Fk5Hpg",
-                "i20150413": "QDVOrQ"
+                "i20150413": "QDVOrQ",
+                "i20151027": "qRVOrQ"
             }
         },
         "org.geotools.xsd.gt-xsd-gml3": {
             "12.2.0": {
                 "i20150402": "nXFlHA",
-                "i20150413": "VRBsIw"
+                "i20150413": "VRBsIw",
+                "i20151027": "OTZsIw"
             }
         },
         "org.geotools.xsd.gt-xsd-ows": {
@@ -1227,7 +1266,8 @@
         "org.geotools.xsd.gt-xsd-wfs": {
             "12.2.0": {
                 "i20150402": "ZmiPA",
-                "i20150413": "91GWw"
+                "i20150413": "91GWw",
+                "i20151027": "e7qWw"
             }
         },
         "org.glassfish.hk2.api": {
@@ -1267,7 +1307,8 @@
         },
         "org.glassfish.jersey.connectors.jersey-apache-connector": {
             "2.13.0": {
-                "i20150413": "IwXjQ"
+                "i20150413": "IwXjQ",
+                "i20151027": "Wb8XjQ"
             }
         },
         "org.glassfish.jersey.core.jersey-client": {
@@ -1376,13 +1417,15 @@
         "org.opengis": {
             "12.2.0": {
                 "i20150402": "cxz64A",
-                "i20150413": "8j4B9g"
+                "i20150413": "8j4B9g",
+                "i20151027": "47AB9g"
             }
         },
         "org.openid4java": {
             "0.9.8": {
                 "i20150402": "s66wyA",
-                "i20150413": "NYa3zw"
+                "i20150413": "NYa3zw",
+                "i20151027": "fxW3zw"
             }
         },
         "org.ow2.asm.commons-4": {
@@ -1429,7 +1472,8 @@
         "org.reflections": {
             "0.9.8": {
                 "i20150402": "fEburg",
-                "i20150413": "SjP1tQ"
+                "i20150413": "SjP1tQ",
+                "i20151027": "Uor1tQ"
             }
         },
         "org.springframework.aop": {
@@ -1483,7 +1527,8 @@
         "org.springframework.ldap.spring-ldap-core": {
             "1.3.1.RELEASE": {
                 "i20150402": "tPGu5g",
-                "i20150413": "E3217Q"
+                "i20150413": "E3217Q",
+                "i20151027": "scW17Q"
             }
         },
         "org.springframework.osgi.web.mini": {
@@ -1689,9 +1734,10 @@
         "com.spotify.docker-client": {
             "2.7.7": {
                 "i201504131603": "kXvQvg",
+                "i20150413": "u2TPKw",
                 "i201504131443": "tGXP9g",
                 "i201504131740": "lFHEbQ",
-                "i20150413": "u2TPKw"
+                "i20151027": "5dHEfQ"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -1701,19 +1747,20 @@
         },
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
-                "i20150511": "J4VUyw",
-                "i20150523": "3c1U0Q",
                 "i20150715": "hSN5nw",
+                "i20150616": "m69Taw",
                 "i20150705": "XVpSSA",
                 "i20150727": "KJJ5hQ",
-                "i20150610": "ZUdUzQ",
-                "i201504131603": "M7du3g",
                 "i20150612": "6mFU0Q",
-                "i20150616": "m69Taw",
-                "i201504131443": "p3drvg",
+                "i20150511": "J4VUyw",
+                "i20150610": "ZUdUzQ",
+                "i20150523": "3c1U0Q",
                 "i20150402": "6hhrmw",
+                "i20150413": "ACpokA",
+                "i201504131603": "M7du3g",
+                "i201504131443": "p3drvg",
                 "i201504131740": "YzFUhw",
-                "i20150413": "ACpokA"
+                "i20151027": "rd15Ww"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -1736,9 +1783,10 @@
         },
         "eu.esdihumboldt.hale.platform.resources": {
             "3.0.0": {
-                "i20150511": "xD6c8w",
                 "i20150705": "aECbxg",
-                "i20150402": "sCOcrw"
+                "i20150511": "xD6c8w",
+                "i20150402": "sCOcrw",
+                "i20151027": "UcueWA"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
@@ -1751,8 +1799,9 @@
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
             "0.8.4": {
                 "i20150402": "Vh5Yg",
+                "i20150413": "Lje5rg",
                 "i201504131740": "5fOqyA",
-                "i20150413": "Lje5rg"
+                "i20151027": "OOqzg"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -1771,7 +1820,8 @@
             "12.2.0": {
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
-                "i20150413": "F0KD5Q"
+                "i20150413": "F0KD5Q",
+                "i20151027": "KSqD7A"
             }
         },
         "platform.shared.groovy-all": {
@@ -1783,21 +1833,24 @@
         "platform.shared.orientdb.core": {
             "1.5.1": {
                 "i20150402": "UOspUw",
-                "i20150413": "UZcpVw"
+                "i20150413": "UZcpVw",
+                "i20151027": "QIVHZA"
             }
         },
         "platform.shared.orientdb.graphdb": {
             "1.5.1": {
-                "i201504131603": "nF1w8g",
                 "i20150616": "tblxBA",
+                "i201504131603": "nF1w8g",
                 "i20150402": "GNxQA",
-                "i20150413": "IiJwKg"
+                "i20150413": "IiJwKg",
+                "i20151027": "0D1xDA"
             }
         },
         "platform.shared.poi": {
             "3.9.0": {
                 "i20150402": "do8Ug",
-                "i20150413": "eyEXg"
+                "i20150413": "eyEXg",
+                "i20151027": "e8YA"
             }
         },
         "platform.shared.postgis": {
@@ -1827,7 +1880,8 @@
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
                 "i20150402": "u4PFVw",
-                "i20150413": "YeFkQ"
+                "i20150413": "YeFkQ",
+                "i20151027": "d3Flw"
             }
         },
         "platform.shared.wicket": {
@@ -1841,7 +1895,8 @@
         "com.orientechnologies.common": {
             "1.5.1": {
                 "i20150402": "pOBKQ",
-                "i20150413": "kq2IMA"
+                "i20150413": "kq2IMA",
+                "i20151027": "ufGIMA"
             }
         },
         "eu.esdihumboldt.hale.server.webjars": {
@@ -1858,13 +1913,15 @@
         "org.apache.poi": {
             "3.9.0": {
                 "i20150402": "Qw6jQ",
-                "i20150413": "2ZhBlA"
+                "i20150413": "2ZhBlA",
+                "i20151027": "DVVBlA"
             }
         },
         "org.geotools": {
             "12.2.0.combined": {
                 "i20150402": "q98trQ",
-                "i20150413": "ecTmAA"
+                "i20150413": "ecTmAA",
+                "i20151027": "5WXmAA"
             }
         },
         "org.postgresql.jdbc": {
