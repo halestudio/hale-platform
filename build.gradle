@@ -433,6 +433,9 @@ subprojects { subproject ->
 	  jaxb 'com.sun.xml.bind:jaxb-xjc:2.1.17'
 	}
 
+	sourceCompatibility = 1.7
+	targetCompatibility = 1.7
+
 	def generatedSources = subproject.file('src/main/java')
 
 	task cleanSrc() << {

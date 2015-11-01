@@ -1,5 +1,5 @@
 // increase the version number with every schema change!
-version = '1.0'
+version = '1.0.1'
 
 jar {
 	// OSGi manifest
