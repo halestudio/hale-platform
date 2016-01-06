@@ -11,7 +11,7 @@ buildscript {
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.2.0'
 		classpath 'org.standardout:bnd-platform:1.3.0'
-		classpath 'org.standardout:gradle-versioneye-plugin:1.1.0'
+		classpath 'org.standardout:gradle-versioneye-plugin:1.1.1'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
 	}
