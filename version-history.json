@@ -154,26 +154,46 @@
         "com.github.jnr.constants": {
             "0.8.6": {
                 "i20150413": "lF2zLw"
+            },
+            "0.9.1": {
+                "i20160531": "awJw1g"
             }
         },
         "com.github.jnr.enxio": {
             "0.5.0": {
                 "i20150413": "Q8fazQ",
                 "i20151027": "Y5azQ"
+            },
+            "0.12.0": {
+                "i20160531": "gDI0NA"
             }
         },
         "com.github.jnr.ffi": {
             "2.0.0": {
                 "i20150413": "76dBHA",
                 "i20151027": "7TFBHA"
+            },
+            "2.0.9": {
+                "i20160531": "3NFHYw"
             }
         },
         "com.github.jnr.jffi": {
+            "1.2.11": {
+                "i20160531": "Qy7Rw"
+            },
             "1.2.7": {
                 "i20150413": "jWGzKw"
             }
         },
+        "com.github.jnr.jffi.native": {
+            "1.2.11": {
+                "i20160531": "GivB9Q"
+            }
+        },
         "com.github.jnr.posix": {
+            "3.0.29": {
+                "i20160531": "voly5g"
+            },
             "3.0.8": {
                 "i20150413": "hvXa0w",
                 "i20151027": "ps3a0w"
@@ -183,11 +203,15 @@
             "0.4.0": {
                 "i20150413": "cnsKSQ",
                 "i20151027": "klMKSQ"
+            },
+            "0.12.0": {
+                "i20160531": "7EpIeg"
             }
         },
         "com.github.jnr.x86asm": {
             "1.0.2": {
-                "i20150413": "gTKzJA"
+                "i20150413": "gTKzJA",
+                "i20160531": "pwmRA"
             }
         },
         "com.github.sommeri.less4j": {
@@ -698,6 +722,11 @@
                 "i20151027": "Vu0EMQ"
             }
         },
+        "net.sf.json-lib.jdk15": {
+            "2.3.0": {
+                "i20160531": "Vu0EMQ"
+            }
+        },
         "net.sf.opencsv": {
             "2.3.0": {
                 "i20150402": "exysHw",
@@ -960,7 +989,8 @@
             "0.6.0": {
                 "i20150402": "OTZpA",
                 "i20150413": "1mXgqw",
-                "i20151027": "62Tgqw"
+                "i20151027": "62Tgqw",
+                "i20160531": "AihFyA"
             }
         },
         "org.codehaus.jackson": {
@@ -1396,10 +1426,20 @@
                 "i20150413": "myXLug"
             }
         },
+        "org.objectweb.asm-5": {
+            "5.0.3": {
+                "i20160531": "fcvMfA"
+            }
+        },
         "org.objectweb.asm.analysis-4": {
             "4.1.0": {
                 "i20150402": "Y0DoHA",
                 "i20150413": "IzTvIw"
+            }
+        },
+        "org.objectweb.asm.analysis-5": {
+            "5.0.3": {
+                "i20160531": "slDxCA"
             }
         },
         "org.objectweb.asm.tree-4": {
@@ -1408,10 +1448,20 @@
                 "i20150413": "SIzUQw"
             }
         },
+        "org.objectweb.asm.tree-5": {
+            "5.0.3": {
+                "i20160531": "mkzVZg"
+            }
+        },
         "org.objectweb.asm.util-4": {
             "4.1.0": {
                 "i20150402": "Z3Qeqw",
                 "i20150413": "ZlYlsg"
+            }
+        },
+        "org.objectweb.asm.util-5": {
+            "5.0.3": {
+                "i20160531": "ox8pGw"
             }
         },
         "org.opengis": {
@@ -1433,13 +1483,24 @@
                 "i20150413": "NlLBuA"
             }
         },
+        "org.ow2.asm.commons-5": {
+            "5.0.3": {
+                "i20160531": "gKoLJQ"
+            }
+        },
         "org.parboiled.core": {
+            "1.1.7": {
+                "i20160531": "tF2OA"
+            },
             "1.1.6": {
                 "i20150402": "uNKPzw",
                 "i20150413": "tMW1g"
             }
         },
         "org.parboiled.java": {
+            "1.1.7": {
+                "i20160531": "jFiC3Q"
+            },
             "1.1.6": {
                 "i20150402": "gr1cg",
                 "i20150413": "HZb8eQ"
@@ -1449,6 +1510,9 @@
             "1.4.2": {
                 "i20150402": "bhDzXg",
                 "i20150413": "Kgn6ZQ"
+            },
+            "1.6.0": {
+                "i20160531": "CBoHoA"
             }
         },
         "org.postgis.jdbc": {
@@ -1737,7 +1801,8 @@
                 "i20150413": "u2TPKw",
                 "i201504131443": "tGXP9g",
                 "i201504131740": "lFHEbQ",
-                "i20151027": "5dHEfQ"
+                "i20151027": "5dHEfQ",
+                "i20160531": "UK3FYg"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -1757,6 +1822,7 @@
                 "i20150523": "3c1U0Q",
                 "i20150402": "6hhrmw",
                 "i20150413": "ACpokA",
+                "i20160531": "3d5qSA",
                 "i201504131603": "M7du3g",
                 "i201504131443": "p3drvg",
                 "i201504131740": "YzFUhw",

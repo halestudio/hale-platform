@@ -15,6 +15,10 @@ buildscript {
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
 	}
+	configurations.all {
+		// ensure SNAPSHOTs are updated every time if needed
+		resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+	}
 }
 
 apply plugin: 'eclipse'
@@ -238,7 +242,7 @@ platform {
 	bundle 'org.apache.ivy:ivy:2.4.0'
 
 	// pegdown
-	bundle group: 'org.pegdown', name: 'pegdown', version: '1.4.2'
+	bundle group: 'org.pegdown', name: 'pegdown', version: '1.6.0'
 	// parboiled must be able to access pegdown
 	bnd group: 'org.parboiled', name: 'parboiled-core', {
 		instructions 'Eclipse-BuddyPolicy': 'registered'
@@ -368,7 +372,24 @@ platform {
 	def dockerClientVersion = '2.7.7'
 	feature(id: 'com.spotify.docker-client', name: 'Spotify docker client and dependencies', version: dockerClientVersion) {
 		plugin group:'com.spotify', name:'docker-client', version: dockerClientVersion
+
+		// a jnr-unixsocket version that already includes proper OSGi headers
+		plugin 'com.github.jnr:jnr-unixsocket:0.12'
 	}
+	bnd group: 'com.github.jnr', {
+		optionalImport 'sun.misc.*'
+	}
+	// configuration for jffi native stuff (needed for docker client)
+	/*
+	bnd group: 'com.github.jnr', name: 'jffi', classifier: 'native', {
+		symbolicName = 'com.github.jnr.jffi.native'
+		instruction 'Fragment-Host', 'com.github.jnr.jffi'
+		instruction 'Require-Bundle', 'com.github.jnr.jffi'
+		instruction 'Bundle-ClassPath', '.,jni'
+		instruction 'Export-Package', '!'
+		instruction 'Private-Package', '*'
+	}
+	*/
 
 	bnd 'commons-dbcp:commons-dbcp', {
 		// dbcp must be able to access database drivers (though not directly relevant for HALE)
