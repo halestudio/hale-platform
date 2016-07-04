@@ -281,6 +281,8 @@ platform {
 	bundle 'org.codehaus.castor:castor-xml:1.3.2'
 	bundle 'org.codehaus.castor:castor-core:1.3.2'
 	bundle 'com.sun.xml.bind:jaxb-core:2.2.7'
+	// staxon
+	bundle 'de.odysseus.staxon:staxon:1.3'
 
 	// jackson 1
 	bundle 'org.codehaus.jackson:jackson-core-asl:1.9.13', {
