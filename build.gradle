@@ -425,6 +425,26 @@ platform {
 			instruction 'Import-Package', '*'
 		}
 	}
+	
+	// MSAccess
+	bundle 'net.sf.ucanaccess:ucanaccess:3.0.6', {
+		bnd {
+			def buddies = ['eu.esdihumboldt.hale.io.jdbc', 'net.sourceforge.schemacrawler'] 
+			
+			if (buddies) {
+				// register buddy
+				instruction 'Eclipse-RegisterBuddy', buddies.join(',')
+				// add as optional required bundle
+				instruction 'Require-Bundle', buddies.collect{
+					it + ';resolution:=optional'
+				}.join(',')
+			}
+		}
+	}
+	bnd group: 'com.healthmarketscience.jackcess', name: 'jackcess', {
+		instruction 'Export-Package', "*;version=$version"
+	}
+	
 }
 
 dependencies {
