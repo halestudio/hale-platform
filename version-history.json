@@ -258,6 +258,11 @@
                 "i20150413": "f3ezIw"
             }
         },
+        "com.healthmarketscience.jackcess": {
+            "2.1.3": {
+                "i20160712": "jpEwLA"
+            }
+        },
         "com.hierynomus.sshj": {
             "0.11.0": {
                 "i20150402": "5eWAAA"
@@ -736,6 +741,11 @@
             "2.3.0": {
                 "i20150402": "exysHw",
                 "i20150413": "hLazJg"
+            }
+        },
+        "net.sf.ucanaccess": {
+            "3.0.6": {
+                "i20160712": "s9C46A"
             }
         },
         "net.sourceforge.nekohtml": {
@@ -1368,6 +1378,9 @@
             }
         },
         "org.hsqldb.hsqldb": {
+            "2.3.1": {
+                "i20160712": "mqBFdQ"
+            },
             "2.2.8": {
                 "i20150402": "cDkYw",
                 "i20150413": "qQhGag"
@@ -1829,6 +1842,7 @@
                 "i20150402": "6hhrmw",
                 "i20150413": "ACpokA",
                 "i20160531": "3d5qSA",
+                "i20160712": "yfDKaQ",
                 "i201504131603": "M7du3g",
                 "i20160704": "HsmCxw",
                 "i20160601": "gDxqRA",
@@ -1893,6 +1907,7 @@
         },
         "platform.shared.geotools": {
             "12.2.0": {
+                "i20160712": "Jb6D6Q",
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q",
