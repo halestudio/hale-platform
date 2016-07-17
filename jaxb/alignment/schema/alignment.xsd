@@ -57,9 +57,12 @@
 	
 	<xs:simpleType name="PriorityType">
 		<xs:restriction base="xs:string">
+			<xs:enumeration value="highest"></xs:enumeration>
+			<xs:enumeration value="higher"></xs:enumeration>
 			<xs:enumeration value="high"></xs:enumeration>
 			<xs:enumeration value="normal"></xs:enumeration>
 			<xs:enumeration value="low"></xs:enumeration>
+			<xs:enumeration value="lower"></xs:enumeration>
 			<xs:enumeration value="lowest"></xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
