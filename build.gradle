@@ -305,6 +305,9 @@ platform {
 	// CSV
 	bundle 'net.sf.opencsv:opencsv:2.3'
 
+	// CLI (needed for using Groovy CLI builder)
+	bundle 'commons-cli:commons-cli:1.3.1'
+
 	// resources (partly replaced by resources module)
 	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.citygml', version: '1.0.0.20120927'
 	//bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.opengis.net', version: '1.0.0.201202131112'
