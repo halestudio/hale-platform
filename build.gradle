@@ -138,6 +138,9 @@ include {
 
 	// support bundles for jetty 8/9
 	from 'modules/jetty-support'
+	
+	// MSSQL driver for Hale
+	from 'modules/mssql-support'
 }
 
 configurations {
