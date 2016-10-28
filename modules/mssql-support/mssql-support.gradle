@@ -1,0 +1,30 @@
+platform {
+	bundle new File(thisDir, 'sqljdbc42.jar'), {
+		bnd {
+			symbolicName = 'com.microsoft.sqlserver.jdbc.SQLServerDriver'
+			bundleName = 'Microsoft SQL Server Driver'
+			version = '4.2.0' // sql jdbc version
+
+			instruction 'Export-Package','com.microsoft.sqlserver.jdbc;version=4.2.0, microsoft.sql;version=4.2.0'
+			optionalImport(
+				//
+				'com.microsoft.azure.*',
+				'com.microsoft.windowsazure.core.pipeline.filter',
+				'com.microsoft.windowsazure.credentials'
+				)
+			
+			def buddies = [
+				'eu.esdihumboldt.hale.io.jdbc',
+				'net.sourceforge.schemacrawler'
+			]
+
+			if (buddies) {
+				// register buddy
+				instruction 'Eclipse-RegisterBuddy', buddies.join(',')
+				// add as optional required bundle
+				instruction 'Require-Bundle', buddies.collect{ it + ';resolution:=optional' }.join(',')
+								
+			}
+		}
+	}
+}
