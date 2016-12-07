@@ -1,0 +1,15 @@
+platform {
+	bundle new File(thisDir, 'skos-api-onejar.jar'), {
+		bnd {
+			symbolicName = 'org.semanticweb.skos.api'
+			bundleName = 'SKOS API'
+			version = '3.0.0'
+			
+			optionalImport(
+				//
+				'org.semanticweb.skos',
+				'org.semanticweb.skosapibinding'
+				)
+		}
+	}
+}

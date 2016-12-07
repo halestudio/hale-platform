@@ -141,6 +141,9 @@ include {
 	
 	// MSSQL driver for Hale
 	from 'modules/mssql-support'
+	
+	// SKOS api
+	from 'modules/skos-support'
 }
 
 configurations {
@@ -453,6 +456,9 @@ platform {
 	bnd group: 'com.healthmarketscience.jackcess', name: 'jackcess', {
 		instruction 'Export-Package', "*;version=$version"
 	}
+	
+	// SKOS libs
+	//bundle 'org.apache.jena:apache-jena-libs:3.1.1'
 	
 }
 
