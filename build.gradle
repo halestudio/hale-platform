@@ -458,7 +458,7 @@ platform {
 	}
 	
 	// SKOS libs
-	//bundle 'org.apache.jena:apache-jena-libs:3.1.1'
+	bundle 'org.apache.jena:apache-jena-libs:3.1.1'
 	
 }
 

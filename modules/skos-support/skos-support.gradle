@@ -1,15 +1,12 @@
 platform {
+	//https://github.com/simonjupp/java-skos-api
 	bundle new File(thisDir, 'skos-api-onejar.jar'), {
 		bnd {
 			symbolicName = 'org.semanticweb.skos.api'
 			bundleName = 'SKOS API'
 			version = '3.0.0'
 			
-			optionalImport(
-				//
-				'org.semanticweb.skos',
-				'org.semanticweb.skosapibinding'
-				)
+			instruction 'Export-Package','org.semanticweb.skos;version=3.0.0, org.semanticweb.skosapibinding;version=3.0.0'
 		}
 	}
 }
