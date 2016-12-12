@@ -457,9 +457,6 @@ platform {
 		instruction 'Export-Package', "*;version=$version"
 	}
 	
-	// SKOS libs
-	bundle 'org.apache.jena:apache-jena-libs:3.1.1'
-	
 }
 
 dependencies {
