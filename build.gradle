@@ -688,7 +688,8 @@ updateSites.each { name, siteUrl ->
 			commandLine 'java', '-jar', launcherJar,
 				'-application', 'org.eclipse.equinox.p2.metadata.repository.mirrorApplication',
 				'-source', updateSiteUri,
-				'-destination', mirrorDirUri
+				'-destination', mirrorDirUri,
+				'-writeMode', 'clean'
 		}
 
 		// Mirroring of artifacts
@@ -697,7 +698,9 @@ updateSites.each { name, siteUrl ->
 			commandLine 'java', '-jar', launcherJar,
 				'-application', 'org.eclipse.equinox.p2.artifact.repository.mirrorApplication',
 				'-source', updateSiteUri,
-				'-destination', mirrorDirUri
+				'-destination', mirrorDirUri,
+				// '-verbose',
+				'-writeMode', 'clean'
 		}
 	}
 
