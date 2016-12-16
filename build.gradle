@@ -656,7 +656,7 @@ file('p2.json').withReader {
 
 updateSites.each { name, siteUrl ->
 
-	task("mirror-p2-$name", dependsOn: 'checkEclipse').doLast {
+	task("download-p2-$name", dependsOn: 'checkEclipse').doLast {
 		assert project.platform.eclipseHome
 		def eclipseHome = project.platform.eclipseHome.absolutePath
 		
@@ -699,6 +699,10 @@ updateSites.each { name, siteUrl ->
 				'-source', updateSiteUri,
 				'-destination', mirrorDirUri
 		}
+	}
+
+	task("upload-p2-$name").doLast {
+		def mirrorDir = new File(new File(project.buildDir, 'p2-mirrors'), name)
 
 		def awsKey = project.hasProperty('builds.aws.key') ? project.getProperty('builds.aws.key') : System.getenv('AWS_ACCESS_KEY_ID')
 		def awsSecret = project.hasProperty('builds.aws.secret') ? project.getProperty('builds.aws.secret') : System.getenv('AWS_SECRET_ACCESS_KEY')
@@ -710,8 +714,16 @@ updateSites.each { name, siteUrl ->
 					mirrorDir,
 					"s3://build-artifacts.wetransform.to/p2/mirror/$name",
 					'--acl', 'public-read', '--delete', '--region', 'eu-central-1'
+				environment 'AWS_ACCESS_KEY_ID', awsKey
+				environment 'AWS_SECRET_ACCESS_KEY', awsSecret
 			}
 		}
+	}
+
+	task("mirror-p2-$name") {
+		dependsOn "download-p2-$name"
+		dependsOn "upload-p2-$name"
+		tasks.findByName("upload-p2-$name").mustRunAfter "download-p2-$name"
 	}
 
 }
