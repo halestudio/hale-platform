@@ -645,6 +645,77 @@ task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) << {
 }
 tasks.updateSite.dependsOn mergeOldSite
 
+/**
+ * Tasks that mirror essential update sites.
+ */
+def json = new groovy.json.JsonSlurper()
+def updateSites
+file('p2.json').withReader {
+	updateSites = json.parse(it)
+}
+
+updateSites.each { name, siteUrl ->
+
+	task("mirror-p2-$name", dependsOn: 'checkEclipse').doLast {
+		assert project.platform.eclipseHome
+		def eclipseHome = project.platform.eclipseHome.absolutePath
+		
+		// find launcher jar
+		def launcherFiles = project.ant.fileScanner {
+			fileset(dir: eclipseHome) {
+				include(name: 'plugins/org.eclipse.equinox.launcher_*.jar')
+			}
+		}
+		def launcherJar = launcherFiles.iterator().next()
+		assert launcherJar
+		
+		project.logger.info "Using Eclipse at $eclipseHome for p2 repository mirroring."
+
+		def mirrorDir = new File(new File(project.buildDir, 'p2-mirrors'), name)
+
+		/*
+		 * Documentation on Mirroring:
+		 * https://wiki.eclipse.org/Equinox_p2_Repository_Mirroring
+		 * 
+		 */
+		
+		def mirrorDirUri = URLDecoder.decode(mirrorDir.toURI().toString(), 'UTF-8')
+		def updateSiteUri = URLDecoder.decode(siteUrl, 'UTF-8')
+
+		// Mirroring of metadata
+		
+		project.exec {
+			commandLine 'java', '-jar', launcherJar,
+				'-application', 'org.eclipse.equinox.p2.metadata.repository.mirrorApplication',
+				'-source', updateSiteUri,
+				'-destination', mirrorDirUri
+		}
+
+		// Mirroring of artifacts
+		
+		project.exec {
+			commandLine 'java', '-jar', launcherJar,
+				'-application', 'org.eclipse.equinox.p2.artifact.repository.mirrorApplication',
+				'-source', updateSiteUri,
+				'-destination', mirrorDirUri
+		}
+
+		def awsKey = project.hasProperty('builds.aws.key') ? project.getProperty('builds.aws.key') : System.getenv('AWS_ACCESS_KEY_ID')
+		def awsSecret = project.hasProperty('builds.aws.secret') ? project.getProperty('builds.aws.secret') : System.getenv('AWS_SECRET_ACCESS_KEY')
+
+		if (awsKey && awsSecret) {
+			// upload to S3
+			project.exec {
+				commandLine 'aws', 's3', 'sync',
+					mirrorDir,
+					"s3://build-artifacts.wetransform.to/p2/mirror/$name",
+					'--acl', 'public-read', '--delete', '--region', 'eu-central-1'
+			}
+		}
+	}
+
+}
+
 task wrapper(type: Wrapper) {
     gradleVersion = '1.11'
 }
