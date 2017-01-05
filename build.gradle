@@ -456,6 +456,20 @@ platform {
 	bnd group: 'com.healthmarketscience.jackcess', name: 'jackcess', {
 		instruction 'Export-Package', "*;version=$version"
 	}
+
+	// Allure test framework
+	bundle 'ru.yandex.qatools.allure:allure-junit-adaptor:1.5.0', {
+		exclude module: 'slf4j-nop'
+	}
+	bnd group: 'ru.yandex.qatools.allure', name: 'allure-java-adaptor-api', {
+		// tika exported package version does not seem to resemble bundle version
+		instruction 'Import-Package', 'org.apache.tika.*;version="[1.0.0,2.0.0)",*'
+	}
+	bnd group: 'ru.yandex.qatools.allure', name: 'allure-java-aspects', {
+		// see http://wiki.eclipse.org/Equinox_Weaving_QuickStart
+		instruction 'Export-Package', "ru.yandex.qatools.allure.aspects;version=$version;aspects=\"AllureAttachAspects,AllureStepsAspects,AllureParametersAspects\",*;version=$version"
+	}
+	bundle 'org.aspectj:aspectjweaver:1.8.3'
 	
 }
 

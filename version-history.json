@@ -435,6 +435,9 @@
             "1.8.0": {
                 "i20150402": "kKru4A",
                 "i20150413": "wiz15w"
+            },
+            "1.8.3": {
+                "i20170105": "yTT16g"
             }
         },
         "commons-digester": {
@@ -696,6 +699,11 @@
                 "i20150413": "B3TVtg"
             }
         },
+        "junit": {
+            "4.12.0": {
+                "i20170105": "QAvjEg"
+            }
+        },
         "log4j.over.slf4j": {
             "1.7.10": {
                 "i20150402": "kYH0yw",
@@ -932,6 +940,11 @@
                 "i20150413": "urqj0A"
             }
         },
+        "org.apache.tika.core": {
+            "1.7.0": {
+                "i20170105": "OHMsqw"
+            }
+        },
         "org.apache.velocity": {
             "1.6.2": {
                 "i20150402": "LWuSyA",
@@ -990,6 +1003,16 @@
             "2.4.0": {
                 "i20150402": "1iu6Eg",
                 "i20150413": "9PbBGQ"
+            }
+        },
+        "org.aspectj.rt": {
+            "1.8.3": {
+                "i20170105": "kOezLQ"
+            }
+        },
+        "org.aspectj.weaver": {
+            "1.8.3": {
+                "i20170105": "kOezLQ"
             }
         },
         "org.codehaus.castor.core": {
@@ -1377,6 +1400,11 @@
                 "i20150413": "J4TOxA"
             }
         },
+        "org.hamcrest.core": {
+            "1.3.0": {
+                "i20170105": "gvWzJQ"
+            }
+        },
         "org.hibernate.javax.persistence.hibernate-jpa-2.0-api": {
             "1.0.0.Final": {
                 "i20150402": "dGqsGw",
@@ -1442,6 +1470,11 @@
             "20090211.0.0": {
                 "i20150402": "CSGteQ",
                 "i20150413": "LGm0gA"
+            }
+        },
+        "org.jvnet.jaxb2_commons.jaxb2-basics-runtime": {
+            "0.9.3": {
+                "i20170105": "JHajw"
             }
         },
         "org.objectweb.asm-4": {
@@ -1734,7 +1767,40 @@
                 "i20150413": "efvBjA"
             }
         },
+        "ru.yandex.qatools.allure.java-adaptor-api": {
+            "1.5.0": {
+                "i20170105": "YwG3Ow"
+            }
+        },
+        "ru.yandex.qatools.allure.java-annotations": {
+            "1.5.0": {
+                "i20170105": "HT0ACw"
+            }
+        },
+        "ru.yandex.qatools.allure.java-aspects": {
+            "1.5.0": {
+                "i20170105": "rj0m0A"
+            }
+        },
+        "ru.yandex.qatools.allure.junit-adaptor": {
+            "1.5.0": {
+                "i20170105": "OuYAgg"
+            }
+        },
+        "ru.yandex.qatools.allure.model": {
+            "1.5.0": {
+                "i20170105": "3JRjPA"
+            }
+        },
+        "ru.yandex.qatools.properties.loader": {
+            "1.5.0": {
+                "i20170105": "3HoLnA"
+            }
+        },
         "slf4j.api": {
+            "1.7.12": {
+                "i20170105": "84bVBg"
+            },
             "1.7.10": {
                 "i20150402": "PI7NQ",
                 "i20150413": "6CTVAA"
@@ -1822,6 +1888,7 @@
     "feature": {
         "com.spotify.docker-client": {
             "2.7.7": {
+                "i20170105": "UOLFZA",
                 "i201504131603": "kXvQvg",
                 "i20150413": "u2TPKw",
                 "i201504131443": "tGXP9g",
@@ -1837,28 +1904,29 @@
         },
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
-                "i20150715": "hSN5nw",
-                "i20150616": "m69Taw",
                 "i20150705": "XVpSSA",
                 "i20150727": "KJJ5hQ",
-                "i20150612": "6mFU0Q",
-                "i20150511": "J4VUyw",
-                "i20150610": "ZUdUzQ",
                 "i20150523": "3c1U0Q",
                 "i20150402": "6hhrmw",
-                "i20150413": "ACpokA",
-                "i20161212": "VwDg",
                 "i20160531": "3d5qSA",
                 "i20160712": "yfDKaQ",
                 "i201504131603": "M7du3g",
-                "i20160704": "HsmCxw",
                 "i20160730": "q7NPcw",
                 "i20161028": "igBiCQ",
-                "i20160721": "rys0og",
-                "i20160601": "gDxqRA",
                 "i20160810": "u7RPdw",
                 "i201504131443": "p3drvg",
                 "i201504131740": "YzFUhw",
+                "i20150715": "hSN5nw",
+                "i20150616": "m69Taw",
+                "i20170105": "8R7xg",
+                "i20150612": "6mFU0Q",
+                "i20150511": "J4VUyw",
+                "i20150610": "ZUdUzQ",
+                "i20150413": "ACpokA",
+                "i20161212": "VwDg",
+                "i20160704": "HsmCxw",
+                "i20160721": "rys0og",
+                "i20160601": "gDxqRA",
                 "i20151027": "rd15Ww",
                 "i20151101": "lRB5dw"
             }
@@ -1898,6 +1966,7 @@
         },
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
             "0.8.4": {
+                "i20170105": "pqq0A",
                 "i20150402": "Vh5Yg",
                 "i20150413": "Lje5rg",
                 "i201504131740": "5fOqyA",
@@ -1919,6 +1988,7 @@
         "platform.shared.geotools": {
             "12.2.0": {
                 "i20160712": "Jb6D6Q",
+                "i20170105": "JmD6w",
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q",
@@ -1941,6 +2011,7 @@
         "platform.shared.orientdb.graphdb": {
             "1.5.1": {
                 "i20150616": "tblxBA",
+                "i20170105": "29BxEQ",
                 "i201504131603": "nF1w8g",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
@@ -1962,6 +2033,7 @@
         },
         "platform.shared.slf4jlogback": {
             "1.7.10": {
+                "i20170105": "7MQ9oQ",
                 "i20150402": "5U9kw",
                 "i20150413": "7Fc9nw"
             }
@@ -1974,12 +2046,14 @@
         },
         "platform.shared.spring.modules": {
             "3.1.1.RELEASE": {
+                "i20170105": "FI7HIw",
                 "i20150402": "9G3HBw",
                 "i20150413": "EPHIQ"
             }
         },
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
+                "i20170105": "eGDFmQ",
                 "i20150402": "u4PFVw",
                 "i20150413": "YeFkQ",
                 "i20151027": "d3Flw"
@@ -1987,6 +2061,7 @@
         },
         "platform.shared.wicket": {
             "6.10.0": {
+                "i20170105": "GtV1qw",
                 "i20150402": "C4x1lQ",
                 "i20150413": "GqB1qQ"
             }
