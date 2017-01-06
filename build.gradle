@@ -460,6 +460,9 @@ platform {
 	// Allure test framework
 	bundle 'ru.yandex.qatools.allure:allure-junit-adaptor:1.5.0', {
 		exclude module: 'slf4j-nop'
+		// exclude junit - is provided by Eclipse
+		// also, adaptions to the manifest would be necessary (exported package version for 3.x packages)
+		exclude module: 'junit'
 	}
 	bnd group: 'ru.yandex.qatools.allure', name: 'allure-java-adaptor-api', {
 		// tika exported package version does not seem to resemble bundle version
