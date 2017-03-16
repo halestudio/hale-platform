@@ -3,6 +3,9 @@ buildscript {
 		maven { // HALE artifactory
 			url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
 		}
+		maven { // wetransform artifactory
+			url 'https://artifactory.wetransform.to/artifactory/libs-release/'
+		}
 		mavenCentral()
 		maven {
 			url 'http://oss.sonatype.org/content/repositories/snapshots/'
@@ -31,6 +34,9 @@ defaultTasks 'clean', 'updateSiteZip'
 repositories {
 	maven { // HALE artifactory
 		url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
+	}
+	maven { // wetransform artifactory
+		url 'https://artifactory.wetransform.to/artifactory/libs-release/'
 	}
 }
 
@@ -224,6 +230,9 @@ platform {
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-core', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml2', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
+
+	// hale connect APIs
+	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.0'
 
 	// security
 	bundle 'org.jasig.cas:cas-client:3.1.10'

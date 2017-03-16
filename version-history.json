@@ -227,6 +227,11 @@
                 "i20150413": "stjGVQ"
             }
         },
+        "com.google.gson": {
+            "2.6.2": {
+                "i20170306": "NOsGzQ"
+            }
+        },
         "com.google.guava": {
             "17.0.0": {
                 "i20150402": "L862bg",
@@ -256,6 +261,19 @@
             "1.1.0": {
                 "i20150402": "dhasHA",
                 "i20150413": "f3ezIw"
+            }
+        },
+        "com.haleconnect.api.haleconnect-user-api": {
+            "1.0.0": {
+                "i20170309": "A2sug"
+            }
+        },
+        "com.haleconnect.hale-connect-api": {
+            "1.0.0.SNAPSHOT": {
+                "i20170306": "rQgCA"
+            },
+            "1.0.0": {
+                "i20170308": "rQgCA"
             }
         },
         "com.healthmarketscience.jackcess": {
@@ -346,6 +364,21 @@
             },
             "2.4.2": {
                 "i20150402": "ydptLQ"
+            }
+        },
+        "com.squareup.okhttp": {
+            "2.7.5": {
+                "i20170306": "u0a6A"
+            }
+        },
+        "com.squareup.okhttp.logging-interceptor": {
+            "2.7.5": {
+                "i20170306": "tgUevQ"
+            }
+        },
+        "com.squareup.okio": {
+            "1.6.0": {
+                "i20170306": "iDKzKA"
             }
         },
         "com.sun.istack.commons-runtime": {
@@ -572,6 +605,11 @@
                 "i20150413": "oRckXQ"
             }
         },
+        "io.swagger.annotations": {
+            "1.5.8": {
+                "i20170306": "OdPJmQ"
+            }
+        },
         "it.geosolutions.imageio-ext.tiff": {
             "1.1.10": {
                 "i20150402": "BmPUrw",
@@ -688,6 +726,9 @@
             }
         },
         "joda-time": {
+            "2.9.3": {
+                "i20170306": "fBneIA"
+            },
             "2.3.0": {
                 "i20150402": "MjvWsg",
                 "i20150413": "b1TduQ"
@@ -708,6 +749,16 @@
             "1.7.10": {
                 "i20150402": "kYH0yw",
                 "i20150413": "UQn70g"
+            }
+        },
+        "net.bytebuddy.byte-buddy": {
+            "1.6.11": {
+                "i20170316": "4Vog4g"
+            }
+        },
+        "net.bytebuddy.byte-buddy-agent": {
+            "1.6.11": {
+                "i20170316": "ntLoYQ"
             }
         },
         "net.java.dev.jna.platform": {
@@ -1477,6 +1528,11 @@
                 "i20170105": "JHajw"
             }
         },
+        "org.mockito.mockito-core": {
+            "2.7.17": {
+                "i20170316": "eZHolw"
+            }
+        },
         "org.objectweb.asm-4": {
             "4.1.0": {
                 "i20150402": "sgDEsw",
@@ -1519,6 +1575,11 @@
         "org.objectweb.asm.util-5": {
             "5.0.3": {
                 "i20160531": "ox8pGw"
+            }
+        },
+        "org.objenesis": {
+            "2.5.0": {
+                "i20170316": "1kxDUg"
             }
         },
         "org.opengis": {
@@ -1930,6 +1991,14 @@
                 "i20160601": "gDxqRA",
                 "i20151027": "rd15Ww",
                 "i20151101": "lRB5dw"
+            },
+            "3.3.0": {
+                "i201703161234": "odyL2Q",
+                "i20170306": "9luEiw",
+                "i20170307": "CsNXA",
+                "i20170316": "CHDbwA",
+                "i20170308": "iuOKzA",
+                "i20170309": "205q5A"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -1945,6 +2014,7 @@
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
+                "i20170306": "HlPTkw",
                 "i20150511": "ZDfkgA",
                 "i20150402": "AQTTfQ",
                 "i20150413": "HlPTkw"
@@ -1956,6 +2026,9 @@
                 "i20150511": "xD6c8w",
                 "i20150402": "sCOcrw",
                 "i20151027": "UcueWA"
+            },
+            "3.3.0": {
+                "i20170306": "UcueWA"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
@@ -1968,10 +2041,12 @@
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
             "0.8.4": {
                 "i20170105": "pqq0A",
+                "i20170306": "M8uq4g",
                 "i20150402": "Vh5Yg",
                 "i20150413": "Lje5rg",
                 "i201504131740": "5fOqyA",
-                "i20151027": "OOqzg"
+                "i20151027": "OOqzg",
+                "i20170309": "Dxiq1g"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -1989,10 +2064,12 @@
         "platform.shared.geotools": {
             "12.2.0": {
                 "i20160712": "Jb6D6Q",
+                "i201703161234": "x9CEtQ",
                 "i20170105": "JmD6w",
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q",
+                "i20170316": "KOeD7Q",
                 "i20151027": "KSqD7A"
             }
         },
@@ -2004,18 +2081,22 @@
         },
         "platform.shared.orientdb.core": {
             "1.5.1": {
+                "i201703161234": "QIVHZA",
                 "i20150402": "UOspUw",
                 "i20150413": "UZcpVw",
+                "i20170316": "Uh0pWQ",
                 "i20151027": "QIVHZA"
             }
         },
         "platform.shared.orientdb.graphdb": {
             "1.5.1": {
                 "i20150616": "tblxBA",
+                "i201703161234": "oOpx3Q",
                 "i20170105": "29BxEQ",
                 "i201504131603": "nF1w8g",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
+                "i20170316": "2BxEw",
                 "i20151027": "0D1xDA"
             }
         },
@@ -2030,6 +2111,9 @@
             "3.0.0": {
                 "i20150402": "444b4A",
                 "i20150413": "468b4g"
+            },
+            "3.3.0": {
+                "i20170306": "468b4g"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -2041,22 +2125,28 @@
         },
         "platform.shared.spring.core": {
             "3.1.1.RELEASE": {
+                "i201703161234": "vP4YYw",
                 "i20150402": "vN0YYQ",
-                "i20150413": "vP4YYw"
+                "i20150413": "vP4YYw",
+                "i20170316": "ma43mg"
             }
         },
         "platform.shared.spring.modules": {
             "3.1.1.RELEASE": {
+                "i201703161234": "MgnH8Q",
                 "i20170105": "FI7HIw",
                 "i20150402": "9G3HBw",
-                "i20150413": "EPHIQ"
+                "i20150413": "EPHIQ",
+                "i20170316": "FKDHJw"
             }
         },
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
+                "i201703161234": "j7PGZw",
                 "i20170105": "eGDFmQ",
                 "i20150402": "u4PFVw",
                 "i20150413": "YeFkQ",
+                "i20170316": "eHLFnQ",
                 "i20151027": "d3Flw"
             }
         },
@@ -2080,6 +2170,9 @@
             "3.0.0": {
                 "i20150402": "cGe5KA",
                 "i20150413": "cbvALw"
+            },
+            "3.3.0": {
+                "i20170306": "d2HAMg"
             }
         },
         "javax.annotation.extensions": {
@@ -2096,8 +2189,10 @@
         },
         "org.geotools": {
             "12.2.0.combined": {
+                "i201703161232": "5WXmAA",
                 "i20150402": "q98trQ",
                 "i20150413": "ecTmAA",
+                "i20170316": "gsXmAA",
                 "i20151027": "5WXmAA"
             }
         },
