@@ -227,6 +227,11 @@
                 "i20150413": "stjGVQ"
             }
         },
+        "com.google.gson": {
+            "2.6.2": {
+                "i20170316": "NOsGzQ"
+            }
+        },
         "com.google.guava": {
             "17.0.0": {
                 "i20150402": "L862bg",
@@ -256,6 +261,11 @@
             "1.1.0": {
                 "i20150402": "dhasHA",
                 "i20150413": "f3ezIw"
+            }
+        },
+        "com.haleconnect.api.haleconnect-user-api": {
+            "1.0.0": {
+                "i20170316": "A2sug"
             }
         },
         "com.healthmarketscience.jackcess": {
@@ -346,6 +356,21 @@
             },
             "2.4.2": {
                 "i20150402": "ydptLQ"
+            }
+        },
+        "com.squareup.okhttp": {
+            "2.7.5": {
+                "i20170316": "u0a6A"
+            }
+        },
+        "com.squareup.okhttp.logging-interceptor": {
+            "2.7.5": {
+                "i20170316": "tgUevQ"
+            }
+        },
+        "com.squareup.okio": {
+            "1.6.0": {
+                "i20170316": "iDKzKA"
             }
         },
         "com.sun.istack.commons-runtime": {
@@ -570,6 +595,11 @@
             "2.3.7": {
                 "i20150402": "fjwdVg",
                 "i20150413": "oRckXQ"
+            }
+        },
+        "io.swagger.annotations": {
+            "1.5.8": {
+                "i20170316": "OdPJmQ"
             }
         },
         "it.geosolutions.imageio-ext.tiff": {
@@ -1930,6 +1960,9 @@
                 "i20160601": "gDxqRA",
                 "i20151027": "rd15Ww",
                 "i20151101": "lRB5dw"
+            },
+            "3.3.0": {
+                "i20170316": "sGWAoA"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -1956,6 +1989,9 @@
                 "i20150511": "xD6c8w",
                 "i20150402": "sCOcrw",
                 "i20151027": "UcueWA"
+            },
+            "3.3.0": {
+                "i20170316": "UcueWA"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
@@ -1970,6 +2006,7 @@
                 "i20170105": "pqq0A",
                 "i20150402": "Vh5Yg",
                 "i20150413": "Lje5rg",
+                "i20170316": "Enqq1w",
                 "i201504131740": "5fOqyA",
                 "i20151027": "OOqzg"
             }
@@ -2030,6 +2067,9 @@
             "3.0.0": {
                 "i20150402": "444b4A",
                 "i20150413": "468b4g"
+            },
+            "3.3.0": {
+                "i20170316": "468b4g"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -2080,6 +2120,9 @@
             "3.0.0": {
                 "i20150402": "cGe5KA",
                 "i20150413": "cbvALw"
+            },
+            "3.3.0": {
+                "i20170316": "d2HAMg"
             }
         },
         "javax.annotation.extensions": {
