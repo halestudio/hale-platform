@@ -13,7 +13,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.2.0'
-		classpath 'org.standardout:bnd-platform:1.4.0'
+		classpath 'org.standardout:bnd-platform:1.5.0'
 		classpath 'org.standardout:gradle-versioneye-plugin:1.1.1'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
@@ -37,6 +37,9 @@ repositories {
 	}
 	maven { // wetransform artifactory
 		url 'https://artifactory.wetransform.to/artifactory/libs-release/'
+	}
+	maven { // XXX Snapshot artifacts (remove for release)
+		url 'https://artifactory.wetransform.to/artifactory/libs-snapshot/'
 	}
 }
 
@@ -232,7 +235,10 @@ platform {
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
 
 	// hale connect APIs
-	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.0'
+	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.2-SNAPSHOT'
+	bundle 'com.haleconnect.api:haleconnect-bucket-api:1.0.1-SNAPSHOT'
+	bundle 'com.haleconnect.api:haleconnect-projectstore-api:1.0.0-SNAPSHOT'
+	bundle 'com.haleconnect.api:haleconnect-project-api:0.1.0-SNAPSHOT'
 
 	// security
 	bundle 'org.jasig.cas:cas-client:3.1.10'
