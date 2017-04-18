@@ -263,7 +263,25 @@
                 "i20150413": "f3ezIw"
             }
         },
+        "com.haleconnect.api.haleconnect-bucket-api": {
+            "1.0.1.SNAPSHOT": {
+                "i20170418": "LSsuw"
+            }
+        },
+        "com.haleconnect.api.haleconnect-project-api": {
+            "0.1.0.SNAPSHOT": {
+                "i20170418": "Ausug"
+            }
+        },
+        "com.haleconnect.api.haleconnect-projectstore-api": {
+            "1.0.0.SNAPSHOT": {
+                "i20170418": "A2sug"
+            }
+        },
         "com.haleconnect.api.haleconnect-user-api": {
+            "1.0.2.SNAPSHOT": {
+                "i20170418": "AWqsvA"
+            },
             "1.0.0": {
                 "i20170316": "A2sug"
             }
@@ -1962,7 +1980,8 @@
                 "i20151101": "lRB5dw"
             },
             "3.3.0": {
-                "i20170316": "sGWAoA"
+                "i20170316": "sGWAoA",
+                "i20170418": "ejoakg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
