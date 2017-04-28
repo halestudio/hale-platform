@@ -265,22 +265,22 @@
         },
         "com.haleconnect.api.haleconnect-bucket-api": {
             "1.0.1.SNAPSHOT": {
-                "i20170418": "LSsuw"
+                "i20170428": "LSsuw"
             }
         },
         "com.haleconnect.api.haleconnect-project-api": {
             "0.1.0.SNAPSHOT": {
-                "i20170418": "Ausug"
+                "i20170428": "Ausug"
             }
         },
         "com.haleconnect.api.haleconnect-projectstore-api": {
             "1.0.0.SNAPSHOT": {
-                "i20170418": "A2sug"
+                "i20170428": "A2sug"
             }
         },
         "com.haleconnect.api.haleconnect-user-api": {
             "1.0.2.SNAPSHOT": {
-                "i20170418": "AWqsvA"
+                "i20170428": "AWqsvA"
             },
             "1.0.0": {
                 "i20170316": "A2sug"
@@ -1980,6 +1980,7 @@
                 "i20151101": "lRB5dw"
             },
             "3.3.0": {
+                "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
                 "i20170418": "ejoakg"
             }
@@ -1997,6 +1998,7 @@
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
+                "i20170428": "HlPTkw",
                 "i20150511": "ZDfkgA",
                 "i20150402": "AQTTfQ",
                 "i20150413": "HlPTkw"
