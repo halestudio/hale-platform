@@ -235,10 +235,10 @@ platform {
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
 
 	// hale connect APIs
-	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.2-SNAPSHOT'
-	bundle 'com.haleconnect.api:haleconnect-bucket-api:1.0.1-SNAPSHOT'
-	bundle 'com.haleconnect.api:haleconnect-projectstore-api:1.0.0-SNAPSHOT'
-	bundle 'com.haleconnect.api:haleconnect-project-api:0.1.0-SNAPSHOT'
+	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.2'
+	bundle 'com.haleconnect.api:haleconnect-bucket-api:1.0.1'
+	bundle 'com.haleconnect.api:haleconnect-projectstore-api:1.0.0'
+	bundle 'com.haleconnect.api:haleconnect-project-api:0.1.0'
 
 	// security
 	bundle 'org.jasig.cas:cas-client:3.1.10'
