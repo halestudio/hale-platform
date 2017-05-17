@@ -264,21 +264,33 @@
             }
         },
         "com.haleconnect.api.haleconnect-bucket-api": {
+            "1.0.1": {
+                "i20170517": "LSsuw"
+            },
             "1.0.1.SNAPSHOT": {
                 "i20170428": "LSsuw"
             }
         },
         "com.haleconnect.api.haleconnect-project-api": {
+            "0.1.0": {
+                "i20170517": "Ausug"
+            },
             "0.1.0.SNAPSHOT": {
                 "i20170428": "Ausug"
             }
         },
         "com.haleconnect.api.haleconnect-projectstore-api": {
+            "1.0.0": {
+                "i20170517": "A2sug"
+            },
             "1.0.0.SNAPSHOT": {
                 "i20170428": "A2sug"
             }
         },
         "com.haleconnect.api.haleconnect-user-api": {
+            "1.0.2": {
+                "i20170517": "AWqsvA"
+            },
             "1.0.2.SNAPSHOT": {
                 "i20170428": "AWqsvA"
             },
@@ -1982,7 +1994,8 @@
             "3.3.0": {
                 "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
-                "i20170418": "ejoakg"
+                "i20170418": "ejoakg",
+                "i20170517": "eoMFvA"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
