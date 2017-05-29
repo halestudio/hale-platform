@@ -1645,6 +1645,11 @@
                 "i20150413": "jz6zLA"
             }
         },
+        "org.postgresql.jdbc4": {
+            "9.4.0.build-1206": {
+                "i20170529": "sXARHw"
+            }
+        },
         "org.quartz-scheduler.quartz": {
             "1.7.3": {
                 "i20150402": "nwPOXw",
@@ -1995,7 +2000,8 @@
                 "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
                 "i20170418": "ejoakg",
-                "i20170517": "eoMFvA"
+                "i20170517": "eoMFvA",
+                "i20170529": "XTIF2g"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -2103,7 +2109,8 @@
                 "i20150413": "468b4g"
             },
             "3.3.0": {
-                "i20170316": "468b4g"
+                "i20170316": "468b4g",
+                "i20170529": "5dwb9A"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -2179,6 +2186,9 @@
             }
         },
         "org.postgresql.jdbc": {
+            "9.4.0.1206-jdbc4_postgis-2_0_1": {
+                "i20170529": "hqxlmA"
+            },
             "9.2.0.1002-jdbc4_postgis-2_0_1": {
                 "i20150402": "5Odejw",
                 "i20150413": "eiBllg"
