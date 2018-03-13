@@ -264,38 +264,38 @@
             }
         },
         "com.haleconnect.api.haleconnect-bucket-api": {
-            "1.0.1": {
-                "i20170517": "LSsuw"
-            },
             "1.0.1.SNAPSHOT": {
                 "i20170428": "LSsuw"
+            },
+            "1.0.1": {
+                "i20170517": "LSsuw"
             }
         },
         "com.haleconnect.api.haleconnect-project-api": {
-            "0.1.0": {
-                "i20170517": "Ausug"
-            },
             "0.1.0.SNAPSHOT": {
                 "i20170428": "Ausug"
+            },
+            "0.1.0": {
+                "i20170517": "Ausug"
             }
         },
         "com.haleconnect.api.haleconnect-projectstore-api": {
-            "1.0.0": {
-                "i20170517": "A2sug"
-            },
             "1.0.0.SNAPSHOT": {
                 "i20170428": "A2sug"
+            },
+            "1.0.0": {
+                "i20170517": "A2sug"
             }
         },
         "com.haleconnect.api.haleconnect-user-api": {
-            "1.0.2": {
-                "i20170517": "AWqsvA"
-            },
             "1.0.2.SNAPSHOT": {
                 "i20170428": "AWqsvA"
             },
             "1.0.0": {
                 "i20170316": "A2sug"
+            },
+            "1.0.2": {
+                "i20170517": "AWqsvA"
             }
         },
         "com.healthmarketscience.jackcess": {
@@ -622,6 +622,9 @@
             }
         },
         "groovy": {
+            "2.4.13": {
+                "i20180313": "ytucRw"
+            },
             "2.3.7": {
                 "i20150402": "fjwdVg",
                 "i20150413": "oRckXQ"
@@ -1997,8 +2000,10 @@
                 "i20151101": "lRB5dw"
             },
             "3.3.0": {
+                "i20180313": "cZgTBg",
                 "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
+                "i201803131622": "jMsTyg",
                 "i20170418": "ejoakg",
                 "i20170517": "eoMFvA",
                 "i20170529": "XTIF2g"
@@ -2017,6 +2022,7 @@
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
+                "i20180313": "ZDfkgA",
                 "i20170428": "HlPTkw",
                 "i20150511": "ZDfkgA",
                 "i20150402": "AQTTfQ",
@@ -2074,6 +2080,9 @@
             }
         },
         "platform.shared.groovy-all": {
+            "2.4.13": {
+                "i20180313": "hIsPZA"
+            },
             "2.3.7": {
                 "i20150402": "dEPMg",
                 "i20150413": "eAIPNA"
@@ -2091,6 +2100,7 @@
                 "i20150616": "tblxBA",
                 "i20170105": "29BxEQ",
                 "i201504131603": "nF1w8g",
+                "i20180313": "8c1xQQ",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
                 "i20151027": "0D1xDA"
