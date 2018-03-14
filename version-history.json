@@ -433,6 +433,7 @@
         },
         "com.tinkerpop.blueprints.core": {
             "2.5.0.orientDB151": {
+                "i20180314": "zMLcA",
                 "i20150402": "qbwqeQ",
                 "i20150413": "DMcxgA",
                 "i20151027": "AD0xgA"
@@ -447,6 +448,7 @@
         },
         "com.tinkerpop.gremlin.groovy": {
             "2.5.0.orientDB151": {
+                "i20180314": "MY0hoA",
                 "i20150402": "R0AntA",
                 "i20150413": "fEuuw",
                 "i20151027": "suguuw"
@@ -497,6 +499,7 @@
         },
         "commons-digester": {
             "1.8.0": {
+                "i20180314": "sacd4A",
                 "i20150402": "I9Ictw",
                 "i20150413": "vrgjvg"
             }
@@ -622,12 +625,20 @@
             }
         },
         "groovy": {
-            "2.4.13": {
-                "i20180313": "ytucRw"
-            },
             "2.3.7": {
                 "i20150402": "fjwdVg",
                 "i20150413": "oRckXQ"
+            },
+            "2.4.13": {
+                "i20180313": "ytucRw"
+            },
+            "2.4.14": {
+                "i20180314": "0xm1QQ"
+            }
+        },
+        "groovy-all": {
+            "2.4.14": {
+                "i20180314": "0xm1QQ"
             }
         },
         "io.swagger.annotations": {
@@ -746,6 +757,7 @@
         },
         "jline": {
             "0.9.94": {
+                "i20180314": "WoT6Sg",
                 "i20150402": "RzvJQ",
                 "i20150413": "ax8GOw"
             }
@@ -993,12 +1005,14 @@
         },
         "org.apache.poi.ooxml": {
             "3.9.0": {
+                "i20180314": "3gjMqg",
                 "i20150402": "FNnVTQ",
                 "i20150413": "vHcVA"
             }
         },
         "org.apache.poi.ooxml-schemas": {
             "3.9.0": {
+                "i20180314": "tuQuw",
                 "i20150402": "f6cyQ",
                 "i20150413": "urqj0A"
             }
@@ -1094,6 +1108,7 @@
         },
         "org.codehaus.groovy.modules.http-builder": {
             "0.6.0": {
+                "i20180314": "Rps8GQ",
                 "i20150402": "OTZpA",
                 "i20150413": "1mXgqw",
                 "i20151027": "62Tgqw",
@@ -1273,6 +1288,7 @@
         },
         "org.geotools.gt-jdbc": {
             "12.2.0": {
+                "i20180314": "V0iYQw",
                 "i20150413": "J4GjrA",
                 "i20151027": "eUujrA"
             }
@@ -1313,6 +1329,7 @@
         },
         "org.geotools.gt-wfs": {
             "12.2.0": {
+                "i20180314": "nC9qw",
                 "i20150402": "ujXDYQ",
                 "i20150413": "YHKaA",
                 "i20151027": "LfLKaA"
@@ -1333,6 +1350,7 @@
         },
         "org.geotools.ogc.net.opengis.fes": {
             "12.2.0": {
+                "i20180314": "tIV8A",
                 "i20150402": "LHq9Pg",
                 "i20150413": "R33ERQ",
                 "i20151027": "fDERQ"
@@ -1340,6 +1358,7 @@
         },
         "org.geotools.ogc.net.opengis.ows": {
             "12.2.0": {
+                "i20180314": "FFlTKA",
                 "i20150402": "aF6Tag",
                 "i20150413": "5ViacQ",
                 "i20151027": "llacQ"
@@ -1347,6 +1366,7 @@
         },
         "org.geotools.ogc.net.opengis.wfs": {
             "12.2.0": {
+                "i20180314": "7cAl1A",
                 "i20150402": "V2BmFg",
                 "i20150413": "0FFtHQ",
                 "i20151027": "wOttHQ"
@@ -1354,6 +1374,7 @@
         },
         "org.geotools.ogc.org.w3.xlink": {
             "12.2.0": {
+                "i20180314": "qIIujw",
                 "i20150402": "udu0Q",
                 "i20150413": "5mV12A",
                 "i20151027": "GIh12A"
@@ -1361,6 +1382,7 @@
         },
         "org.geotools.xsd.gt-xsd-core": {
             "12.2.0": {
+                "i20180314": "PJZcxw",
                 "i20150402": "6PvRMg",
                 "i20150413": "aeHYOQ",
                 "i20151027": "SEnYOQ"
@@ -1593,6 +1615,7 @@
         },
         "org.openid4java": {
             "0.9.8": {
+                "i20180314": "DsueLQ",
                 "i20150402": "s66wyA",
                 "i20150413": "NYa3zw",
                 "i20151027": "fxW3zw"
@@ -1716,6 +1739,7 @@
         },
         "org.springframework.ldap.spring-ldap-core": {
             "1.3.1.RELEASE": {
+                "i20180314": "AfGrvA",
                 "i20150402": "tPGu5g",
                 "i20150413": "E3217Q",
                 "i20151027": "scW17Q"
@@ -1842,17 +1866,20 @@
         },
         "ru.yandex.qatools.allure.java-annotations": {
             "1.5.0": {
-                "i20170105": "HT0ACw"
+                "i20170105": "HT0ACw",
+                "i20180314": "WqzplA"
             }
         },
         "ru.yandex.qatools.allure.java-aspects": {
             "1.5.0": {
-                "i20170105": "rj0m0A"
+                "i20170105": "rj0m0A",
+                "i20180314": "6HEPFw"
             }
         },
         "ru.yandex.qatools.allure.junit-adaptor": {
             "1.5.0": {
-                "i20170105": "OuYAgg"
+                "i20170105": "OuYAgg",
+                "i20180314": "OLzpYw"
             }
         },
         "ru.yandex.qatools.allure.model": {
@@ -2001,6 +2028,8 @@
             },
             "3.3.0": {
                 "i20180313": "cZgTBg",
+                "i20180314": "5JI00w",
+                "i201803141008": "nHtCpg",
                 "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
                 "i201803131622": "jMsTyg",
@@ -2023,6 +2052,7 @@
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
                 "i20180313": "ZDfkgA",
+                "i20180314": "MP0WA",
                 "i20170428": "HlPTkw",
                 "i20150511": "ZDfkgA",
                 "i20150402": "AQTTfQ",
@@ -2073,6 +2103,7 @@
             "12.2.0": {
                 "i20160712": "Jb6D6Q",
                 "i20170105": "JmD6w",
+                "i20180314": "J7SD7A",
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q",
@@ -2080,12 +2111,16 @@
             }
         },
         "platform.shared.groovy-all": {
-            "2.4.13": {
-                "i20180313": "hIsPZA"
-            },
             "2.3.7": {
                 "i20150402": "dEPMg",
                 "i20150413": "eAIPNA"
+            },
+            "2.4.13": {
+                "i20180313": "hIsPZA"
+            },
+            "2.4.14": {
+                "i20180314": "hLUPZg",
+                "i201803141008": "FVQYrw"
             }
         },
         "platform.shared.orientdb.core": {
@@ -2101,6 +2136,8 @@
                 "i20170105": "29BxEQ",
                 "i201504131603": "nF1w8g",
                 "i20180313": "8c1xQQ",
+                "i20180314": "ERxSw",
+                "i201803141008": "jxtysQ",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
                 "i20151027": "0D1xDA"
@@ -2108,6 +2145,7 @@
         },
         "platform.shared.poi": {
             "3.9.0": {
+                "i20180314": "fH4YQ",
                 "i20150402": "do8Ug",
                 "i20150413": "eyEXg",
                 "i20151027": "e8YA"
@@ -2146,6 +2184,7 @@
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
                 "i20170105": "eGDFmQ",
+                "i20180314": "fsXFmw",
                 "i20150402": "u4PFVw",
                 "i20150413": "YeFkQ",
                 "i20151027": "d3Flw"
@@ -2183,6 +2222,7 @@
         },
         "org.apache.poi": {
             "3.9.0": {
+                "i20180314": "HgAe1Q",
                 "i20150402": "Qw6jQ",
                 "i20150413": "2ZhBlA",
                 "i20151027": "DVVBlA"
@@ -2190,6 +2230,7 @@
         },
         "org.geotools": {
             "12.2.0.combined": {
+                "i20180314": "WV9SaA",
                 "i20150402": "q98trQ",
                 "i20150413": "ecTmAA",
                 "i20151027": "5WXmAA"
