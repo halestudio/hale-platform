@@ -131,8 +131,8 @@ include {
 
 	// ensures that always a fixed version of groovy-all is used as groovy dependency
 	from 'modules/shared/groovy.gradle', {
-		//XXX custom name is not supported w/ indy - problem with bnd-platform
-		groovyAll '2.4.14', true, /*'groovy'*/ null, true
+		//XXX custom name is required w/ indy - problem is that Gradle still adds the normal groovy-all dependency
+		groovyAll '2.4.14', true, 'groovy', true
 	}
 
 	// HALE specific modules

@@ -633,7 +633,8 @@
                 "i20180313": "ytucRw"
             },
             "2.4.14": {
-                "i20180314": "0xm1QQ"
+                "i20180314": "0xm1QQ",
+                "i201803141230": "lYfCag"
             }
         },
         "groovy-all": {
@@ -2035,7 +2036,8 @@
                 "i201803131622": "jMsTyg",
                 "i20170418": "ejoakg",
                 "i20170517": "eoMFvA",
-                "i20170529": "XTIF2g"
+                "i20170529": "XTIF2g",
+                "i201803141231": "40BCAg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -2120,7 +2122,8 @@
             },
             "2.4.14": {
                 "i20180314": "hLUPZg",
-                "i201803141008": "FVQYrw"
+                "i201803141008": "FVQYrw",
+                "i201803141231": "AS8YDw"
             }
         },
         "platform.shared.orientdb.core": {
