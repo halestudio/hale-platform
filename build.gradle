@@ -44,7 +44,7 @@ repositories {
 }
 
 // platform version
-version = '3.3.0'
+version = '3.4.0'
 
 ext {
 	geotoolsVersion = '12.2'
@@ -237,7 +237,7 @@ platform {
 	// hale connect APIs
 	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.2'
 	bundle 'com.haleconnect.api:haleconnect-bucket-api:1.0.1'
-	bundle 'com.haleconnect.api:haleconnect-projectstore-api:1.0.0'
+	bundle 'com.haleconnect.api:haleconnect-projectstore-api:1.6.0'
 	bundle 'com.haleconnect.api:haleconnect-project-api:0.1.0'
 
 	// security
