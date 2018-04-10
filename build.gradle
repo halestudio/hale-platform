@@ -153,6 +153,10 @@ include {
 	
 	// SKOS api
 	from 'modules/skos-support'
+
+        // xtraserver-config-util
+        from 'modules/xtraserver-config-util'
+
 }
 
 configurations {
