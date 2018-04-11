@@ -222,6 +222,9 @@
             }
         },
         "com.google.code.findbugs.jsr305": {
+            "3.0.0": {
+                "i20180411": "rv7GUw"
+            },
             "2.0.3": {
                 "i20150402": "PLKTg",
                 "i20150413": "stjGVQ"
@@ -264,19 +267,19 @@
             }
         },
         "com.haleconnect.api.haleconnect-bucket-api": {
-            "1.0.1": {
-                "i20170517": "LSsuw"
-            },
             "1.0.1.SNAPSHOT": {
                 "i20170428": "LSsuw"
+            },
+            "1.0.1": {
+                "i20170517": "LSsuw"
             }
         },
         "com.haleconnect.api.haleconnect-project-api": {
-            "0.1.0": {
-                "i20170517": "Ausug"
-            },
             "0.1.0.SNAPSHOT": {
                 "i20170428": "Ausug"
+            },
+            "0.1.0": {
+                "i20170517": "Ausug"
             }
         },
         "com.haleconnect.api.haleconnect-projectstore-api": {
@@ -291,14 +294,14 @@
             }
         },
         "com.haleconnect.api.haleconnect-user-api": {
-            "1.0.2": {
-                "i20170517": "AWqsvA"
-            },
             "1.0.2.SNAPSHOT": {
                 "i20170428": "AWqsvA"
             },
             "1.0.0": {
                 "i20170316": "A2sug"
+            },
+            "1.0.2": {
+                "i20170517": "AWqsvA"
             }
         },
         "com.healthmarketscience.jackcess": {
@@ -550,6 +553,11 @@
             "1.0.0": {
                 "i20150402": "OM9h3w",
                 "i20150413": "G9ho5g"
+            }
+        },
+        "de.interactive_instruments.xtraserver-config-util": {
+            "1.0.0": {
+                "i20180411": "84btpw"
             }
         },
         "de.odysseus.staxon": {
@@ -1999,15 +2007,16 @@
                 "i20151027": "rd15Ww",
                 "i20151101": "lRB5dw"
             },
-            "3.4.0": {
-                "i20180329": "ucETPg"
-            },
             "3.3.0": {
                 "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
                 "i20170418": "ejoakg",
                 "i20170517": "eoMFvA",
                 "i20170529": "XTIF2g"
+            },
+            "3.4.0": {
+                "i20180411": "a1BdCg",
+                "i20180329": "ucETPg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -2023,6 +2032,7 @@
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
+                "i20180411": "ZDfkgA",
                 "i20170428": "HlPTkw",
                 "i20150511": "ZDfkgA",
                 "i20150402": "AQTTfQ",
@@ -2036,11 +2046,11 @@
                 "i20150402": "sCOcrw",
                 "i20151027": "UcueWA"
             },
-            "3.4.0": {
-                "i20180329": "UcueWA"
-            },
             "3.3.0": {
                 "i20170316": "UcueWA"
+            },
+            "3.4.0": {
+                "i20180329": "UcueWA"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
@@ -2077,6 +2087,7 @@
             "12.2.0": {
                 "i20160712": "Jb6D6Q",
                 "i20170105": "JmD6w",
+                "i20180411": "JUiD6g",
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q",
@@ -2091,6 +2102,7 @@
         },
         "platform.shared.orientdb.core": {
             "1.5.1": {
+                "i20180411": "Uh0pWQ",
                 "i20150402": "UOspUw",
                 "i20150413": "UZcpVw",
                 "i20151027": "QIVHZA"
@@ -2100,6 +2112,7 @@
             "1.5.1": {
                 "i20150616": "tblxBA",
                 "i20170105": "29BxEQ",
+                "i20180411": "291xEA",
                 "i201504131603": "nF1w8g",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
@@ -2118,12 +2131,12 @@
                 "i20150402": "444b4A",
                 "i20150413": "468b4g"
             },
-            "3.4.0": {
-                "i20180329": "5dwb9A"
-            },
             "3.3.0": {
                 "i20170316": "468b4g",
                 "i20170529": "5dwb9A"
+            },
+            "3.4.0": {
+                "i20180329": "5dwb9A"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -2135,6 +2148,7 @@
         },
         "platform.shared.spring.core": {
             "3.1.1.RELEASE": {
+                "i20180411": "ma43mg",
                 "i20150402": "vN0YYQ",
                 "i20150413": "vP4YYw"
             }
@@ -2142,6 +2156,7 @@
         "platform.shared.spring.modules": {
             "3.1.1.RELEASE": {
                 "i20170105": "FI7HIw",
+                "i20180411": "FJ3HJA",
                 "i20150402": "9G3HBw",
                 "i20150413": "EPHIQ"
             }
@@ -2149,6 +2164,7 @@
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
                 "i20170105": "eGDFmQ",
+                "i20180411": "eGFmg",
                 "i20150402": "u4PFVw",
                 "i20150413": "YeFkQ",
                 "i20151027": "d3Flw"
@@ -2159,6 +2175,11 @@
                 "i20170105": "GtV1qw",
                 "i20150402": "C4x1lQ",
                 "i20150413": "GqB1qQ"
+            }
+        },
+        "platform.shared.xs": {
+            "1.0.0": {
+                "i20180411": "4x08YQ"
             }
         }
     },
@@ -2175,11 +2196,11 @@
                 "i20150402": "cGe5KA",
                 "i20150413": "cbvALw"
             },
-            "3.4.0": {
-                "i20180329": "eUPAMw"
-            },
             "3.3.0": {
                 "i20170316": "d2HAMg"
+            },
+            "3.4.0": {
+                "i20180329": "eUPAMw"
             }
         },
         "javax.annotation.extensions": {
@@ -2196,6 +2217,7 @@
         },
         "org.geotools": {
             "12.2.0.combined": {
+                "i20180411": "gsXmAA",
                 "i20150402": "q98trQ",
                 "i20150413": "ecTmAA",
                 "i20151027": "5WXmAA"
