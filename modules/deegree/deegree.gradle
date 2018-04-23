@@ -1,0 +1,39 @@
+import static org.standardout.gradle.plugin.platform.internal.util.VersionUtil.toOsgiVersion
+
+def deegree(deegreeVersion) {
+  repositories {
+    // deegree repository
+    maven {
+      url 'http://repo.deegree.org/content/groups/public'
+    }
+    // for builds not available in public repo
+    maven {
+      url 'https://artifactory.wetransform.to/artifactory/deegree-release-local'
+    }
+    maven {
+      url 'https://artifactory.wetransform.to/artifactory/deegree-snapshot-local'
+    }
+  }
+
+  // def osgiVersion = toOsgiVersion(deegreeVersion)
+
+  platform {
+    feature id: 'eu.esdihumboldt.hale.platform.deegree', name: 'Deegree SQL FeatureStore', version: deegreeVersion, {
+      plugin "org.deegree:deegree-featurestore-sql:${deegreeVersion}"
+      //FIXME anything that we can exclude?
+    }
+
+    // force package export versions
+    bnd group: 'org.apache.ws.commons.axiom', {
+      instruction 'Export-Package', "*;version=$version"
+    }
+    bnd group: 'java3d', name: 'vecmath', {
+      instruction 'Export-Package', "!javax,*;version=$version"
+    }
+
+    // make postgis driver dependency optional and remove version constraint (so version 2 can be used)
+    bnd group: 'org.deegree', {
+      optionalImport 'org.postgis.*'
+    }
+  }
+}
