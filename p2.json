@@ -1,5 +1,6 @@
 {
 	"mars-eclipse": "http://download.eclipse.org/eclipse/updates/4.5",
 	"mars-releases": "http://download.eclipse.org/releases/mars/",
+	"kepler-releases": "http://download.eclipse.org/releases/kepler/",
 	"jetty-8": "http://download.eclipse.org/jetty/updates/jetty-bundles-8.x/8.1.18.v20150929"
 }
