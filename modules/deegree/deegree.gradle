@@ -35,5 +35,14 @@ def deegree(deegreeVersion) {
     bnd group: 'org.deegree', {
       optionalImport 'org.postgis.*'
     }
+    // make OSGi JDBC service import optional
+    bnd group: 'com.h2database', name: 'h2', {
+      optionalImport 'org.osgi.service.jdbc'
+    }
+
+    bnd group: 'xml-apis', name: 'xml-apis', {
+      // not sure why this is introduced, but Eclipse chokes on it
+      instruction '-removeheaders', 'Require-Capability'
+    }
   }
 }
