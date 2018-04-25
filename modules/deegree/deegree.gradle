@@ -15,12 +15,37 @@ def deegree(deegreeVersion) {
     }
   }
 
-  // def osgiVersion = toOsgiVersion(deegreeVersion)
+  def osgiVersion = toOsgiVersion(deegreeVersion) as String
 
   platform {
     feature id: 'eu.esdihumboldt.hale.platform.deegree', name: 'Deegree SQL FeatureStore', version: deegreeVersion, {
       plugin "org.deegree:deegree-featurestore-sql:${deegreeVersion}"
       //FIXME anything that we can exclude?
+      
+      // Merged deegree bundle
+      // 
+      // Reason for merge:
+      // - some mechanisms using classloaders in deegree seem not to work in OSGi
+      // - some packages seem to be present in multiple JARs (e.g. org.deegree.commons.utils.io)
+      // Possible disadvantages:
+      // - no fine grained dependency management for dependencies on deegree
+      // - META-INF/deegree/log4j/debug files are present in multiple JARs (possibly also other duplicates?)
+      merge(failOnDuplicate: false) {
+        match {
+          it.group != null && it.group.startsWith('org.deegree')
+        }
+        
+        bnd {
+          symbolicName = 'org.deegree'
+          bundleName = 'Deegree'
+          version = osgiVersion
+          instruction 'Export-Package', "org.deegree.*;version=$osgiVersion"
+          instruction 'Private-Package', '*'
+
+          // make postgis driver dependency optional and remove version constraint (so version 2 can be used)
+          optionalImport 'org.postgis.*'
+        }
+      }
     }
 
     // force package export versions
