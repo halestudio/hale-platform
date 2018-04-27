@@ -437,6 +437,11 @@
                 "i20150413": "e4vesg"
             }
         },
+        "com.sun.xml.fastinfoset.FastInfoset": {
+            "1.2.12": {
+                "i20180427": "5GazVw"
+            }
+        },
         "com.tinkerpop.blueprints.core": {
             "2.5.0.orientDB151": {
                 "i20180424": "zMLcA",
@@ -636,12 +641,12 @@
             }
         },
         "groovy": {
-            "2.4.14": {
-                "i20180424": "lYfCag"
-            },
             "2.3.7": {
                 "i20150402": "fjwdVg",
                 "i20150413": "oRckXQ"
+            },
+            "2.4.14": {
+                "i20180424": "lYfCag"
             }
         },
         "groovy-all": {
@@ -666,6 +671,26 @@
                 "i20150402": "2hOtQA",
                 "i20150413": "oJy0Rw",
                 "i20151027": "oWS0Rw"
+            }
+        },
+        "jai.jai-codec": {
+            "1.1.3": {
+                "i20180427": "hK6zJg"
+            }
+        },
+        "jai.jai-core": {
+            "1.1.3": {
+                "i20180427": "hK6zJg"
+            }
+        },
+        "jai.jai-imageio": {
+            "1.1.3": {
+                "i20180427": "hK6zJg"
+            }
+        },
+        "jai.jai-mlibwrapper": {
+            "1.1.3": {
+                "i20180427": "hK6zJg"
             }
         },
         "java3d.vecmath": {
@@ -731,6 +756,11 @@
                 "i20150402": "fMisIA"
             }
         },
+        "javax.vecmath": {
+            "1.5.2": {
+                "i20180427": "emitJA"
+            }
+        },
         "javax.ws.rs-api": {
             "2.0.1": {
                 "i20150413": "ITdvZA"
@@ -743,7 +773,8 @@
         },
         "jaxen": {
             "1.1.6": {
-                "i20150402": "WWQA3Q"
+                "i20150402": "WWQA3Q",
+                "i20180427": "eugH5A"
             }
         },
         "jcifs": {
@@ -752,6 +783,9 @@
             }
         },
         "jcl.over.slf4j": {
+            "1.7.13": {
+                "i20180427": "UwXfaw"
+            },
             "1.7.10": {
                 "i20150402": "v87YXg",
                 "i20150413": "UpbfZQ"
@@ -774,6 +808,11 @@
             "2.3.0": {
                 "i20150402": "MjvWsg",
                 "i20150413": "b1TduQ"
+            }
+        },
+        "jogl": {
+            "1.1.2": {
+                "i20180427": "gvGzJQ"
             }
         },
         "jul.to.slf4j": {
@@ -915,6 +954,9 @@
             "1.6.0": {
                 "i20150402": "TowmDw",
                 "i20150413": "cNEtFg"
+            },
+            "1.7.0": {
+                "i20180427": "fYYtHA"
             }
         },
         "org.apache.commons.collections": {
@@ -965,6 +1007,11 @@
                 "i20150413": "IbRosw"
             }
         },
+        "org.apache.commons.math": {
+            "2.2.0": {
+                "i20180427": "bHPM4g"
+            }
+        },
         "org.apache.commons.net": {
             "2.0.0": {
                 "i20150402": "KfYJag"
@@ -974,6 +1021,19 @@
             "1.5.4": {
                 "i20150402": "L7PxQ",
                 "i20150413": "mN0G2w"
+            },
+            "1.6.0": {
+                "i20180427": "fnLo5A"
+            }
+        },
+        "org.apache.geronimo.specs.geronimo-activation_1.1_spec": {
+            "1.1.0": {
+                "i20180427": "R08SVA"
+            }
+        },
+        "org.apache.geronimo.specs.geronimo-stax-api_1.0_spec": {
+            "1.0.1": {
+                "i20180427": "sfg9Lw"
             }
         },
         "org.apache.httpcomponents.fluent-hc": {
@@ -1003,6 +1063,11 @@
             "2.3.0.final_20130110142753": {
                 "i20150402": "Ild2Fg",
                 "i20150413": "hh9HQ"
+            }
+        },
+        "org.apache.james.apache-mime4j-core": {
+            "0.7.2": {
+                "i20180427": "shJ6MA"
             }
         },
         "org.apache.poi": {
@@ -1072,6 +1137,16 @@
                 "i20150413": "C0KF2A"
             }
         },
+        "org.apache.ws.commons.axiom.axiom-api": {
+            "1.2.15": {
+                "i20180427": "fb1NbA"
+            }
+        },
+        "org.apache.ws.commons.axiom.axiom-impl": {
+            "1.2.15": {
+                "i20180427": "Bg3C5Q"
+            }
+        },
         "org.apache.ws.commons.schema.XmlSchema": {
             "1.4.7": {
                 "i20150402": "j8yI6w",
@@ -1139,6 +1214,86 @@
             "1.3.3": {
                 "i20150402": "W2YQWg",
                 "i20150413": "HtYXYQ"
+            }
+        },
+        "org.deegree.core-annotations": {
+            "3.4.0.RC7": {
+                "i20180427": "Ps7PUQ"
+            }
+        },
+        "org.deegree.core-base": {
+            "3.4.0.RC7": {
+                "i20180427": "Hc6lbw"
+            }
+        },
+        "org.deegree.core-commons": {
+            "3.4.0.RC7": {
+                "i20180427": "Y0j6g"
+            }
+        },
+        "org.deegree.core-coverage": {
+            "3.4.0.RC7": {
+                "i20180427": "UMlXsA"
+            }
+        },
+        "org.deegree.core-cs": {
+            "3.4.0.RC7": {
+                "i20180427": "XOzmAA"
+            }
+        },
+        "org.deegree.core-db": {
+            "3.4.0.RC7": {
+                "i20180427": "qSJjw"
+            }
+        },
+        "org.deegree.core-geometry": {
+            "3.4.0.RC7": {
+                "i20180427": "5An1g"
+            }
+        },
+        "org.deegree.core-workspace": {
+            "3.4.0.RC7": {
+                "i20180427": "ZvNeHw"
+            }
+        },
+        "org.deegree.featurestore-commons": {
+            "3.4.0.RC7": {
+                "i20180427": "4AkD2A"
+            }
+        },
+        "org.deegree.featurestore-sql": {
+            "3.4.0.RC7": {
+                "i20180427": "r7qWAw"
+            }
+        },
+        "org.deegree.junidecode": {
+            "0.2.0": {
+                "i20180427": "7VnAkg"
+            }
+        },
+        "org.deegree.ogcschemas": {
+            "20120804.0.0": {
+                "i20180427": "zcDB8Q"
+            }
+        },
+        "org.deegree.protocol-commons": {
+            "3.4.0.RC7": {
+                "i20180427": "MRNlaQ"
+            }
+        },
+        "org.deegree.protocol-wfs": {
+            "3.4.0.RC7": {
+                "i20180427": "S7e3Ng"
+            }
+        },
+        "org.deegree.sqldialect-commons": {
+            "3.4.0.RC7": {
+                "i20180427": "MRNlaQ"
+            }
+        },
+        "org.deegree.sqldialect-postgis": {
+            "3.4.0.RC7": {
+                "i20180427": "wwD1NQ"
             }
         },
         "org.eclipse.emf.common": {
@@ -1491,6 +1646,11 @@
         "org.glassfish.jersey.media.jersey-media-json-jackson": {
             "2.13.0": {
                 "i20150413": "J4TOxA"
+            }
+        },
+        "org.h2": {
+            "1.3.171": {
+                "i20180427": "knukjA"
             }
         },
         "org.hamcrest.core": {
@@ -1867,6 +2027,11 @@
                 "i20150413": "efvBjA"
             }
         },
+        "postgresql": {
+            "9.1.0.901-1_jdbc4": {
+                "i20180427": "jXzKw"
+            }
+        },
         "ru.yandex.qatools.allure.java-adaptor-api": {
             "1.5.0": {
                 "i20170105": "YwG3Ow"
@@ -1904,6 +2069,9 @@
             "1.7.12": {
                 "i20170105": "84bVBg"
             },
+            "1.7.13": {
+                "i20180427": "TfVCQ"
+            },
             "1.7.10": {
                 "i20150402": "PI7NQ",
                 "i20150413": "6CTVAA"
@@ -1925,6 +2093,11 @@
             "1.0.1": {
                 "i20150402": "dhSsHA",
                 "i20150413": "f3WzIw"
+            }
+        },
+        "stax2-api": {
+            "3.1.1": {
+                "i20180427": "gy64Zw"
             }
         },
         "wicket-bootstrap-core": {
@@ -1951,13 +2124,34 @@
                 "i20150413": "KsHZg"
             }
         },
+        "woodstox-core-lgpl": {
+            "4.2.0": {
+                "i20180427": "hhd0A"
+            }
+        },
+        "xalan": {
+            "2.7.2": {
+                "i20180427": "oxmww"
+            }
+        },
+        "xalan.serializer": {
+            "2.7.2": {
+                "i20180427": "jyyzLA"
+            }
+        },
         "xerces.xercesImpl": {
             "2.9.1": {
                 "i20150402": "hs6sJg",
                 "i20150413": "kO2zLQ"
+            },
+            "2.11.0": {
+                "i20180427": "4p7BwQ"
             }
         },
         "xml-apis": {
+            "1.4.1": {
+                "i20180427": "HhJbQ"
+            },
             "1.0.0.b2": {
                 "i20150402": "tCq1OA",
                 "i20150413": "bTa8Pw"
@@ -1994,6 +2188,7 @@
                 "i20170105": "UOLFZA",
                 "i201504131603": "kXvQvg",
                 "i20150413": "u2TPKw",
+                "i20180427": "qWLFgQ",
                 "i201504131443": "tGXP9g",
                 "i201504131740": "lFHEbQ",
                 "i20151027": "5dHEfQ",
@@ -2044,6 +2239,7 @@
             "3.4.0": {
                 "i20180411": "a1BdCg",
                 "i20180424": "OAyIaA",
+                "i20180427": "XVSCsA",
                 "i20180329": "ucETPg"
             }
         },
@@ -2051,6 +2247,11 @@
             "8.0.1": {
                 "i20150402": "Qa3Bg",
                 "i20150413": "UjO3FA"
+            }
+        },
+        "eu.esdihumboldt.hale.platform.deegree": {
+            "3.4.0.RC7": {
+                "i20180427": "xso6zQ"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
@@ -2095,6 +2296,7 @@
                 "i20150402": "Vh5Yg",
                 "i20150413": "Lje5rg",
                 "i20170316": "Enqq1w",
+                "i20180427": "VWCqPQ",
                 "i20180329": "JtGq3Q",
                 "i201504131740": "5fOqyA",
                 "i20151027": "OOqzg"
@@ -2121,16 +2323,17 @@
                 "i20150610": "FJ6D5A",
                 "i20150402": "Rd3QA",
                 "i20150413": "F0KD5Q",
+                "i20180427": "h7CDRw",
                 "i20151027": "KSqD7A"
             }
         },
         "platform.shared.groovy-all": {
-            "2.4.14": {
-                "i20180424": "rEYXTQ"
-            },
             "2.3.7": {
                 "i20150402": "dEPMg",
                 "i20150413": "eAIPNA"
+            },
+            "2.4.14": {
+                "i20180424": "rEYXTQ"
             }
         },
         "platform.shared.orientdb.core": {
@@ -2150,6 +2353,7 @@
                 "i20180424": "s9Fyug",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
+                "i20180427": "1otyzg",
                 "i20151027": "0D1xDA"
             }
         },
@@ -2158,6 +2362,7 @@
                 "i20180424": "fWMYw",
                 "i20150402": "do8Ug",
                 "i20150413": "eyEXg",
+                "i20180427": "yb0uA",
                 "i20151027": "e8YA"
             }
         },
@@ -2178,14 +2383,16 @@
             "1.7.10": {
                 "i20170105": "7MQ9oQ",
                 "i20150402": "5U9kw",
-                "i20150413": "7Fc9nw"
+                "i20150413": "7Fc9nw",
+                "i20180427": "7mY9qg"
             }
         },
         "platform.shared.spring.core": {
             "3.1.1.RELEASE": {
                 "i20180411": "ma43mg",
                 "i20150402": "vN0YYQ",
-                "i20150413": "vP4YYw"
+                "i20150413": "vP4YYw",
+                "i20180427": "oKQ3rg"
             }
         },
         "platform.shared.spring.modules": {
@@ -2193,7 +2400,8 @@
                 "i20170105": "FI7HIw",
                 "i20180411": "FJ3HJA",
                 "i20150402": "9G3HBw",
-                "i20150413": "EPHIQ"
+                "i20150413": "EPHIQ",
+                "i20180427": "L83HPw"
             }
         },
         "platform.shared.spring.security": {
@@ -2203,6 +2411,7 @@
                 "i20180424": "i2zFoA",
                 "i20150402": "u4PFVw",
                 "i20150413": "YeFkQ",
+                "i20180427": "xSvMxg",
                 "i20151027": "d3Flw"
             }
         },
@@ -2210,7 +2419,8 @@
             "6.10.0": {
                 "i20170105": "GtV1qw",
                 "i20150402": "C4x1lQ",
-                "i20150413": "GqB1qQ"
+                "i20150413": "GqB1qQ",
+                "i20180427": "G3t1tA"
             }
         },
         "platform.shared.xs": {
@@ -2250,6 +2460,11 @@
                 "i20150402": "Qw6jQ",
                 "i20150413": "2ZhBlA",
                 "i20151027": "DVVBlA"
+            }
+        },
+        "org.deegree": {
+            "3.4.0.RC7": {
+                "i20180427": "MRD0gw"
             }
         },
         "org.geotools": {
