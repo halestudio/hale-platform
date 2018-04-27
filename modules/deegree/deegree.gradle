@@ -1,0 +1,73 @@
+import static org.standardout.gradle.plugin.platform.internal.util.VersionUtil.toOsgiVersion
+
+def deegree(deegreeVersion) {
+  repositories {
+    // deegree repository
+    maven {
+      url 'http://repo.deegree.org/content/groups/public'
+    }
+    // for builds not available in public repo
+    maven {
+      url 'https://artifactory.wetransform.to/artifactory/deegree-release-local'
+    }
+    maven {
+      url 'https://artifactory.wetransform.to/artifactory/deegree-snapshot-local'
+    }
+  }
+
+  def osgiVersion = toOsgiVersion(deegreeVersion) as String
+
+  platform {
+    feature id: 'eu.esdihumboldt.hale.platform.deegree', name: 'Deegree SQL FeatureStore', version: deegreeVersion, {
+      plugin "org.deegree:deegree-featurestore-sql:${deegreeVersion}"
+      //FIXME anything that we can exclude?
+      
+      // Merged deegree bundle
+      // 
+      // Reason for merge:
+      // - some mechanisms using classloaders in deegree seem not to work in OSGi
+      // - some packages seem to be present in multiple JARs (e.g. org.deegree.commons.utils.io)
+      // Possible disadvantages:
+      // - no fine grained dependency management for dependencies on deegree
+      // - META-INF/deegree/log4j/debug files are present in multiple JARs (possibly also other duplicates?)
+      merge(failOnDuplicate: false) {
+        match {
+          it.group != null && it.group.startsWith('org.deegree')
+        }
+        
+        bnd {
+          symbolicName = 'org.deegree'
+          bundleName = 'Deegree'
+          version = osgiVersion
+          instruction 'Export-Package', "org.deegree.*;version=$osgiVersion"
+          instruction 'Private-Package', '*'
+
+          // make postgis driver dependency optional and remove version constraint (so version 2 can be used)
+          optionalImport 'org.postgis.*'
+        }
+      }
+    }
+
+    // force package export versions
+    bnd group: 'org.apache.ws.commons.axiom', {
+      instruction 'Export-Package', "*;version=$version"
+    }
+    bnd group: 'java3d', name: 'vecmath', {
+      instruction 'Export-Package', "!javax,*;version=$version"
+    }
+
+    // make postgis driver dependency optional and remove version constraint (so version 2 can be used)
+    bnd group: 'org.deegree', {
+      optionalImport 'org.postgis.*'
+    }
+    // make OSGi JDBC service import optional
+    bnd group: 'com.h2database', name: 'h2', {
+      optionalImport 'org.osgi.service.jdbc'
+    }
+
+    bnd group: 'xml-apis', name: 'xml-apis', {
+      // not sure why this is introduced, but Eclipse chokes on it
+      instruction '-removeheaders', 'Require-Capability'
+    }
+  }
+}
