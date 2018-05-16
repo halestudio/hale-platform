@@ -1,8 +1,5 @@
 buildscript {
 	repositories {
-		maven { // HALE artifactory
-			url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
-		}
 		maven { // wetransform artifactory
 			url 'https://artifactory.wetransform.to/artifactory/libs-release/'
 		}
@@ -32,9 +29,6 @@ apply plugin: 'org.standardout.versioneye'
 defaultTasks 'clean', 'updateSiteZip'
 
 repositories {
-	maven { // HALE artifactory
-		url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
-	}
 	maven { // wetransform artifactory
 		url 'https://artifactory.wetransform.to/artifactory/libs-release/'
 	}
@@ -522,8 +516,8 @@ subprojects { subproject ->
 	apply plugin: 'osgi'
 
 	repositories {
-	  maven { // HALE artifactory
-		url 'http://artifactory.esdi-humboldt.eu/artifactory/libs-release/'
+	  maven { // wetransform artifactory
+		url 'https://artifactory.wetransform.to/artifactory/libs-release/'
 	  }
 	}
 
