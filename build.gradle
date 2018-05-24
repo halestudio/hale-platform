@@ -451,7 +451,7 @@ platform {
 			bundleName = 'javax.annotation Extensions'
 			version = '1.2' // version should be equal to javax.annotation-api module version
 			instruction 'Fragment-Host', 'system.bundle;extension:=framework'
-			instruction 'Export-Package', "javax.annotation.*;version=$version"
+			instruction 'Export-Package', "javax.annotation.*;version=$version;-noimport:=true"
 			instruction 'Import-Package', '*'
 		}
 	}
