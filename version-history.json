@@ -1018,12 +1018,12 @@
             }
         },
         "org.apache.commons.pool": {
+            "1.6.0": {
+                "i20180427": "fnLo5A"
+            },
             "1.5.4": {
                 "i20150402": "L7PxQ",
                 "i20150413": "mN0G2w"
-            },
-            "1.6.0": {
-                "i20180427": "fnLo5A"
             }
         },
         "org.apache.geronimo.specs.geronimo-activation_1.1_spec": {
@@ -2066,11 +2066,11 @@
             }
         },
         "slf4j.api": {
-            "1.7.12": {
-                "i20170105": "84bVBg"
-            },
             "1.7.13": {
                 "i20180427": "TfVCQ"
+            },
+            "1.7.12": {
+                "i20170105": "84bVBg"
             },
             "1.7.10": {
                 "i20150402": "PI7NQ",
@@ -2136,7 +2136,8 @@
         },
         "xalan.serializer": {
             "2.7.2": {
-                "i20180427": "jyyzLA"
+                "i20180427": "jyyzLA",
+                "i20180719": "ia7Blw"
             }
         },
         "xerces.xercesImpl": {
@@ -2240,7 +2241,8 @@
                 "i20180411": "a1BdCg",
                 "i20180424": "OAyIaA",
                 "i20180427": "XVSCsA",
-                "i20180329": "ucETPg"
+                "i20180329": "ucETPg",
+                "i20180719": "bmSMvw"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -2251,7 +2253,8 @@
         },
         "eu.esdihumboldt.hale.platform.deegree": {
             "3.4.0.RC7": {
-                "i20180427": "xso6zQ"
+                "i20180427": "xso6zQ",
+                "i20180719": "yGM60Q"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
@@ -2451,7 +2454,8 @@
         },
         "javax.annotation.extensions": {
             "1.2.0": {
-                "i20150413": "IcTEmA"
+                "i20150413": "IcTEmA",
+                "i20180719": "qCHKrw"
             }
         },
         "org.apache.poi": {
