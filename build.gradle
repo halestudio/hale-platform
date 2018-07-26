@@ -491,6 +491,10 @@ platform {
 		instruction 'Export-Package', "ru.yandex.qatools.allure.aspects;version=$version;aspects=\"AllureAttachAspects,AllureStepsAspects,AllureParametersAspects\",*;version=$version"
 	}
 	bundle 'org.aspectj:aspectjweaver:1.8.3'
+
+        bnd group: 'net.sf.ezmorph', name: 'ezmorph', {
+                instruction '-removeheaders', 'Require-Capability'
+        }
 	
 }
 
