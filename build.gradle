@@ -499,6 +499,9 @@ platform {
 
 	// YAML library
 	bundle 'org.yaml:snakeyaml:1.21'
+
+	// Pebble template engine
+	bundle 'io.pebbletemplates:pebble:3.0.1'
 }
 
 dependencies {
