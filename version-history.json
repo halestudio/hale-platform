@@ -84,6 +84,11 @@
                 "i20150413": "XyjZLA"
             }
         },
+        "com.coverity.security.coverity-escapers": {
+            "1.1.1": {
+                "i20180727": "38jATQ"
+            }
+        },
         "com.fasterxml.jackson.core.jackson-annotations": {
             "2.3.2": {
                 "i20150413": "CCkg"
@@ -149,6 +154,11 @@
             },
             "2.2.3": {
                 "i20150402": "YMHc7w"
+            }
+        },
+        "com.github.ben-manes.caffeine": {
+            "2.6.2": {
+                "i20180727": "hhe2MQ"
             }
         },
         "com.github.jnr.constants": {
@@ -239,6 +249,9 @@
             "17.0.0": {
                 "i20150402": "L862bg",
                 "i20150413": "wRuuWg"
+            },
+            "18.0.0": {
+                "i20180727": "x0WhDA"
             }
         },
         "com.google.inject": {
@@ -328,7 +341,8 @@
         "com.jhlabs.filters": {
             "2.0.235": {
                 "i20150402": "O9Cshg",
-                "i20150413": "TQzjQ"
+                "i20150413": "TQzjQ",
+                "i20180727": "xfXAtg"
             }
         },
         "com.orientechnologies.orient-commons": {
@@ -434,10 +448,14 @@
         "com.sun.xml.bind.jaxb-core": {
             "2.2.7": {
                 "i20150402": "vJLXqw",
-                "i20150413": "e4vesg"
+                "i20150413": "e4vesg",
+                "i20180727": "GtHsug"
             }
         },
         "com.sun.xml.fastinfoset.FastInfoset": {
+            "1.2.13": {
+                "i20180727": "RaatA"
+            },
             "1.2.12": {
                 "i20180427": "5GazVw"
             }
@@ -566,7 +584,8 @@
         },
         "de.interactive_instruments.xtraserver-config-util": {
             "1.0.0": {
-                "i20180411": "84btpw"
+                "i20180411": "84btpw",
+                "i20180727": "OSbNhQ"
             }
         },
         "de.odysseus.staxon": {
@@ -655,6 +674,11 @@
                 "i20180424": "0xm1QQ"
             }
         },
+        "io.pebbletemplates.pebble": {
+            "3.0.1": {
+                "i20180727": "acE6hw"
+            }
+        },
         "io.swagger.annotations": {
             "1.5.8": {
                 "i20170316": "OdPJmQ"
@@ -704,6 +728,9 @@
             "3.12.1.GA": {
                 "i20150402": "2NsUQ",
                 "i20150413": "5izWA"
+            },
+            "3.18.2.GA": {
+                "i20180727": "tSX8wQ"
             },
             "3.18.1.GA": {
                 "i20150413": "twTvmA",
@@ -845,10 +872,18 @@
                 "i20150413": "fbizIg"
             }
         },
+        "net.postgis.jdbc": {
+            "2.2.1": {
+                "i20180727": "e9kqKg"
+            }
+        },
         "net.sf.ehcache.core": {
             "2.6.6": {
                 "i20150402": "ymTNHw",
                 "i20150413": "y8rUJg"
+            },
+            "2.6.11": {
+                "i20180727": "NXPUUg"
             }
         },
         "net.sf.ezmorph": {
@@ -1158,7 +1193,8 @@
         "org.apache.xml.commons-resolver": {
             "1.2.0": {
                 "i20150402": "d8KsHQ",
-                "i20150413": "gTazJA"
+                "i20150413": "gTazJA",
+                "i20180727": "38rATQ"
             }
         },
         "org.apache.xmlbeans": {
@@ -1221,51 +1257,81 @@
         "org.deegree.core-annotations": {
             "3.4.0.RC7": {
                 "i20180427": "Ps7PUQ"
+            },
+            "3.4.2": {
+                "i20180727": "T2DPUw"
             }
         },
         "org.deegree.core-base": {
             "3.4.0.RC7": {
                 "i20180427": "Hc6lbw"
+            },
+            "3.4.2": {
+                "i20180727": "Px6lcQ"
             }
         },
         "org.deegree.core-commons": {
             "3.4.0.RC7": {
                 "i20180427": "Y0j6g"
+            },
+            "3.4.2": {
+                "i20180727": "tTMj7A"
             }
         },
         "org.deegree.core-coverage": {
             "3.4.0.RC7": {
                 "i20180427": "UMlXsA"
+            },
+            "3.4.2": {
+                "i20180727": "p9VXsg"
             }
         },
         "org.deegree.core-cs": {
             "3.4.0.RC7": {
                 "i20180427": "XOzmAA"
+            },
+            "3.4.2": {
+                "i20180727": "ea7mAg"
             }
         },
         "org.deegree.core-db": {
             "3.4.0.RC7": {
                 "i20180427": "qSJjw"
+            },
+            "3.4.2": {
+                "i20180727": "tUmJkQ"
             }
         },
         "org.deegree.core-geometry": {
             "3.4.0.RC7": {
                 "i20180427": "5An1g"
+            },
+            "3.4.2": {
+                "i20180727": "rTr2Q"
             }
         },
         "org.deegree.core-workspace": {
             "3.4.0.RC7": {
                 "i20180427": "ZvNeHw"
+            },
+            "3.4.2": {
+                "i20180727": "bmVeIQ"
             }
         },
         "org.deegree.featurestore-commons": {
             "3.4.0.RC7": {
                 "i20180427": "4AkD2A"
+            },
+            "3.4.2": {
+                "i20180727": "Ae8D2g"
             }
         },
         "org.deegree.featurestore-sql": {
             "3.4.0.RC7": {
                 "i20180427": "r7qWAw"
+            },
+            "3.4.2": {
+                "i20180727": "uGqWBQ"
             }
         },
         "org.deegree.junidecode": {
@@ -1281,21 +1347,33 @@
         "org.deegree.protocol-commons": {
             "3.4.0.RC7": {
                 "i20180427": "MRNlaQ"
+            },
+            "3.4.2": {
+                "i20180727": "RNllaw"
             }
         },
         "org.deegree.protocol-wfs": {
             "3.4.0.RC7": {
                 "i20180427": "S7e3Ng"
+            },
+            "3.4.2": {
+                "i20180727": "WwG3OA"
             }
         },
         "org.deegree.sqldialect-commons": {
             "3.4.0.RC7": {
                 "i20180427": "MRNlaQ"
+            },
+            "3.4.2": {
+                "i20180727": "RNllaw"
             }
         },
         "org.deegree.sqldialect-postgis": {
             "3.4.0.RC7": {
                 "i20180427": "wwD1NQ"
+            },
+            "3.4.2": {
+                "i20180727": "mmv1OA"
             }
         },
         "org.eclipse.emf.common": {
@@ -1846,6 +1924,11 @@
                 "i20170529": "sXARHw"
             }
         },
+        "org.postgresql.jdbc42": {
+            "42.2.4": {
+                "i20180727": "oQQoeg"
+            }
+        },
         "org.quartz-scheduler.quartz": {
             "1.7.3": {
                 "i20150402": "nwPOXw",
@@ -1853,6 +1936,9 @@
             }
         },
         "org.reflections": {
+            "0.9.10": {
+                "i20180727": "Ffy2JQ"
+            },
             "0.9.8": {
                 "i20150402": "fEburg",
                 "i20150413": "SjP1tQ",
@@ -2017,6 +2103,11 @@
                 "i20150413": "5jqzWA"
             }
         },
+        "org.yaml.snakeyaml": {
+            "1.21.0": {
+                "i20180727": "hSM4A"
+            }
+        },
         "oro": {
             "2.0.8": {
                 "i20150402": "g2isJA",
@@ -2077,6 +2168,9 @@
             "1.7.10": {
                 "i20150402": "PI7NQ",
                 "i20150413": "6CTVAA"
+            },
+            "1.7.25": {
+                "i20180727": "5AbfsA"
             }
         },
         "slf4j.ext": {
@@ -2163,7 +2257,8 @@
         "xml-resolver": {
             "1.2.0": {
                 "i20150402": "d8KsHQ",
-                "i20150413": "gTazJA"
+                "i20150413": "gTazJA",
+                "i20180727": "38rATQ"
             }
         },
         "xmlpull": {
@@ -2196,6 +2291,7 @@
                 "i201504131443": "tGXP9g",
                 "i201504131740": "lFHEbQ",
                 "i20151027": "5dHEfQ",
+                "i20180727": "YznE1w",
                 "i20160531": "UK3FYg"
             }
         },
@@ -2246,6 +2342,7 @@
                 "i20180427": "XVSCsA",
                 "i20180329": "ucETPg",
                 "i20180726": "KqCNFQ",
+                "i20180727": "KMUjgQ",
                 "i20180719": "bmSMvw"
             }
         },
@@ -2259,6 +2356,9 @@
             "3.4.0.RC7": {
                 "i20180427": "xso6zQ",
                 "i20180719": "yGM60Q"
+            },
+            "3.4.2": {
+                "i20180727": "T6dAbQ"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
@@ -2307,13 +2407,19 @@
                 "i20180427": "VWCqPQ",
                 "i20180329": "JtGq3Q",
                 "i201504131740": "5fOqyA",
-                "i20151027": "OOqzg"
+                "i20151027": "OOqzg",
+                "i20180727": "KempwA"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
             "2.0.0.201204272302": {
                 "i20150402": "d8y5nQ",
                 "i20150413": "e7u5nw"
+            }
+        },
+        "io.pebbletemplates.pebble": {
+            "3.0.1": {
+                "i20180727": "F00jA"
             }
         },
         "platform.shared.gemini-blueprint": {
@@ -2333,7 +2439,8 @@
                 "i20150413": "F0KD5Q",
                 "i20180427": "h7CDRw",
                 "i20151027": "KSqD7A",
-                "i20180726": "iGODUQ"
+                "i20180726": "iGODUQ",
+                "i20180727": "oBCDYg"
             }
         },
         "platform.shared.groovy-all": {
@@ -2364,7 +2471,8 @@
                 "i20150413": "IiJwKg",
                 "i20180427": "1otyzg",
                 "i20151027": "0D1xDA",
-                "i20180726": "9Zy2A"
+                "i20180726": "9Zy2A",
+                "i20180727": "nihyIg"
             }
         },
         "platform.shared.poi": {
@@ -2386,7 +2494,8 @@
                 "i20170529": "5dwb9A"
             },
             "3.4.0": {
-                "i20180329": "5dwb9A"
+                "i20180329": "5dwb9A",
+                "i20180727": "5pQZCg"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -2394,7 +2503,8 @@
                 "i20170105": "7MQ9oQ",
                 "i20150402": "5U9kw",
                 "i20150413": "7Fc9nw",
-                "i20180427": "7mY9qg"
+                "i20180427": "7mY9qg",
+                "i20180727": "75M9sA"
             }
         },
         "platform.shared.spring.core": {
@@ -2402,7 +2512,8 @@
                 "i20180411": "ma43mg",
                 "i20150402": "vN0YYQ",
                 "i20150413": "vP4YYw",
-                "i20180427": "oKQ3rg"
+                "i20180427": "oKQ3rg",
+                "i20180727": "oSk3tA"
             }
         },
         "platform.shared.spring.modules": {
@@ -2411,7 +2522,8 @@
                 "i20180411": "FJ3HJA",
                 "i20150402": "9G3HBw",
                 "i20150413": "EPHIQ",
-                "i20180427": "L83HPw"
+                "i20180427": "L83HPw",
+                "i20180727": "MZPHSA"
             }
         },
         "platform.shared.spring.security": {
@@ -2422,7 +2534,8 @@
                 "i20150402": "u4PFVw",
                 "i20150413": "YeFkQ",
                 "i20180427": "xSvMxg",
-                "i20151027": "d3Flw"
+                "i20151027": "d3Flw",
+                "i20180727": "yGXMzw"
             }
         },
         "platform.shared.wicket": {
@@ -2430,12 +2543,14 @@
                 "i20170105": "GtV1qw",
                 "i20150402": "C4x1lQ",
                 "i20150413": "GqB1qQ",
-                "i20180427": "G3t1tA"
+                "i20180427": "G3t1tA",
+                "i20180727": "HAB1ug"
             }
         },
         "platform.shared.xs": {
             "1.0.0": {
-                "i20180411": "4x08YQ"
+                "i20180411": "4x08YQ",
+                "i20180727": "7Jk8dw"
             }
         }
     },
@@ -2476,6 +2591,9 @@
         "org.deegree": {
             "3.4.0.RC7": {
                 "i20180427": "MRD0gw"
+            },
+            "3.4.2": {
+                "i20180727": "rurzjA"
             }
         },
         "org.geotools": {
@@ -2488,6 +2606,9 @@
             }
         },
         "org.postgresql.jdbc": {
+            "42.2.4.postgis-2_2_1": {
+                "i20180727": "UWKJtg"
+            },
             "9.4.0.1206-jdbc4_postgis-2_0_1": {
                 "i20170529": "hqxlmA"
             },
