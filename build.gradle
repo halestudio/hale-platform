@@ -500,7 +500,10 @@ platform {
 	bundle 'org.yaml:snakeyaml:1.21'
 
 	// Pebble template engine
-	bundle 'io.pebbletemplates:pebble:3.0.1'
+	def pebbleVersion = '3.0.1'
+	feature(id: 'io.pebbletemplates.pebble', name: 'Pebble template engine', version: pebbleVersion) {
+		plugin "io.pebbletemplates:pebble:${pebbleVersion}"
+	}
 }
 
 dependencies {
