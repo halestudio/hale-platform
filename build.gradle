@@ -492,10 +492,9 @@ platform {
 	}
 	bundle 'org.aspectj:aspectjweaver:1.8.3'
 
-        bnd group: 'net.sf.ezmorph', name: 'ezmorph', {
-                instruction '-removeheaders', 'Require-Capability'
-        }
-	
+	bnd group: 'net.sf.ezmorph', name: 'ezmorph', {
+		instruction '-removeheaders', 'Require-Capability'
+	}
 
 	// YAML library
 	bundle 'org.yaml:snakeyaml:1.21'
