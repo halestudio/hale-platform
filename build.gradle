@@ -496,6 +496,9 @@ platform {
                 instruction '-removeheaders', 'Require-Capability'
         }
 	
+
+	// YAML library
+	bundle 'org.yaml:snakeyaml:1.21'
 }
 
 dependencies {
