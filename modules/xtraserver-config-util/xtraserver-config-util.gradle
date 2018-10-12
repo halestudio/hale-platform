@@ -3,8 +3,9 @@ repositories {
 }
 
 platform {
-    feature id: 'platform.shared.xs', name: 'XtraServer configuration utilities', version: '1.0.3', {
-        plugin 'de.interactive_instruments:xtraserver-config-util:1.0.3', {
+    feature id: 'platform.shared.xs', name: 'XtraServer configuration utilities', version: '1.0.4', {
+        plugin 'de.interactive_instruments:xtraserver-config-util:1.0.4', {
+
             bnd {
                 // adapt guava imports to use minimal versions
                 prependImport 'com.google.common.*;version=17'
