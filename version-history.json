@@ -333,6 +333,16 @@
                 "i20150413": "fbazIg"
             }
         },
+        "com.j256.ormlite.core": {
+            "5.1.0": {
+                "i20191223": "hnuzJw"
+            }
+        },
+        "com.j256.ormlite.jdbc": {
+            "5.1.0": {
+                "i20191223": "Gexf7g"
+            }
+        },
         "com.jcraft.jzlib": {
             "1.1.3": {
                 "i20150402": "exSsHw"
@@ -863,6 +873,46 @@
                 "i20150413": "UQn70g"
             }
         },
+        "mil.nga.geopackage": {
+            "3.4.0": {
+                "i20191223": "8Vc5dQ"
+            }
+        },
+        "mil.nga.geopackage.core": {
+            "3.4.0": {
+                "i20191223": "HeqG2w"
+            }
+        },
+        "mil.nga.oapi.features.oapi-features-json": {
+            "1.0.1": {
+                "i20191223": "Z7QCA"
+            }
+        },
+        "mil.nga.sf": {
+            "2.0.2": {
+                "i20191223": "gvOzJQ"
+            }
+        },
+        "mil.nga.sf.geojson": {
+            "2.0.3": {
+                "i20191223": "0un78w"
+            }
+        },
+        "mil.nga.sf.proj": {
+            "3.0.2": {
+                "i20191223": "tU2DyA"
+            }
+        },
+        "mil.nga.sf.wkb": {
+            "2.0.2": {
+                "i20191223": "iKrzFA"
+            }
+        },
+        "mil.nga.tiff": {
+            "2.0.1": {
+                "i20191223": "gTazJA"
+            }
+        },
         "net.java.dev.jna.platform": {
             "3.5.2": {
                 "i20150402": "sUUSaQ",
@@ -877,7 +927,8 @@
         },
         "net.postgis.jdbc": {
             "2.2.1": {
-                "i20180727": "e9kqKg"
+                "i20180727": "e9kqKg",
+                "i20191223": "OQXbQ"
             }
         },
         "net.sf.ehcache.core": {
@@ -1813,6 +1864,11 @@
                 "i20170105": "JHajw"
             }
         },
+        "org.locationtech.proj4j": {
+            "1.1.0": {
+                "i20191223": "io0nJQ"
+            }
+        },
         "org.objectweb.asm-4": {
             "4.1.0": {
                 "i20150402": "sgDEsw",
@@ -1933,6 +1989,9 @@
             },
             "42.2.5": {
                 "i20181015": "Fhst0Q"
+            },
+            "42.2.9": {
+                "i20191223": "95EeQ"
             }
         },
         "org.quartz-scheduler.quartz": {
@@ -2107,6 +2166,16 @@
             "6.10.0": {
                 "i20150402": "2OqsUQ",
                 "i20150413": "5jqzWA"
+            }
+        },
+        "org.xerial.sqlite-jdbc": {
+            "3.28.0": {
+                "i20191223": "Sx7MYQ"
+            }
+        },
+        "org.xerial.thirdparty.nestedvm": {
+            "1.0.0": {
+                "i20191223": "fbizIg"
             }
         },
         "org.yaml.snakeyaml": {
@@ -2307,9 +2376,6 @@
             }
         },
         "eu.esdihumboldt.hale.platform": {
-            "3.5.0": {
-                "i20181217": "YgT5tw"
-            },
             "3.0.0": {
                 "i20150705": "XVpSSA",
                 "i20150727": "KJJ5hQ",
@@ -2338,6 +2404,9 @@
                 "i20151027": "rd15Ww",
                 "i20151101": "lRB5dw"
             },
+            "3.5.0": {
+                "i20181217": "YgT5tw"
+            },
             "3.3.0": {
                 "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
@@ -2353,7 +2422,8 @@
                 "i20180329": "ucETPg",
                 "i20180726": "KqCNFQ",
                 "i20180727": "KMUjgQ",
-                "i20180719": "bmSMvw"
+                "i20180719": "bmSMvw",
+                "i20191223": "oPozmQ"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -2387,14 +2457,14 @@
             }
         },
         "eu.esdihumboldt.hale.platform.resources": {
-            "3.5.0": {
-                "i20181217": "hrSb8A"
-            },
             "3.0.0": {
                 "i20150705": "aECbxg",
                 "i20150511": "xD6c8w",
                 "i20150402": "sCOcrw",
                 "i20151027": "UcueWA"
+            },
+            "3.5.0": {
+                "i20181217": "hrSb8A"
             },
             "3.3.0": {
                 "i20170316": "UcueWA"
@@ -2423,7 +2493,8 @@
                 "i20180329": "JtGq3Q",
                 "i201504131740": "5fOqyA",
                 "i20151027": "OOqzg",
-                "i20180727": "KempwA"
+                "i20180727": "KempwA",
+                "i20191223": "KempwA"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -2500,12 +2571,12 @@
             }
         },
         "platform.shared.postgis": {
-            "3.5.0": {
-                "i20181217": "5pQZCg"
-            },
             "3.0.0": {
                 "i20150402": "444b4A",
                 "i20150413": "468b4g"
+            },
+            "3.5.0": {
+                "i20181217": "5pQZCg"
             },
             "3.3.0": {
                 "i20170316": "468b4g",
@@ -2513,7 +2584,8 @@
             },
             "3.4.0": {
                 "i20180329": "5dwb9A",
-                "i20180727": "5pQZCg"
+                "i20180727": "5pQZCg",
+                "i20191223": "5iEZAw"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -2584,12 +2656,12 @@
             }
         },
         "eu.esdihumboldt.hale.server.webjars": {
-            "3.5.0": {
-                "i20181217": "eyXANA"
-            },
             "3.0.0": {
                 "i20150402": "cGe5KA",
                 "i20150413": "cbvALw"
+            },
+            "3.5.0": {
+                "i20181217": "eyXANA"
             },
             "3.3.0": {
                 "i20170316": "d2HAMg"
@@ -2631,7 +2703,8 @@
         },
         "org.postgresql.jdbc": {
             "42.2.4.postgis-2_2_1": {
-                "i20180727": "UWKJtg"
+                "i20180727": "UWKJtg",
+                "i20191223": "yFb2Q"
             },
             "9.4.0.1206-jdbc4_postgis-2_0_1": {
                 "i20170529": "hqxlmA"
