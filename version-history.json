@@ -2418,11 +2418,14 @@
                 "i20181015": "ZRb5vQ",
                 "i20180411": "a1BdCg",
                 "i20180424": "OAyIaA",
+                "i202001141313": "uLL9FA",
                 "i20180427": "XVSCsA",
+                "i202001141259": "bZT7hg",
                 "i20180329": "ucETPg",
                 "i20180726": "KqCNFQ",
                 "i20180727": "KMUjgQ",
                 "i20180719": "bmSMvw",
+                "i20200114": "AsgYGg",
                 "i20191223": "oPozmQ"
             }
         },
@@ -2648,6 +2651,12 @@
         }
     },
     "mergedBundle": {
+        "com.j256.ormlite": {
+            "5.1.0": {
+                "i202001141312": "A1lsMA",
+                "i20200114": "lzBfkA"
+            }
+        },
         "com.orientechnologies.common": {
             "1.5.1": {
                 "i20150402": "pOBKQ",
@@ -2674,6 +2683,11 @@
             "1.2.0": {
                 "i20150413": "IcTEmA",
                 "i20180719": "qCHKrw"
+            }
+        },
+        "mil.nga.geopackage": {
+            "3.4.0": {
+                "i20200114": "Gnfvdw"
             }
         },
         "org.apache.poi": {

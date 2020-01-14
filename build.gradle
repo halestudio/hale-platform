@@ -519,9 +519,40 @@ platform {
 	}
 
 	// Geopackage library
-	bundle 'mil.nga.geopackage:geopackage:3.4.0', {
+	def gpkgVersion = '3.4.0'
+	def ormliteVersion = '5.1' // see gpkg deps
+	bundle "mil.nga.geopackage:geopackage:$gpkgVersion", {
 		// avoid jackson update
 		exclude module: 'jackson-databind'
+	}
+	// merge bundle (because there are shared packages)
+	merge {
+		match {
+			it.group != null && it.group.startsWith('mil.nga.geopackage') && it.name.startsWith('geopackage')
+		}
+		
+		bnd {
+			symbolicName = 'mil.nga.geopackage'
+			bundleName = 'Geopackage Java'
+			version = gpkgVersion
+			instruction 'Export-Package', "*;version=$gpkgVersion"
+		}
+	}
+	// merge ormlite bundle (because there are shared packages)
+	merge {
+		match {
+			it.group != null && it.group.startsWith('com.j256.ormlite') && it.name.startsWith('ormlite')
+		}
+		
+		bnd {
+			symbolicName = 'com.j256.ormlite'
+			bundleName = 'ormlite'
+			version = ormliteVersion
+			instruction 'Export-Package', "*;version=$ormliteVersion"
+
+			// need to be able to access sqlite JDBC driver
+			optionalImport 'org.sqlite'
+		}
 	}
 	bnd group: 'mil.nga.sf', name: 'sf-geojson', {
 		prependImport 'com.fasterxml.jackson.*' // remove import versions (because we use an older jackson version)
