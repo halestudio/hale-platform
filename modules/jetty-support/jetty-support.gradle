@@ -1,6 +1,7 @@
 // Adapted jetty related bundles
 platform {
 	def jettyVersion = '9.2.1.v20140609'
+	//def jettyVersion = '9.4.10.v20180503' // Originally upgraded during the platform migration to Photon. Not sure why anymore, so left out for the moment
 	def jettyGroup = 'org.eclipse.jetty'
 	
 	feature id: 'eu.esdihumboldt.hale.platform.jetty',
