@@ -845,6 +845,6 @@ updateSites.each { name, siteUrl ->
 
 }
 
-task wrapper(type: Wrapper) {
-    gradleVersion = '1.11'
+wrapper {
+    gradleVersion = '4.10.2'
 }
