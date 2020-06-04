@@ -13,7 +13,7 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath 'de.undercouch:gradle-download-task:1.0'
+		classpath 'de.undercouch:gradle-download-task:4.0.4'
 	}
 }
 
