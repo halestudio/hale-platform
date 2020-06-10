@@ -101,8 +101,8 @@ include {
 
 	from('modules/shared/postgis.gradle') {
 		postgis(
-			'2.2.1', // PostGIS driver version
-			'42.2.4', // PostgreSQL driver version
+			'2.3.0', // PostGIS driver version
+			'42.2.8', // PostgreSQL driver version
 			[
 				// buddies
 				'eu.esdihumboldt.hale.io.jdbc',
