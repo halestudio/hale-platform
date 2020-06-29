@@ -33,6 +33,8 @@ ext {
 	porteleSchemas = new File(buildDir, 'portele-schemas.zip')
 	// where inspire feature concept files are downloaded to
 	inspireFeatureConcepts = new File(buildDir, 'inspire-feature-concepts.zip')
+	// where AAA NAS schema files are downloaded to
+	aaaSchemas = new File(buildDir, 'aaa-nas-schemas.zip')
 	// where XPlanung schema files are downloaded to
 	xPlanungSchemas = new File(buildDir, 'xplanung-schemas.zip')
 }
@@ -401,6 +403,81 @@ task porteleSchemasBundle(type: ResourceBundleTask, dependsOn: downloadPorteleSc
 }
 
 resourceBundles.dependsOn('porteleSchemasBundle')
+
+/*
+ * Creates a resource bundle from AAA NAS application schemas
+ */
+
+// Map version number used in URLs to version number displayed to user
+def aaaVersions = [
+	'6.0' : '6.0.1',
+	'7.0' : '7.0.3',
+	'7.1' : '7.1.0'
+]
+
+def wfsExtVersions = [ '1.0', '2.0' ]
+def shapeChangeVersions = [ '1.0' ]
+
+// download schema files based on directory listing (requires wget)
+task downloadAAASchemas << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing schema archive
+	aaaSchemas.delete()
+
+	aaaVersions.each { urlVersion, displayVersion ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/nas/${urlVersion}/"
+		}
+	}
+	wfsExtVersions.each { version ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/wfsext/${version}/"
+		}
+	}
+	shapeChangeVersions.each { version ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/sc/${version}/"
+		}
+	}
+
+	// create ZIP archive
+	ant.zip(
+		destfile: aaaSchemas,
+		basedir: temporaryDir)
+}
+
+// create the bundle
+task aaaSchemasBundle(type: ResourceBundleTask, dependsOn: downloadAAASchemas) {
+	bundleId = 'schemas.adv-online.de'
+	host = 'repository.gdi-de.org'
+	archive = aaaSchemas
+	destDir = projectDir
+	pluginExtra = { xml ->
+		xml.extension(point: 'eu.esdihumboldt.hale.ui.schema.presets') {
+			aaaVersions.each { urlVersion, displayVersion ->
+				xml.schema(
+					category: 'de',
+					description: "AAA (ATKIS, ALKIS, AFIS) Modell der Arbeitsgemeinschaft der Vermessungsverwaltungen der Länder der Bundesrepublik Deutschland (AdV)",
+					id: "de.adv-online.aaa.${urlVersion.replace('.', '_')}",
+					name: "AAA XML Schema",
+					version: "${displayVersion}"
+				) {
+					xml.uri(value: "http://repository.gdi-de.org/schemas/adv/nas/${urlVersion}/aaa.xsd")
+				}
+			}
+		}
+	}
+}
+
+resourceBundles.dependsOn('aaaSchemasBundle')
 
 /*
  * Creates a resource bundle from XPlanung application schemas
