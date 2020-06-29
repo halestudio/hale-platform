@@ -33,6 +33,8 @@ ext {
 	porteleSchemas = new File(buildDir, 'portele-schemas.zip')
 	// where inspire feature concept files are downloaded to
 	inspireFeatureConcepts = new File(buildDir, 'inspire-feature-concepts.zip')
+	// where XPlanung schema files are downloaded to
+	xPlanungSchemas = new File(buildDir, 'xplanung-schemas.zip')
 }
 
 task clean << {
@@ -399,6 +401,73 @@ task porteleSchemasBundle(type: ResourceBundleTask, dependsOn: downloadPorteleSc
 }
 
 resourceBundles.dependsOn('porteleSchemasBundle')
+
+/*
+ * Creates a resource bundle from XPlanung application schemas
+ */
+
+// Map version number used in URLs to version number displayed to user
+def xplanungVersions = [
+	'4.0.2' :'4.0.2',
+	'4.1-Kernmodell' : '4.1',
+	'5.0' : '5.0.1',
+	'5.1' : '5.1.2',
+	'5.2' : '5.2.1',
+	'5.3' : '5.3-Beta-20200619'
+]
+
+// download schema files based on directory listing (requires wget)
+task downloadXPlanungSchemas << {
+	// need a clean tmp dir
+	temporaryDir.deleteDir()
+	temporaryDir.mkdir()
+	// delete existing schema archive
+	xPlanungSchemas.delete()
+
+	xplanungVersions.each { urlVersion, displayVersion ->
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://www.xplanungwiki.de/upload/XPlanGML/${urlVersion}/Schema/"
+		}
+	}
+	// add fixups
+	copy {
+		from new File(projectDir, 'xplanung-fixup')
+		into temporaryDir
+		include '**/*'
+	}
+	// create ZIP archive
+	ant.zip(
+		destfile: xPlanungSchemas,
+		basedir: temporaryDir)
+}
+
+// create the bundle
+task xPlanungSchemasBundle(type: ResourceBundleTask, dependsOn: downloadXPlanungSchemas) {
+	bundleId = 'schemas.xplanung.de'
+	host = 'www.xplanungwiki.de'
+	archive = xPlanungSchemas
+	destDir = projectDir
+	pluginExtra = { xml ->
+		xml.extension(point: 'eu.esdihumboldt.hale.ui.schema.presets') {
+			xplanungVersions.each { urlVersion, displayVersion ->
+				xml.schema(
+					category: 'de',
+					description: "XPlanung GML Application Schema",
+					icon: 'icons/xplanung.png',
+					id: "de.xplanung.xplangml.${urlVersion.replace('.', '_')}",
+					name: "XPlanGML",
+					version: "${displayVersion}"
+				) {
+					xml.uri(value: "http://www.xplanungwiki.de/upload/XPlanGML/${urlVersion}/Schema/XPlanung-Operationen.xsd")
+				}
+			}
+		}
+	}
+}
+
+resourceBundles.dependsOn('xPlanungSchemasBundle')
 
 /*
  * Common task definition
