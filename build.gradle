@@ -150,9 +150,6 @@ include {
 	// SKOS api
 	from 'modules/skos-support'
 
-	// xtraserver-config-util
-	from 'modules/xtraserver-config-util'
-
 	from('modules/deegree') {
 		deegree('3.4.13')
 	}
