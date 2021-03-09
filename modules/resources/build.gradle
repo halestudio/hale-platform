@@ -67,7 +67,7 @@ resourceBundles.dependsOn('opengisBundle')
 def inspireSchemaIndex(def project, File target, List<File> folders) {
 	// get application schemas from INSPIRE registry
 	def registry
-	new URL('http://inspire.ec.europa.eu/applicationschema/applicationschema.en.json').withReader { reader ->
+	new URL('https://inspire.ec.europa.eu/applicationschema/applicationschema.en.json').withReader { reader ->
 		registry = new groovy.json.JsonSlurper().parse(reader)
 	}
 	def appSchemas = []
@@ -106,7 +106,7 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 								versionDir.eachFileMatch(~/.*\.xsd/) { File xsd ->
 									xml.schema(
 										version: versionDir.name,
-										url: "http://inspire.ec.europa.eu/${folder.name}/${asDir.name}/${versionDir.name}/${xsd.name}"
+										url: "https://inspire.ec.europa.eu/${folder.name}/${asDir.name}/${versionDir.name}/${xsd.name}"
 									)
 								}
 							}
@@ -129,12 +129,12 @@ task downloadInspireSchemas << {
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/schemas/'
+		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/schemas/'
 	}
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'http://inspire.ec.europa.eu/draft-schemas/'
+		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/draft-schemas/'
 	}
 	// add fixups
 	copy {
@@ -222,7 +222,7 @@ task downloadInspireCodeLists << {
 
 	// determine resources to retrieve from registry
 	def registry
-	new URL('http://inspire.ec.europa.eu/codelist/codelist.en.json').withReader { reader ->
+	new URL('https://inspire.ec.europa.eu/codelist/codelist.en.json').withReader { reader ->
 		registry = new groovy.json.JsonSlurper().parse(reader)
 	}
 
@@ -349,7 +349,7 @@ task downloadInspireFeatureConcepts << {
 		exec {
 			workingDir = temporaryDir
 			executable = 'wget'
-			args '--force-directories', '--no-host-directories', "http://inspire.ec.europa.eu/featureconcept/$path"
+			args '--force-directories', '--no-host-directories', "https://inspire.ec.europa.eu/featureconcept/$path"
 		}
 	}
 	downloadFile('featureconcept.en.json')
