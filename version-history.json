@@ -42,6 +42,11 @@
                 "i20150413": "PDHBvA"
             }
         },
+        "assertj-core": {
+            "3.22.0": {
+                "i20220321": "nQcuGw"
+            }
+        },
         "bcpkix": {
             "1.51.0": {
                 "i20150402": "suR2nw",
@@ -2950,7 +2955,8 @@
                 "i20200630": "hnuWeg"
             },
             "4.1.0": {
-                "i20210309": "LR1Lw"
+                "i20210309": "LR1Lw",
+                "i20220321": "0dpfg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
