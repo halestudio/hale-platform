@@ -517,6 +517,9 @@ platform {
 		instruction 'Export-Package', "*;version=$version"
 	}
 
+	// better assertions
+  	bundle("org.assertj:assertj-core:3.22.0")
+
 	// Allure test framework
 	bundle 'ru.yandex.qatools.allure:allure-junit-adaptor:1.5.0', {
 		exclude module: 'slf4j-nop'
