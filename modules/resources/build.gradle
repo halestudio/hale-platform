@@ -134,7 +134,7 @@ task downloadInspireSchemas << {
 	exec {
 		workingDir = temporaryDir
 		executable = 'wget'
-		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/draft-schemas/'
+		args '-e', 'robots=off', '-r', '--no-parent', '-X', 'draft-schemas/geoportal', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/draft-schemas/'
 	}
 	// add fixups
 	copy {
@@ -490,7 +490,9 @@ def xplanungVersions = [
 	'5.0' : '5.0.1',
 	'5.1' : '5.1.2',
 	'5.2' : '5.2.1',
-	'5.3' : '5.3'
+	'5.3' : '5.3',
+	'5.4' : '5.4',
+	'6.0' : '6.0'
 ]
 
 // download schema files based on directory listing (requires wget)
