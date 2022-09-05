@@ -166,7 +166,7 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 	destDir = projectDir
 	pluginExtra = { xml ->
 		// read application schemas file
-		def appSchemas = new groovy.util.XmlSlurper().parse(applicationSchemasFile)
+		def appSchemas = new groovy.xml.XmlSlurper().parse(applicationSchemasFile)
 
 		def themeShortIdRegex = '^http://inspire.ec.europa.eu/theme/([^/]*)$'
 
