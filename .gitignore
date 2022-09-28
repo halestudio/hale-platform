@@ -3,3 +3,15 @@ build/
 *~
 .project
 *.sublime-workspace
+.idea/modules/jaxb/alignment/hale-platform.jaxb.alignment.test.iml
+.idea/modules/jaxb/hale-platform.jaxb.iml
+.idea/modules/jaxb/oml/hale-platform.jaxb.oml.iml
+.idea/modules/jaxb/oml/hale-platform.jaxb.oml.main.iml
+.idea/modules/jaxb/oml/hale-platform.jaxb.oml.test.iml
+.idea/modules/jaxb/project/hale-platform.jaxb.project.iml
+.idea/modules/jaxb/project/hale-platform.jaxb.project.main.iml
+.idea/modules/jaxb/project/hale-platform.jaxb.project.test.iml
+.idea/modules/jaxb/wadl/hale-platform.jaxb.wadl.iml
+.idea/modules/jaxb/wadl/hale-platform.jaxb.wadl.main.iml
+.idea/modules/jaxb/wadl/hale-platform.jaxb.wadl.test.iml
+.idea/workspace.xml
