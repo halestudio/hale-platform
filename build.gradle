@@ -6,6 +6,10 @@ buildscript {
 		mavenCentral()
 		maven {
 			url 'http://oss.sonatype.org/content/repositories/snapshots/'
+//			allowInsecureProtocol = true
+		}
+		maven {
+			url "https://plugins.gradle.org/m2/"
 		}
 	}
 	dependencies {
@@ -14,6 +18,9 @@ buildscript {
 		classpath 'org.standardout:gradle-versioneye-plugin:1.1.1'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
+		// when upgrading to newer gradle, 'osgi' plugin will not be available so uncomment below
+		// https://plugins.gradle.org/plugin/biz.aQute.bnd.workspace
+//		classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:6.3.1"
 	}
 	configurations.all {
 		// ensure SNAPSHOTs are updated every time if needed
@@ -71,7 +78,8 @@ include {
 	}
 
 	from('modules/shared/spring.gradle') {
-		def v = '3.1.1.RELEASE'
+//		def v = '3.1.1.RELEASE'
+		def v = '5.2.0.RELEASE'
 		spring v, [
 			'spring-beans',
 			'spring-context',
@@ -98,7 +106,7 @@ include {
 	}
 
 	from 'modules/shared/poi.gradle', {
-		poi('3.9')
+		poi('5.2.3', '4.1.2')
 	}
 
 	from('modules/shared/postgis.gradle') {
@@ -163,8 +171,18 @@ include {
 configurations {
 	// exclude bundles conflicting with JRE-provided packages
 	platform.exclude group: 'javax.xml'
-	platform.exclude group: 'javax.xml.bind'
+//	platform.exclude group: 'javax.xml.bind'
 	platform.exclude group: 'javax.activation'
+	platform.exclude group: 'xml-apis'
+	platform.exclude group: 'dom4j'
+	platform.exclude group: 'stax'
+	platform.exclude group: 'org.w3c.dom'
+	platform.exclude group: 'org.apache.batik'
+	platform.exclude group: 'org.codehaus.woodstox'
+
+	//org.apache.geronimo.specs.geronimo-stax-api_1.0_spec
+	platform.exclude group: 'org.apache.geronimo.specs'
+
 
 	/*
 	 * They have to be excluded as just removing the version constraint on
@@ -198,9 +216,8 @@ configurations {
 		}
 	}
 }
-
 platform {
-	fetchSources = true
+	fetchSources = false
 	determineImportVersions = true
 	addBndPlatformManifestHeaders = true
 	auxVersionedSymbolicNames = true
@@ -211,30 +228,35 @@ platform {
 
 	// uncomment and update with eclipse directory only during development
 //	eclipseHome = new File('/Applications/Eclipse.app/Contents/Eclipse')
+	eclipseHome = new File('/Users/kapil/eclipse/eclipse-4.24-rcp/Eclipse.app/Contents/Eclipse')
 
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
 		// ensure javax.annotation imports are w/o version
 		prependImport('javax.annotation.*')
+		prependImport('org.apache.commons.logging.*')
 
 		optionalImport(
-			// no version requirement for certain JRE provided packages
-			// use wildcards to not enforce imports
-			// use optional imports as otherwise we suddenly get errors in Eclipse while resolving seemingly random optional(!) package imports
-			'javax.xml.*',
-			'org.w3c.dom.*',
-			'org.xml.sax.*',
-			'javax.activation.*',
-			'com.sun.xml.internal.*',
-			// cal10n.api
-			'javax.tools.*',
-			'javax.lang.model.*',
-			'javax.annotation.processing.*',
-			// also make JUnit optional everywhere - so we can exclude it from products
-			'junit.framework.*',
-			'org.junit.*'
+				// no version requirement for certain JRE provided packages
+				// use wildcards to not enforce imports
+				// use optional imports as otherwise we suddenly get errors in Eclipse while resolving seemingly random optional(!) package imports
+				'javax.xml.*',
+				'org.w3c.dom.*',
+				'org.xml.sax.*',
+				'javax.activation.*',
+				'com.sun.xml.internal.*',
+				// cal10n.api
+				'javax.tools.*',
+				'javax.lang.model.*',
+				'javax.annotation.processing.*',
+				// also make JUnit optional everywhere - so we can exclude it from products
+				'junit.framework.*',
+				'org.junit.*',
+				'xml-apis.*',
+				'jakarta.xml.*'
 		)
 	}
+
 
 	// geotools additional bundles not in the default group
 	bundle group: 'org.geotools.jdbc', name: 'gt-jdbc-oracle', version: geotoolsVersion
@@ -242,14 +264,14 @@ platform {
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml2', version: geotoolsVersion
 	bundle group: 'org.geotools.xsd', name: 'gt-xsd-gml3', version: geotoolsVersion
 
-        bnd group: 'org.locationtech.jts', name: 'jts-core', {
-                instruction 'Export-Package', "*;version=$version"
-        }
+	bnd group: 'org.locationtech.jts', name: 'jts-core', {
+		instruction 'Export-Package', "*;version=$version"
+	}
 
-        // Exclude in favour of later version pulled in by GeoPackage
-        bundle group: 'org.geotools', name: 'geotools', {
-                exclude module: 'org.xerial.sqlite-jdbc'
-        }
+	// Exclude in favour of later version pulled in by GeoPackage
+	bundle group: 'org.geotools', name: 'geotools', {
+		exclude module: 'org.xerial.sqlite-jdbc'
+	}
 
 	// hale connect APIs
 	bundle 'com.haleconnect.api:haleconnect-user-api:1.0.2'
@@ -269,7 +291,9 @@ platform {
 	bundle 'commons-io:commons-io:2.4'
 	bundle 'net.sf.ehcache:ehcache-core:2.6.6'
 	bundle 'org.apache.velocity:velocity:1.6.2'
-	bundle 'org.apache.xmlbeans:xmlbeans:2.4.0'
+	bundle 'org.apache.xmlbeans:xmlbeans:5.1.1'
+
+
 	bundle 'com.iabcinc:jmep:0.1.0'
 	bundle 'com.google.code.findbugs:jsr305:2.0.3'
 	bundle 'eu.esdihumboldt.hale:prefixmapper:1.0.1'
@@ -292,7 +316,7 @@ platform {
 
 
 	// fluent HTTP client API
-	bundle 'org.apache.httpcomponents:fluent-hc:4.3.6'
+	bundle 'org.apache.httpcomponents:fluent-hc:4.5.13'
 
 	// prometheus client for providing metrics
 	bundle 'io.prometheus:simpleclient:0.16.0'
@@ -309,43 +333,69 @@ platform {
 	// XML
 //	bundle 'org.apache.ws.xmlschema:xmlschema-core:2.0.2'
 	bundle 'org.apache.ws.commons.schema:XmlSchema:1.4.7'
-	bundle 'org.codehaus.castor:castor-xml:1.3.2'
-	bundle 'org.codehaus.castor:castor-core:1.3.2'
-	bundle 'com.sun.xml.bind:jaxb-core:2.2.7', {
+//	bundle 'org.codehaus.castor:castor-xml:1.3.2'
+	bundle 'org.codehaus.castor:castor-xml:1.4.1', {
 		bnd {
-			// istack seems to be part of the bundle and reimporting it fails because of a version issue
-			optionalImport 'com.sun.istack'
+			instruction 'Import-Package', 'org.springframework.*'
+			addQualifier = true
 		}
 	}
 
-        // Units of Measurement
-        bundle 'systems.uom:systems-common-java8:0.7.2'
-        bundle 'systems.uom:systems-quantity:0.7.2'
+//	bundle 'org.codehaus.castor:castor-core:1.3.2'
+	bundle 'org.codehaus.castor:castor-core:1.4.1'
 
-        bnd group: 'com.sun.istack', name: 'istack-commons-runtime', {
-		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
-		instruction '-removeheaders', 'Require-Capability'
-        }
-        bnd group: 'com.sun.xml.fastinfoset', name: 'FastInfoset', {
-		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
-		instruction '-removeheaders', 'Require-Capability'
-        }
-        bnd group: 'org.glassfish.jaxb', name: 'jaxb-runtime', {
-		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
-		instruction '-removeheaders', 'Require-Capability'
-        }
-        bnd group: 'org.glassfish.jaxb', name: 'txw2', {
-		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
-		instruction '-removeheaders', 'Require-Capability'
-        }
-        bnd group: 'org.jvnet.staxex', name: 'stax-ex', {
-		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
-		instruction '-removeheaders', 'Require-Capability'
-        }
 
-        bnd group: 'org.reflections', name: 'reflections', {
-                prependImport 'com.google.common.*;version=20'
-        }
+//	bundle 'com.sun.xml.bind:jaxb-core:2.2.7', {
+//		bnd {
+//			 suppress Require-Capability: osgi.ee;filter:="(osgi.ee=UNKNOWN)" generated by bnd
+//			instruction '-removeheaders', 'Require-Capability'
+//			// istack seems to be part of the bundle and reimporting it fails because of a version issue
+//			optionalImport 'com.sun.istack'
+//		}
+//	}
+
+	// Units of Measurement
+	bundle 'systems.uom:systems-common-java8:0.7.2'
+	bundle 'systems.uom:systems-quantity:0.7.2'
+
+	bnd group: 'com.sun.istack', name: 'istack-commons-runtime', {
+		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
+		instruction '-removeheaders', 'Require-Capability'
+	}
+	bnd group: 'com.sun.xml.fastinfoset', name: 'FastInfoset', {
+		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
+		instruction '-removeheaders', 'Require-Capability'
+	}
+
+	bnd group: 'org.glassfish.jaxb', name: 'jaxb-runtime', {
+		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
+		instruction '-removeheaders', 'Require-Capability'
+	}
+
+//	bnd group: 'com.sun.xml.bind', name: 'jaxb-osgi', version: '4.0.1', {
+//		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
+//		instruction '-removeheaders', 'Require-Capability'
+//	}
+
+
+
+
+	bnd group: 'org.glassfish.jaxb', name: 'txw2', {
+		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
+		instruction '-removeheaders', 'Require-Capability'
+	}
+	bnd group: 'org.jvnet.staxex', name: 'stax-ex', {
+		// suppress Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=9))" generated by bnd
+		instruction '-removeheaders', 'Require-Capability'
+	}
+
+	bnd group: 'org.reflections', name: 'reflections', {
+		prependImport 'com.google.common.*;version=20'
+	}
+
+	bnd group: 'net.tanesha.recaptcha4j', name: 'recaptcha4j', {
+		instruction '-removeheaders', 'Require-Capability'
+	}
 
 	// staxon
 	bundle 'de.odysseus.staxon:staxon:1.3'
@@ -363,7 +413,16 @@ platform {
 	}
 	// jackson 2
 	bundle 'com.fasterxml.jackson.core:jackson-core:2.3.2'
-	bundle 'com.fasterxml.jackson.core:jackson-databind:2.3.2'
+	bundle 'com.fasterxml.jackson.core:jackson-databind:2.3.2' , {
+		bnd {
+			optionalImport group: 'javax.xml'
+		}
+	}
+
+//	bnd group: 'dom4j', name: 'dom4j',  {
+//		optionalImport 'javax.xml'
+//	}
+//	remove javax.xml from dom4j like you did for com.fasterxml.jackson.core:jackson-databind:2.3.2
 
 	// https://mvnrepository.com/artifact/com.fasterxml.jackson.jaxrs/jackson-jaxrs-base
 	bundle 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base:2.13.4'
@@ -406,6 +465,59 @@ platform {
 	//bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.inspire', version: '1.0.0.20120927'
 	bundle group: 'eu.esdihumboldt.util.resource', name: 'schemas.test', version: '1.0.0.201205101531'
 
+	//jaxb stuff
+//	https://mkyong.com/java/jaxbexception-implementation-of-jaxb-api-has-not-been-found-on-module-path-or-classpath/
+//	bundle 'javax.xml.bind:jaxb-api:2.3.0'
+	bundle 'com.sun.xml.bind:jaxb-core:4.0.1', {
+		bnd {
+		// suppress Require-Capability: osgi.ee;filter:="(osgi.ee=UNKNOWN)" generated by bnd
+		instruction '-removeheaders', 'Require-Capability'
+		}
+	}
+	bundle 'com.sun.xml.bind:jaxb-impl:4.0.1', {
+		bnd {
+			// suppress Require-Capability: osgi.ee;filter:="(osgi.ee=UNKNOWN)" generated by bnd
+			instruction '-removeheaders', 'Require-Capability'
+		}
+	}
+
+	bundle 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0', {
+		bnd {
+			// suppress Require-Capability: osgi.ee;filter:="(osgi.ee=UNKNOWN)" generated by bnd
+			instruction '-removeheaders', 'Require-Capability'
+		}
+	}
+	bundle 'jakarta.xml.bind:jakarta.xml.bind-api-test:3.0.1', {
+		bnd {
+			// suppress Require-Capability: osgi.ee;filter:="(osgi.ee=UNKNOWN)" generated by bnd
+			instruction '-removeheaders', 'Require-Capability'
+		}
+	}
+	bundle 'jakarta.xml.bind:jakarta.xml.bind-api-parent:4.0.0', {
+		bnd {
+			// suppress Require-Capability: osgi.ee;filter:="(osgi.ee=UNKNOWN)" generated by bnd
+			instruction '-removeheaders', 'Require-Capability'
+		}
+	}
+	// https://mvnrepository.com/artifact/com.sun.xml.bind/jaxb-ri
+//	bundle 'com.sun.xml.bind:jaxb-ri:4.0.1'
+
+
+
+
+
+
+
+//	bundle 'javax.xml.bind:jaxb-api:2.3.1'
+//	bundle 'javax.xml.bind:jaxb-core:2.2.11'
+
+//	bundle 'javax.xml.bind:jaxb-api:2.3.0'
+//	bundle 'javax.activation:activation:1.1'
+	bundle 'org.glassfish.jaxb:jaxb-runtime:2.3.0'
+//	bundle 'jakarta.xml.bind:jakarta.xml.bind-api-test:3.0.1'
+//	bundle 'jakarta.xml.bind:jakarta.xml.bind-api-parent:4.0.0'
+
+
 	/*
 	 * XXX Orient graph DB hack
 	 *
@@ -435,22 +547,32 @@ platform {
 		symbolicName = symbolicName + '-' + ov.major
 	}
 	bnd group: 'org.ow2.asm', name: 'asm-commons', {
-    // -> use versioned symbolic names
-    def ov = org.osgi.framework.Version.parseVersion(version)
-    // and fix problem with null symbolic name
+		// -> use versioned symbolic names
+		def ov = org.osgi.framework.Version.parseVersion(version)
+		// and fix problem with null symbolic name
 		symbolicName = 'org.ow2.asm.commons-' + ov.major
 	}
 
 	// ensure optional jdi imports for javassist
 	// not sure why bnd-platform adds those
 	bnd group: 'org.javassist', name: 'javassist', {
-    optionalImport 'com.sun.jdi.*'
+		optionalImport 'com.sun.jdi.*'
 	}
 
 	// force package export versions for hsqldb
 	bnd group: 'org.hsqldb', name: 'hsqldb', {
 		instruction 'Export-Package', "*;version=$version"
 	}
+
+	bnd group: 'jakarta.activation', name: 'jakarta.activation-api', {
+		optionalImport 'com.sun.activation.registeries'
+	}
+
+	bnd group: 'org.apache.ws.commons.schema', name: 'XmlSchema', {
+		optionalImport 'org.w3c.dom'
+	}
+
+	bundle 'xerces:xercesImpl:2.12.2'
 
 	imports 'com.google.guava:guava', {
 		versionStrategy = MINIMUM
@@ -508,7 +630,7 @@ platform {
 		match {
 			// merge all artifacts in org.geotools group, but not gt-opengis
 			(it.group == 'javax.annotation' && it.name == 'javax.annotation-api') ||
-			(it.group == 'com.google.code.findbugs' && it.name == 'jsr305')
+					(it.group == 'com.google.code.findbugs' && it.name == 'jsr305')
 		}
 
 		bnd {
@@ -520,12 +642,12 @@ platform {
 			instruction 'Import-Package', '*'
 		}
 	}
-	
+
 	// MSAccess
 	bundle 'net.sf.ucanaccess:ucanaccess:3.0.6', {
 		bnd {
-			def buddies = ['eu.esdihumboldt.hale.io.jdbc', 'net.sourceforge.schemacrawler'] 
-			
+			def buddies = ['eu.esdihumboldt.hale.io.jdbc', 'net.sourceforge.schemacrawler']
+
 			if (buddies) {
 				// register buddy
 				instruction 'Eclipse-RegisterBuddy', buddies.join(',')
@@ -541,7 +663,7 @@ platform {
 	}
 
 	// better assertions
-  	bundle("org.assertj:assertj-core:3.22.0")
+	bundle("org.assertj:assertj-core:3.22.0")
 
 	// Allure test framework
 	bundle 'ru.yandex.qatools.allure:allure-junit-adaptor:1.5.0', {
@@ -559,6 +681,22 @@ platform {
 		instruction 'Export-Package', "ru.yandex.qatools.allure.aspects;version=$version;aspects=\"AllureAttachAspects,AllureStepsAspects,AllureParametersAspects\",*;version=$version"
 	}
 	bundle 'org.aspectj:aspectjweaver:1.8.3'
+
+	// https://mvnrepository.com/artifact/javax.transaction/javax.transaction-api
+	bundle 'javax.transaction:javax.transaction-api:1.3', {
+		bnd {
+			// istack seems to be part of the bundle and reimporting it fails because of a version issue
+			optionalImport 'javax.enterprise.context'
+			optionalImport 'javax.enterprise.util'
+			optionalImport 'javax.interceptor'
+
+		}
+	}
+
+	bnd group: 'org.eclipse.jetty', name: 'jetty-plus', {
+		optionalImport 'javax.transaction'
+	}
+
 
 	bnd group: 'net.sf.ezmorph', name: 'ezmorph', {
 		instruction '-removeheaders', 'Require-Capability'
@@ -593,7 +731,7 @@ platform {
 		match {
 			it.group != null && it.group.startsWith('mil.nga.geopackage') && it.name.startsWith('geopackage')
 		}
-		
+
 		bnd {
 			symbolicName = 'mil.nga.geopackage'
 			bundleName = 'Geopackage Java'
@@ -606,7 +744,7 @@ platform {
 		match {
 			it.group != null && it.group.startsWith('com.j256.ormlite') && it.name.startsWith('ormlite')
 		}
-		
+
 		bnd {
 			symbolicName = 'com.j256.ormlite'
 			bundleName = 'ormlite'
@@ -636,6 +774,7 @@ platform {
 	}
 }
 
+
 dependencies {
   platform 'de.fhg.igd:osgi-util:1.0', {
     // exclude OSGi dependencies (we include Equinox/Eclipse through separate update site)
@@ -655,12 +794,16 @@ dependencies {
 subprojects { subproject ->
   if (subproject.parent?.name == "jaxb") {
 	apply plugin: 'java'
+	//https://github.com/bndtools/bnd/blob/6.3.1/gradle-plugins/README.md#gradle-plugins
+	//https://github.com/bndtools/bnd/issues/2687
+  // https://github.com/bndtools/bnd/blob/93bedaaf76f7fd9112dbf9b54d58bfb5741dc246/biz.aQute.bnd.gradle/testresources/builderplugin1/build.gradle#L25-L36
 	apply plugin: 'osgi'
-
+//	apply plugin: "biz.aQute.bnd.builder"
 	repositories {
 	  maven { // wetransform artifactory
 		url 'https://artifactory.wetransform.to/artifactory/libs-release/'
 	  }
+	  mavenCentral()
 	}
 
 	configurations {
@@ -668,24 +811,36 @@ subprojects { subproject ->
 	}
 
 	dependencies {
-	  jaxb 'com.sun.xml.bind:jaxb-xjc:2.1.17'
+		jaxb 'com.sun.xml.bind:jaxb-xjc:4.0.1'
+		jaxb 'com.sun.xml.bind:jaxb-impl:4.0.1'
+		jaxb 'org.glassfish.jaxb:jaxb-runtime:2.3.0'
+//		as per the documentation this should be commented
+		// https://docs.gradle.org/current/userguide/upgrading_version_4.html#rel5.0:jaxb_and_java9
+		jaxb 'javax.xml.bind:jaxb-api:2.3.0'
+		jaxb 'org.glassfish.jaxb:jaxb-xjc:4.0.1'
+
 	}
 
-	sourceCompatibility = 1.7
-	targetCompatibility = 1.7
+
+	sourceCompatibility = JavaVersion.VERSION_1_7
+	targetCompatibility = JavaVersion.VERSION_1_7
 
 	def generatedSources = subproject.file('src/main/java')
 
-	task cleanSrc() << {
-		generatedSources.deleteDir()
+	task cleanSrc()  {
+		doLast {
+			generatedSources.deleteDir()
+		}
 	}
 
-	task xjc << {
-		generatedSources.mkdirs()
-		ant.taskdef(name: 'xjc', classname: 'com.sun.tools.xjc.XJCTask', classpath: configurations.jaxb.asPath)
-		ant.xjc(destdir: generatedSources) {
-			schema(dir: subproject.file('schema'), includes: '*.xsd')
-			binding(dir: subproject.file('schema'), includes: 'bindings.xml')
+	task xjc {
+		doLast {
+			generatedSources.mkdirs()
+			ant.taskdef(name: 'xjc', classname: 'com.sun.tools.xjc.XJCTask', classpath: configurations.jaxb.asPath)
+			ant.xjc(destdir: generatedSources) {
+				schema(dir: subproject.file('schema'), includes: '*.xsd')
+				binding(dir: subproject.file('schema'), includes: 'bindings.xml')
+			}
 		}
 	}
 
@@ -795,29 +950,29 @@ def mergeOldJars(File targetFolder, File referenceFolder, String resourceName, b
  * Merge with old update site in hale-build-support to prevent unnecessary
  * pollution of the hale-build-support repository.
  */
-task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) << {
-	// bundles
-	File newBundles = new File(project.buildDir, 'plugins')
-	File oldBundles = new File(updateSiteMergeDir, 'plugins')
+task mergeOldSite(dependsOn: [tasks.bundles, tasks.bundleFeatures]) {
+	doLast {
+		// bundles
+		File newBundles = new File(project.buildDir, 'plugins')
+		File oldBundles = new File(updateSiteMergeDir, 'plugins')
 
-	if (oldBundles.exists()) {
-		logger.warn("Attempting to merge existing update site at $oldBundles, may replace bundles with previously created bundles")
-		mergeOldJars(newBundles, oldBundles, 'bundle', true)
-	}
-	else {
-		logger.warn("Skipping merge with current update site content, as directory $oldBundles was not found")
-	}
+		if (oldBundles.exists()) {
+			logger.warn("Attempting to merge existing update site at $oldBundles, may replace bundles with previously created bundles")
+			mergeOldJars(newBundles, oldBundles, 'bundle', true)
+		} else {
+			logger.warn("Skipping merge with current update site content, as directory $oldBundles was not found")
+		}
 
-	// features
-	File newFeatures = new File(project.buildDir, 'features')
-	File oldFeatures = new File(updateSiteMergeDir, 'features')
+		// features
+		File newFeatures = new File(project.buildDir, 'features')
+		File oldFeatures = new File(updateSiteMergeDir, 'features')
 
-	if (oldFeatures.exists()) {
-		logger.warn("Attempting to merge existing update site at $oldFeatures, may replace features with previously created features")
-		mergeOldJars(newFeatures, oldFeatures, 'feature', false)
-	}
-	else {
-		logger.warn("Skipping merge with current update site content, as directory $oldFeatures was not found")
+		if (oldFeatures.exists()) {
+			logger.warn("Attempting to merge existing update site at $oldFeatures, may replace features with previously created features")
+			mergeOldJars(newFeatures, oldFeatures, 'feature', false)
+		} else {
+			logger.warn("Skipping merge with current update site content, as directory $oldFeatures was not found")
+		}
 	}
 }
 tasks.updateSite.dependsOn mergeOldSite
@@ -911,3 +1066,7 @@ updateSites.each { name, siteUrl ->
 wrapper {
     gradleVersion = '4.10.2'
 }
+
+//wrapper {
+//	gradleVersion = '7.5.1'
+//}

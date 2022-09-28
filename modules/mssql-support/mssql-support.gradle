@@ -10,7 +10,8 @@ platform {
 				//
 				'com.microsoft.azure.*',
 				'com.microsoft.windowsazure.core.pipeline.filter',
-				'com.microsoft.windowsazure.credentials'
+				'com.microsoft.windowsazure.credentials',
+				'javax.xml.*'
 				)
 			
 			def buddies = [
