@@ -105,6 +105,9 @@
             },
             "2.3.0": {
                 "i20150402": "PADd8Q"
+            },
+            "2.13.4": {
+                "i20220909": "MYfjWw"
             }
         },
         "com.fasterxml.jackson.core.jackson-core": {
@@ -113,6 +116,9 @@
             },
             "2.3.0": {
                 "i20150402": "DJNRrw"
+            },
+            "2.13.4": {
+                "i20220909": "sCsGpw"
             }
         },
         "com.fasterxml.jackson.core.jackson-databind": {
@@ -121,12 +127,18 @@
             },
             "2.3.0": {
                 "i20150402": "GIflmg"
+            },
+            "2.13.4": {
+                "i20220909": "9CiHhQ"
             }
         },
         "com.fasterxml.jackson.dataformat.jackson-dataformat-yaml": {
             "2.2.3": {
                 "i20150402": "V5E7UQ",
                 "i20150413": "E6tCWA"
+            },
+            "2.13.1": {
+                "i20220909": "NOUYPg"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-guava": {
@@ -149,6 +161,9 @@
             },
             "2.2.3": {
                 "i20150402": "YMHc7w"
+            },
+            "2.13.4": {
+                "i20220909": "ht6dw"
             }
         },
         "com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider": {
@@ -157,6 +172,9 @@
             },
             "2.2.3": {
                 "i20150402": "3mJmRQ"
+            },
+            "2.13.4": {
+                "i20220909": "RqRTng"
             }
         },
         "com.fasterxml.jackson.module.jackson-module-jaxb-annotations": {
@@ -165,11 +183,29 @@
             },
             "2.2.3": {
                 "i20150402": "YMHc7w"
+            },
+            "2.13.4": {
+                "i20220909": "lTJCWw"
+            }
+        },
+        "com.github.albfernandez.javadbf": {
+            "1.13.2": {
+                "i20221013": "5iezWA"
             }
         },
         "com.github.ben-manes.caffeine": {
             "2.6.2": {
                 "i20180727": "hhe2MQ"
+            }
+        },
+        "com.github.javaparser.javaparser-core": {
+            "3.24.0": {
+                "i20220909": "JIR9lQ"
+            }
+        },
+        "com.github.jnr.a64asm": {
+            "1.0.0": {
+                "i20220909": "o0Qg"
             }
         },
         "com.github.jnr.constants": {
@@ -196,6 +232,9 @@
             },
             "2.0.9": {
                 "i20160531": "3NFHYw"
+            },
+            "2.2.12": {
+                "i20220909": "1VtSIQ"
             }
         },
         "com.github.jnr.jffi": {
@@ -204,11 +243,17 @@
             },
             "1.2.7": {
                 "i20150413": "jWGzKw"
+            },
+            "1.3.9": {
+                "i20220909": "ubGTg"
             }
         },
         "com.github.jnr.jffi.native": {
             "1.2.11": {
                 "i20160531": "GivB9Q"
+            },
+            "1.3.9": {
+                "i20220909": "GivB9Q"
             }
         },
         "com.github.jnr.posix": {
@@ -243,6 +288,11 @@
                 "i20200622": "tQEQQA"
             }
         },
+        "com.github.wetransform-os.topojson-j": {
+            "1.0.0": {
+                "i20221013": "6g4SiA"
+            }
+        },
         "com.google.code.findbugs.jsr305": {
             "3.0.0": {
                 "i20180411": "rv7GUw"
@@ -260,6 +310,9 @@
         "com.google.gson": {
             "2.6.2": {
                 "i20170316": "NOsGzQ"
+            },
+            "2.9.1": {
+                "i20221013": "jG8uUg"
             }
         },
         "com.google.guava": {
@@ -373,6 +426,11 @@
                 "i20150413": "fbazIg"
             }
         },
+        "com.ibm.icu": {
+            "59.1.0": {
+                "i20220909": "ISbIUg"
+            }
+        },
         "com.j256.ormlite.core": {
             "5.1.0": {
                 "i20191223": "hnuzJw"
@@ -393,6 +451,26 @@
                 "i20150402": "O9Cshg",
                 "i20150413": "TQzjQ",
                 "i20180727": "xfXAtg"
+            }
+        },
+        "com.openhtmltopdf.core": {
+            "1.0.10": {
+                "i20220909": "hEdG7g"
+            }
+        },
+        "com.openhtmltopdf.jsoup-dom-converter": {
+            "1.0.0": {
+                "i20220909": "BUAJVg"
+            }
+        },
+        "com.openhtmltopdf.pdfbox": {
+            "1.0.10": {
+                "i20220909": "KyliPg"
+            }
+        },
+        "com.openhtmltopdf.rtl-support": {
+            "1.0.10": {
+                "i20220909": "gEcXWA"
             }
         },
         "com.orientechnologies.orient-commons": {
@@ -517,6 +595,11 @@
                 "i20200622": "t96nKA"
             }
         },
+        "com.thoughtworks.qdox": {
+            "1.12.1": {
+                "i20220909": "4quzVg"
+            }
+        },
         "com.tinkerpop.blueprints.core": {
             "2.5.0.orientDB151": {
                 "i20180424": "zMLcA",
@@ -565,6 +648,251 @@
             "1.13.0": {
                 "i20150402": "1YOsTw",
                 "i20150413": "4q2zVg"
+            }
+        },
+        "com.vladsch.flexmark": {
+            "0.64.0": {
+                "i20220909": "cW0Ew"
+            }
+        },
+        "com.vladsch.flexmark.all": {
+            "0.64.0": {
+                "i20220909": "1CLYBQ"
+            }
+        },
+        "com.vladsch.flexmark.ext-abbreviation": {
+            "0.64.0": {
+                "i20220909": "qYvNyA"
+            }
+        },
+        "com.vladsch.flexmark.ext-admonition": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-anchorlink": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-aside": {
+            "0.64.0": {
+                "i20220909": "Z5bPVA"
+            }
+        },
+        "com.vladsch.flexmark.ext-attributes": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-autolink": {
+            "0.64.0": {
+                "i20220909": "dXzBzg"
+            }
+        },
+        "com.vladsch.flexmark.ext-definition": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-emoji": {
+            "0.64.0": {
+                "i20220909": "Z5bPVA"
+            }
+        },
+        "com.vladsch.flexmark.ext-enumerated-reference": {
+            "0.64.0": {
+                "i20220909": "6dTPiA"
+            }
+        },
+        "com.vladsch.flexmark.ext-escaped-character": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-footnotes": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-gfm-issues": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-gfm-strikethrough": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-gfm-tasklist": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-gfm-users": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-gitlab": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-ins": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-jekyll-front-matter": {
+            "0.64.0": {
+                "i20220909": "IY3UhA"
+            }
+        },
+        "com.vladsch.flexmark.ext-jekyll-tag": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-macros": {
+            "0.64.0": {
+                "i20220909": "NoTL4A"
+            }
+        },
+        "com.vladsch.flexmark.ext-media-tags": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-resizable-image": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-superscript": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-tables": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-toc": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-typographic": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-wikilink": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-xwiki-macros": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-yaml-front-matter": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.ext-youtube-embedded": {
+            "0.64.0": {
+                "i20220909": "timjxw"
+            }
+        },
+        "com.vladsch.flexmark.html2md-converter": {
+            "0.64.0": {
+                "i20220909": "vUohaw"
+            }
+        },
+        "com.vladsch.flexmark.jira-converter": {
+            "0.64.0": {
+                "i20220909": "xCt5oQ"
+            }
+        },
+        "com.vladsch.flexmark.pdf-converter": {
+            "0.64.0": {
+                "i20220909": "9upqSA"
+            }
+        },
+        "com.vladsch.flexmark.profile-pegdown": {
+            "0.64.0": {
+                "i20220909": "twSlQ"
+            }
+        },
+        "com.vladsch.flexmark.util": {
+            "0.64.0": {
+                "i20220909": "ek62w"
+            }
+        },
+        "com.vladsch.flexmark.util-ast": {
+            "0.64.0": {
+                "i20220909": "xjCgqA"
+            }
+        },
+        "com.vladsch.flexmark.util-builder": {
+            "0.64.0": {
+                "i20220909": "03oG6g"
+            }
+        },
+        "com.vladsch.flexmark.util-collection": {
+            "0.64.0": {
+                "i20220909": "VfD1AA"
+            }
+        },
+        "com.vladsch.flexmark.util-data": {
+            "0.64.0": {
+                "i20220909": "VfD1AA"
+            }
+        },
+        "com.vladsch.flexmark.util-dependency": {
+            "0.64.0": {
+                "i20220909": "VAQzwQ"
+            }
+        },
+        "com.vladsch.flexmark.util-format": {
+            "0.64.0": {
+                "i20220909": "3VnD2A"
+            }
+        },
+        "com.vladsch.flexmark.util-html": {
+            "0.64.0": {
+                "i20220909": "CE1OpQ"
+            }
+        },
+        "com.vladsch.flexmark.util-misc": {
+            "0.64.0": {
+                "i20220909": "kevjEw"
+            }
+        },
+        "com.vladsch.flexmark.util-options": {
+            "0.64.0": {
+                "i20220909": "CE1OpQ"
+            }
+        },
+        "com.vladsch.flexmark.util-sequence": {
+            "0.64.0": {
+                "i20220909": "VAQzwQ"
+            }
+        },
+        "com.vladsch.flexmark.util-visitor": {
+            "0.64.0": {
+                "i20220909": "kevjEw"
+            }
+        },
+        "com.vladsch.flexmark.youtrack-converter": {
+            "0.64.0": {
+                "i20220909": "4Ej9GQ"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -656,6 +984,11 @@
                 "i20160704": "gvWzJQ"
             }
         },
+        "de.rototor.pdfbox.graphics2d": {
+            "0.32.0": {
+                "i20220909": "wzVMg"
+            }
+        },
         "de.schlichtherle.truezip.driver-file": {
             "7.3.4": {
                 "i20150402": "WIuUug"
@@ -730,11 +1063,114 @@
             },
             "2.4.14": {
                 "i20180424": "lYfCag"
+            },
+            "4.0.1": {
+                "i20220909": "Hto2dg"
             }
         },
         "groovy-all": {
             "2.4.14": {
                 "i20180424": "0xm1QQ"
+            }
+        },
+        "groovy-ant": {
+            "4.0.1": {
+                "i20220909": "TRyLLQ"
+            }
+        },
+        "groovy-cli-picocli": {
+            "4.0.1": {
+                "i20220909": "EpOw4A"
+            }
+        },
+        "groovy-console": {
+            "4.0.1": {
+                "i20220909": "YavSOw"
+            }
+        },
+        "groovy-datetime": {
+            "4.0.1": {
+                "i20220909": "hjjcCg"
+            }
+        },
+        "groovy-docgenerator": {
+            "4.0.1": {
+                "i20220909": "bxm9Kw"
+            }
+        },
+        "groovy-groovydoc": {
+            "4.0.1": {
+                "i20220909": "emF1bQ"
+            }
+        },
+        "groovy-groovysh": {
+            "4.0.1": {
+                "i20220909": "gpoIng"
+            }
+        },
+        "groovy-jmx": {
+            "4.0.1": {
+                "i20220909": "eqUFIw"
+            }
+        },
+        "groovy-json": {
+            "4.0.1": {
+                "i20220909": "MrDg"
+            }
+        },
+        "groovy-jsr223": {
+            "4.0.1": {
+                "i20220909": "EqRGHA"
+            }
+        },
+        "groovy-macro": {
+            "4.0.1": {
+                "i20220909": "qCVbBg"
+            }
+        },
+        "groovy-nio": {
+            "4.0.1": {
+                "i20220909": "D26R3A"
+            }
+        },
+        "groovy-servlet": {
+            "4.0.1": {
+                "i20220909": "gO9atg"
+            }
+        },
+        "groovy-sql": {
+            "4.0.1": {
+                "i20220909": "oGbYjQ"
+            }
+        },
+        "groovy-swing": {
+            "4.0.1": {
+                "i20220909": "lwod4w"
+            }
+        },
+        "groovy-templates": {
+            "4.0.1": {
+                "i20220909": "tvcelg"
+            }
+        },
+        "groovy-test": {
+            "4.0.1": {
+                "i20220909": "kzGpog"
+            }
+        },
+        "groovy-test-junit5": {
+            "4.0.1": {
+                "i20220909": "R3ttXg"
+            }
+        },
+        "groovy-xml": {
+            "4.0.1": {
+                "i20220909": "aFqtA"
+            }
+        },
+        "groovy-yaml": {
+            "4.0.1": {
+                "i20220909": "6Yhnmg"
             }
         },
         "io.pebbletemplates.pebble": {
@@ -957,6 +1393,16 @@
                 "i20180427": "hK6zJg"
             }
         },
+        "jakarta.activation-api": {
+            "1.2.2": {
+                "i20220909": "I5LU0Q"
+            }
+        },
+        "jakarta.xml.bind-api": {
+            "2.3.3": {
+                "i20220909": "Sifaqg"
+            }
+        },
         "java3d.vecmath": {
             "1.3.2": {
                 "i20150402": "fMKsIA",
@@ -1077,6 +1523,9 @@
                 "i20180424": "WoT6Sg",
                 "i20150402": "RzvJQ",
                 "i20150413": "ax8GOw"
+            },
+            "2.14.6": {
+                "i20220909": "oHg4XA"
             }
         },
         "joda-time": {
@@ -1099,6 +1548,34 @@
         "junit": {
             "4.12.0": {
                 "i20170105": "QAvjEg"
+            },
+            "4.13.2": {
+                "i20220909": "szZbA"
+            }
+        },
+        "junit-jupiter-api": {
+            "5.8.2": {
+                "i20220909": "boxmEQ"
+            }
+        },
+        "junit-jupiter-engine": {
+            "5.8.2": {
+                "i20220909": "6bNWhQ"
+            }
+        },
+        "junit-platform-commons": {
+            "1.8.2": {
+                "i20220909": "o7PJLg"
+            }
+        },
+        "junit-platform-engine": {
+            "1.8.2": {
+                "i20220909": "pn5jyg"
+            }
+        },
+        "junit-platform-launcher": {
+            "1.8.2": {
+                "i20220909": "CEAWHw"
             }
         },
         "log4j.over.slf4j": {
@@ -1243,6 +1720,11 @@
                 "i20150402": "V86PMA"
             }
         },
+        "org.abego.treelayout.core": {
+            "1.0.3": {
+                "i20220909": "695Q"
+            }
+        },
         "org.antlr": {
             "3.4.0": {
                 "i20150402": "zgw2jA",
@@ -1271,12 +1753,28 @@
             "1.8.3": {
                 "i20150402": "sk8lA",
                 "i20150413": "GrDmw"
+            },
+            "1.10.12": {
+                "i20220909": "nAHEHQ"
+            }
+        },
+        "org.apache.ant.antlr": {
+            "1.10.12": {
+                "i20220909": "QN6zhg"
+            }
+        },
+        "org.apache.ant.junit": {
+            "1.10.12": {
+                "i20220909": "L5z3zQ"
             }
         },
         "org.apache.ant.launcher": {
             "1.8.3": {
                 "i20150402": "hsisJg",
                 "i20150413": "kOezLQ"
+            },
+            "1.10.12": {
+                "i20220909": "QN6zhg"
             }
         },
         "org.apache.commons.beanutils": {
@@ -1361,6 +1859,9 @@
         "org.apache.commons.lang3": {
             "3.8.1": {
                 "i20200622": "lDqlVA"
+            },
+            "3.12.0": {
+                "i20221013": "rI3v6A"
             }
         },
         "org.apache.commons.math": {
@@ -1421,11 +1922,29 @@
             "2.3.0.final_20130110142753": {
                 "i20150402": "Ild2Fg",
                 "i20150413": "hh9HQ"
+            },
+            "2.5.0.final_20191020104435": {
+                "i20220909": "wkX3Iw"
             }
         },
         "org.apache.james.apache-mime4j-core": {
             "0.7.2": {
                 "i20180427": "shJ6MA"
+            }
+        },
+        "org.apache.pdfbox": {
+            "2.0.24": {
+                "i20220909": "kHyFSg"
+            }
+        },
+        "org.apache.pdfbox.fontbox": {
+            "2.0.24": {
+                "i20220909": "1ccpwA"
+            }
+        },
+        "org.apache.pdfbox.xmpbox": {
+            "2.0.24": {
+                "i20220909": "oc6Rfw"
             }
         },
         "org.apache.poi": {
@@ -1564,6 +2083,9 @@
                 "i20151027": "62Tgqw",
                 "i20160531": "AihFyA",
                 "i20200622": "UjI8GQ"
+            },
+            "0.7.1": {
+                "i20220909": "ReotgA"
             }
         },
         "org.codehaus.jackson": {
@@ -2312,10 +2834,20 @@
                 "i20200622": "ieezKQ"
             }
         },
+        "org.jetbrains.annotations": {
+            "15.0.0": {
+                "i20220909": "5HezVw"
+            }
+        },
         "org.json": {
             "20090211.0.0": {
                 "i20150402": "CSGteQ",
                 "i20150413": "LGm0gA"
+            }
+        },
+        "org.jsoup": {
+            "1.14.3": {
+                "i20220909": "A8v4vQ"
             }
         },
         "org.jsr-305": {
@@ -2343,6 +2875,16 @@
                 "i20191223": "io0nJQ"
             }
         },
+        "org.lz4.lz4-java": {
+            "1.4.1": {
+                "i20221013": "Uaa72g"
+            }
+        },
+        "org.nibor.autolink": {
+            "0.6.0": {
+                "i20220909": "hnGzJw"
+            }
+        },
         "org.objectweb.asm-4": {
             "4.1.0": {
                 "i20150402": "sgDEsw",
@@ -2352,6 +2894,11 @@
         "org.objectweb.asm-5": {
             "5.0.3": {
                 "i20160531": "fcvMfA"
+            }
+        },
+        "org.objectweb.asm-9": {
+            "9.2.0": {
+                "i20220909": "4OfjMQ"
             }
         },
         "org.objectweb.asm.analysis-4": {
@@ -2376,6 +2923,16 @@
                 "i20160531": "mkzVZg"
             }
         },
+        "org.objectweb.asm.tree-9": {
+            "9.2.0": {
+                "i20220909": "I3Ld8Q"
+            }
+        },
+        "org.objectweb.asm.tree.analysis-9": {
+            "9.2.0": {
+                "i20220909": "0XP4Nw"
+            }
+        },
         "org.objectweb.asm.util-4": {
             "4.1.0": {
                 "i20150402": "Z3Qeqw",
@@ -2385,6 +2942,11 @@
         "org.objectweb.asm.util-5": {
             "5.0.3": {
                 "i20160531": "ox8pGw"
+            }
+        },
+        "org.objectweb.asm.util-9": {
+            "9.2.0": {
+                "i20220909": "dTUYuA"
             }
         },
         "org.opengis": {
@@ -2406,6 +2968,11 @@
                 "i20200622": "nwaeLQ"
             }
         },
+        "org.opentest4j": {
+            "1.2.0": {
+                "i20220909": "LVzLcQ"
+            }
+        },
         "org.ow2.asm.commons-4": {
             "4.0.0": {
                 "i20150413": "NlLBuA"
@@ -2414,6 +2981,11 @@
         "org.ow2.asm.commons-5": {
             "5.0.3": {
                 "i20160531": "gKoLJQ"
+            }
+        },
+        "org.ow2.asm.commons-9": {
+            "9.2.0": {
+                "i20220909": "ACoQA"
             }
         },
         "org.parboiled.core": {
@@ -2667,12 +3239,20 @@
         "org.yaml.snakeyaml": {
             "1.21.0": {
                 "i20180727": "hSM4A"
+            },
+            "1.28.0": {
+                "i20220909": "E16rA"
             }
         },
         "oro": {
             "2.0.8": {
                 "i20150402": "g2isJA",
                 "i20150413": "jWGzKw"
+            }
+        },
+        "picocli": {
+            "4.6.3": {
+                "i20220909": "k4qtvw"
             }
         },
         "picocontainer": {
@@ -2888,7 +3468,8 @@
                 "i20151027": "5dHEfQ",
                 "i20180727": "YznE1w",
                 "i20160531": "UK3FYg",
-                "i20200622": "S4UfA"
+                "i20200622": "S4UfA",
+                "i20220909": "j9NwBA"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -2957,7 +3538,9 @@
             "4.1.0": {
                 "i20210309": "LR1Lw",
                 "i20220321": "0dpfg",
-                "i20220816": "uTFh1g"
+                "i20220816": "uTFh1g",
+                "i20220909": "Yg7LsQ",
+                "i20221013": "9WDrEw"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -2975,7 +3558,8 @@
                 "i20180727": "T6dAbQ"
             },
             "3.4.13": {
-                "i20200622": "HDQAeg"
+                "i20200622": "HDQAeg",
+                "i20221013": "2zUAcw"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
@@ -3042,7 +3626,8 @@
                 "i20180727": "KempwA",
                 "i20191223": "KempwA",
                 "i20200622": "F70X1Q",
-                "i20210309": "JqEX2Q"
+                "i20210309": "JqEX2Q",
+                "i20220909": "IYig"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -3077,7 +3662,8 @@
                 "i20180727": "oBCDYg"
             },
             "21.0.0": {
-                "i20200622": "PnCdmQ"
+                "i20200622": "PnCdmQ",
+                "i20221013": "LkqdwA"
             }
         },
         "platform.shared.groovy-all": {
@@ -3087,6 +3673,9 @@
             },
             "2.4.14": {
                 "i20180424": "rEYXTQ"
+            },
+            "4.0.1": {
+                "i20220909": "eNEJNQ"
             }
         },
         "platform.shared.orientdb.core": {
@@ -3111,7 +3700,8 @@
                 "i20151027": "0D1xDA",
                 "i20180726": "9Zy2A",
                 "i20180727": "nihyIg",
-                "i20200622": "Cu9x9w"
+                "i20200622": "Cu9x9w",
+                "i20220909": "n2xxxQ"
             }
         },
         "platform.shared.poi": {
