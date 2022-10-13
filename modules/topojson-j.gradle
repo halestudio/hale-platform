@@ -1,0 +1,24 @@
+repositories {
+	maven {
+		url 'https://jitpack.io'
+	}
+}
+
+platform {
+	bundle group: 'org.lz4', name: 'lz4-java', version: '1.4.1', {
+		bnd {
+			version = '1.4.1'
+			symbolicName = 'org.lz4.lz4-java'
+			instruction 'Export-Package', "net.jpountz.lz4;version=$version"
+		}
+	}
+
+	bundle group: 'com.github.albfernandez', name: 'javadbf', version: '1.13.2'
+
+	bundle group: 'com.github.wetransform-os', name: 'topojson-j', version: '1.0', {
+		bnd {
+			version = '1.0.0'
+			symbolicName = 'com.github.wetransform-os.topojson-j'
+		}
+	}
+}
