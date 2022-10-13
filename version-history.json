@@ -188,6 +188,11 @@
                 "i20220909": "lTJCWw"
             }
         },
+        "com.github.albfernandez.javadbf": {
+            "1.13.2": {
+                "i20221013": "5iezWA"
+            }
+        },
         "com.github.ben-manes.caffeine": {
             "2.6.2": {
                 "i20180727": "hhe2MQ"
@@ -283,6 +288,11 @@
                 "i20200622": "tQEQQA"
             }
         },
+        "com.github.wetransform-os.topojson-j": {
+            "1.0.0": {
+                "i20221013": "6g4SiA"
+            }
+        },
         "com.google.code.findbugs.jsr305": {
             "3.0.0": {
                 "i20180411": "rv7GUw"
@@ -300,6 +310,9 @@
         "com.google.gson": {
             "2.6.2": {
                 "i20170316": "NOsGzQ"
+            },
+            "2.9.1": {
+                "i20221013": "jG8uUg"
             }
         },
         "com.google.guava": {
@@ -1846,6 +1859,9 @@
         "org.apache.commons.lang3": {
             "3.8.1": {
                 "i20200622": "lDqlVA"
+            },
+            "3.12.0": {
+                "i20221013": "rI3v6A"
             }
         },
         "org.apache.commons.math": {
@@ -2859,6 +2875,11 @@
                 "i20191223": "io0nJQ"
             }
         },
+        "org.lz4.lz4-java": {
+            "1.4.1": {
+                "i20221013": "Uaa72g"
+            }
+        },
         "org.nibor.autolink": {
             "0.6.0": {
                 "i20220909": "hnGzJw"
@@ -3518,7 +3539,8 @@
                 "i20210309": "LR1Lw",
                 "i20220321": "0dpfg",
                 "i20220816": "uTFh1g",
-                "i20220909": "Yg7LsQ"
+                "i20220909": "Yg7LsQ",
+                "i20221013": "9WDrEw"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -3536,7 +3558,8 @@
                 "i20180727": "T6dAbQ"
             },
             "3.4.13": {
-                "i20200622": "HDQAeg"
+                "i20200622": "HDQAeg",
+                "i20221013": "2zUAcw"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
@@ -3639,7 +3662,8 @@
                 "i20180727": "oBCDYg"
             },
             "21.0.0": {
-                "i20200622": "PnCdmQ"
+                "i20200622": "PnCdmQ",
+                "i20221013": "LkqdwA"
             }
         },
         "platform.shared.groovy-all": {
