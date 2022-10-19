@@ -306,6 +306,12 @@ platform {
 	// fluent HTTP client API
 	bundle 'org.apache.httpcomponents:fluent-hc:4.3.6'
 
+	// prometheus client for providing metrics
+	bundle 'io.prometheus:simpleclient:0.16.0'
+	bnd group: 'io.prometheus', name: 'simpleclient', {
+		optionalImport 'io.prometheus.client.exemplars.tracer.*'
+	}
+
 	// Async HTTP client
 //	bundle 'com.ning:async-http-client:1.8.15'
 
