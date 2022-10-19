@@ -1178,6 +1178,27 @@
                 "i20180727": "acE6hw"
             }
         },
+        "io.prometheus.simpleclient": {
+            "0.16.0": {
+                "i20221019": "KZ5B3A",
+                "i202210192341": "5nsTzQ"
+            }
+        },
+        "io.prometheus.simpleclient_tracer_common": {
+            "0.16.0": {
+                "i20221019": "L8zRw"
+            }
+        },
+        "io.prometheus.simpleclient_tracer_otel": {
+            "0.16.0": {
+                "i20221019": "LAwOxQ"
+            }
+        },
+        "io.prometheus.simpleclient_tracer_otel_agent": {
+            "0.16.0": {
+                "i20221019": "9jgRMw"
+            }
+        },
         "io.swagger.annotations": {
             "1.5.8": {
                 "i20170316": "OdPJmQ"
@@ -3469,7 +3490,8 @@
                 "i20180727": "YznE1w",
                 "i20160531": "UK3FYg",
                 "i20200622": "S4UfA",
-                "i20220909": "j9NwBA"
+                "i20220909": "j9NwBA",
+                "i20221019": "S4UfA"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -3540,7 +3562,9 @@
                 "i20220321": "0dpfg",
                 "i20220816": "uTFh1g",
                 "i20220909": "Yg7LsQ",
-                "i20221013": "9WDrEw"
+                "i20221013": "9WDrEw",
+                "i20221019": "BOFiAA",
+                "i202210192343": "J2BjlA"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -3627,7 +3651,8 @@
                 "i20191223": "KempwA",
                 "i20200622": "F70X1Q",
                 "i20210309": "JqEX2Q",
-                "i20220909": "IYig"
+                "i20220909": "IYig",
+                "i20221019": "JqEX2Q"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -3701,7 +3726,8 @@
                 "i20180726": "9Zy2A",
                 "i20180727": "nihyIg",
                 "i20200622": "Cu9x9w",
-                "i20220909": "n2xxxQ"
+                "i20220909": "n2xxxQ",
+                "i20221019": "Cu9x9w"
             }
         },
         "platform.shared.poi": {
