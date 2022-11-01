@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="2.6">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+		   xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+		   jaxb:version="3.0">
 	
 	<!-- Project -->
 	<xs:element name="hale-project" type="ProjectType" />

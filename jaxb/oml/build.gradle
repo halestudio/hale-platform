@@ -1,11 +1,11 @@
 // increase the version number with every schema change!
-version = '2.9.5'
+version = '2.9.7'
 
 dependencies {
+	implementation 'org.glassfish.jaxb:jaxb-core:4.0.0'
 	implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
-	implementation 'jakarta.xml.bind:jakarta.xml.bind-api-test:3.0.1'
-	implementation 'jakarta.xml.bind:jakarta.xml.bind-api-parent:4.0.0'
-
+	implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.0'
+	implementation 'com.sun.xml.bind:jaxb-impl:4.0.0'
 }
 
 jar {
