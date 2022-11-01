@@ -3,7 +3,10 @@
   targetNamespace="http://wadl.dev.java.net/2009/02"
   xmlns:tns="http://wadl.dev.java.net/2009/02"
   xmlns:xml="http://www.w3.org/XML/1998/namespace"
-  elementFormDefault="qualified">
+  elementFormDefault="qualified"
+           xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           jaxb:version="3.0">
 
   <xs:import namespace="http://www.w3.org/XML/1998/namespace"
     schemaLocation="http://www.w3.org/2001/xml.xsd"/>

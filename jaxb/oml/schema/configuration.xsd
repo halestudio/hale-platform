@@ -2,7 +2,11 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.esdi-humboldt.eu/configuration"
 	xmlns:cfg="http://www.esdi-humboldt.eu/configuration"
-	elementFormDefault="qualified">
+	elementFormDefault="qualified"
+			xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+			xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+			jaxb:version="3.0"
+>
 	<xsd:annotation>
 		<xsd:documentation xml:lang="en">
 			This schema defines the

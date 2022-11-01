@@ -1,144 +1,170 @@
 {
     "bundle": {
+        "angus-activation": {
+            "1.0.0": {
+                "i20221102": "U4Qrkw"
+            }
+        },
         "antlr": {
             "2.7.7": {
                 "i20150402": "jXKsKg",
-                "i20150413": "l92zMQ"
+                "i20150413": "l92zMQ",
+                "i20221102": "naHXNA"
             }
         },
         "aopalliance": {
             "1.0.0": {
                 "i20150402": "dGqsGw",
-                "i20150413": "fbizIg"
+                "i20150413": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "args4j": {
             "2.0.16": {
                 "i20150402": "3CasUw",
-                "i20150413": "6ZyzWg"
+                "i20150413": "6ZyzWg",
+                "i20221102": "sDXXQ"
             }
         },
         "asm": {
             "3.3.1": {
                 "i20150402": "fnSsIQ",
-                "i20150413": "iDSzKA"
+                "i20150413": "iDSzKA",
+                "i20221102": "ipjXKw"
             }
         },
         "asm.asm-analysis": {
             "3.3.1": {
                 "i20150402": "9hi6tQ",
-                "i20150413": "PDHBvA"
+                "i20150413": "PDHBvA",
+                "i20221102": "k3blvw"
             }
         },
         "asm.asm-tree": {
             "3.3.1": {
                 "i20150402": "IQvJjQ",
-                "i20150413": "o1QlA"
+                "i20150413": "o1QlA",
+                "i20221102": "T5T0lw"
             }
         },
         "asm.asm-util": {
             "3.3.1": {
                 "i20150402": "9hi6tQ",
-                "i20150413": "PDHBvA"
+                "i20150413": "PDHBvA",
+                "i20221102": "k3blvw"
             }
         },
         "assertj-core": {
             "3.22.0": {
-                "i20220321": "nQcuGw"
+                "i20220321": "nQcuGw",
+                "i20221102": "T2hSHg"
             }
         },
         "bcpkix": {
             "1.51.0": {
                 "i20150402": "suR2nw",
-                "i20150413": "Bm59pg"
+                "i20150413": "Bm59pg",
+                "i20221102": "amhqQ"
             }
         },
         "bcprov": {
             "1.51.0": {
                 "i20150402": "Y9mBYQ",
-                "i20150413": "4HiIaA"
+                "i20150413": "4HiIaA",
+                "i20221102": "YC6saw"
             }
         },
         "cal10n.api": {
             "0.8.1": {
                 "i20150402": "TErfg",
-                "i20150413": "VmeyhQ"
+                "i20150413": "VmeyhQ",
+                "i20221102": "TzWiA"
             }
         },
         "cglib": {
             "2.2.2": {
                 "i20150402": "HwHJjA",
-                "i20150413": "oULQkw"
+                "i20150413": "oULQkw",
+                "i20221102": "TRf0lg"
             }
         },
         "ch.qos.logback.classic": {
             "1.0.13": {
                 "i20150402": "Or0Yig",
-                "i20150413": "wrsfkQ"
+                "i20150413": "wrsfkQ",
+                "i20221102": "0BDlA"
             }
         },
         "ch.qos.logback.core": {
             "1.0.13": {
                 "i20150402": "oGZBqQ",
-                "i20150413": "D5xIsA"
+                "i20150413": "D5xIsA",
+                "i20221102": "ATt53A"
             }
         },
         "colt": {
             "1.2.0": {
                 "i20150402": "LWLSJQ",
-                "i20150413": "XyjZLA"
+                "i20150413": "XyjZLA",
+                "i20221102": "jlX9Lw"
             }
         },
         "com.conversantmedia.disruptor": {
             "1.2.13": {
-                "i20200622": "L6jUUg"
+                "i20200622": "L6jUUg",
+                "i20221102": "djH4VQ"
             }
         },
         "com.coverity.security.coverity-escapers": {
             "1.1.1": {
-                "i20180727": "38jATQ"
+                "i20180727": "38jATQ",
+                "i20221102": "0FfkUA"
             }
         },
         "com.fasterxml.jackson.core.jackson-annotations": {
-            "2.3.2": {
-                "i20150413": "CCkg"
+            "2.13.4": {
+                "i20220909": "MYfjWw",
+                "i20221102": "fFoHbQ"
             },
             "2.3.0": {
                 "i20150402": "PADd8Q"
             },
-            "2.13.4": {
-                "i20220909": "MYfjWw"
+            "2.3.2": {
+                "i20150413": "CCkg"
             }
         },
         "com.fasterxml.jackson.core.jackson-core": {
-            "2.3.2": {
-                "i20150413": "kQNYxg"
+            "2.13.4": {
+                "i20220909": "sCsGpw",
+                "i20221102": "HXcqqg"
             },
             "2.3.0": {
                 "i20150402": "DJNRrw"
             },
-            "2.13.4": {
-                "i20220909": "sCsGpw"
+            "2.3.2": {
+                "i20150413": "kQNYxg"
             }
         },
         "com.fasterxml.jackson.core.jackson-databind": {
-            "2.3.2": {
-                "i20150413": "Ubfs1w"
+            "2.13.4": {
+                "i20220909": "9CiHhQ",
+                "i20221102": "1SmriA"
             },
             "2.3.0": {
                 "i20150402": "GIflmg"
             },
-            "2.13.4": {
-                "i20220909": "9CiHhQ"
+            "2.3.2": {
+                "i20150413": "Ubfs1w"
             }
         },
         "com.fasterxml.jackson.dataformat.jackson-dataformat-yaml": {
-            "2.2.3": {
-                "i20150402": "V5E7UQ",
-                "i20150413": "E6tCWA"
-            },
             "2.13.1": {
                 "i20220909": "NOUYPg"
+            },
+            "2.2.3": {
+                "i20150402": "V5E7UQ",
+                "i20150413": "E6tCWA",
+                "i20221102": "BpFmWw"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-guava": {
@@ -146,56 +172,63 @@
                 "i20150402": "azKdeA",
                 "i20150413": "Lqkfw",
                 "i20151027": "i2kfw",
-                "i20200622": "Fakfw"
+                "i20200622": "Fakfw",
+                "i20221102": "NkjIgg"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-json-org": {
             "2.1.2": {
                 "i20150402": "0Pxc8A",
-                "i20150413": "oK9j9w"
+                "i20150413": "oK9j9w",
+                "i20221102": "2aSHg"
             }
         },
         "com.fasterxml.jackson.jaxrs.jackson-jaxrs-base": {
-            "2.3.2": {
-                "i20150413": "AG3oOQ"
+            "2.13.4": {
+                "i20220909": "ht6dw",
+                "i20221102": "EACeeg"
             },
             "2.2.3": {
                 "i20150402": "YMHc7w"
             },
-            "2.13.4": {
-                "i20220909": "ht6dw"
+            "2.3.2": {
+                "i20150413": "AG3oOQ"
             }
         },
         "com.fasterxml.jackson.jaxrs.jackson-jaxrs-json-provider": {
-            "2.3.2": {
-                "i20150413": "Zdb01Q"
+            "2.13.4": {
+                "i20220909": "RqRTng",
+                "i20221102": "Jh13oQ"
             },
             "2.2.3": {
                 "i20150402": "3mJmRQ"
             },
-            "2.13.4": {
-                "i20220909": "RqRTng"
+            "2.3.2": {
+                "i20150413": "Zdb01Q"
             }
         },
         "com.fasterxml.jackson.module.jackson-module-jaxb-annotations": {
-            "2.3.2": {
-                "i20150413": "Twykag"
+            "2.13.4": {
+                "i20220909": "lTJCWw",
+                "i20221102": "U65mXg"
             },
             "2.2.3": {
                 "i20150402": "YMHc7w"
             },
-            "2.13.4": {
-                "i20220909": "lTJCWw"
+            "2.3.2": {
+                "i20150413": "Twykag"
             }
         },
         "com.github.albfernandez.javadbf": {
             "1.13.2": {
-                "i20221013": "5iezWA"
+                "i20221013": "5iezWA",
+                "i20221102": "ovXWw"
             }
         },
         "com.github.ben-manes.caffeine": {
             "2.6.2": {
-                "i20180727": "hhe2MQ"
+                "i20180727": "hhe2MQ",
+                "i20221102": "hbaNA"
             }
         },
         "com.github.javaparser.javaparser-core": {
@@ -205,24 +238,27 @@
         },
         "com.github.jnr.a64asm": {
             "1.0.0": {
-                "i20220909": "o0Qg"
+                "i20220909": "o0Qg",
+                "i20221102": "JB7jRQ"
             }
         },
         "com.github.jnr.constants": {
-            "0.9.1": {
-                "i20160531": "awJw1g"
-            },
             "0.8.6": {
                 "i20150413": "lF2zLw"
+            },
+            "0.9.1": {
+                "i20160531": "awJw1g",
+                "i20221102": "tdCU2Q"
             }
         },
         "com.github.jnr.enxio": {
+            "0.12.0": {
+                "i20160531": "gDI0NA",
+                "i20221102": "Sy9YNw"
+            },
             "0.5.0": {
                 "i20150413": "Q8fazQ",
                 "i20151027": "Y5azQ"
-            },
-            "0.12.0": {
-                "i20160531": "gDI0NA"
             }
         },
         "com.github.jnr.ffi": {
@@ -234,7 +270,8 @@
                 "i20160531": "3NFHYw"
             },
             "2.2.12": {
-                "i20220909": "1VtSIQ"
+                "i20220909": "1VtSIQ",
+                "i20221102": "cqt2JA"
             }
         },
         "com.github.jnr.jffi": {
@@ -245,7 +282,8 @@
                 "i20150413": "jWGzKw"
             },
             "1.3.9": {
-                "i20220909": "ubGTg"
+                "i20220909": "ubGTg",
+                "i20221102": "PwDjUQ"
             }
         },
         "com.github.jnr.jffi.native": {
@@ -253,12 +291,14 @@
                 "i20160531": "GivB9Q"
             },
             "1.3.9": {
-                "i20220909": "GivB9Q"
+                "i20220909": "GivB9Q",
+                "i20221102": "0lvlA"
             }
         },
         "com.github.jnr.posix": {
             "3.0.29": {
-                "i20160531": "voly5g"
+                "i20160531": "voly5g",
+                "i20221102": "X8WW6Q"
             },
             "3.0.8": {
                 "i20150413": "hvXa0w",
@@ -266,18 +306,20 @@
             }
         },
         "com.github.jnr.unixsocket": {
+            "0.12.0": {
+                "i20160531": "7EpIeg",
+                "i20221102": "gpRsfQ"
+            },
             "0.4.0": {
                 "i20150413": "cnsKSQ",
                 "i20151027": "klMKSQ"
-            },
-            "0.12.0": {
-                "i20160531": "7EpIeg"
             }
         },
         "com.github.jnr.x86asm": {
             "1.0.2": {
                 "i20150413": "gTKzJA",
-                "i20160531": "pwmRA"
+                "i20160531": "pwmRA",
+                "i20221102": "KJjjRw"
             }
         },
         "com.github.sommeri.less4j": {
@@ -285,26 +327,34 @@
                 "i20150402": "s7YJOQ",
                 "i20150413": "zgwQQA",
                 "i20151027": "k6oQQA",
-                "i20200622": "tQEQQA"
+                "i20200622": "tQEQQA",
+                "i20221102": "Jlo0Qw"
+            }
+        },
+        "com.github.virtuald.curvesapi": {
+            "1.7.0": {
+                "i20221102": "jLXXLA"
             }
         },
         "com.github.wetransform-os.topojson-j": {
             "1.0.0": {
-                "i20221013": "6g4SiA"
+                "i20221013": "6g4SiA",
+                "i20221102": "lv82iw"
             }
         },
         "com.google.code.findbugs.jsr305": {
-            "3.0.0": {
-                "i20180411": "rv7GUw"
-            },
             "2.0.3": {
                 "i20150402": "PLKTg",
                 "i20150413": "stjGVQ"
+            },
+            "3.0.0": {
+                "i20180411": "rv7GUw"
             }
         },
         "com.google.errorprone.error_prone_annotations": {
             "2.2.0": {
-                "i20200622": "gvezJQ"
+                "i20200622": "gvezJQ",
+                "i20221102": "hDvXKA"
             }
         },
         "com.google.gson": {
@@ -312,7 +362,8 @@
                 "i20170316": "NOsGzQ"
             },
             "2.9.1": {
-                "i20221013": "jG8uUg"
+                "i20221013": "jG8uUg",
+                "i20221102": "dS5SVQ"
             }
         },
         "com.google.guava": {
@@ -324,28 +375,35 @@
                 "i20180727": "x0WhDA"
             },
             "27.0.0.jre": {
-                "i20200622": "nsTSpg"
+                "i20200622": "nsTSpg",
+                "i20221102": "vZ32qQ"
             }
         },
         "com.google.guava.failureaccess": {
             "1.0.0": {
-                "i20200622": "fbizIg"
+                "i20200622": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "com.google.guava.listenablefuture": {
             "9999.0.0.empty-to-avoid-conflict-with-guava": {
-                "i20200622": "1duz1Q"
+                "i20200622": "1duz1Q",
+                "i20221102": "GS7X2A"
             }
         },
         "com.google.inject": {
             "2.0.0": {
                 "i20150402": "3HXMpA",
                 "i20150413": "67zTqw"
+            },
+            "3.0.0": {
+                "i20221102": "FKhFIQ"
             }
         },
         "com.google.j2objc.annotations": {
             "1.1.0": {
-                "i20200622": "f3ezIw"
+                "i20200622": "f3ezIw",
+                "i20221102": "fvXJg"
             }
         },
         "com.google.javascript.closure-compiler": {
@@ -353,66 +411,74 @@
                 "i20150402": "6WGfA",
                 "i20150413": "CuWqKA",
                 "i20151027": "XZKqKA",
-                "i20200622": "CuWqKA"
+                "i20200622": "CuWqKA",
+                "i20221102": "1OzOKw"
             }
         },
         "com.google.protobuf.java": {
             "2.4.1": {
                 "i20150402": "fnKsIQ",
-                "i20150413": "iDKzKA"
+                "i20150413": "iDKzKA",
+                "i20221102": "ipbXKw"
             }
         },
         "com.googlecode.json-simple": {
             "1.1.0": {
                 "i20150402": "dhasHA",
-                "i20150413": "f3ezIw"
+                "i20150413": "f3ezIw",
+                "i20221102": "fvXJg"
             }
         },
         "com.haleconnect.api.haleconnect-bucket-api": {
-            "1.0.1.SNAPSHOT": {
-                "i20170428": "LSsuw"
-            },
             "1.0.1": {
                 "i20170517": "LSsuw",
-                "i20200622": "7Bqsuw"
+                "i20200622": "7Bqsuw",
+                "i20221102": "44PQvg"
+            },
+            "1.0.1.SNAPSHOT": {
+                "i20170428": "LSsuw"
             }
         },
         "com.haleconnect.api.haleconnect-project-api": {
-            "0.1.0.SNAPSHOT": {
-                "i20170428": "Ausug"
-            },
             "0.1.0": {
                 "i20170517": "Ausug",
-                "i20200622": "53Gsug"
+                "i20200622": "53Gsug",
+                "i20221102": "3nrQvQ"
+            },
+            "0.1.0.SNAPSHOT": {
+                "i20170428": "Ausug"
             }
         },
         "com.haleconnect.api.haleconnect-projectstore-api": {
-            "1.6.0": {
-                "i20180329": "FBKswA",
-                "i20200622": "A3iswA"
+            "1.0.0": {
+                "i20170517": "A2sug"
             },
             "1.0.0.SNAPSHOT": {
                 "i20170428": "A2sug"
             },
-            "1.0.0": {
-                "i20170517": "A2sug"
+            "1.6.0": {
+                "i20180329": "FBKswA",
+                "i20200622": "A3iswA",
+                "i20221102": "LLQww"
             }
         },
         "com.haleconnect.api.haleconnect-user-api": {
-            "1.0.2.SNAPSHOT": {
-                "i20170428": "AWqsvA"
-            },
             "1.0.0": {
                 "i20170316": "A2sug"
             },
             "1.0.2": {
                 "i20170517": "AWqsvA",
-                "i20200622": "8MGsvA"
+                "i20200622": "8MGsvA",
+                "i20221102": "6IrQvw"
+            },
+            "1.0.2.SNAPSHOT": {
+                "i20170428": "AWqsvA"
             }
         },
         "com.healthmarketscience.jackcess": {
             "2.1.3": {
-                "i20160712": "jpEwLA"
+                "i20160712": "jpEwLA",
+                "i20221102": "N8pEuA"
             }
         },
         "com.hierynomus.sshj": {
@@ -423,22 +489,26 @@
         "com.iabcinc.jmep": {
             "0.1.0": {
                 "i20150402": "dGisGw",
-                "i20150413": "fbazIg"
+                "i20150413": "fbazIg",
+                "i20221102": "fdrXJQ"
             }
         },
         "com.ibm.icu": {
             "59.1.0": {
-                "i20220909": "ISbIUg"
+                "i20220909": "ISbIUg",
+                "i20221102": "SAPsVQ"
             }
         },
         "com.j256.ormlite.core": {
             "5.1.0": {
-                "i20191223": "hnuzJw"
+                "i20191223": "hnuzJw",
+                "i20221102": "iHXKg"
             }
         },
         "com.j256.ormlite.jdbc": {
             "5.1.0": {
-                "i20191223": "Gexf7g"
+                "i20191223": "Gexf7g",
+                "i20221102": "xuuD8Q"
             }
         },
         "com.jcraft.jzlib": {
@@ -450,106 +520,124 @@
             "2.0.235": {
                 "i20150402": "O9Cshg",
                 "i20150413": "TQzjQ",
-                "i20180727": "xfXAtg"
+                "i20180727": "xfXAtg",
+                "i20221102": "3eTkuQ"
             }
         },
         "com.openhtmltopdf.core": {
             "1.0.10": {
-                "i20220909": "hEdG7g"
+                "i20220909": "hEdG7g",
+                "i20221102": "JQRq8Q"
             }
         },
         "com.openhtmltopdf.jsoup-dom-converter": {
             "1.0.0": {
-                "i20220909": "BUAJVg"
+                "i20220909": "BUAJVg",
+                "i20221102": "ktQtWQ"
             }
         },
         "com.openhtmltopdf.pdfbox": {
             "1.0.10": {
-                "i20220909": "KyliPg"
+                "i20220909": "KyliPg",
+                "i20221102": "ltGGQQ"
             }
         },
         "com.openhtmltopdf.rtl-support": {
             "1.0.10": {
-                "i20220909": "gEcXWA"
+                "i20220909": "gEcXWA",
+                "i20221102": "oYw7Ww"
             }
         },
         "com.orientechnologies.orient-commons": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-client": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-core": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-enterprise": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-graphdb": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-nativeos": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-object": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-server": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.orientechnologies.orientdb-tools": {
             "1.5.1": {
                 "i20150402": "3FfdEw",
-                "i20150413": "qA3kGg"
+                "i20150413": "qA3kGg",
+                "i20221102": "sGcILA"
             }
         },
         "com.spotify.docker-client": {
+            "2.4.2": {
+                "i20150402": "ydptLQ"
+            },
             "2.7.7": {
                 "i20150413": "yoE1eA",
                 "i20151027": "jLU1eA",
-                "i20200622": "e8E1eA"
-            },
-            "2.4.2": {
-                "i20150402": "ydptLQ"
+                "i20200622": "e8E1eA",
+                "i20221102": "uNJZew"
             }
         },
         "com.squareup.okhttp": {
             "2.7.5": {
-                "i20170316": "u0a6A"
+                "i20170316": "u0a6A",
+                "i20221102": "jNfew"
             }
         },
         "com.squareup.okhttp.logging-interceptor": {
             "2.7.5": {
-                "i20170316": "tgUevQ"
+                "i20170316": "tgUevQ",
+                "i20221102": "MWBCwA"
             }
         },
         "com.squareup.okio": {
             "1.6.0": {
-                "i20170316": "iDKzKA"
+                "i20170316": "iDKzKA",
+                "i20221102": "ipbXKw"
             }
         },
         "com.sun.istack.commons-runtime": {
@@ -559,6 +647,9 @@
             },
             "3.0.7": {
                 "i20200622": "5HosGA"
+            },
+            "4.1.1": {
+                "i20221102": "VORTcw"
             }
         },
         "com.sun.jersey.client": {
@@ -574,7 +665,8 @@
         "com.sun.jna": {
             "3.5.2": {
                 "i20150402": "7pG78w",
-                "i20150413": "MXbCg"
+                "i20150413": "MXbCg",
+                "i20221102": "VzXmQ"
             }
         },
         "com.sun.xml.bind.jaxb-core": {
@@ -582,14 +674,23 @@
                 "i20150402": "vJLXqw",
                 "i20150413": "e4vesg",
                 "i20180727": "GtHsug"
+            },
+            "4.0.1": {
+                "i20221102": "hFlvMQ"
+            }
+        },
+        "com.sun.xml.bind.jaxb-impl": {
+            "4.0.1": {
+                "i20221102": "UgAFvg"
             }
         },
         "com.sun.xml.fastinfoset.FastInfoset": {
-            "1.2.13": {
-                "i20180727": "RaatA"
-            },
             "1.2.12": {
                 "i20180427": "5GazVw"
+            },
+            "1.2.13": {
+                "i20180727": "RaatA",
+                "i20221102": "zdTw4A"
             },
             "1.2.15": {
                 "i20200622": "t96nKA"
@@ -597,16 +698,18 @@
         },
         "com.thoughtworks.qdox": {
             "1.12.1": {
-                "i20220909": "4quzVg"
+                "i20220909": "4quzVg",
+                "i20221102": "9kXWQ"
             }
         },
         "com.tinkerpop.blueprints.core": {
             "2.5.0.orientDB151": {
-                "i20180424": "zMLcA",
                 "i20150402": "qbwqeQ",
                 "i20150413": "DMcxgA",
                 "i20151027": "AD0xgA",
-                "i20200622": "O0LcA"
+                "i20180424": "zMLcA",
+                "i20200622": "O0LcA",
+                "i20221102": "e70vcw"
             }
         },
         "com.tinkerpop.blueprints.orient-graph": {
@@ -614,34 +717,39 @@
                 "i20150402": "6sJ1qQ",
                 "i20150413": "GIJ8sA",
                 "i20151027": "3RR8sA",
-                "i20200622": "GIJ8sA"
+                "i20200622": "GIJ8sA",
+                "i20221102": "Fd2gsw"
             }
         },
         "com.tinkerpop.gremlin.groovy": {
             "2.5.0.orientDB151": {
-                "i20180424": "MY0hoA",
                 "i20150402": "R0AntA",
                 "i20150413": "fEuuw",
                 "i20151027": "suguuw",
-                "i20200622": "RpYhoA"
+                "i20180424": "MY0hoA",
+                "i20200622": "RpYhoA",
+                "i20221102": "ZO4uEw"
             }
         },
         "com.tinkerpop.gremlin.java": {
             "2.5.0.orientDB151": {
                 "i20150402": "9KaZFQ",
-                "i20150413": "ApmgHA"
+                "i20150413": "ApmgHA",
+                "i20221102": "9U3EHw"
             }
         },
         "com.tinkerpop.pipes": {
             "2.5.0.orientDB151": {
                 "i20150402": "WEQPeg",
-                "i20150413": "OWIWgQ"
+                "i20150413": "OWIWgQ",
+                "i20221102": "5o6hA"
             }
         },
         "com.typesafe.config": {
             "1.2.1": {
                 "i20150402": "orDDlg",
-                "i20150413": "dq7KnQ"
+                "i20150413": "dq7KnQ",
+                "i20221102": "ebruoA"
             }
         },
         "com.vividsolutions.jts": {
@@ -652,247 +760,296 @@
         },
         "com.vladsch.flexmark": {
             "0.64.0": {
-                "i20220909": "cW0Ew"
+                "i20220909": "cW0Ew",
+                "i20221102": "HbwpAg"
             }
         },
         "com.vladsch.flexmark.all": {
             "0.64.0": {
-                "i20220909": "1CLYBQ"
+                "i20220909": "1CLYBQ",
+                "i20221102": "5qH8CA"
             }
         },
         "com.vladsch.flexmark.ext-abbreviation": {
             "0.64.0": {
-                "i20220909": "qYvNyA"
+                "i20220909": "qYvNyA",
+                "i20221102": "Grbxyw"
             }
         },
         "com.vladsch.flexmark.ext-admonition": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-anchorlink": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-aside": {
             "0.64.0": {
-                "i20220909": "Z5bPVA"
+                "i20220909": "Z5bPVA",
+                "i20221102": "aM3zVw"
             }
         },
         "com.vladsch.flexmark.ext-attributes": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-autolink": {
             "0.64.0": {
-                "i20220909": "dXzBzg"
+                "i20220909": "dXzBzg",
+                "i20221102": "Zfzl0Q"
             }
         },
         "com.vladsch.flexmark.ext-definition": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-emoji": {
             "0.64.0": {
-                "i20220909": "Z5bPVA"
+                "i20220909": "Z5bPVA",
+                "i20221102": "aM3zVw"
             }
         },
         "com.vladsch.flexmark.ext-enumerated-reference": {
             "0.64.0": {
-                "i20220909": "6dTPiA"
+                "i20220909": "6dTPiA",
+                "i20221102": "6wvziw"
             }
         },
         "com.vladsch.flexmark.ext-escaped-character": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-footnotes": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-gfm-issues": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-gfm-strikethrough": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-gfm-tasklist": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-gfm-users": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-gitlab": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-ins": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-jekyll-front-matter": {
             "0.64.0": {
-                "i20220909": "IY3UhA"
+                "i20220909": "IY3UhA",
+                "i20221102": "Gwz4hw"
             }
         },
         "com.vladsch.flexmark.ext-jekyll-tag": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-macros": {
             "0.64.0": {
-                "i20220909": "NoTL4A"
+                "i20220909": "NoTL4A",
+                "i20221102": "F5Tv4w"
             }
         },
         "com.vladsch.flexmark.ext-media-tags": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-resizable-image": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-superscript": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-tables": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-toc": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-typographic": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-wikilink": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-xwiki-macros": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-yaml-front-matter": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.ext-youtube-embedded": {
             "0.64.0": {
-                "i20220909": "timjxw"
+                "i20220909": "timjxw",
+                "i20221102": "2NXHyg"
             }
         },
         "com.vladsch.flexmark.html2md-converter": {
             "0.64.0": {
-                "i20220909": "vUohaw"
+                "i20220909": "vUohaw",
+                "i20221102": "48RFbg"
             }
         },
         "com.vladsch.flexmark.jira-converter": {
             "0.64.0": {
-                "i20220909": "xCt5oQ"
+                "i20220909": "xCt5oQ",
+                "i20221102": "11KdpA"
             }
         },
         "com.vladsch.flexmark.pdf-converter": {
             "0.64.0": {
-                "i20220909": "9upqSA"
+                "i20220909": "9upqSA",
+                "i20221102": "H8mOSw"
             }
         },
         "com.vladsch.flexmark.profile-pegdown": {
             "0.64.0": {
-                "i20220909": "twSlQ"
+                "i20220909": "twSlQ",
+                "i20221102": "4gU2mA"
             }
         },
         "com.vladsch.flexmark.util": {
             "0.64.0": {
-                "i20220909": "ek62w"
+                "i20220909": "ek62w",
+                "i20221102": "UXRe3g"
             }
         },
         "com.vladsch.flexmark.util-ast": {
             "0.64.0": {
-                "i20220909": "xjCgqA"
+                "i20220909": "xjCgqA",
+                "i20221102": "qI7Eqw"
             }
         },
         "com.vladsch.flexmark.util-builder": {
             "0.64.0": {
-                "i20220909": "03oG6g"
+                "i20220909": "03oG6g",
+                "i20221102": "rOcq7Q"
             }
         },
         "com.vladsch.flexmark.util-collection": {
             "0.64.0": {
-                "i20220909": "VfD1AA"
+                "i20220909": "VfD1AA",
+                "i20221102": "lkMZEg"
             }
         },
         "com.vladsch.flexmark.util-data": {
             "0.64.0": {
-                "i20220909": "VfD1AA"
+                "i20220909": "VfD1AA",
+                "i20221102": "lkMZEg"
             }
         },
         "com.vladsch.flexmark.util-dependency": {
             "0.64.0": {
-                "i20220909": "VAQzwQ"
+                "i20220909": "VAQzwQ",
+                "i20221102": "eAVXxA"
             }
         },
         "com.vladsch.flexmark.util-format": {
             "0.64.0": {
-                "i20220909": "3VnD2A"
+                "i20220909": "3VnD2A",
+                "i20221102": "zdnn2w"
             }
         },
         "com.vladsch.flexmark.util-html": {
             "0.64.0": {
-                "i20220909": "CE1OpQ"
+                "i20220909": "CE1OpQ",
+                "i20221102": "AdpyqA"
             }
         },
         "com.vladsch.flexmark.util-misc": {
             "0.64.0": {
-                "i20220909": "kevjEw"
+                "i20220909": "kevjEw",
+                "i20221102": "OTMHJQ"
             }
         },
         "com.vladsch.flexmark.util-options": {
             "0.64.0": {
-                "i20220909": "CE1OpQ"
+                "i20220909": "CE1OpQ",
+                "i20221102": "AdpyqA"
             }
         },
         "com.vladsch.flexmark.util-sequence": {
             "0.64.0": {
-                "i20220909": "VAQzwQ"
+                "i20220909": "VAQzwQ",
+                "i20221102": "eAVXxA"
             }
         },
         "com.vladsch.flexmark.util-visitor": {
             "0.64.0": {
-                "i20220909": "kevjEw"
+                "i20220909": "kevjEw",
+                "i20221102": "OTMHJQ"
             }
         },
         "com.vladsch.flexmark.youtrack-converter": {
             "0.64.0": {
-                "i20220909": "4Ej9GQ"
+                "i20220909": "4Ej9GQ",
+                "i20221102": "mCshKw"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -905,33 +1062,42 @@
                 "i20150402": "RhxebA"
             }
         },
+        "com.zaxxer.SparseBitSet": {
+            "1.2.0": {
+                "i20221102": "ghrXJw"
+            }
+        },
         "commons-beanutils.commons-beanutils-core": {
             "1.8.0": {
                 "i20150402": "kKru4A",
                 "i20150413": "wiz15w"
             },
             "1.8.3": {
-                "i20170105": "yTT16g"
+                "i20170105": "yTT16g",
+                "i20221102": "pYT3sw"
             }
         },
         "commons-digester": {
             "1.8.0": {
-                "i20180424": "sacd4A",
                 "i20150402": "I9Ictw",
-                "i20150413": "vrgjvg"
+                "i20150413": "vrgjvg",
+                "i20180424": "sacd4A",
+                "i20221102": "TEEfqQ"
             }
         },
         "commons-httpclient": {
             "3.1.0": {
                 "i20150402": "LgAlBg",
-                "i20150413": "PRgsDQ"
+                "i20150413": "PRgsDQ",
+                "i20221102": "FfUt2A"
             }
         },
         "concurrent": {
             "1.3.4": {
                 "i20150402": "gBasIg",
                 "i20150413": "iemzKQ",
-                "i20180726": "6H3AUg"
+                "i20180726": "6H3AUg",
+                "i20221102": "2uzkVQ"
             }
         },
         "de.cs3d.common.metamodel": {
@@ -949,44 +1115,50 @@
         "de.fhg.igd.hale.fme": {
             "1.1.0": {
                 "i20150402": "0xTx8A",
-                "i20150413": "kxf49w"
+                "i20150413": "kxf49w",
+                "i20221102": "2r4dCQ"
             }
         },
         "de.fhg.igd.hale.fme.doc": {
             "1.1.0": {
                 "i20150402": "pSajuA",
-                "i20150413": "G4yqvw"
+                "i20150413": "G4yqvw",
+                "i20221102": "KqTOwg"
             }
         },
         "de.fhg.igd.hale.fme.ui": {
             "1.3.0": {
                 "i20150402": "p6MEng",
-                "i20150413": "gM0LpQ"
+                "i20150413": "gM0LpQ",
+                "i20221102": "aUYvqA"
             }
         },
         "de.fhg.igd.osgi.util": {
             "1.0.0": {
                 "i20150402": "OM9h3w",
-                "i20150413": "G9ho5g"
+                "i20150413": "G9ho5g",
+                "i20221102": "gMmM6Q"
             }
         },
         "de.interactive_instruments.xtraserver-config-util": {
-            "1.0.6": {
-                "i20181217": "5uLUTA"
-            },
             "1.0.0": {
                 "i20180411": "84btpw",
                 "i20180727": "OSbNhQ"
+            },
+            "1.0.6": {
+                "i20181217": "5uLUTA"
             }
         },
         "de.odysseus.staxon": {
             "1.3.0": {
-                "i20160704": "gvWzJQ"
+                "i20160704": "gvWzJQ",
+                "i20221102": "hDnXKA"
             }
         },
         "de.rototor.pdfbox.graphics2d": {
             "0.32.0": {
-                "i20220909": "wzVMg"
+                "i20220909": "wzVMg",
+                "i20221102": "xu75NQ"
             }
         },
         "de.schlichtherle.truezip.driver-file": {
@@ -1023,19 +1195,22 @@
         "eu.esdihumboldt.hale.prefixmapper": {
             "1.0.1": {
                 "i20150402": "MosLw",
-                "i20150413": "ScqzNg"
+                "i20150413": "ScqzNg",
+                "i20221102": "haXOQ"
             }
         },
         "eu.esdihumboldt.util.resource.schemas.citygml": {
             "1.0.0.20120927": {
                 "i20150402": "cU6ZOQ",
-                "i20150413": "IDigQA"
+                "i20150413": "IDigQA",
+                "i20221102": "P3TEQw"
             }
         },
         "eu.esdihumboldt.util.resource.schemas.test": {
             "1.0.0.201205101531": {
                 "i20150402": "cU6ZOQ",
-                "i20150413": "IDigQA"
+                "i20150413": "IDigQA",
+                "i20221102": "P3TEQw"
             }
         },
         "findbugs.annotations": {
@@ -1046,14 +1221,16 @@
         "findbugsAnnotations": {
             "2.0.3": {
                 "i20150402": "vXWsJw",
-                "i20150413": "4DGzLg"
+                "i20150413": "4DGzLg",
+                "i20221102": "X97XMQ"
             }
         },
         "gnu.trove": {
             "2.0.4": {
                 "i20150402": "yVw5Q",
                 "i20150413": "Oiu37A",
-                "i20160810": "54DDg"
+                "i20160810": "54DDg",
+                "i20221102": "bU7nQ"
             }
         },
         "groovy": {
@@ -1063,6 +1240,9 @@
             },
             "2.4.14": {
                 "i20180424": "lYfCag"
+            },
+            "2.5.19": {
+                "i20221102": "MfPCig"
             },
             "4.0.1": {
                 "i20220909": "Hto2dg"
@@ -1074,96 +1254,163 @@
             }
         },
         "groovy-ant": {
+            "2.5.19": {
+                "i20221102": "H5kXiQ"
+            },
             "4.0.1": {
                 "i20220909": "TRyLLQ"
             }
         },
+        "groovy-cli-commons": {
+            "2.5.19": {
+                "i20221102": "binU4w"
+            }
+        },
         "groovy-cli-picocli": {
+            "2.5.19": {
+                "i20221102": "binU4w"
+            },
             "4.0.1": {
                 "i20220909": "EpOw4A"
             }
         },
         "groovy-console": {
+            "2.5.19": {
+                "i20221102": "7i1Bg"
+            },
             "4.0.1": {
                 "i20220909": "YavSOw"
             }
         },
         "groovy-datetime": {
+            "2.5.19": {
+                "i20221102": "CzD7EA"
+            },
             "4.0.1": {
                 "i20220909": "hjjcCg"
             }
         },
         "groovy-docgenerator": {
+            "2.5.19": {
+                "i20221102": "GUDf4Q"
+            },
             "4.0.1": {
                 "i20220909": "bxm9Kw"
             }
         },
         "groovy-groovydoc": {
+            "2.5.19": {
+                "i20221102": "YzQZCw"
+            },
             "4.0.1": {
                 "i20220909": "emF1bQ"
             }
         },
         "groovy-groovysh": {
+            "2.5.19": {
+                "i20221102": "oGvecw"
+            },
             "4.0.1": {
                 "i20220909": "gpoIng"
             }
         },
         "groovy-jmx": {
+            "2.5.19": {
+                "i20221102": "i6bzfA"
+            },
             "4.0.1": {
                 "i20220909": "eqUFIw"
             }
         },
         "groovy-json": {
+            "2.5.19": {
+                "i20221102": "sp7Lvw"
+            },
             "4.0.1": {
                 "i20220909": "MrDg"
             }
         },
         "groovy-jsr223": {
+            "2.5.19": {
+                "i20221102": "J2A8cA"
+            },
             "4.0.1": {
                 "i20220909": "EqRGHA"
             }
         },
         "groovy-macro": {
+            "2.5.19": {
+                "i20221102": "2T5ITg"
+            },
             "4.0.1": {
                 "i20220909": "qCVbBg"
             }
         },
         "groovy-nio": {
+            "2.5.19": {
+                "i20221102": "bgpDug"
+            },
             "4.0.1": {
                 "i20220909": "D26R3A"
             }
         },
         "groovy-servlet": {
+            "2.5.19": {
+                "i20221102": "bX9qEQ"
+            },
             "4.0.1": {
                 "i20220909": "gO9atg"
             }
         },
         "groovy-sql": {
+            "2.5.19": {
+                "i20221102": "lnPPWA"
+            },
             "4.0.1": {
                 "i20220909": "oGbYjQ"
             }
         },
         "groovy-swing": {
+            "2.5.19": {
+                "i20221102": "XtVyQ"
+            },
             "4.0.1": {
                 "i20220909": "lwod4w"
             }
         },
         "groovy-templates": {
+            "2.5.19": {
+                "i20221102": "8cvkWA"
+            },
             "4.0.1": {
                 "i20220909": "tvcelg"
             }
         },
         "groovy-test": {
+            "2.5.19": {
+                "i20221102": "4VyQ2A"
+            },
             "4.0.1": {
                 "i20220909": "kzGpog"
             }
         },
         "groovy-test-junit5": {
+            "2.5.19": {
+                "i20221102": "IOptDg"
+            },
             "4.0.1": {
                 "i20220909": "R3ttXg"
             }
         },
+        "groovy-testng": {
+            "2.5.19": {
+                "i20221102": "XHxaZA"
+            }
+        },
         "groovy-xml": {
+            "2.5.19": {
+                "i20221102": "fhpHmQ"
+            },
             "4.0.1": {
                 "i20220909": "aFqtA"
             }
@@ -1175,22 +1422,46 @@
         },
         "io.pebbletemplates.pebble": {
             "3.0.1": {
-                "i20180727": "acE6hw"
+                "i20180727": "acE6hw",
+                "i20221102": "F11eig"
+            }
+        },
+        "io.prometheus.simpleclient": {
+            "0.16.0": {
+                "i20221102": "6Y030A"
+            }
+        },
+        "io.prometheus.simpleclient_tracer_common": {
+            "0.16.0": {
+                "i20221102": "97b2Ag"
+            }
+        },
+        "io.prometheus.simpleclient_tracer_otel": {
+            "0.16.0": {
+                "i20221102": "qHkyyA"
+            }
+        },
+        "io.prometheus.simpleclient_tracer_otel_agent": {
+            "0.16.0": {
+                "i20221102": "XAM1Ng"
             }
         },
         "io.swagger.annotations": {
             "1.5.8": {
-                "i20170316": "OdPJmQ"
+                "i20170316": "OdPJmQ",
+                "i20221102": "21DtnA"
             }
         },
         "it.geosolutions.imageio-ext.geocore": {
             "1.2.1": {
-                "i20200622": "5dRxrQ"
+                "i20200622": "5dRxrQ",
+                "i20221102": "WOSVsA"
             }
         },
         "it.geosolutions.imageio-ext.streams": {
             "1.2.1": {
-                "i20200622": "KnbiQ"
+                "i20200622": "KnbiQ",
+                "i20221102": "wcnjA"
             }
         },
         "it.geosolutions.imageio-ext.tiff": {
@@ -1200,7 +1471,8 @@
                 "i20151027": "7vDbtg"
             },
             "1.2.1": {
-                "i20200622": "yPYjMQ"
+                "i20200622": "yPYjMQ",
+                "i20221102": "EIpHNA"
             }
         },
         "it.geosolutions.imageio-ext.utilities": {
@@ -1210,197 +1482,245 @@
                 "i20151027": "oWS0Rw"
             },
             "1.2.1": {
-                "i20200622": "oYa0GA"
+                "i20200622": "oYa0GA",
+                "i20221102": "LpnYGw"
             }
         },
         "it.geosolutions.jaiext.affine.jt-affine": {
             "1.1.7": {
-                "i20200622": "wPq83w"
+                "i20200622": "wPq83w",
+                "i20221102": "R7Dg4g"
             }
         },
         "it.geosolutions.jaiext.algebra.jt-algebra": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.bandcombine.jt-bandcombine": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.bandmerge.jt-bandmerge": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.bandselect.jt-bandselect": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.binarize.jt-binarize": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.border.jt-border": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.buffer.jt-buffer": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.classifier.jt-classifier": {
             "1.1.7": {
-                "i20200622": "tJuCQA"
+                "i20200622": "tJuCQA",
+                "i20221102": "TumQw"
             }
         },
         "it.geosolutions.jaiext.colorconvert.jt-colorconvert": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.colorindexer.jt-colorindexer": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.crop.jt-crop": {
             "1.1.7": {
-                "i20200622": "jBuAg"
+                "i20200622": "jBuAg",
+                "i20221102": "u1OlAQ"
             }
         },
         "it.geosolutions.jaiext.errordiffusion.jt-errordiffusion": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.format.jt-format": {
             "1.1.7": {
-                "i20200622": "zkOBAA"
+                "i20200622": "zkOBAA",
+                "i20221102": "XulAw"
             }
         },
         "it.geosolutions.jaiext.imagefunction.jt-imagefunction": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.iterators.jt-iterators": {
             "1.1.7": {
-                "i20200622": "5OjLgw"
+                "i20200622": "5OjLgw",
+                "i20221102": "gZTvhg"
             }
         },
         "it.geosolutions.jaiext.lookup.jt-lookup": {
             "1.1.7": {
-                "i20200622": "AmuWcQ"
+                "i20200622": "AmuWcQ",
+                "i20221102": "xtK6dA"
             }
         },
         "it.geosolutions.jaiext.mosaic.jt-mosaic": {
             "1.1.7": {
-                "i20200622": "BySBHA"
+                "i20200622": "BySBHA",
+                "i20221102": "NlylHw"
             }
         },
         "it.geosolutions.jaiext.nullop.jt-nullop": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.orderdither.jt-orderdither": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.piecewise.jt-piecewise": {
             "1.1.7": {
-                "i20200622": "YpyCTg"
+                "i20200622": "YpyCTg",
+                "i20221102": "d2mUQ"
             }
         },
         "it.geosolutions.jaiext.rescale.jt-rescale": {
             "1.1.7": {
-                "i20200622": "AmuWcQ"
+                "i20200622": "AmuWcQ",
+                "i20221102": "xtK6dA"
             }
         },
         "it.geosolutions.jaiext.rlookup.jt-rlookup": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.scale.jt-scale": {
             "1.1.7": {
-                "i20200622": "gJHRng"
+                "i20200622": "gJHRng",
+                "i20221102": "VHD1oQ"
             }
         },
         "it.geosolutions.jaiext.scale2.jt-scale2": {
             "1.1.7": {
-                "i20200622": "gJHRng"
+                "i20200622": "gJHRng",
+                "i20221102": "VHD1oQ"
             }
         },
         "it.geosolutions.jaiext.shadedrelief.jt-shadedrelief": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.stats.jt-stats": {
             "1.1.7": {
-                "i20200622": "YXu2bw"
+                "i20200622": "YXu2bw",
+                "i20221102": "opXacg"
             }
         },
         "it.geosolutions.jaiext.translate.jt-translate": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.utilities.jt-utilities": {
             "1.1.7": {
-                "i20200622": "rVLynw"
+                "i20200622": "rVLynw",
+                "i20221102": "MEEWsQ"
             }
         },
         "it.geosolutions.jaiext.vectorbin.jt-vectorbin": {
             "1.1.7": {
-                "i20200622": "9ahvVQ"
+                "i20200622": "9ahvVQ",
+                "i20221102": "09uTWA"
             }
         },
         "it.geosolutions.jaiext.warp.jt-warp": {
             "1.1.7": {
-                "i20200622": "FgeTQ"
+                "i20200622": "FgeTQ",
+                "i20221102": "Aly3A"
             }
         },
         "it.geosolutions.jaiext.zonal.jt-zonal": {
             "1.1.7": {
-                "i20200622": "D2WnzQ"
+                "i20200622": "D2WnzQ",
+                "i20221102": "AN3L0A"
             }
         },
         "jai.jai-codec": {
             "1.1.3": {
-                "i20180427": "hK6zJg"
+                "i20180427": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "jai.jai-core": {
             "1.1.3": {
-                "i20180427": "hK6zJg"
+                "i20180427": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "jai.jai-imageio": {
             "1.1.3": {
-                "i20180427": "hK6zJg"
+                "i20180427": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "jai.jai-mlibwrapper": {
             "1.1.3": {
-                "i20180427": "hK6zJg"
+                "i20180427": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "jakarta.activation-api": {
             "1.2.2": {
                 "i20220909": "I5LU0Q"
+            },
+            "2.1.0": {
+                "i20221102": "87w2FQ"
             }
         },
         "jakarta.xml.bind-api": {
             "2.3.3": {
                 "i20220909": "Sifaqg"
+            },
+            "4.0.0": {
+                "i20221102": "51kjJQ"
+            }
+        },
+        "jakarta.xml.bind.jakarta.xml.bind-api-test": {
+            "3.0.1": {
+                "i20221102": "ZlDxpg"
             }
         },
         "java3d.vecmath": {
@@ -1414,62 +1734,71 @@
                 "i20150402": "2NsUQ",
                 "i20150413": "5izWA"
             },
-            "3.18.2.GA": {
-                "i20180727": "tSX8wQ"
-            },
             "3.18.1.GA": {
                 "i20150413": "twTvmA",
                 "i201504131601": "a9L8sA"
             },
+            "3.18.2.GA": {
+                "i20180727": "tSX8wQ"
+            },
             "3.21.0.GA": {
-                "i20200622": "tQXIRw"
+                "i20200622": "tQXIRw",
+                "i20221102": "2yvsSg"
             }
         },
         "javax.annotation-api": {
             "1.2.0": {
                 "i20150413": "35EGiA",
-                "i201504131442": "MUzy9A"
+                "i201504131442": "MUzy9A",
+                "i20221102": "LhMXBg"
             }
         },
         "javax.inject.javax.inject": {
             "1.0.0": {
                 "i20150402": "dGqsGw",
-                "i20150413": "fbizIg"
+                "i20150413": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "javax.mail": {
             "1.4.0": {
                 "i20150402": "IDnOMw",
-                "i20150413": "77TVOg"
+                "i20150413": "77TVOg",
+                "i20221102": "J2j5PQ"
             }
         },
         "javax.measure.unit-api": {
             "1.0.0": {
-                "i20200622": "ePQfLA"
+                "i20200622": "ePQfLA",
+                "i20221102": "4VRDLw"
             }
         },
         "javax.media.jai_codec": {
             "1.1.3": {
                 "i20150402": "exSsHw",
-                "i20150413": "hK6zJg"
+                "i20150413": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "javax.media.jai_core": {
             "1.1.3": {
                 "i20150402": "exSsHw",
-                "i20150413": "hK6zJg"
+                "i20150413": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "javax.media.jai_imageio": {
             "1.1.0": {
                 "i20150402": "dhasHA",
-                "i20150413": "f3ezIw"
+                "i20150413": "f3ezIw",
+                "i20221102": "fvXJg"
             }
         },
         "javax.servlet": {
             "3.1.0": {
                 "i20150402": "lWxTCg",
-                "i20150413": "PpdaEQ"
+                "i20150413": "PpdaEQ",
+                "i20221102": "Rq9FA"
             }
         },
         "javax.servlet.api": {
@@ -1477,14 +1806,21 @@
                 "i20150402": "fMisIA"
             }
         },
+        "javax.transaction-api": {
+            "1.3.0": {
+                "i20221102": "fl1p1w"
+            }
+        },
         "javax.vecmath": {
             "1.5.2": {
-                "i20180427": "emitJA"
+                "i20180427": "emitJA",
+                "i20221102": "b2RJw"
             }
         },
         "javax.ws.rs-api": {
             "2.0.1": {
-                "i20150413": "ITdvZA"
+                "i20150413": "ITdvZA",
+                "i20221102": "xxqTZw"
             }
         },
         "javax.ws.rs.jsr311-api": {
@@ -1492,10 +1828,16 @@
                 "i20150402": "uSAEaA"
             }
         },
+        "jaxb-api": {
+            "2.4.0.b1808300359": {
+                "i20221102": "Hw4Ivg"
+            }
+        },
         "jaxen": {
             "1.1.6": {
                 "i20150402": "WWQA3Q",
-                "i20180427": "eugH5A"
+                "i20180427": "eugH5A",
+                "i20221102": "ivUr5w"
             }
         },
         "jcifs": {
@@ -1504,45 +1846,56 @@
             }
         },
         "jcl.over.slf4j": {
-            "1.7.13": {
-                "i20180427": "UwXfaw"
-            },
             "1.7.10": {
                 "i20150402": "v87YXg",
                 "i20150413": "UpbfZQ"
+            },
+            "1.7.13": {
+                "i20180427": "UwXfaw",
+                "i20221102": "Q8ADfQ"
+            }
+        },
+        "jcommander": {
+            "1.72.0": {
+                "i20221102": "86cv2w"
             }
         },
         "jgridshift": {
             "1.0.0": {
                 "i20150402": "dGqsGw",
-                "i20150413": "fbizIg"
+                "i20150413": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "jline": {
             "0.9.94": {
-                "i20180424": "WoT6Sg",
                 "i20150402": "RzvJQ",
-                "i20150413": "ax8GOw"
+                "i20150413": "ax8GOw",
+                "i20180424": "WoT6Sg"
             },
             "2.14.6": {
-                "i20220909": "oHg4XA"
+                "i20220909": "oHg4XA",
+                "i20221102": "xtcXw"
             }
         },
         "joda-time": {
             "2.3.0": {
                 "i20150402": "MjvWsg",
-                "i20150413": "b1TduQ"
+                "i20150413": "b1TduQ",
+                "i20221102": "uGcByw"
             }
         },
         "jogl": {
             "1.1.2": {
-                "i20180427": "gvGzJQ"
+                "i20180427": "gvGzJQ",
+                "i20221102": "hDXXKA"
             }
         },
         "jul.to.slf4j": {
             "1.7.10": {
                 "i20150402": "LLjOrw",
-                "i20150413": "B3TVtg"
+                "i20150413": "B3TVtg",
+                "i20221102": "VlP5uQ"
             }
         },
         "junit": {
@@ -1550,7 +1903,8 @@
                 "i20170105": "QAvjEg"
             },
             "4.13.2": {
-                "i20220909": "szZbA"
+                "i20220909": "szZbA",
+                "i20221102": "0rT9bw"
             }
         },
         "junit-jupiter-api": {
@@ -1581,54 +1935,64 @@
         "log4j.over.slf4j": {
             "1.7.10": {
                 "i20150402": "kYH0yw",
-                "i20150413": "UQn70g"
+                "i20150413": "UQn70g",
+                "i20221102": "Twkf5A"
             }
         },
         "mil.nga.geopackage": {
             "3.4.0": {
                 "i20191223": "8Vc5dQ",
-                "i20200622": "NY5dQ"
+                "i20200622": "NY5dQ",
+                "i20221102": "UPRdeA"
             }
         },
         "mil.nga.geopackage.core": {
             "3.4.0": {
-                "i20191223": "HeqG2w"
+                "i20191223": "HeqG2w",
+                "i20221102": "Pcuq3g"
             }
         },
         "mil.nga.oapi.features.oapi-features-json": {
             "1.0.1": {
-                "i20191223": "Z7QCA"
+                "i20191223": "Z7QCA",
+                "i20221102": "EhT0Cw"
             }
         },
         "mil.nga.sf": {
             "2.0.2": {
-                "i20191223": "gvOzJQ"
+                "i20191223": "gvOzJQ",
+                "i20221102": "hDfXKA"
             }
         },
         "mil.nga.sf.geojson": {
             "2.0.3": {
-                "i20191223": "0un78w"
+                "i20191223": "0un78w",
+                "i20221102": "6RkgBQ"
             }
         },
         "mil.nga.sf.proj": {
             "3.0.2": {
-                "i20191223": "tU2DyA"
+                "i20191223": "tU2DyA",
+                "i20221102": "KOnyw"
             }
         },
         "mil.nga.sf.wkb": {
             "2.0.2": {
-                "i20191223": "iKrzFA"
+                "i20191223": "iKrzFA",
+                "i20221102": "PgUXJg"
             }
         },
         "mil.nga.tiff": {
             "2.0.1": {
-                "i20191223": "gTazJA"
+                "i20191223": "gTazJA",
+                "i20221102": "ghrXJw"
             }
         },
         "net.java.dev.jna.platform": {
             "3.5.2": {
                 "i20150402": "sUUSaQ",
-                "i20150413": "BgcZcA"
+                "i20150413": "BgcZcA",
+                "i20221102": "h4s9cw"
             }
         },
         "net.java.dev.jsr-275": {
@@ -1643,28 +2007,32 @@
                 "i20191223": "OQXbQ"
             },
             "2.3.0": {
-                "i20200622": "eRgFtw"
+                "i20200622": "eRgFtw",
+                "i20221102": "P24pug"
             }
         },
         "net.sf.ehcache.core": {
+            "2.6.11": {
+                "i20180727": "NXPUUg",
+                "i20221102": "fRz4VQ"
+            },
             "2.6.6": {
                 "i20150402": "ymTNHw",
                 "i20150413": "y8rUJg"
-            },
-            "2.6.11": {
-                "i20180727": "NXPUUg"
             }
         },
         "net.sf.ezmorph": {
             "1.0.6": {
                 "i20150402": "uKVGhw",
                 "i20150413": "jeZNjg",
-                "i20180726": "4oRatw"
+                "i20180726": "4oRatw",
+                "i20221102": "Zedug"
             }
         },
         "net.sf.geographiclib.GeographicLib-Java": {
             "1.49.0": {
-                "i20200622": "8mezXw"
+                "i20200622": "8mezXw",
+                "i20221102": "CXrXYg"
             }
         },
         "net.sf.json-lib": {
@@ -1677,42 +2045,51 @@
         "net.sf.json-lib.jdk15": {
             "2.3.0": {
                 "i20160531": "Vu0EMQ",
-                "i20200622": "Wu8EMQ"
+                "i20200622": "Wu8EMQ",
+                "i20221102": "10QFg"
             }
         },
         "net.sf.opencsv": {
             "2.3.0": {
                 "i20150402": "exysHw",
-                "i20150413": "hLazJg"
+                "i20150413": "hLazJg",
+                "i20221102": "hlrXKQ"
             }
         },
         "net.sf.saxon.Saxon-HE": {
             "9.9.1.4": {
-                "i20200622": "nTSzNA"
+                "i20200622": "nTSzNA",
+                "i20221102": "pBjXNw"
             }
         },
         "net.sf.ucanaccess": {
             "3.0.6": {
-                "i20160712": "s9C46A"
+                "i20160712": "s9C46A",
+                "i20221102": "qmjc6w"
             }
         },
         "net.sourceforge.nekohtml": {
             "1.9.16": {
                 "i20150402": "8TIKEQ",
                 "i20150413": "hI0RGA"
+            },
+            "1.9.22": {
+                "i20221102": "C5RbVg"
             }
         },
         "net.sourceforge.schemacrawler": {
             "12.4.2": {
-                "i20150612": "dBNjfQ",
                 "i20150402": "Fs5TrQ",
-                "i20150413": "915atA"
+                "i20150413": "915atA",
+                "i20150612": "dBNjfQ",
+                "i20221102": "bcxy8Q"
             }
         },
         "net.tanesha.recaptcha4j": {
             "0.0.8": {
                 "i20150402": "gAysIg",
-                "i20150413": "idzKQ"
+                "i20150413": "idzKQ",
+                "i20221102": "2uLkVQ"
             }
         },
         "nl.javadude.scannit": {
@@ -1728,64 +2105,84 @@
         "org.antlr": {
             "3.4.0": {
                 "i20150402": "zgw2jA",
-                "i20150413": "Xw9kw"
+                "i20150413": "Xw9kw",
+                "i20221102": "esFhlg"
             }
         },
         "org.antlr.ST4": {
             "4.0.4": {
                 "i20150402": "dEvlow",
-                "i20150413": "Uznsqg"
+                "i20150413": "Uznsqg",
+                "i20221102": "GYQQvA"
             }
         },
         "org.antlr.runtime": {
             "3.4.0": {
                 "i20150402": "OOB1Pw",
-                "i20150413": "QYx8Rg"
+                "i20150413": "QYx8Rg",
+                "i20221102": "XEqgSQ"
             }
         },
         "org.antlr.stringtemplate": {
             "3.2.1": {
                 "i20150402": "Mi1AeQ",
-                "i20150413": "T5HgA"
+                "i20150413": "T5HgA",
+                "i20221102": "RJBrgw"
             }
         },
         "org.apache.ant": {
+            "1.10.12": {
+                "i20220909": "nAHEHQ"
+            },
             "1.8.3": {
                 "i20150402": "sk8lA",
                 "i20150413": "GrDmw"
             },
-            "1.10.12": {
-                "i20220909": "nAHEHQ"
+            "1.9.16": {
+                "i20221102": "rjnn1A"
             }
         },
         "org.apache.ant.antlr": {
             "1.10.12": {
                 "i20220909": "QN6zhg"
+            },
+            "1.9.16": {
+                "i20221102": "D83XZQ"
             }
         },
         "org.apache.ant.junit": {
             "1.10.12": {
                 "i20220909": "L5z3zQ"
+            },
+            "1.9.16": {
+                "i20221102": "w2r9PA"
             }
         },
         "org.apache.ant.launcher": {
+            "1.10.12": {
+                "i20220909": "QN6zhg"
+            },
             "1.8.3": {
                 "i20150402": "hsisJg",
                 "i20150413": "kOezLQ"
             },
-            "1.10.12": {
-                "i20220909": "QN6zhg"
+            "1.9.16": {
+                "i20221102": "D83XZQ"
             }
         },
         "org.apache.commons.beanutils": {
             "1.8.3": {
                 "i20150402": "SLkwKw",
-                "i20150413": "0yA3Mg"
+                "i20150413": "0yA3Mg",
+                "i20221102": "La9Q8g"
             }
         },
         "org.apache.commons.cli": {
             "1.3.1": {
                 "i20160730": "IXZcQ"
+            },
+            "1.4.0": {
+                "i20221102": "tl9iQ"
             }
         },
         "org.apache.commons.codec": {
@@ -1803,12 +2200,34 @@
                 "i20150413": "RSac6g"
             },
             "3.2.2": {
-                "i20200622": "O960wQ"
+                "i20200622": "O960wQ",
+                "i20221102": "CLYxA"
+            }
+        },
+        "org.apache.commons.commons-codec": {
+            "1.15.0": {
+                "i20221102": "yuBtoA"
+            }
+        },
+        "org.apache.commons.commons-collections4": {
+            "4.4.0": {
+                "i20221102": "2GBkjg"
+            }
+        },
+        "org.apache.commons.commons-compress": {
+            "1.21.0": {
+                "i20221102": "oJow"
+            }
+        },
+        "org.apache.commons.commons-io": {
+            "2.11.0": {
+                "i20221102": "dAwPBA"
             }
         },
         "org.apache.commons.commons-text": {
             "1.6.0": {
-                "i20200622": "XwZGgA"
+                "i20200622": "XwZGgA",
+                "i20221102": "wkpqgw"
             }
         },
         "org.apache.commons.compress": {
@@ -1820,19 +2239,22 @@
         "org.apache.commons.configuration": {
             "1.6.0": {
                 "i20150402": "nCUuuw",
-                "i20150413": "yiA1wg"
+                "i20150413": "yiA1wg",
+                "i20221102": "CQRMIw"
             }
         },
         "org.apache.commons.dbcp": {
             "1.4.0": {
+                "i20150413": "MVycRg",
                 "i20150610": "JVylDw",
-                "i20150413": "MVycRg"
+                "i20221102": "MgXJEg"
             }
         },
         "org.apache.commons.fileupload": {
             "1.3.1": {
                 "i20150402": "JyNANw",
-                "i20150413": "HjlHPg"
+                "i20150413": "HjlHPg",
+                "i20221102": "dU1rQQ"
             }
         },
         "org.apache.commons.io": {
@@ -1847,26 +2269,35 @@
         "org.apache.commons.jxpath": {
             "1.3.0": {
                 "i20150402": "0n4xVw",
-                "i20150413": "PbA4Xg"
+                "i20150413": "PbA4Xg",
+                "i20221102": "cyNcYQ"
             }
         },
         "org.apache.commons.lang": {
             "2.6.0": {
                 "i20150402": "kn1hrA",
-                "i20150413": "IbRosw"
+                "i20150413": "IbRosw",
+                "i20221102": "atWMtg"
             }
         },
         "org.apache.commons.lang3": {
+            "3.12.0": {
+                "i20221013": "rI3v6A",
+                "i20221102": "rIsTg"
+            },
             "3.8.1": {
                 "i20200622": "lDqlVA"
-            },
-            "3.12.0": {
-                "i20221013": "rI3v6A"
             }
         },
         "org.apache.commons.math": {
             "2.2.0": {
-                "i20180427": "bHPM4g"
+                "i20180427": "bHPM4g",
+                "i20221102": "SW7w5Q"
+            }
+        },
+        "org.apache.commons.math3": {
+            "3.6.1": {
+                "i20221102": "ykj2JA"
             }
         },
         "org.apache.commons.net": {
@@ -1875,12 +2306,13 @@
             }
         },
         "org.apache.commons.pool": {
-            "1.6.0": {
-                "i20180427": "fnLo5A"
-            },
             "1.5.4": {
                 "i20150402": "L7PxQ",
                 "i20150413": "mN0G2w"
+            },
+            "1.6.0": {
+                "i20180427": "fnLo5A",
+                "i20221102": "3MMM9g"
             }
         },
         "org.apache.geronimo.specs.geronimo-activation_1.1_spec": {
@@ -1899,6 +2331,9 @@
                 "i20150413": "F4FdVA",
                 "i20151027": "F7ddVA",
                 "i20200622": "F4FdVA"
+            },
+            "4.5.13": {
+                "i20221102": "ollolQ"
             }
         },
         "org.apache.httpcomponents.httpclient": {
@@ -1907,21 +2342,28 @@
                 "i20150413": "ldscEA",
                 "i20151027": "kE0cEA",
                 "i20200622": "iwYcEA"
+            },
+            "4.5.13": {
+                "i20221102": "RRPMQ"
             }
         },
         "org.apache.httpcomponents.httpcore": {
             "4.3.3": {
                 "i20150402": "g3asJA",
                 "i20150413": "jWzKw"
+            },
+            "4.4.13": {
+                "i20221102": "BTzXYA"
             }
         },
         "org.apache.ivy": {
-            "2.4.0.final_20141213170938": {
-                "i20150616": "FaL1xQ"
-            },
             "2.3.0.final_20130110142753": {
                 "i20150402": "Ild2Fg",
                 "i20150413": "hh9HQ"
+            },
+            "2.4.0.final_20141213170938": {
+                "i20150616": "FaL1xQ",
+                "i20221102": "J7UZ1w"
             },
             "2.5.0.final_20191020104435": {
                 "i20220909": "wkX3Iw"
@@ -1929,134 +2371,177 @@
         },
         "org.apache.james.apache-mime4j-core": {
             "0.7.2": {
-                "i20180427": "shJ6MA"
+                "i20180427": "shJ6MA",
+                "i20221102": "inyeMw"
+            }
+        },
+        "org.apache.logging.log4j.api": {
+            "2.19.0": {
+                "i20221102": "F0xGA"
+            }
+        },
+        "org.apache.logging.log4j.to-slf4j": {
+            "2.19.0": {
+                "i20221102": "B7OUwg"
             }
         },
         "org.apache.pdfbox": {
             "2.0.24": {
-                "i20220909": "kHyFSg"
+                "i20220909": "kHyFSg",
+                "i20221102": "1RGZ1Q"
             }
         },
         "org.apache.pdfbox.fontbox": {
             "2.0.24": {
-                "i20220909": "1ccpwA"
+                "i20220909": "1ccpwA",
+                "i20221102": "MSMSw"
             }
         },
         "org.apache.pdfbox.xmpbox": {
             "2.0.24": {
-                "i20220909": "oc6Rfw"
+                "i20220909": "oc6Rfw",
+                "i20221102": "bC1gg"
             }
         },
         "org.apache.poi": {
             "3.9.0": {
                 "i20150402": "GaAC5Q",
                 "i20150413": "VVIJ7A"
+            },
+            "5.2.3": {
+                "i20221102": "wjTAYg"
             }
         },
         "org.apache.poi.ooxml": {
             "3.9.0": {
-                "i20180424": "3gjMqg",
                 "i20150402": "FNnVTQ",
-                "i20150413": "vHcVA"
+                "i20150413": "vHcVA",
+                "i20180424": "3gjMqg"
+            },
+            "5.2.3": {
+                "i20221102": "BD3IQ"
+            }
+        },
+        "org.apache.poi.ooxml-lite": {
+            "5.2.3": {
+                "i20221102": "gyxEIQ"
             }
         },
         "org.apache.poi.ooxml-schemas": {
             "3.9.0": {
-                "i20180424": "tuQuw",
                 "i20150402": "f6cyQ",
-                "i20150413": "urqj0A"
+                "i20150413": "urqj0A",
+                "i20180424": "tuQuw"
             }
         },
         "org.apache.tika.core": {
             "1.7.0": {
-                "i20170105": "OHMsqw"
+                "i20170105": "OHMsqw",
+                "i20221102": "ZfBQrg"
             }
         },
         "org.apache.velocity": {
             "1.6.2": {
                 "i20150402": "LWuSyA",
                 "i20150413": "B0Zzw",
-                "i20200622": "AkeZzw"
+                "i20200622": "AkeZzw",
+                "i20221102": "Cl290g"
             }
         },
         "org.apache.wicket.core": {
             "6.10.0": {
                 "i20150402": "pCc9iA",
-                "i20150413": "Y85Ejw"
+                "i20150413": "Y85Ejw",
+                "i20221102": "7X1okg"
             }
         },
         "org.apache.wicket.extensions": {
             "6.10.0": {
                 "i20150402": "9RXr0w",
-                "i20150413": "zVzy2g"
+                "i20150413": "zVzy2g",
+                "i20221102": "5C8W7A"
             }
         },
         "org.apache.wicket.ioc": {
             "6.10.0": {
                 "i20150402": "C5tRpA",
-                "i20150413": "GYFYqw"
+                "i20150413": "GYFYqw",
+                "i20221102": "exx8rg"
             }
         },
         "org.apache.wicket.request": {
             "6.10.0": {
                 "i20150402": "sTYRsA",
-                "i20150413": "BboYtw"
+                "i20150413": "BboYtw",
+                "i20221102": "iAo8ug"
             }
         },
         "org.apache.wicket.spring": {
             "6.10.0": {
                 "i20150402": "ggKVjA",
-                "i20150413": "58Kckw"
+                "i20150413": "58Kckw",
+                "i20221102": "jXnAlg"
             }
         },
         "org.apache.wicket.util": {
             "6.10.0": {
                 "i20150402": "Ui50Q",
-                "i20150413": "C0KF2A"
+                "i20150413": "C0KF2A",
+                "i20221102": "Quip2w"
             }
         },
         "org.apache.ws.commons.axiom.axiom-api": {
             "1.2.15": {
-                "i20180427": "fb1NbA"
+                "i20180427": "fb1NbA",
+                "i20221102": "OVBnLA"
             }
         },
         "org.apache.ws.commons.axiom.axiom-impl": {
             "1.2.15": {
-                "i20180427": "Bg3C5Q"
+                "i20180427": "Bg3C5Q",
+                "i20221102": "NKbcpQ"
             }
         },
         "org.apache.ws.commons.schema.XmlSchema": {
             "1.4.7": {
                 "i20150402": "j8yI6w",
-                "i20150413": "W8aP8g"
+                "i20150413": "W8aP8g",
+                "i20221102": "nQiz9Q"
             }
         },
         "org.apache.xml.commons-resolver": {
             "1.2.0": {
                 "i20150402": "d8KsHQ",
                 "i20150413": "gTazJA",
-                "i20180727": "38rATQ"
+                "i20180727": "38rATQ",
+                "i20221102": "0FnkUA"
             }
         },
         "org.apache.xmlbeans": {
             "2.4.0": {
                 "i20150402": "1iu6Eg",
                 "i20150413": "9PbBGQ"
+            },
+            "5.1.1": {
+                "i20221102": "4Fdfxw"
             }
         },
         "org.aspectj.rt": {
             "1.8.3": {
-                "i20170105": "kOezLQ"
+                "i20170105": "kOezLQ",
+                "i20221102": "lSvXMA"
             }
         },
         "org.aspectj.weaver": {
             "1.8.3": {
-                "i20170105": "kOezLQ"
+                "i20170105": "kOezLQ",
+                "i20221102": "lSvXMA"
             }
         },
         "org.checkerframework.checker-qual": {
             "2.5.2": {
-                "i20200622": "i66zKg"
+                "i20200622": "i66zKg",
+                "i20221102": "jtLXLQ"
             }
         },
         "org.codehaus.castor.core": {
@@ -2065,6 +2550,9 @@
                 "i20150413": "SEFe2A",
                 "i20151027": "Qvte2A",
                 "i20200622": "SEFe2A"
+            },
+            "1.4.1": {
+                "i20221102": "aIiuvg"
             }
         },
         "org.codehaus.castor.xml": {
@@ -2073,338 +2561,389 @@
                 "i20150413": "5wFZEQ",
                 "i20151027": "s0lZEQ",
                 "i20200622": "oOVZEQ"
+            },
+            "1.4.1": {
+                "i20221102": "t6TWww"
             }
         },
         "org.codehaus.groovy.modules.http-builder": {
             "0.6.0": {
-                "i20180424": "Rps8GQ",
                 "i20150402": "OTZpA",
                 "i20150413": "1mXgqw",
                 "i20151027": "62Tgqw",
                 "i20160531": "AihFyA",
+                "i20180424": "Rps8GQ",
                 "i20200622": "UjI8GQ"
             },
             "0.7.1": {
-                "i20220909": "ReotgA"
+                "i20220909": "ReotgA",
+                "i20221102": "01FRgw"
             }
         },
         "org.codehaus.jackson": {
             "1.9.13": {
                 "i20150402": "1VB6nQ",
-                "i20150413": "1waBpA"
+                "i20150413": "1waBpA",
+                "i20221102": "KZWlpw"
             }
         },
         "org.codehaus.jackson.mapper": {
             "1.9.13": {
                 "i20150402": "t0i4ig",
-                "i20150413": "PaKkQ"
+                "i20150413": "PaKkQ",
+                "i20221102": "Tt3jlA"
             }
         },
         "org.codehaus.jettison.jettison": {
             "1.3.3": {
                 "i20150402": "W2YQWg",
-                "i20150413": "HtYXYQ"
+                "i20150413": "HtYXYQ",
+                "i20221102": "jCw7ZA"
             }
         },
         "org.codehaus.mojo.animal-sniffer-annotations": {
             "1.17.0": {
-                "i20200622": "6amzWg"
+                "i20200622": "6amzWg",
+                "i20221102": "s3XXQ"
             }
         },
         "org.deegree.core-annotations": {
             "3.4.0.RC7": {
                 "i20180427": "Ps7PUQ"
             },
+            "3.4.13": {
+                "i20200622": "D7PhQ",
+                "i20221102": "9xnRQg"
+            },
             "3.4.2": {
                 "i20180727": "T2DPUw"
-            },
-            "3.4.13": {
-                "i20200622": "D7PhQ"
             }
         },
         "org.deegree.core-base": {
             "3.4.0.RC7": {
                 "i20180427": "Hc6lbw"
             },
+            "3.4.13": {
+                "i20200622": "KzIhvg",
+                "i20221102": "kdxFwQ"
+            },
             "3.4.2": {
                 "i20180727": "Px6lcQ"
-            },
-            "3.4.13": {
-                "i20200622": "KzIhvg"
             }
         },
         "org.deegree.core-commons": {
             "3.4.0.RC7": {
                 "i20180427": "Y0j6g"
             },
+            "3.4.13": {
+                "i20200622": "UXNBPQ",
+                "i20221102": "oeZlQA"
+            },
             "3.4.2": {
                 "i20180727": "tTMj7A"
-            },
-            "3.4.13": {
-                "i20200622": "UXNBPQ"
             }
         },
         "org.deegree.core-coverage": {
             "3.4.0.RC7": {
                 "i20180427": "UMlXsA"
             },
+            "3.4.13": {
+                "i20200622": "LbLT8A",
+                "i20221102": "Va738w"
+            },
             "3.4.2": {
                 "i20180727": "p9VXsg"
-            },
-            "3.4.13": {
-                "i20200622": "LbLT8A"
             }
         },
         "org.deegree.core-cs": {
             "3.4.0.RC7": {
                 "i20180427": "XOzmAA"
             },
+            "3.4.13": {
+                "i20200622": "i0mNA",
+                "i20221102": "8cgKRg"
+            },
             "3.4.2": {
                 "i20180727": "ea7mAg"
-            },
-            "3.4.13": {
-                "i20200622": "i0mNA"
             }
         },
         "org.deegree.core-db": {
             "3.4.0.RC7": {
                 "i20180427": "qSJjw"
             },
+            "3.4.13": {
+                "i20200622": "kNyJww",
+                "i20221102": "S1mtxg"
+            },
             "3.4.2": {
                 "i20180727": "tUmJkQ"
-            },
-            "3.4.13": {
-                "i20200622": "kNyJww"
             }
         },
         "org.deegree.core-geometry": {
             "3.4.0.RC7": {
                 "i20180427": "5An1g"
             },
+            "3.4.13": {
+                "i20200622": "DAChzw",
+                "i20221102": "wVDF0g"
+            },
             "3.4.2": {
                 "i20180727": "rTr2Q"
-            },
-            "3.4.13": {
-                "i20200622": "DAChzw"
             }
         },
         "org.deegree.core-workspace": {
             "3.4.0.RC7": {
                 "i20180427": "ZvNeHw"
             },
+            "3.4.13": {
+                "i20200622": "MyNeUw",
+                "i20221102": "wySCVg"
+            },
             "3.4.2": {
                 "i20180727": "bmVeIQ"
-            },
-            "3.4.13": {
-                "i20200622": "MyNeUw"
             }
         },
         "org.deegree.featurestore-commons": {
             "3.4.0.RC7": {
                 "i20180427": "4AkD2A"
             },
+            "3.4.13": {
+                "i20200622": "90QEDA",
+                "i20221102": "mL8oDw"
+            },
             "3.4.2": {
                 "i20180727": "Ae8D2g"
-            },
-            "3.4.13": {
-                "i20200622": "90QEDA"
             }
         },
         "org.deegree.featurestore-sql": {
             "3.4.0.RC7": {
                 "i20180427": "r7qWAw"
             },
+            "3.4.13": {
+                "i20200622": "nDaWNw",
+                "i20221102": "i226Og"
+            },
             "3.4.2": {
                 "i20180727": "uGqWBQ"
-            },
-            "3.4.13": {
-                "i20200622": "nDaWNw"
             }
         },
         "org.deegree.junidecode": {
             "0.2.0": {
-                "i20180427": "7VnAkg"
+                "i20180427": "7VnAkg",
+                "i20221102": "2pHklQ"
             }
         },
         "org.deegree.ogcschemas": {
             "20120804.0.0": {
-                "i20180427": "zcDB8Q"
+                "i20180427": "zcDB8Q",
+                "i20221102": "Pqfl9A"
             }
         },
         "org.deegree.protocol-commons": {
             "3.4.0.RC7": {
                 "i20180427": "MRNlaQ"
             },
+            "3.4.13": {
+                "i20200622": "PdplnQ",
+                "i20221102": "1VuJoA"
+            },
             "3.4.2": {
                 "i20180727": "RNllaw"
-            },
-            "3.4.13": {
-                "i20200622": "PdplnQ"
             }
         },
         "org.deegree.protocol-wfs": {
             "3.4.0.RC7": {
                 "i20180427": "S7e3Ng"
             },
+            "3.4.13": {
+                "i20200622": "49e3ag",
+                "i20221102": "t7bbQ"
+            },
             "3.4.2": {
                 "i20180727": "WwG3OA"
-            },
-            "3.4.13": {
-                "i20200622": "49e3ag"
             }
         },
         "org.deegree.sqldialect-commons": {
             "3.4.0.RC7": {
                 "i20180427": "MRNlaQ"
             },
+            "3.4.13": {
+                "i20200622": "PdplnQ",
+                "i20221102": "1VuJoA"
+            },
             "3.4.2": {
                 "i20180727": "RNllaw"
-            },
-            "3.4.13": {
-                "i20200622": "PdplnQ"
             }
         },
         "org.deegree.sqldialect-postgis": {
             "3.4.0.RC7": {
                 "i20180427": "wwD1NQ"
             },
+            "3.4.13": {
+                "i20200622": "NNBoUA",
+                "i20221102": "Vy2MUw"
+            },
             "3.4.2": {
                 "i20180727": "mmv1OA"
-            },
-            "3.4.13": {
-                "i20200622": "NNBoUA"
             }
         },
         "org.eclipse.emf.common": {
+            "2.15.0.v20180723-1316": {
+                "i20200622": "uloBKw",
+                "i20221102": "9jwlLg"
+            },
             "2.6.0.v20100914-1218": {
                 "i20150402": "hcbsyQ",
                 "i20150413": "aLrz0A"
-            },
-            "2.15.0.v20180723-1316": {
-                "i20200622": "uloBKw"
             }
         },
         "org.eclipse.emf.ecore": {
+            "2.15.0.v20180722-1159": {
+                "i20200622": "mrZsdg",
+                "i20221102": "8E2QeQ"
+            },
             "2.6.1.v20100914-1218": {
                 "i20150402": "RZlMIA",
                 "i20150413": "O05TJw"
-            },
-            "2.15.0.v20180722-1159": {
-                "i20200622": "mrZsdg"
             }
         },
         "org.eclipse.emf.ecore.xmi": {
             "2.15.0.v20180706-1146": {
-                "i20200622": "jPLeiA"
+                "i20200622": "jPLeiA",
+                "i20221102": "0JECmg"
             }
         },
         "org.eclipse.gemini.blueprint.core": {
             "1.0.0.RELEASE": {
                 "i20150402": "ynJNng",
                 "i20150413": "am9UpQ"
+            },
+            "3.0.0.M01": {
+                "i20221102": "l08wzg"
             }
         },
         "org.eclipse.gemini.blueprint.extender": {
             "1.0.0.RELEASE": {
                 "i20150402": "BsQkXw",
                 "i20150413": "haUrZg"
+            },
+            "3.0.0.M01": {
+                "i20221102": "yH13VQ"
             }
         },
         "org.eclipse.gemini.blueprint.io": {
             "1.0.0.RELEASE": {
                 "i20150402": "mDV2Q",
                 "i20150413": "0VqF4A"
+            },
+            "3.0.0.M01": {
+                "i20221102": "IM6ETg"
             }
         },
         "org.eclipse.jetty.continuation-9": {
             "9.2.1.v20140609": {
                 "i20150402": "JcT1lg",
-                "i20150413": "vgD8nQ"
+                "i20150413": "vgD8nQ",
+                "i20221102": "2GMgrw"
             }
         },
         "org.eclipse.jetty.deploy-9": {
             "9.2.1.v20140609": {
                 "i20150402": "K7jdJQ",
-                "i20150413": "pJbkLA"
+                "i20150413": "pJbkLA",
+                "i20221102": "9lQIPg"
             }
         },
         "org.eclipse.jetty.http-9": {
             "9.2.1.v20140609": {
                 "i20150402": "9pIxVg",
-                "i20150413": "LVQ4XQ"
+                "i20150413": "LVQ4XQ",
+                "i20221102": "1DFcYA"
             }
         },
         "org.eclipse.jetty.io-9": {
             "9.2.1.v20140609": {
                 "i20150402": "R26ugA",
-                "i20150413": "9pa1hw"
+                "i20150413": "9pa1hw",
+                "i20221102": "rxzZig"
             }
         },
         "org.eclipse.jetty.security-9": {
             "9.2.1.v20140609": {
                 "i20150402": "5US5NQ",
-                "i20150413": "ASnAPA"
+                "i20150413": "ASnAPA",
+                "i20221102": "onPkPw"
             }
         },
         "org.eclipse.jetty.server-9": {
             "9.2.1.v20140609": {
                 "i20150402": "zdtOvg",
-                "i20150413": "PqhVxQ"
+                "i20150413": "PqhVxQ",
+                "i20221102": "aot5yA"
             }
         },
         "org.eclipse.jetty.servlet-9": {
             "9.2.1.v20140609": {
                 "i20150402": "BoUvHQ",
-                "i20150413": "TA2JA"
+                "i20150413": "TA2JA",
+                "i20221102": "1wVaJw"
             }
         },
         "org.eclipse.jetty.util-9": {
             "9.2.1.v20140609": {
                 "i20150402": "YeJiJw",
-                "i20150413": "htpLg"
+                "i20150413": "htpLg",
+                "i20221102": "bViNMQ"
             }
         },
         "org.eclipse.jetty.webapp-9": {
             "9.2.1.v20140609": {
                 "i20150402": "IBNsg",
-                "i20150413": "2PN0BQ"
+                "i20150413": "2PN0BQ",
+                "i20221102": "awSYCA"
             }
         },
         "org.eclipse.jetty.xml-9": {
             "9.2.1.v20140609": {
                 "i20150402": "0eRi5Q",
-                "i20150413": "yUJp7A"
+                "i20150413": "yUJp7A",
+                "i20221102": "gEeN7w"
             }
         },
         "org.eclipse.xsd": {
+            "2.12.0.v20160526-0356": {
+                "i20200622": "cKLYbQ",
+                "i20221102": "ofn8cA"
+            },
             "2.6.0.v20100914-1218": {
                 "i20150402": "liXRZg",
                 "i20150413": "cKLYbQ"
-            },
-            "2.12.0.v20160526-0356": {
-                "i20200622": "cKLYbQ"
             }
         },
         "org.eclipse.zest.core": {
             "2.0.0.201204272302": {
                 "i20150402": "Lnb4A",
-                "i20150413": "YzAF9g"
+                "i20150413": "YzAF9g",
+                "i20221102": "jJMpQ"
             }
         },
         "org.ejml.core": {
             "0.34.0": {
-                "i20200622": "2DmFA"
+                "i20200622": "2DmFA",
+                "i20221102": "CJWpw"
             }
         },
         "org.ejml.ddense": {
             "0.34.0": {
-                "i20200622": "1gjDvw"
+                "i20200622": "1gjDvw",
+                "i20221102": "2annwg"
             }
         },
         "org.fusesource.jansi": {
             "1.5.0": {
                 "i20150402": "4RPZOg",
-                "i20150413": "OYPgQQ"
+                "i20150413": "OYPgQQ",
+                "i20221102": "9rUEUw"
             }
         },
         "org.geotools.gt-api": {
@@ -2415,12 +2954,14 @@
         },
         "org.geotools.gt-app-schema-resolver": {
             "21.0.0": {
-                "i20200622": "27B7SQ"
+                "i20200622": "27B7SQ",
+                "i20221102": "LqSfTA"
             }
         },
         "org.geotools.gt-complex": {
             "21.0.0": {
-                "i20200622": "1wmiQ"
+                "i20200622": "1wmiQ",
+                "i20221102": "Hn7jjA"
             }
         },
         "org.geotools.gt-coverage": {
@@ -2430,7 +2971,8 @@
                 "i20151027": "OatSPQ"
             },
             "21.0.0": {
-                "i20200622": "kUTrfQ"
+                "i20200622": "kUTrfQ",
+                "i20221102": "hN0Pjw"
             }
         },
         "org.geotools.gt-cql": {
@@ -2439,7 +2981,8 @@
                 "i20150413": "zUQ5zg"
             },
             "21.0.0": {
-                "i20200622": "VMgSNw"
+                "i20200622": "VMgSNw",
+                "i20221102": "TDE2Og"
             }
         },
         "org.geotools.gt-data": {
@@ -2455,7 +2998,8 @@
                 "i20151027": "39SDg"
             },
             "21.0.0": {
-                "i20200622": "6iIPg"
+                "i20200622": "6iIPg",
+                "i20221102": "3H1iQQ"
             }
         },
         "org.geotools.gt-geojson": {
@@ -2465,12 +3009,14 @@
                 "i20151027": "Kp9UhQ"
             },
             "21.0.0": {
-                "i20200622": "S30iCg"
+                "i20200622": "S30iCg",
+                "i20221102": "M3ZGDQ"
             }
         },
         "org.geotools.gt-geometry": {
             "21.0.0": {
-                "i20200622": "zKgenQ"
+                "i20200622": "zKgenQ",
+                "i20221102": "HPlCoA"
             }
         },
         "org.geotools.gt-graph": {
@@ -2481,12 +3027,13 @@
         },
         "org.geotools.gt-jdbc": {
             "12.2.0": {
-                "i20180424": "V0iYQw",
                 "i20150413": "J4GjrA",
-                "i20151027": "eUujrA"
+                "i20151027": "eUujrA",
+                "i20180424": "V0iYQw"
             },
             "21.0.0": {
-                "i20200622": "NDxs5Q"
+                "i20200622": "NDxs5Q",
+                "i20221102": "jBOQ6A"
             }
         },
         "org.geotools.gt-main": {
@@ -2496,7 +3043,8 @@
                 "i20151027": "MZ2Ccw"
             },
             "21.0.0": {
-                "i20200622": "5gdbyA"
+                "i20200622": "5gdbyA",
+                "i20221102": "4j9yw"
             }
         },
         "org.geotools.gt-metadata": {
@@ -2505,7 +3053,8 @@
                 "i20150413": "NX8uhg"
             },
             "21.0.0": {
-                "i20200622": "HhcW7A"
+                "i20200622": "HhcW7A",
+                "i20221102": "qWg67w"
             }
         },
         "org.geotools.gt-referencing": {
@@ -2515,7 +3064,8 @@
                 "i20151027": "BAxWcQ"
             },
             "21.0.0": {
-                "i20200622": "op1sw"
+                "i20200622": "op1sw",
+                "i20221102": "ZyeZtg"
             }
         },
         "org.geotools.gt-render": {
@@ -2525,7 +3075,8 @@
                 "i20151027": "KGnhw"
             },
             "21.0.0": {
-                "i20200622": "uLXMCQ"
+                "i20200622": "uLXMCQ",
+                "i20221102": "HrbwDA"
             }
         },
         "org.geotools.gt-shapefile": {
@@ -2535,20 +3086,22 @@
                 "i20151027": "Qp8gAA"
             },
             "21.0.0": {
-                "i20200622": "nnzdOQ"
+                "i20200622": "nnzdOQ",
+                "i20221102": "MuIBSw"
             }
         },
         "org.geotools.gt-wfs": {
             "12.2.0": {
-                "i20180424": "nC9qw",
                 "i20150402": "ujXDYQ",
                 "i20150413": "YHKaA",
-                "i20151027": "LfLKaA"
+                "i20151027": "LfLKaA",
+                "i20180424": "nC9qw"
             }
         },
         "org.geotools.gt-wfs-ng": {
             "21.0.0": {
-                "i20200622": "R004DQ"
+                "i20200622": "R004DQ",
+                "i20221102": "6oFcEA"
             }
         },
         "org.geotools.gt-xml": {
@@ -2558,7 +3111,8 @@
                 "i20151027": "edZKaA"
             },
             "21.0.0": {
-                "i20200622": "ReqHhg"
+                "i20200622": "ReqHhg",
+                "i20221102": "J2uriQ"
             }
         },
         "org.geotools.jdbc.gt-jdbc-oracle": {
@@ -2567,62 +3121,68 @@
                 "i20151027": "FK1cQQ"
             },
             "21.0.0": {
-                "i20200622": "BScpg"
+                "i20200622": "BScpg",
+                "i20221102": "eFZiqQ"
             }
         },
         "org.geotools.ogc.net.opengis.fes": {
             "12.2.0": {
-                "i20180424": "tIV8A",
                 "i20150402": "LHq9Pg",
                 "i20150413": "R33ERQ",
-                "i20151027": "fDERQ"
+                "i20151027": "fDERQ",
+                "i20180424": "tIV8A"
             },
             "21.0.0": {
-                "i20200622": "mXnQ"
+                "i20200622": "mXnQ",
+                "i20221102": "ze7oA"
             }
         },
         "org.geotools.ogc.net.opengis.ows": {
             "12.2.0": {
-                "i20180424": "FFlTKA",
                 "i20150402": "aF6Tag",
                 "i20150413": "5ViacQ",
-                "i20151027": "llacQ"
+                "i20151027": "llacQ",
+                "i20180424": "FFlTKA"
             },
             "21.0.0": {
-                "i20200622": "cdeKjg"
+                "i20200622": "cdeKjg",
+                "i20221102": "jW2ukQ"
             }
         },
         "org.geotools.ogc.net.opengis.wfs": {
             "12.2.0": {
-                "i20180424": "7cAl1A",
                 "i20150402": "V2BmFg",
                 "i20150413": "0FFtHQ",
-                "i20151027": "wOttHQ"
+                "i20151027": "wOttHQ",
+                "i20180424": "7cAl1A"
             },
             "21.0.0": {
-                "i20200622": "GmUzMg"
+                "i20200622": "GmUzMg",
+                "i20221102": "K2hXNQ"
             }
         },
         "org.geotools.ogc.org.w3.xlink": {
             "12.2.0": {
-                "i20180424": "qIIujw",
                 "i20150402": "udu0Q",
                 "i20150413": "5mV12A",
-                "i20151027": "GIh12A"
+                "i20151027": "GIh12A",
+                "i20180424": "qIIujw"
             },
             "21.0.0": {
-                "i20200622": "ujhlw"
+                "i20200622": "ujhlw",
+                "i20221102": "z2SJg"
             }
         },
         "org.geotools.xsd.gt-xsd-core": {
             "12.2.0": {
-                "i20180424": "PJZcxw",
                 "i20150402": "6PvRMg",
                 "i20150413": "aeHYOQ",
-                "i20151027": "SEnYOQ"
+                "i20151027": "SEnYOQ",
+                "i20180424": "PJZcxw"
             },
             "21.0.0": {
-                "i20200622": "R4aug"
+                "i20200622": "R4aug",
+                "i20221102": "zEkvQ"
             }
         },
         "org.geotools.xsd.gt-xsd-fes": {
@@ -2632,7 +3192,8 @@
                 "i20151027": "p9bng"
             },
             "21.0.0": {
-                "i20200622": "UFdlCg"
+                "i20200622": "UFdlCg",
+                "i20221102": "OBGJDQ"
             }
         },
         "org.geotools.xsd.gt-xsd-filter": {
@@ -2642,7 +3203,8 @@
                 "i20151027": "Vh5NlA"
             },
             "21.0.0": {
-                "i20200622": "U1UtBQ"
+                "i20200622": "U1UtBQ",
+                "i20221102": "w2pRCA"
             }
         },
         "org.geotools.xsd.gt-xsd-gml2": {
@@ -2652,7 +3214,8 @@
                 "i20151027": "qRVOrQ"
             },
             "21.0.0": {
-                "i20200622": "qbkQAg"
+                "i20200622": "qbkQAg",
+                "i20221102": "U900BQ"
             }
         },
         "org.geotools.xsd.gt-xsd-gml3": {
@@ -2662,7 +3225,8 @@
                 "i20151027": "OTZsIw"
             },
             "21.0.0": {
-                "i20200622": "Bkk9Jw"
+                "i20200622": "Bkk9Jw",
+                "i20221102": "qzRhKg"
             }
         },
         "org.geotools.xsd.gt-xsd-ows": {
@@ -2671,7 +3235,8 @@
                 "i20150413": "PYt3DQ"
             },
             "21.0.0": {
-                "i20200622": "hoKatQ"
+                "i20200622": "hoKatQ",
+                "i20221102": "K96uA"
             }
         },
         "org.geotools.xsd.gt-xsd-wfs": {
@@ -2681,90 +3246,116 @@
                 "i20151027": "e7qWw"
             },
             "21.0.0": {
-                "i20200622": "8QY6cg"
+                "i20200622": "8QY6cg",
+                "i20221102": "VxVedQ"
             }
         },
         "org.glassfish.hk2.api": {
             "2.3.0.b10": {
-                "i20150413": "92dDA"
+                "i20150413": "92dDA",
+                "i20221102": "RwyiDw"
             }
         },
         "org.glassfish.hk2.external.aopalliance-repackaged": {
             "2.3.0.b10": {
-                "i20150413": "7sPwxQ"
+                "i20150413": "7sPwxQ",
+                "i20221102": "QbAU1w"
             }
         },
         "org.glassfish.hk2.external.javax.inject": {
             "2.3.0.b10": {
-                "i20150413": "hOfVEA"
+                "i20150413": "hOfVEA",
+                "i20221102": "c05Ew"
             }
         },
         "org.glassfish.hk2.locator": {
             "2.3.0.b10": {
-                "i20150413": "f7u3xw"
+                "i20150413": "f7u3xw",
+                "i20221102": "g6Dbyg"
             }
         },
         "org.glassfish.hk2.osgi-resource-locator": {
             "1.0.1": {
-                "i20150413": "VSUKRA"
+                "i20150413": "VSUKRA",
+                "i20221102": "02QuRw"
             }
         },
         "org.glassfish.hk2.utils": {
             "2.3.0.b10": {
-                "i20150413": "wxNMbA"
+                "i20150413": "wxNMbA",
+                "i20221102": "Qv9wbw"
+            }
+        },
+        "org.glassfish.jaxb.core": {
+            "4.0.1": {
+                "i20221102": "JFphRA"
             }
         },
         "org.glassfish.jaxb.runtime": {
             "2.4.0.b180830_0438": {
                 "i20200622": "SU51nA"
+            },
+            "4.0.1": {
+                "i20221102": "Gp2xvw"
             }
         },
         "org.glassfish.jaxb.txw2": {
             "2.4.0.b180830_0438": {
                 "i20200622": "5QnAUA"
+            },
+            "4.0.1": {
+                "i20221102": "1JvkUg"
             }
         },
         "org.glassfish.jersey.bundles.repackaged.jersey-guava": {
             "2.13.0": {
-                "i20150413": "TCAZtA"
+                "i20150413": "TCAZtA",
+                "i20221102": "9A89tw"
             }
         },
         "org.glassfish.jersey.connectors.jersey-apache-connector": {
             "2.13.0": {
                 "i20150413": "IwXjQ",
                 "i20151027": "Wb8XjQ",
-                "i20200622": "6cMXjQ"
+                "i20200622": "6cMXjQ",
+                "i20221102": "7fw7kA"
             }
         },
         "org.glassfish.jersey.core.jersey-client": {
             "2.13.0": {
-                "i20150413": "f9WJoQ"
+                "i20150413": "f9WJoQ",
+                "i20221102": "FRutpA"
             }
         },
         "org.glassfish.jersey.core.jersey-common": {
             "2.13.0": {
-                "i20150413": "qVnHrg"
+                "i20150413": "qVnHrg",
+                "i20221102": "7TTrsQ"
             }
         },
         "org.glassfish.jersey.media.jersey-media-json-jackson": {
             "2.13.0": {
-                "i20150413": "J4TOxA"
+                "i20150413": "J4TOxA",
+                "i20221102": "ygnyxw"
             }
         },
         "org.h2": {
             "1.3.171": {
-                "i20180427": "knukjA"
+                "i20180427": "knukjA",
+                "i20221102": "e1fIjw"
             }
         },
         "org.hamcrest.core": {
             "1.3.0": {
-                "i20170105": "gvWzJQ"
+                "i20170105": "gvWzJQ",
+                "i20221102": "hDnXKA"
             }
         },
         "org.hibernate.javax.persistence.hibernate-jpa-2.0-api": {
             "1.0.0.Final": {
                 "i20150402": "dGqsGw",
-                "i20150413": "fbizIg"
+                "i20150413": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "org.hsqldb.hsqldb": {
@@ -2776,13 +3367,15 @@
                 "i20160712": "mqBFdQ"
             },
             "2.4.1": {
-                "i20200622": "ou9Fdg"
+                "i20200622": "ou9Fdg",
+                "i20221102": "BuZpeQ"
             }
         },
         "org.iq80.snappy": {
             "0.3.0": {
                 "i20150402": "d8CsHQ",
-                "i20150413": "gTSzJA"
+                "i20150413": "gTSzJA",
+                "i20221102": "ghjXJw"
             }
         },
         "org.jaitools.jt-utils": {
@@ -2791,7 +3384,8 @@
                 "i20150413": "5AaDHQ"
             },
             "1.5.0": {
-                "i20200622": "IzKjQ"
+                "i20200622": "IzKjQ",
+                "i20221102": "M7nukA"
             }
         },
         "org.jaitools.jt-zonalstats": {
@@ -2800,13 +3394,17 @@
                 "i20150413": "tK9Wsw"
             },
             "1.5.0": {
-                "i20200622": "zOJWyg"
+                "i20200622": "zOJWyg",
+                "i20221102": "mNB6zQ"
             }
         },
         "org.jasig.cas.client.cas-client-core": {
             "3.1.12": {
                 "i20150402": "BITOiw",
                 "i20150413": "5cPVkg"
+            },
+            "3.5.1": {
+                "i20221102": "IH2aTA"
             }
         },
         "org.javassist": {
@@ -2817,7 +3415,8 @@
         "org.jdesktop.swingx": {
             "1.0.0": {
                 "i20150402": "hnbuw",
-                "i20150413": "Rc72Ag"
+                "i20150413": "Rc72Ag",
+                "i20221102": "ihUaFA"
             }
         },
         "org.jdom": {
@@ -2831,33 +3430,64 @@
                 "i20150402": "fmqsIQ"
             },
             "2.0.6": {
-                "i20200622": "ieezKQ"
+                "i20200622": "ieezKQ",
+                "i20221102": "jKvXLA"
             }
         },
         "org.jetbrains.annotations": {
             "15.0.0": {
-                "i20220909": "5HezVw"
+                "i20220909": "5HezVw",
+                "i20221102": "HvXWg"
             }
         },
         "org.json": {
             "20090211.0.0": {
                 "i20150402": "CSGteQ",
-                "i20150413": "LGm0gA"
+                "i20150413": "LGm0gA",
+                "i20221102": "r83Ygw"
             }
         },
         "org.jsoup": {
             "1.14.3": {
-                "i20220909": "A8v4vQ"
+                "i20220909": "A8v4vQ",
+                "i20221102": "zF4czw"
             }
         },
         "org.jsr-305": {
             "3.0.2": {
-                "i20200622": "cD4Lew"
+                "i20200622": "cD4Lew",
+                "i20221102": "wlIvfg"
+            }
+        },
+        "org.junit.jupiter.junit-jupiter-api": {
+            "5.4.2": {
+                "i20221102": "sRzwQw"
+            }
+        },
+        "org.junit.jupiter.junit-jupiter-engine": {
+            "5.4.2": {
+                "i20221102": "56Tkpw"
+            }
+        },
+        "org.junit.platform.junit-platform-commons": {
+            "1.4.2": {
+                "i20221102": "3njkow"
+            }
+        },
+        "org.junit.platform.junit-platform-engine": {
+            "1.4.2": {
+                "i20221102": "p1zwPw"
+            }
+        },
+        "org.junit.platform.junit-platform-launcher": {
+            "1.4.2": {
+                "i20221102": "3njkow"
             }
         },
         "org.jvnet.jaxb2_commons.jaxb2-basics-runtime": {
             "0.9.3": {
-                "i20170105": "JHajw"
+                "i20170105": "JHajw",
+                "i20221102": "oA3lnw"
             }
         },
         "org.jvnet.staxex.stax-ex": {
@@ -2867,22 +3497,26 @@
         },
         "org.locationtech.jts.jts-core": {
             "1.16.0": {
-                "i20200622": "WKHf1Q"
+                "i20200622": "WKHf1Q",
+                "i20221102": "KV8D5w"
             }
         },
         "org.locationtech.proj4j": {
             "1.1.0": {
-                "i20191223": "io0nJQ"
+                "i20191223": "io0nJQ",
+                "i20221102": "PQZLKA"
             }
         },
         "org.lz4.lz4-java": {
             "1.4.1": {
-                "i20221013": "Uaa72g"
+                "i20221013": "Uaa72g",
+                "i20221102": "cMzf3Q"
             }
         },
         "org.nibor.autolink": {
             "0.6.0": {
-                "i20220909": "hnGzJw"
+                "i20220909": "hnGzJw",
+                "i20221102": "iHXXKg"
             }
         },
         "org.objectweb.asm-4": {
@@ -2898,7 +3532,8 @@
         },
         "org.objectweb.asm-9": {
             "9.2.0": {
-                "i20220909": "4OfjMQ"
+                "i20220909": "4OfjMQ",
+                "i20221102": "HAkHQw"
             }
         },
         "org.objectweb.asm.analysis-4": {
@@ -2925,12 +3560,14 @@
         },
         "org.objectweb.asm.tree-9": {
             "9.2.0": {
-                "i20220909": "I3Ld8Q"
+                "i20220909": "I3Ld8Q",
+                "i20221102": "4FACAw"
             }
         },
         "org.objectweb.asm.tree.analysis-9": {
             "9.2.0": {
-                "i20220909": "0XP4Nw"
+                "i20220909": "0XP4Nw",
+                "i20221102": "C8McSQ"
             }
         },
         "org.objectweb.asm.util-4": {
@@ -2946,7 +3583,8 @@
         },
         "org.objectweb.asm.util-9": {
             "9.2.0": {
-                "i20220909": "dTUYuA"
+                "i20220909": "dTUYuA",
+                "i20221102": "9J88uw"
             }
         },
         "org.opengis": {
@@ -2956,19 +3594,24 @@
                 "i20151027": "47AB9g"
             },
             "21.0.0": {
-                "i20200622": "IkDqrQ"
+                "i20200622": "IkDqrQ",
+                "i20221102": "tFYOvw"
             }
         },
         "org.openid4java": {
             "0.9.8": {
-                "i20180424": "DsueLQ",
                 "i20150402": "s66wyA",
                 "i20150413": "NYa3zw",
                 "i20151027": "fxW3zw",
-                "i20200622": "nwaeLQ"
+                "i20180424": "DsueLQ",
+                "i20200622": "nwaeLQ",
+                "i20221102": "6qmf9g"
             }
         },
         "org.opentest4j": {
+            "1.1.1": {
+                "i20221102": "c5rfXA"
+            },
             "1.2.0": {
                 "i20220909": "LVzLcQ"
             }
@@ -2985,7 +3628,8 @@
         },
         "org.ow2.asm.commons-9": {
             "9.2.0": {
-                "i20220909": "ACoQA"
+                "i20220909": "ACoQA",
+                "i20221102": "B440w"
             }
         },
         "org.parboiled.core": {
@@ -3003,8 +3647,8 @@
                 "i20150413": "HZb8eQ"
             },
             "1.1.7": {
-                "i20160601": "s5Kc6w",
                 "i20160531": "jFiC3Q",
+                "i20160601": "s5Kc6w",
                 "i20200622": "rfKc6w"
             }
         },
@@ -3041,30 +3685,38 @@
             "42.2.5": {
                 "i20181015": "Fhst0Q"
             },
+            "42.2.8": {
+                "i20200622": "piMXQ",
+                "i20221102": "KMViYA"
+            },
             "42.2.9": {
                 "i20191223": "95EeQ"
-            },
-            "42.2.8": {
-                "i20200622": "piMXQ"
             }
         },
         "org.quartz-scheduler.quartz": {
             "1.7.3": {
                 "i20150402": "nwPOXw",
-                "i20150413": "fQ3VZg"
+                "i20150413": "fQ3VZg",
+                "i20221102": "kwzXLw"
             }
         },
         "org.reflections": {
             "0.9.10": {
                 "i20180727": "Ffy2JQ"
             },
+            "0.9.11": {
+                "i20200622": "Z8e2pA",
+                "i20221102": "8Abapw"
+            },
             "0.9.8": {
                 "i20150402": "fEburg",
                 "i20150413": "SjP1tQ",
                 "i20151027": "Uor1tQ"
-            },
-            "0.9.11": {
-                "i20200622": "Z8e2pA"
+            }
+        },
+        "org.sonatype.sisu.inject.cglib": {
+            "2.2.1.v20090111": {
+                "i20221102": "SdT0kQ"
             }
         },
         "org.springframework.aop": {
@@ -3117,17 +3769,21 @@
         },
         "org.springframework.ldap.spring-ldap-core": {
             "1.3.1.RELEASE": {
-                "i20180424": "AfGrvA",
                 "i20150402": "tPGu5g",
                 "i20150413": "E3217Q",
                 "i20151027": "scW17Q",
+                "i20180424": "AfGrvA",
                 "i20200622": "iervA"
+            },
+            "2.3.2.RELEASE": {
+                "i20221102": "lCEIag"
             }
         },
         "org.springframework.osgi.web.mini": {
             "2.0.0.M1": {
                 "i20150402": "5uTrWQ",
-                "i20150413": "oK3yYA"
+                "i20150413": "oK3yYA",
+                "i20221102": "hv8HfA"
             }
         },
         "org.springframework.security.cas": {
@@ -3160,10 +3816,90 @@
                 "i20150413": "eo6DcA"
             }
         },
+        "org.springframework.security.spring-security-cas": {
+            "5.2.0.RELEASE": {
+                "i20221102": "Yh2ZnQ"
+            }
+        },
+        "org.springframework.security.spring-security-config": {
+            "5.2.0.RELEASE": {
+                "i20221102": "wQezdg"
+            }
+        },
+        "org.springframework.security.spring-security-core": {
+            "5.2.0.RELEASE": {
+                "i20221102": "cuSseQ"
+            }
+        },
+        "org.springframework.security.spring-security-ldap": {
+            "5.2.0.RELEASE": {
+                "i20221102": "ixozBg"
+            }
+        },
+        "org.springframework.security.spring-security-openid": {
+            "5.2.0.RELEASE": {
+                "i20221102": "fMb7Q"
+            }
+        },
+        "org.springframework.security.spring-security-web": {
+            "5.2.0.RELEASE": {
+                "i20221102": "5uCsvg"
+            }
+        },
         "org.springframework.security.web": {
             "3.1.1.RELEASE": {
                 "i20150402": "ranmg",
                 "i20150413": "8XbuAQ"
+            }
+        },
+        "org.springframework.spring-aop": {
+            "5.2.0.RELEASE": {
+                "i20221102": "fHqgcw"
+            }
+        },
+        "org.springframework.spring-beans": {
+            "5.2.0.RELEASE": {
+                "i20221102": "VhqJQw"
+            }
+        },
+        "org.springframework.spring-context": {
+            "5.2.0.RELEASE": {
+                "i20221102": "qbuLgg"
+            }
+        },
+        "org.springframework.spring-context-support": {
+            "5.2.0.RELEASE": {
+                "i20221102": "IDfBag"
+            }
+        },
+        "org.springframework.spring-core": {
+            "5.2.0.RELEASE": {
+                "i20221102": "ip7XKw"
+            }
+        },
+        "org.springframework.spring-expression": {
+            "5.2.0.RELEASE": {
+                "i20221102": "VhqJQw"
+            }
+        },
+        "org.springframework.spring-jcl": {
+            "5.2.0.RELEASE": {
+                "i20221102": "ip7XKw"
+            }
+        },
+        "org.springframework.spring-tx": {
+            "5.2.0.RELEASE": {
+                "i20221102": "fHqgcw"
+            }
+        },
+        "org.springframework.spring-web": {
+            "5.2.0.RELEASE": {
+                "i20221102": "fHqgcw"
+            }
+        },
+        "org.springframework.spring-webmvc": {
+            "5.2.0.RELEASE": {
+                "i20221102": "EH8MVw"
             }
         },
         "org.springframework.transaction": {
@@ -3187,58 +3923,68 @@
         "org.swinglabs.swing-worker": {
             "1.1.0": {
                 "i20150402": "dhasHA",
-                "i20150413": "f3ezIw"
+                "i20150413": "f3ezIw",
+                "i20221102": "fvXJg"
             }
         },
         "org.webjars.bootstrap": {
             "2.3.2": {
                 "i20150402": "fnCsIQ",
-                "i20150413": "iDCzKA"
+                "i20150413": "iDCzKA",
+                "i20221102": "ipTXKw"
             }
         },
         "org.webjars.jquery": {
             "1.9.0": {
                 "i20150402": "g3asJA",
-                "i20150413": "jWzKw"
+                "i20150413": "jWzKw",
+                "i20221102": "kPPXLg"
             }
         },
         "org.webjars.jquerypp": {
             "1.0.0.b2": {
                 "i20150402": "dGqsGw",
-                "i20150413": "fbizIg"
+                "i20150413": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "org.webjars.locator": {
             "0.1.0": {
                 "i20150402": "6MexDw",
-                "i20150413": "jeS4Fg"
+                "i20150413": "jeS4Fg",
+                "i20221102": "ScLcGQ"
             }
         },
         "org.webjars.modernizr": {
             "2.6.2.1": {
                 "i20150402": "g3SsJA",
-                "i20150413": "jW2zKw"
+                "i20150413": "jW2zKw",
+                "i20221102": "kPHXLg"
             }
         },
         "org.wicketstuff.html5": {
             "6.10.0": {
                 "i20150402": "2OqsUQ",
-                "i20150413": "5jqzWA"
+                "i20150413": "5jqzWA",
+                "i20221102": "p7XWw"
             }
         },
         "org.xerial.sqlite-jdbc": {
             "3.28.0": {
-                "i20191223": "Sx7MYQ"
+                "i20191223": "Sx7MYQ",
+                "i20221102": "mkHwZA"
             }
         },
         "org.xerial.thirdparty.nestedvm": {
             "1.0.0": {
-                "i20191223": "fbizIg"
+                "i20191223": "fbizIg",
+                "i20221102": "fdzXJQ"
             }
         },
         "org.yaml.snakeyaml": {
             "1.21.0": {
-                "i20180727": "hSM4A"
+                "i20180727": "hSM4A",
+                "i20221102": "nzqw4w"
             },
             "1.28.0": {
                 "i20220909": "E16rA"
@@ -3247,10 +3993,14 @@
         "oro": {
             "2.0.8": {
                 "i20150402": "g2isJA",
-                "i20150413": "jWGzKw"
+                "i20150413": "jWGzKw",
+                "i20221102": "kOXXLg"
             }
         },
         "picocli": {
+            "4.3.2": {
+                "i20221102": "uofRvg"
+            },
             "4.6.3": {
                 "i20220909": "k4qtvw"
             }
@@ -3258,7 +4008,8 @@
         "picocontainer": {
             "1.2.0": {
                 "i20150402": "O0S6hQ",
-                "i20150413": "efvBjA"
+                "i20150413": "efvBjA",
+                "i20221102": "q73ljw"
             }
         },
         "postgresql": {
@@ -3268,67 +4019,79 @@
         },
         "ru.yandex.qatools.allure.java-adaptor-api": {
             "1.5.0": {
-                "i20170105": "YwG3Ow"
+                "i20170105": "YwG3Ow",
+                "i20221102": "WXHbPg"
             }
         },
         "ru.yandex.qatools.allure.java-annotations": {
             "1.5.0": {
                 "i20170105": "HT0ACw",
-                "i20180424": "WqzplA"
+                "i20180424": "WqzplA",
+                "i20221102": "AwNpg"
             }
         },
         "ru.yandex.qatools.allure.java-aspects": {
             "1.5.0": {
                 "i20170105": "rj0m0A",
-                "i20180424": "6HEPFw"
+                "i20180424": "6HEPFw",
+                "i20221102": "35MzGg"
             }
         },
         "ru.yandex.qatools.allure.junit-adaptor": {
             "1.5.0": {
                 "i20170105": "OuYAgg",
-                "i20180424": "OLzpYw"
+                "i20180424": "OLzpYw",
+                "i20221102": "ug4NdQ"
             }
         },
         "ru.yandex.qatools.allure.model": {
             "1.5.0": {
                 "i20170105": "3JRjPA",
-                "i20200622": "g5RjPA"
+                "i20200622": "g5RjPA",
+                "i20221102": "7uKHPw"
             }
         },
         "ru.yandex.qatools.properties.loader": {
             "1.5.0": {
-                "i20170105": "3HoLnA"
+                "i20170105": "3HoLnA",
+                "i20221102": "7y4vnw"
             }
         },
         "si.uom.si-quantity": {
             "0.7.1": {
-                "i20200622": "mnlkw"
+                "i20200622": "mnlkw",
+                "i20221102": "GxQJpQ"
             }
         },
         "si.uom.si-units-java8": {
             "0.7.1": {
-                "i20200622": "9Vt7Mg"
+                "i20200622": "9Vt7Mg",
+                "i20221102": "DKyfNQ"
             }
         },
         "slf4j.api": {
-            "1.7.25": {
-                "i20180727": "5AbfsA"
-            },
-            "1.7.13": {
-                "i20180427": "TfVCQ"
+            "1.7.10": {
+                "i20150402": "PI7NQ",
+                "i20150413": "6CTVAA"
             },
             "1.7.12": {
                 "i20170105": "84bVBg"
             },
-            "1.7.10": {
-                "i20150402": "PI7NQ",
-                "i20150413": "6CTVAA"
+            "1.7.13": {
+                "i20180427": "TfVCQ"
+            },
+            "1.7.25": {
+                "i20180727": "5AbfsA"
+            },
+            "1.7.36": {
+                "i20221102": "TEADyg"
             }
         },
         "slf4j.ext": {
             "1.7.10": {
                 "i20150402": "kBvtvA",
-                "i20150413": "9Gj0ww"
+                "i20150413": "9Gj0ww",
+                "i20221102": "NlwY1Q"
             }
         },
         "stax": {
@@ -3350,46 +4113,59 @@
         },
         "systems.uom.systems-common-java8": {
             "0.7.2": {
-                "i20200622": "rrB5ew"
+                "i20200622": "rrB5ew",
+                "i20221102": "NM2dfg"
             }
         },
         "systems.uom.systems-quantity": {
             "0.7.2": {
-                "i20200622": "RDdYg"
+                "i20200622": "RDdYg",
+                "i20221102": "Za4BdA"
             }
         },
         "tec.uom.lib.uom-lib-common": {
             "1.0.2": {
-                "i20200622": "oDpCfA"
+                "i20200622": "oDpCfA",
+                "i20221102": "8qdmfw"
             }
         },
         "tec.uom.se": {
             "1.0.8": {
-                "i20200622": "GXfPfg"
+                "i20200622": "GXfPfg",
+                "i20221102": "gbzzgQ"
+            }
+        },
+        "testng": {
+            "6.13.1": {
+                "i20221102": "qqIk9A"
             }
         },
         "wicket-bootstrap-core": {
             "0.8.4": {
                 "i20150402": "iBuTHA",
-                "i20150413": "JumaIw"
+                "i20150413": "JumaIw",
+                "i20221102": "6uiJg"
             }
         },
         "wicket-bootstrap-extensions": {
             "0.8.4": {
                 "i20150402": "So2OIA",
-                "i20150413": "WhKVJw"
+                "i20150413": "WhKVJw",
+                "i20221102": "Rr65Kg"
             }
         },
         "wicket-bootstrap-less": {
             "0.8.4": {
                 "i20150402": "mSkYMw",
-                "i20150413": "m1IfOg"
+                "i20150413": "m1IfOg",
+                "i20221102": "WRDPQ"
             }
         },
         "wicket-bootstrap-themes": {
             "0.8.4": {
                 "i20150402": "4AbS9w",
-                "i20150413": "KsHZg"
+                "i20150413": "KsHZg",
+                "i20221102": "HwTAQ"
             }
         },
         "woodstox-core-lgpl": {
@@ -3409,67 +4185,75 @@
             }
         },
         "xerces.xercesImpl": {
-            "2.9.1": {
-                "i20150402": "hs6sJg",
-                "i20150413": "kO2zLQ"
-            },
             "2.11.0": {
                 "i20180427": "4p7BwQ"
             },
             "2.12.0": {
                 "i20200622": "5InBwg"
+            },
+            "2.12.2": {
+                "i20221102": "Lazlxw"
+            },
+            "2.9.1": {
+                "i20150402": "hs6sJg",
+                "i20150413": "kO2zLQ"
             }
         },
         "xml-apis": {
-            "1.4.1": {
-                "i20180427": "HhJbQ"
-            },
             "1.0.0.b2": {
                 "i20150402": "tCq1OA",
                 "i20150413": "bTa8Pw"
+            },
+            "1.4.1": {
+                "i20180427": "HhJbQ"
             }
         },
         "xml-resolver": {
             "1.2.0": {
                 "i20150402": "d8KsHQ",
                 "i20150413": "gTazJA",
-                "i20180727": "38rATQ"
+                "i20180727": "38rATQ",
+                "i20221102": "0FnkUA"
             }
         },
         "xmlpull": {
             "1.1.3.1": {
                 "i20150402": "exSsHw",
-                "i20150413": "hK6zJg"
+                "i20150413": "hK6zJg",
+                "i20221102": "hlLXKQ"
             }
         },
         "xpp3.xpp3_min": {
             "1.1.4.c": {
                 "i20150402": "fL6sIA",
                 "i20150413": "hmuzJw",
-                "i20180726": "5PAUA"
+                "i20180726": "5PAUA",
+                "i20221102": "1q7kUw"
             }
         },
         "xstream": {
             "1.4.5": {
                 "i20150402": "Av9gXA",
-                "i20150413": "cpnYw"
+                "i20150413": "cpnYw",
+                "i20221102": "3PmLZg"
             }
         }
     },
     "feature": {
         "com.spotify.docker-client": {
             "2.7.7": {
-                "i20170105": "UOLFZA",
-                "i201504131603": "kXvQvg",
                 "i20150413": "u2TPKw",
-                "i20180427": "qWLFgQ",
                 "i201504131443": "tGXP9g",
+                "i201504131603": "kXvQvg",
                 "i201504131740": "lFHEbQ",
                 "i20151027": "5dHEfQ",
-                "i20180727": "YznE1w",
                 "i20160531": "UK3FYg",
+                "i20170105": "UOLFZA",
+                "i20180427": "qWLFgQ",
+                "i20180727": "YznE1w",
                 "i20200622": "S4UfA",
-                "i20220909": "j9NwBA"
+                "i20220909": "j9NwBA",
+                "i20221102": "XMtqDA"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -3479,56 +4263,56 @@
         },
         "eu.esdihumboldt.hale.platform": {
             "3.0.0": {
-                "i20150705": "XVpSSA",
-                "i20150727": "KJJ5hQ",
-                "i20150523": "3c1U0Q",
                 "i20150402": "6hhrmw",
-                "i20160531": "3d5qSA",
-                "i20160712": "yfDKaQ",
-                "i201504131603": "M7du3g",
-                "i20160730": "q7NPcw",
-                "i20161028": "igBiCQ",
-                "i20160810": "u7RPdw",
-                "i201504131443": "p3drvg",
-                "i201504131740": "YzFUhw",
-                "i20150715": "hSN5nw",
-                "i20150616": "m69Taw",
-                "i20170105": "8R7xg",
-                "i20150612": "6mFU0Q",
-                "i20150511": "J4VUyw",
-                "i20150610": "ZUdUzQ",
-                "i20170106": "F6TMCg",
                 "i20150413": "ACpokA",
-                "i20161212": "VwDg",
-                "i20160704": "HsmCxw",
-                "i20160721": "rys0og",
-                "i20160601": "gDxqRA",
+                "i201504131443": "p3drvg",
+                "i201504131603": "M7du3g",
+                "i201504131740": "YzFUhw",
+                "i20150511": "J4VUyw",
+                "i20150523": "3c1U0Q",
+                "i20150610": "ZUdUzQ",
+                "i20150612": "6mFU0Q",
+                "i20150616": "m69Taw",
+                "i20150705": "XVpSSA",
+                "i20150715": "hSN5nw",
+                "i20150727": "KJJ5hQ",
                 "i20151027": "rd15Ww",
-                "i20151101": "lRB5dw"
-            },
-            "3.5.0": {
-                "i20181217": "YgT5tw"
+                "i20151101": "lRB5dw",
+                "i20160531": "3d5qSA",
+                "i20160601": "gDxqRA",
+                "i20160704": "HsmCxw",
+                "i20160712": "yfDKaQ",
+                "i20160721": "rys0og",
+                "i20160730": "q7NPcw",
+                "i20160810": "u7RPdw",
+                "i20161028": "igBiCQ",
+                "i20161212": "VwDg",
+                "i20170105": "8R7xg",
+                "i20170106": "F6TMCg"
             },
             "3.3.0": {
-                "i20170428": "zgsarA",
                 "i20170316": "sGWAoA",
                 "i20170418": "ejoakg",
+                "i20170428": "zgsarA",
                 "i20170517": "eoMFvA",
                 "i20170529": "XTIF2g"
             },
             "3.4.0": {
-                "i20181015": "ZRb5vQ",
+                "i20180329": "ucETPg",
                 "i20180411": "a1BdCg",
                 "i20180424": "OAyIaA",
-                "i202001141313": "uLL9FA",
                 "i20180427": "XVSCsA",
-                "i202001141259": "bZT7hg",
-                "i20180329": "ucETPg",
+                "i20180719": "bmSMvw",
                 "i20180726": "KqCNFQ",
                 "i20180727": "KMUjgQ",
-                "i20180719": "bmSMvw",
+                "i20181015": "ZRb5vQ",
+                "i20191223": "oPozmQ",
                 "i20200114": "AsgYGg",
-                "i20191223": "oPozmQ"
+                "i202001141259": "bZT7hg",
+                "i202001141313": "uLL9FA"
+            },
+            "3.5.0": {
+                "i20181217": "YgT5tw"
             },
             "4.0.0": {
                 "i20200622": "YkmHZg",
@@ -3540,7 +4324,8 @@
                 "i20220321": "0dpfg",
                 "i20220816": "uTFh1g",
                 "i20220909": "Yg7LsQ",
-                "i20221013": "9WDrEw"
+                "i20221013": "9WDrEw",
+                "i20221102": "HL7mg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -3554,12 +4339,13 @@
                 "i20180427": "xso6zQ",
                 "i20180719": "yGM60Q"
             },
-            "3.4.2": {
-                "i20180727": "T6dAbQ"
-            },
             "3.4.13": {
                 "i20200622": "HDQAeg",
-                "i20221013": "2zUAcw"
+                "i20221013": "2zUAcw",
+                "i20221102": "iA3iBA"
+            },
+            "3.4.2": {
+                "i20180727": "T6dAbQ"
             }
         },
         "eu.esdihumboldt.hale.platform.groovy-sandbox": {
@@ -3569,30 +4355,31 @@
         },
         "eu.esdihumboldt.hale.platform.jetty": {
             "9.2.1.v20140609": {
+                "i20150402": "AQTTfQ",
+                "i20150413": "HlPTkw",
+                "i20150511": "ZDfkgA",
+                "i20170428": "HlPTkw",
                 "i20180411": "ZDfkgA",
                 "i20180424": "MP0WA",
-                "i20170428": "HlPTkw",
-                "i20150511": "ZDfkgA",
-                "i20150402": "AQTTfQ",
-                "i20150413": "HlPTkw"
+                "i20221102": "ygv0Fg"
             }
         },
         "eu.esdihumboldt.hale.platform.resources": {
             "3.0.0": {
-                "i20150705": "aECbxg",
-                "i20150511": "xD6c8w",
                 "i20150402": "sCOcrw",
+                "i20150511": "xD6c8w",
+                "i20150705": "aECbxg",
                 "i20151027": "UcueWA"
-            },
-            "3.5.0": {
-                "i20181217": "hrSb8A"
             },
             "3.3.0": {
                 "i20170316": "UcueWA"
             },
             "3.4.0": {
-                "i20181015": "hrSb8A",
-                "i20180329": "UcueWA"
+                "i20180329": "UcueWA",
+                "i20181015": "hrSb8A"
+            },
+            "3.5.0": {
+                "i20181217": "hrSb8A"
             },
             "4.0.0": {
                 "i20200622": "hrSb8A",
@@ -3606,64 +4393,72 @@
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
             "12.4.2": {
-                "i20150612": "PxwvKw",
                 "i20150402": "PN8vIg",
                 "i20150413": "PrMvKg",
-                "i20180726": "QMkvNQ"
+                "i20150612": "PxwvKw",
+                "i20180726": "QMkvNQ",
+                "i20221102": "ORcvEg"
             }
         },
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
             "0.8.4": {
-                "i20170105": "pqq0A",
-                "i20181217": "IyGpvg",
                 "i20150402": "Vh5Yg",
                 "i20150413": "Lje5rg",
-                "i20170316": "Enqq1w",
-                "i20180427": "VWCqPQ",
-                "i20180329": "JtGq3Q",
                 "i201504131740": "5fOqyA",
                 "i20151027": "OOqzg",
+                "i20170105": "pqq0A",
+                "i20170316": "Enqq1w",
+                "i20180329": "JtGq3Q",
+                "i20180427": "VWCqPQ",
                 "i20180727": "KempwA",
+                "i20181217": "IyGpvg",
                 "i20191223": "KempwA",
                 "i20200622": "F70X1Q",
                 "i20210309": "JqEX2Q",
-                "i20220909": "IYig"
+                "i20220909": "IYig",
+                "i20221102": "Pfwa6Q"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
             "2.0.0.201204272302": {
                 "i20150402": "d8y5nQ",
-                "i20150413": "e7u5nw"
+                "i20150413": "e7u5nw",
+                "i20221102": "ba5mQ"
             }
         },
         "io.pebbletemplates.pebble": {
             "3.0.1": {
-                "i20180727": "F00jA"
+                "i20180727": "F00jA",
+                "i20221102": "BGESg"
             }
         },
         "platform.shared.gemini-blueprint": {
             "1.0.0.RELEASE": {
                 "i20150402": "5IJBtA",
                 "i20150413": "5kdBug"
+            },
+            "3.0.0.M01": {
+                "i20221102": "zos9tQ"
             }
         },
         "platform.shared.geotools": {
             "12.2.0": {
+                "i20150402": "Rd3QA",
+                "i20150413": "F0KD5Q",
+                "i20150610": "FJ6D5A",
+                "i20151027": "KSqD7A",
                 "i20160712": "Jb6D6Q",
                 "i20170105": "JmD6w",
                 "i20180411": "JUiD6g",
                 "i20180424": "KiWD7g",
-                "i20150610": "FJ6D5A",
-                "i20150402": "Rd3QA",
-                "i20150413": "F0KD5Q",
                 "i20180427": "h7CDRw",
-                "i20151027": "KSqD7A",
                 "i20180726": "iGODUQ",
                 "i20180727": "oBCDYg"
             },
             "21.0.0": {
                 "i20200622": "PnCdmQ",
-                "i20221013": "LkqdwA"
+                "i20221013": "LkqdwA",
+                "i20221102": "BXm1ig"
             }
         },
         "platform.shared.groovy-all": {
@@ -3674,53 +4469,58 @@
             "2.4.14": {
                 "i20180424": "rEYXTQ"
             },
+            "2.5.19": {
+                "i20221102": "eNEJNQ"
+            },
             "4.0.1": {
                 "i20220909": "eNEJNQ"
             }
         },
         "platform.shared.orientdb.core": {
             "1.5.1": {
-                "i20180411": "Uh0pWQ",
                 "i20150402": "UOspUw",
                 "i20150413": "UZcpVw",
                 "i20151027": "QIVHZA",
-                "i20200622": "PcdHYA"
+                "i20180411": "Uh0pWQ",
+                "i20200622": "PcdHYA",
+                "i20221102": "NF5HRA"
             }
         },
         "platform.shared.orientdb.graphdb": {
             "1.5.1": {
-                "i20150616": "tblxBA",
-                "i20170105": "29BxEQ",
-                "i20180411": "291xEA",
-                "i201504131603": "nF1w8g",
-                "i20180424": "s9Fyug",
                 "i20150402": "GNxQA",
                 "i20150413": "IiJwKg",
-                "i20180427": "1otyzg",
+                "i201504131603": "nF1w8g",
+                "i20150616": "tblxBA",
                 "i20151027": "0D1xDA",
+                "i20170105": "29BxEQ",
+                "i20180411": "291xEA",
+                "i20180424": "s9Fyug",
+                "i20180427": "1otyzg",
                 "i20180726": "9Zy2A",
                 "i20180727": "nihyIg",
                 "i20200622": "Cu9x9w",
-                "i20220909": "n2xxxQ"
+                "i20220909": "n2xxxQ",
+                "i20221102": "CSBnvA"
             }
         },
         "platform.shared.poi": {
             "3.9.0": {
-                "i20180424": "fWMYw",
                 "i20150402": "do8Ug",
                 "i20150413": "eyEXg",
-                "i20180427": "yb0uA",
                 "i20151027": "e8YA",
+                "i20180424": "fWMYw",
+                "i20180427": "yb0uA",
                 "i20200622": "xqQsQ"
+            },
+            "5.2.3": {
+                "i20221102": "LimWxg"
             }
         },
         "platform.shared.postgis": {
             "3.0.0": {
                 "i20150402": "444b4A",
                 "i20150413": "468b4g"
-            },
-            "3.5.0": {
-                "i20181217": "5pQZCg"
             },
             "3.3.0": {
                 "i20170316": "468b4g",
@@ -3731,79 +4531,95 @@
                 "i20180727": "5pQZCg",
                 "i20191223": "5iEZAw"
             },
+            "3.5.0": {
+                "i20181217": "5pQZCg"
+            },
             "4.0.0": {
                 "i20200622": "5kkZAQ"
             },
             "4.1.0": {
-                "i20210309": "5kkZAQ"
+                "i20210309": "5kkZAQ",
+                "i20221102": "5ggYQ"
             }
         },
         "platform.shared.slf4jlogback": {
             "1.7.10": {
-                "i20170105": "7MQ9oQ",
                 "i20150402": "5U9kw",
                 "i20150413": "7Fc9nw",
+                "i20170105": "7MQ9oQ",
                 "i20180427": "7mY9qg",
-                "i20180727": "75M9sA"
+                "i20180727": "75M9sA",
+                "i20221102": "lYRboA"
             }
         },
         "platform.shared.spring.core": {
             "3.1.1.RELEASE": {
-                "i20180411": "ma43mg",
                 "i20150402": "vN0YYQ",
                 "i20150413": "vP4YYw",
+                "i20180411": "ma43mg",
                 "i20180427": "oKQ3rg",
                 "i20180727": "oSk3tA"
+            },
+            "5.2.0.RELEASE": {
+                "i20221102": "koAs5Q"
             }
         },
         "platform.shared.spring.modules": {
             "3.1.1.RELEASE": {
-                "i20170105": "FI7HIw",
-                "i20180411": "FJ3HJA",
                 "i20150402": "9G3HBw",
                 "i20150413": "EPHIQ",
+                "i20170105": "FI7HIw",
+                "i20180411": "FJ3HJA",
                 "i20180427": "L83HPw",
                 "i20180727": "MZPHSA"
+            },
+            "5.2.0.RELEASE": {
+                "i20221102": "XV3FjQ"
             }
         },
         "platform.shared.spring.security": {
             "3.1.1.RELEASE": {
+                "i20150402": "u4PFVw",
+                "i20150413": "YeFkQ",
+                "i20151027": "d3Flw",
                 "i20170105": "eGDFmQ",
                 "i20180411": "eGFmg",
                 "i20180424": "i2zFoA",
-                "i20150402": "u4PFVw",
-                "i20150413": "YeFkQ",
                 "i20180427": "xSvMxg",
-                "i20151027": "d3Flw",
                 "i20180727": "yGXMzw",
                 "i20200622": "hOjMtA"
+            },
+            "5.2.0.RELEASE": {
+                "i20221102": "6VGnQ"
             }
         },
         "platform.shared.wicket": {
             "6.10.0": {
-                "i20170105": "GtV1qw",
                 "i20150402": "C4x1lQ",
                 "i20150413": "GqB1qQ",
+                "i20170105": "GtV1qw",
                 "i20180427": "G3t1tA",
-                "i20180727": "HAB1ug"
+                "i20180727": "HAB1ug",
+                "i20221102": "7dd1dQ"
             }
         },
         "platform.shared.xs": {
-            "1.0.6": {
-                "i20181217": "7RU8eA",
-                "i20200622": "gDe2Mw"
-            },
             "1.0.0": {
                 "i20180411": "4x08YQ",
                 "i20180727": "7Jk8dw"
+            },
+            "1.0.6": {
+                "i20181217": "7RU8eA",
+                "i20200622": "gDe2Mw"
             }
         }
     },
     "mergedBundle": {
         "com.j256.ormlite": {
             "5.1.0": {
+                "i20200114": "lzBfkA",
                 "i202001141312": "A1lsMA",
-                "i20200114": "lzBfkA"
+                "i20221102": "DcOQMw"
             }
         },
         "com.orientechnologies.common": {
@@ -3811,7 +4627,8 @@
                 "i20150402": "pOBKQ",
                 "i20150413": "kq2IMA",
                 "i20151027": "ufGIMA",
-                "i20200622": "kq2IMA"
+                "i20200622": "kq2IMA",
+                "i20221102": "4Vu5XA"
             }
         },
         "eu.esdihumboldt.hale.server.webjars": {
@@ -3819,64 +4636,72 @@
                 "i20150402": "cGe5KA",
                 "i20150413": "cbvALw"
             },
-            "3.5.0": {
-                "i20181217": "eyXANA"
-            },
             "3.3.0": {
                 "i20170316": "d2HAMg"
             },
             "3.4.0": {
                 "i20180329": "eUPAMw"
             },
+            "3.5.0": {
+                "i20181217": "eyXANA"
+            },
             "4.0.0": {
                 "i20200622": "c5AMA"
             },
             "4.1.0": {
-                "i20210309": "dYHAMQ"
+                "i20210309": "dYHAMQ",
+                "i20221102": "W5DkNA"
             }
         },
         "javax.annotation.extensions": {
             "1.2.0": {
                 "i20150413": "IcTEmA",
-                "i20180719": "qCHKrw"
+                "i20180719": "qCHKrw",
+                "i20221102": "se3usg"
             }
         },
         "mil.nga.geopackage": {
             "3.4.0": {
                 "i20200114": "Gnfvdw",
-                "i20200622": "NhLvdw"
+                "i20200622": "NhLvdw",
+                "i20221102": "Wp8TiQ"
             }
         },
         "org.apache.poi": {
             "3.9.0": {
-                "i20180424": "HgAe1Q",
                 "i20150402": "Qw6jQ",
                 "i20150413": "2ZhBlA",
                 "i20151027": "DVVBlA",
+                "i20180424": "HgAe1Q",
                 "i20200622": "9vse1Q"
+            },
+            "5.2.3": {
+                "i20221102": "tUuzw"
             }
         },
         "org.deegree": {
             "3.4.0.RC7": {
                 "i20180427": "MRD0gw"
             },
+            "3.4.13": {
+                "i20200622": "kpmzoQ",
+                "i20221102": "6G21Xg"
+            },
             "3.4.2": {
                 "i20180727": "rurzjA"
-            },
-            "3.4.13": {
-                "i20200622": "kpmzoQ"
             }
         },
         "org.geotools": {
             "12.2.0.combined": {
-                "i20180411": "gsXmAA",
-                "i20180424": "9rBSaA",
                 "i20150402": "q98trQ",
                 "i20150413": "ecTmAA",
-                "i20151027": "5WXmAA"
+                "i20151027": "5WXmAA",
+                "i20180411": "gsXmAA",
+                "i20180424": "9rBSaA"
             },
             "21.0.0.combined": {
-                "i20200622": "5n5yg"
+                "i20200622": "5n5yg",
+                "i20221102": "WIMd3A"
             }
         },
         "org.postgresql.jdbc": {
@@ -3884,15 +4709,16 @@
                 "i20180727": "UWKJtg",
                 "i20191223": "yFb2Q"
             },
-            "9.4.0.1206-jdbc4_postgis-2_0_1": {
-                "i20170529": "hqxlmA"
+            "42.2.8.postgis-2_3_0": {
+                "i20200622": "QopZg",
+                "i20221102": "VxBNaQ"
             },
             "9.2.0.1002-jdbc4_postgis-2_0_1": {
                 "i20150402": "5Odejw",
                 "i20150413": "eiBllg"
             },
-            "42.2.8.postgis-2_3_0": {
-                "i20200622": "QopZg"
+            "9.4.0.1206-jdbc4_postgis-2_0_1": {
+                "i20170529": "hqxlmA"
             }
         }
     }

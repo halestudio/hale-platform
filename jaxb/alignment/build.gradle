@@ -1,11 +1,11 @@
 // increase the version number with every schema change!
-version = '2.9.6'
+version = '2.9.9'
 
 dependencies {
+	implementation 'org.glassfish.jaxb:jaxb-core:4.0.0'
 	implementation 'jakarta.xml.bind:jakarta.xml.bind-api:4.0.0'
-	implementation 'jakarta.xml.bind:jakarta.xml.bind-api-test:3.0.1'
-	implementation 'jakarta.xml.bind:jakarta.xml.bind-api-parent:4.0.0'
-
+	implementation 'org.glassfish.jaxb:jaxb-runtime:4.0.0'
+	implementation 'com.sun.xml.bind:jaxb-impl:4.0.0'
 }
 
 jar {
@@ -15,5 +15,6 @@ jar {
 		symbolicName = 'eu.esdihumboldt.hale.common.align.io.model.jaxb'
 		license = 'http://www.gnu.org/licenses/lgpl.html;description=Lesser General Public License (LGPL) Version 3'
 		instruction 'Bundle-Vendor', 'data harmonisation panel'
+		instruction 'Require-Bundle', 'org.glassfish.jaxb.runtime'
 	}
 }

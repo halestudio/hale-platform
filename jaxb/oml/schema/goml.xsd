@@ -9,7 +9,11 @@
     xmlns:omwg="http://www.omwg.org/TR/d7/ontology/alignment"
     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
     elementFormDefault="qualified"
-    attributeFormDefault="qualified" >
+    attributeFormDefault="qualified"
+           xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           jaxb:version="3.0"
+>
 
   <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="tmprdf.xsd" />
   <xs:import namespace="http://www.omwg.org/TR/d7/ontology/alignment" schemaLocation="util.xsd" />

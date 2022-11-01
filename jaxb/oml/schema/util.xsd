@@ -5,7 +5,10 @@
       xmlns:goml="http://www.esdi-humboldt.eu/goml" 
       xmlns:xs="http://www.w3.org/2001/XMLSchema"
       xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-      elementFormDefault="qualified">
+      elementFormDefault="qualified"
+           xmlns:jaxb="https://jakarta.ee/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           jaxb:version="3.0">
 
    <xs:import namespace="http://www.w3.org/1999/02/22-rdf-syntax-ns#" schemaLocation="tmprdf.xsd" />
    <xs:import namespace="http://www.esdi-humboldt.eu/goml" schemaLocation="goml.xsd" />
