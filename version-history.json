@@ -2566,7 +2566,8 @@
                 "i20200622": "oOVZEQ"
             },
             "1.4.1": {
-                "i20221102": "t6TWww"
+                "i20221102": "t6TWww",
+                "i20221111": "tHrnLg"
             }
         },
         "org.codehaus.groovy.modules.http-builder": {
@@ -4329,6 +4330,7 @@
                 "i20220909": "Yg7LsQ",
                 "i20221013": "9WDrEw",
                 "i20221102": "HL7mg",
+                "i20221111": "HT7mg"
                 "i20230427": "S9D8GA"
             }
         },
