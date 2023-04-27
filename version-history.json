@@ -2225,6 +2225,9 @@
             }
         },
         "org.apache.commons.commons-text": {
+            "1.10.0": {
+                "i20230427": "ZgSN6w"
+            },
             "1.6.0": {
                 "i20200622": "XwZGgA",
                 "i20221102": "wkpqgw"
@@ -4325,7 +4328,8 @@
                 "i20220816": "uTFh1g",
                 "i20220909": "Yg7LsQ",
                 "i20221013": "9WDrEw",
-                "i20221102": "HL7mg"
+                "i20221102": "HL7mg",
+                "i20230427": "S9D8GA"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -4458,7 +4462,8 @@
             "21.0.0": {
                 "i20200622": "PnCdmQ",
                 "i20221013": "LkqdwA",
-                "i20221102": "BXm1ig"
+                "i20221102": "BXm1ig",
+                "i20230427": "RM21vw"
             }
         },
         "platform.shared.groovy-all": {
