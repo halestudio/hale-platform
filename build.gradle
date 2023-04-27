@@ -226,7 +226,8 @@ platform {
 	defaultQualifierMap.baseDate = DAY // to have a rather short default length, that seldom has to be exceeded
 
 	// uncomment and update with eclipse directory only during development
-	//eclipseHome = new File('/Users/kapil/eclipse/eclipse-4.24-rcp/Eclipse.app/Contents/Eclipse')
+//	eclipseHome = new File('/Users/kapil/eclipse/eclipse-4.24-rcp-for-hale-studio-java17/Eclipse-for-hale-studio-5.0.0.app/Contents/Eclipse')
+
 
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
@@ -286,6 +287,8 @@ platform {
 		instructions 'Eclipse-BuddyPolicy': 'registered'
 	}
 	bundle 'commons-io:commons-io:2.4'
+	// https://www.cve.org/CVERecord?id=CVE-2022-42889
+	bundle 'org.apache.commons:commons-text:1.10.0'
 	bundle 'net.sf.ehcache:ehcache-core:2.6.6'
 	bundle 'org.apache.velocity:velocity:1.6.2'
 	bundle 'org.apache.xmlbeans:xmlbeans:5.1.1'
