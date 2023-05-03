@@ -226,7 +226,7 @@ platform {
 	defaultQualifierMap.baseDate = DAY // to have a rather short default length, that seldom has to be exceeded
 
 	// uncomment and update with eclipse directory only during development
-	//eclipseHome = new File('/Users/kapil/eclipse/eclipse-4.24-rcp/Eclipse.app/Contents/Eclipse')
+	// eclipseHome = new File('/Users/kapil/eclipse/eclipse-4.24-rcp-for-hale-studio-java17/Eclipse-for-hale-studio-5.0.0.app/Contents/Eclipse')
 
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
