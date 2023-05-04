@@ -2226,7 +2226,7 @@
         },
         "org.apache.commons.commons-text": {
             "1.10.0": {
-                "i20230427": "ZgSN6w"
+                "i20230505": "ZgSN6w"
             },
             "1.6.0": {
                 "i20200622": "XwZGgA",
@@ -2567,7 +2567,7 @@
             },
             "1.4.1": {
                 "i20221102": "t6TWww",
-                "i20221111": "tHrnLg"
+                "i20230505": "NjuLg"
             }
         },
         "org.codehaus.groovy.modules.http-builder": {
@@ -4330,9 +4330,7 @@
                 "i20220909": "Yg7LsQ",
                 "i20221013": "9WDrEw",
                 "i20221102": "HL7mg",
-                "i20221111": "HT7mg",
-                "i20230427": "S9D8GA",
-                "i20230503": "S9L8GA"
+                "i20230505": "25P8Gg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -4466,7 +4464,7 @@
                 "i20200622": "PnCdmQ",
                 "i20221013": "LkqdwA",
                 "i20221102": "BXm1ig",
-                "i20230427": "RM21vw"
+                "i20230505": "NXC1vA"
             }
         },
         "platform.shared.groovy-all": {

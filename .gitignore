@@ -3,4 +3,4 @@ build/
 *~
 .project
 *.sublime-workspace
-.idea/*
+.idea*

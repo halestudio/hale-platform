@@ -227,7 +227,6 @@ platform {
 
 	// uncomment and update with eclipse directory only during development
 	// eclipseHome = new File('/Users/kapil/eclipse/eclipse-4.24-rcp-for-hale-studio-java17/Eclipse-for-hale-studio-5.0.0.app/Contents/Eclipse')
-
 	// override behavior for all bundles to prevent package uses conflicts for packages provided by the JRE
 	override {
 		// ensure javax.annotation imports are w/o version
@@ -332,16 +331,11 @@ platform {
 	bundle 'org.apache.ws.commons.schema:XmlSchema:1.4.7'
 	bundle 'org.codehaus.castor:castor-xml:1.4.1', {
 		bnd {
-//			def buddies = ['org.codehaus.castor.core', 'org.apache.commons.lang3']
 			instruction 'Import-Package', 'org.springframework.*'
 			instruction 'Import-Package', 'org.apache.commons.lang3.*'
-			instruction 'Require-Bundle', 'org.codehaus.castor.core'
-//			instruction 'Require-Bundle', 'org.apache.commons.lang3'
+			// required to run unit tests involving codehaus xml
+			instruction 'Require-Bundle', "org.codehaus.castor.core,xerces.xercesImpl"
 			addQualifier = true
-//			 add as optional required bundle
-//			instruction 'Require-Bundle', buddies.collect{
-//				it
-//			}.join(',')
 		}
 	}
 
