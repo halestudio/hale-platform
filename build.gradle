@@ -43,7 +43,7 @@ repositories {
 version = '5.0.0'
 
 ext {
-	geotoolsVersion = '21.0'
+	geotoolsVersion = '29.2'
 	wicketVersion = '6.10.0'
 }
 
@@ -62,7 +62,6 @@ include {
 			'gt-cql',
 			'gt-epsg-hsql',
 			'gt-geojson',
-			'gt-geometry',
 			'gt-main',
 			'gt-shapefile',
 			'gt-render',
