@@ -45,7 +45,7 @@ repositories {
 }
 
 // platform version
-version = '4.1.0'
+version = '5.0.0'
 
 ext {
 	geotoolsVersion = '21.0'
