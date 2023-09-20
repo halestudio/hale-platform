@@ -6,7 +6,7 @@ platform {
 		bundle(fileTree(thisDir) { include '*.jar' }) {
 			bnd {
 				// prevent package exports
-				instruction 'Export-Package', '!'
+				instruction 'Export-Package', '!*'
 			}
 		}
 	}

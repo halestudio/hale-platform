@@ -13,13 +13,13 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.2.0'
-		classpath 'org.standardout:bnd-platform:1.8.0-SNAPSHOT'
+		classpath 'org.standardout:bnd-platform:1.9.0-SNAPSHOT'
 		classpath 'org.standardout:gradle-versioneye-plugin:1.1.1'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath 'org.codehaus.groovy:groovy-backports-compat23:2.3+'
 		// when upgrading to newer gradle, 'osgi' plugin will not be available so uncomment below
 		// https://plugins.gradle.org/plugin/biz.aQute.bnd.workspace
-//		classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:6.3.1"
+		classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:5.2.0"
 	}
 	configurations.all {
 		// ensure SNAPSHOTs are updated every time if needed
@@ -759,7 +759,8 @@ dependencies {
 subprojects { subproject ->
   if (subproject.parent?.name == "jaxb") {
 	apply plugin: 'java'
-	apply plugin: 'osgi'
+
+	apply plugin: 'biz.aQute.bnd.builder'
 
 	repositories {
 	  maven { // wetransform artifactory
@@ -1031,5 +1032,5 @@ updateSites.each { name, siteUrl ->
 }
 
 wrapper {
-    gradleVersion = '4.10.2'
+    gradleVersion = '5.3'
 }
