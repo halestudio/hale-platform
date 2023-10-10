@@ -1,0 +1,25 @@
+name: Check
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  check:
+    uses: wetransform/gha-workflows/.github/workflows/gradle-library.yml@master
+    with:
+      gradle-tasks: ''
+      java-version: 17
+      notify-failure: false
+      skip-build: true # only do scan, build takes long and often failing
+      expect-tests: false
+      submodules: 'recursive'
+
+      # work around issue with new Zip validation in recent Java updates
+      # for info see https://github.com/iBotPeaches/Apktool/issues/3174
+      java-options: '-Djdk.util.zip.disableZip64ExtraFieldValidation=true'
+
+      # rename lockfile so trivy picks it up
+      pre-build-command: mv gradle/dependency-locks/platform.lockfile gradle/dependency-locks/platform-gradle.lockfile
+    secrets: inherit

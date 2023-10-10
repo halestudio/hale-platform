@@ -212,6 +212,9 @@ configurations {
 				details.useTarget "com.hierynomus:sshj:${details.requested.version}"
 			}
 		}
+
+		// activate dependency locking for generating a lockfile for security scanning
+		resolutionStrategy.activateDependencyLocking()
 	}
 }
 
