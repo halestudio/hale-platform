@@ -11,11 +11,13 @@ buildscript {
 		mavenCentral()
 	}
 	dependencies {
-		classpath 'de.undercouch:gradle-download-task:4.0.4'
+		classpath 'de.undercouch:gradle-download-task:5.5.0'
 	}
 }
 
 apply plugin: 'de.undercouch.download'
+
+
 
 defaultTasks 'clean', 'resourceBundles'
 
@@ -39,11 +41,13 @@ ext {
 	xPlanungSchemas = new File(buildDir, 'xplanung-schemas.zip')
 }
 
-task clean << {
-	buildDir.deleteDir()
+task clean() {
+	doLast {
+		buildDir.deleteDir()
+	}
 }
 
-task resourceBundles << {
+task resourceBundles() {
 }
 
 /*
@@ -119,43 +123,45 @@ def inspireSchemaIndex(def project, File target, List<File> folders) {
 }
 
 // download schema files based on directory listing (requires wget)
-task downloadInspireSchemas << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing schema archive
-	inspireSchemas.delete()
+task downloadInspireSchemas() {
+	doFirst {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing schema archive
+		inspireSchemas.delete()
 
-	exec {
-		workingDir = temporaryDir
-		executable = 'wget'
-		args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/schemas/'
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/schemas/'
+		}
+		exec {
+			workingDir = temporaryDir
+			executable = 'wget'
+			args '-e', 'robots=off', '-r', '--no-parent', '-X', 'draft-schemas/geoportal', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/draft-schemas/'
+		}
+		// add fixups
+		copy {
+			from new File(projectDir, 'inspire-fixup')
+			into temporaryDir
+			include '**/*'
+		}
+		// generate schema index file
+		inspireSchemaIndex(project, applicationSchemasFile,
+			[new File(temporaryDir, 'schemas')]
+		)
+		// copy to be included in bundle
+		copy {
+			from buildDir
+			into temporaryDir
+			include 'applicationSchemas.xml'
+		}
+		// create ZIP archive
+		ant.zip(
+			destfile: inspireSchemas,
+			basedir: temporaryDir)
 	}
-	exec {
-		workingDir = temporaryDir
-		executable = 'wget'
-		args '-e', 'robots=off', '-r', '--no-parent', '-X', 'draft-schemas/geoportal', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/draft-schemas/'
-	}
-	// add fixups
-	copy {
-		from new File(projectDir, 'inspire-fixup')
-		into temporaryDir
-		include '**/*'
-	}
-	// generate schema index file
-	inspireSchemaIndex(project, applicationSchemasFile,
-		[new File(temporaryDir, 'schemas')]
-	)
-	// copy to be included in bundle
-	copy {
-		from buildDir
-		into temporaryDir
-		include 'applicationSchemas.xml'
-	}
-	// create ZIP archive
-	ant.zip(
-		destfile: inspireSchemas,
-		basedir: temporaryDir)
 }
 
 // create the bundle
@@ -193,7 +199,7 @@ task inspireSchemasBundle(type: ResourceBundleTask, dependsOn: downloadInspireSc
 						description: descr,
 						icon: iconPath,
 						id: id,
-						name: "INSPIRE ${appSchema.@name}",
+						name: "INSPIRE ${appSchema.'@name'}",
 //						tag: 'Bundled',
 						version: schema.@version
 					) {
@@ -212,68 +218,70 @@ resourceBundles.dependsOn('inspireSchemasBundle')
  */
 
 // download code list files based on registry (requires wget, XML content type)
-task downloadInspireCodeLists << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing archives
-	inspireCodeListsFixed.delete()
-	inspireCodeListsGeneric.delete()
+task downloadInspireCodeLists {
+	doLast {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing archives
+		inspireCodeListsFixed.delete()
+		inspireCodeListsGeneric.delete()
 
-	// determine resources to retrieve from registry
-	def registry
-	new URL('https://inspire.ec.europa.eu/codelist/codelist.en.json').withReader { reader ->
-		registry = new groovy.json.JsonSlurper().parse(reader)
-	}
-
-	def languages = ['en', 'bg', 'cs', 'hr', 'da', 'de', 'el', 'es', 'et', 'fi', 'fr',
-		'hu', 'it', 'lt', 'lv', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv']
-
-	def genericUrls = []
-	def fixedUrls = []
-	registry.register.containeditems*.codelist.id.each { id ->
-		// the ID is the URI to retrieve the code list by default
-		genericUrls << id
-		// extract code list name
-		def regex = '/([^/]*)$'
-		def matcher = ( id =~ regex )
-		def name = matcher[0][1]
-		// add fixed urls TODO in all languages?
-		fixedUrls << "${id}/${name}.en.xml"
-		fixedUrls << "${id}/${name}.en.json"
-	}
-
-	// problem is, we can't download both generic and fixed,
-	// because the fixed URLs require a directory with the name
-	// of the generic URL -> so we create two archives/bundles
-
-	def genericDir = new File(temporaryDir, "generic")
-	genericDir.mkdirs()
-	genericUrls.each { url ->
-		exec {
-			workingDir = genericDir
-			executable = 'wget'
-			args '--force-directories', '--no-host-directories', "--header=Accept: application/xml", url
+		// determine resources to retrieve from registry
+		def registry
+		new URL('https://inspire.ec.europa.eu/codelist/codelist.en.json').withReader { reader ->
+			registry = new groovy.json.JsonSlurper().parse(reader)
 		}
-	}
 
-	def fixedDir = new File(temporaryDir, "fixed")
-	fixedDir.mkdirs()
-	fixedUrls.each { url ->
-		exec {
-			workingDir = fixedDir
-			executable = 'wget'
-			args '--force-directories', '--no-host-directories', url
+		def languages = ['en', 'bg', 'cs', 'hr', 'da', 'de', 'el', 'es', 'et', 'fi', 'fr',
+			'hu', 'it', 'lt', 'lv', 'mt', 'nl', 'pl', 'pt', 'ro', 'sk', 'sl', 'sv']
+
+		def genericUrls = []
+		def fixedUrls = []
+		registry.register.containeditems*.codelist.id.each { id ->
+			// the ID is the URI to retrieve the code list by default
+			genericUrls << id
+			// extract code list name
+			def regex = '/([^/]*)$'
+			def matcher = ( id =~ regex )
+			def name = matcher[0][1]
+			// add fixed urls TODO in all languages?
+			fixedUrls << "${id}/${name}.en.xml"
+			fixedUrls << "${id}/${name}.en.json"
 		}
-	}
 
-	// create ZIP archives
-	ant.zip(
-		destfile: inspireCodeListsGeneric,
-		basedir: genericDir)
-	ant.zip(
-		destfile: inspireCodeListsFixed,
-		basedir: fixedDir)
+		// problem is, we can't download both generic and fixed,
+		// because the fixed URLs require a directory with the name
+		// of the generic URL -> so we create two archives/bundles
+
+		def genericDir = new File(temporaryDir, "generic")
+		genericDir.mkdirs()
+		genericUrls.each { url ->
+			exec {
+				workingDir = genericDir
+				executable = 'wget'
+				args '--force-directories', '--no-host-directories', "--header=Accept: application/xml", url
+			}
+		}
+
+		def fixedDir = new File(temporaryDir, "fixed")
+		fixedDir.mkdirs()
+		fixedUrls.each { url ->
+			exec {
+				workingDir = fixedDir
+				executable = 'wget'
+				args '--force-directories', '--no-host-directories', url
+			}
+		}
+
+		// create ZIP archives
+		ant.zip(
+			destfile: inspireCodeListsGeneric,
+			basedir: genericDir)
+		ant.zip(
+			destfile: inspireCodeListsFixed,
+			basedir: fixedDir)
+	}
 }
 
 // create the bundles
@@ -300,26 +308,28 @@ resourceBundles.dependsOn('inspireCodeListsBundleFixed')
  */
 
 // download schema files individually (requires wget)
-task downloadW3Schemas << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing schema archive
-	w3Schemas.delete()
+task downloadW3Schemas {
+	doLast {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing schema archive
+		w3Schemas.delete()
 
-	def downloadSchema = { path ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '--force-directories', '--no-host-directories', "http://www.w3.org/$path"
+		def downloadSchema = { path ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '--force-directories', '--no-host-directories', "http://www.w3.org/$path"
+			}
 		}
+		downloadSchema('1999/xlink.xsd')
+		downloadSchema('2001/xml.xsd')
+		downloadSchema('2001/XMLSchema.xsd')
+		ant.zip(
+			destfile: w3Schemas,
+			basedir: temporaryDir)
 	}
-	downloadSchema('1999/xlink.xsd')
-	downloadSchema('2001/xml.xsd')
-	downloadSchema('2001/XMLSchema.xsd')
-	ant.zip(
-		destfile: w3Schemas,
-		basedir: temporaryDir)
 }
 
 // create the bundle
@@ -338,24 +348,26 @@ resourceBundles.dependsOn('w3SchemasBundle')
  */
 
 // download JSON representation (requires wget)
-task downloadInspireFeatureConcepts << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing schema archive
-	inspireFeatureConcepts.delete()
+task downloadInspireFeatureConcepts {
+	doLast {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing schema archive
+		inspireFeatureConcepts.delete()
 
-	def downloadFile = { path ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '--force-directories', '--no-host-directories', "https://inspire.ec.europa.eu/featureconcept/$path"
+		def downloadFile = { path ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '--force-directories', '--no-host-directories', "https://inspire.ec.europa.eu/featureconcept/$path"
+			}
 		}
+		downloadFile('featureconcept.en.json')
+		ant.zip(
+			destfile: inspireFeatureConcepts,
+			basedir: temporaryDir)
 	}
-	downloadFile('featureconcept.en.json')
-	ant.zip(
-		destfile: inspireFeatureConcepts,
-		basedir: temporaryDir)
 }
 
 // create the bundle
@@ -374,24 +386,26 @@ resourceBundles.dependsOn('inspireFeatureConceptsBundle')
  */
 
 // download schema files individually (requires wget)
-task downloadPorteleSchemas << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing schema archive
-	porteleSchemas.delete()
+task downloadPorteleSchemas {
+	doLast {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing schema archive
+		porteleSchemas.delete()
 
-	def downloadSchema = { path ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '--force-directories', '--no-host-directories', "http://portele.de/$path"
+		def downloadSchema = { path ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '--force-directories', '--no-host-directories', "http://portele.de/$path"
+			}
 		}
+		downloadSchema('ShapeChangeAppinfo.xsd')
+		ant.zip(
+			destfile: porteleSchemas,
+			basedir: temporaryDir)
 	}
-	downloadSchema('ShapeChangeAppinfo.xsd')
-	ant.zip(
-		destfile: porteleSchemas,
-		basedir: temporaryDir)
 }
 
 // create the bundle
@@ -410,48 +424,54 @@ resourceBundles.dependsOn('porteleSchemasBundle')
 
 // Map version number used in URLs to version number displayed to user
 def aaaVersions = [
+	/*
+	 * XXX the versions offered on the repository seem to be subject to change
+	 */
+
 	'6.0' : '6.0.1',
-	'7.0' : '7.0.3',
-	'7.1' : '7.1.0'
+	// '7.0' : '7.0.3', no longer available directly as schema files (though there seem to be archives of versions that were dropped at https://repository.gdi-de.org/schemas/adv/nas/)
+	'7.1' : '7.1.2' // was: 7.1.0
 ]
 
 def wfsExtVersions = [ '1.0', '2.0' ]
 def shapeChangeVersions = [ '1.0' ]
 
 // download schema files based on directory listing (requires wget)
-task downloadAAASchemas << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing schema archive
-	aaaSchemas.delete()
+task downloadAAASchemas {
+	doLast {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing schema archive
+		aaaSchemas.delete()
 
-	aaaVersions.each { urlVersion, displayVersion ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/nas/${urlVersion}/"
+		aaaVersions.each { urlVersion, displayVersion ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/nas/${urlVersion}/"
+			}
 		}
-	}
-	wfsExtVersions.each { version ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/wfsext/${version}/"
+		wfsExtVersions.each { version ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/wfsext/${version}/"
+			}
 		}
-	}
-	shapeChangeVersions.each { version ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/sc/${version}/"
+		shapeChangeVersions.each { version ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "http://repository.gdi-de.org/schemas/adv/sc/${version}/"
+			}
 		}
-	}
 
-	// create ZIP archive
-	ant.zip(
-		destfile: aaaSchemas,
-		basedir: temporaryDir)
+		// create ZIP archive
+		ant.zip(
+			destfile: aaaSchemas,
+			basedir: temporaryDir)
+	}
 }
 
 // create the bundle
@@ -496,30 +516,32 @@ def xplanungVersions = [
 ]
 
 // download schema files based on directory listing (requires wget)
-task downloadXPlanungSchemas << {
-	// need a clean tmp dir
-	temporaryDir.deleteDir()
-	temporaryDir.mkdir()
-	// delete existing schema archive
-	xPlanungSchemas.delete()
+task downloadXPlanungSchemas {
+	doLast {
+		// need a clean tmp dir
+		temporaryDir.deleteDir()
+		temporaryDir.mkdir()
+		// delete existing schema archive
+		xPlanungSchemas.delete()
 
-	xplanungVersions.each { urlVersion, displayVersion ->
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/${urlVersion}/"
+		xplanungVersions.each { urlVersion, displayVersion ->
+			exec {
+				workingDir = temporaryDir
+				executable = 'wget'
+				args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', "https://repository.gdi-de.org/schemas/de.xleitstelle.xplanung/${urlVersion}/"
+			}
 		}
+		// add fixups
+		copy {
+			from new File(projectDir, 'xplanung-fixup')
+			into temporaryDir
+			include '**/*'
+		}
+		// create ZIP archive
+		ant.zip(
+			destfile: xPlanungSchemas,
+			basedir: temporaryDir)
 	}
-	// add fixups
-	copy {
-		from new File(projectDir, 'xplanung-fixup')
-		into temporaryDir
-		include '**/*'
-	}
-	// create ZIP archive
-	ant.zip(
-		destfile: xPlanungSchemas,
-		basedir: temporaryDir)
 }
 
 // create the bundle
@@ -554,21 +576,38 @@ resourceBundles.dependsOn('xPlanungSchemasBundle')
 
 class ResourceBundleTask extends DefaultTask {
 	// the host that the resource bundle mirrors resources from
+	@Input
 	def host
 	// the remote URL to retrieve the resource ZIP archive from
+	@Input
+	@Optional
 	def archiveUrl
 	// the local ZIP archive file containing the resources
+	@Input
+	@Optional
 	def archive
 	// the prefix for the symbolic name
+	@Input
 	def symbolicNamePrefix = 'eu.esdihumboldt.util.resource'
 	// the bundle identifier (is appended to prefix sepearate by a dot)
+	@Input
 	def bundleId
 	// the served resource type
+	@Input
 	def resourceType = 'xmlSchema'
 	// the destination dir
+	@Input
 	def destDir = project.buildDir
 	// extra content for the plugin.xml - must be a closure taking a markup builder as argument
-	def pluginExtra
+	@Internal
+	java.util.function.Consumer<groovy.xml.MarkupBuilder> pluginExtra
+
+	ResourceBundleTask() {
+		getOutputs().upToDateWhen {
+			// we don't support proper up-to-date checking here
+			false
+		}
+	}
 
 	@TaskAction
 	def createBundle() {
@@ -597,7 +636,7 @@ class ResourceBundleTask extends DefaultTask {
 		else {
 			// download schema archive
 			tmpSchemas = new File(tmpDir, 'schemas.zip')
-			project.download {
+			project.download.run {
 				src archiveUrl
 				dest tmpSchemas
 			}
@@ -617,7 +656,7 @@ class ResourceBundleTask extends DefaultTask {
 					}
 				}
 				if (pluginExtra != null) {
-					pluginExtra.call(xml)
+					pluginExtra.accept(xml)
 				}
 			}
 		}
