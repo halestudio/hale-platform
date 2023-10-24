@@ -260,7 +260,7 @@ task downloadInspireCodeLists {
 			exec {
 				workingDir = genericDir
 				executable = 'wget'
-				args '--force-directories', '--no-host-directories', "--header=Accept: application/xml", url
+				args '--force-directories', '--no-host-directories', "--header=Accept: application/xml", "--header=Accept-Language: en", url
 			}
 		}
 
