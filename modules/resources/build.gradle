@@ -131,16 +131,28 @@ task downloadInspireSchemas() {
 		// delete existing schema archive
 		inspireSchemas.delete()
 
+		// download Zip (TODO better way, e.g. Gradle download task?)
 		exec {
 			workingDir = temporaryDir
 			executable = 'wget'
-			args '-e', 'robots=off', '-r', '--no-parent', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/schemas/'
+			args 'https://github.com/INSPIRE-MIF/application-schemas/archive/refs/heads/main.zip'
 		}
-		exec {
-			workingDir = temporaryDir
-			executable = 'wget'
-			args '-e', 'robots=off', '-r', '--no-parent', '-X', 'draft-schemas/geoportal', '--no-host-directories', '-A', 'xsd,xml,txt', 'https://inspire.ec.europa.eu/draft-schemas/'
+		// unzip
+		def zipFile = new File(temporaryDir, 'main.zip')
+		ant.unzip(src: zipFile, dest: temporaryDir)
+		// delete zip file
+		zipFile.delete()
+		// move content up out of "application-schemas-main"
+		ant.move(todir: temporaryDir) {
+			ant.fileset(dir: new File(temporaryDir, 'application-schemas-main')) {
+				// only include XML schemas
+				include( name: '**/*.xsd' )
+				// README that includes information about the state/date
+				include( name: '**/readme.txt' )
+			}
 		}
+		// delete remainder
+		delete(new File(temporaryDir, 'application-schemas-main'))
 		// add fixups
 		copy {
 			from new File(projectDir, 'inspire-fixup')
