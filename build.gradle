@@ -13,7 +13,7 @@ buildscript {
 	}
 	dependencies {
 		classpath 'org.standardout:gradle-include-plugin:0.2.0'
-		classpath 'org.standardout:bnd-platform:2.0.1'
+		classpath 'org.standardout:bnd-platform:3.0.0-SNAPSHOT'
 		classpath 'zipdiff:zipdiff:0.4'
 		classpath "biz.aQute.bnd:biz.aQute.bnd.gradle:6.3.0"
 	}
@@ -163,17 +163,17 @@ include {
 
 configurations {
 	// exclude bundles conflicting with JRE-provided packages
-	platform.exclude group: 'javax.xml'
-	platform.exclude group: 'javax.activation'
-	platform.exclude group: 'xml-apis'
-	platform.exclude group: 'dom4j'
-	platform.exclude group: 'stax'
-	platform.exclude group: 'org.w3c.dom'
-	platform.exclude group: 'org.apache.batik'
-	platform.exclude group: 'org.codehaus.woodstox'
+	bndplatform.exclude group: 'javax.xml'
+	bndplatform.exclude group: 'javax.activation'
+	bndplatform.exclude group: 'xml-apis'
+	bndplatform.exclude group: 'dom4j'
+	bndplatform.exclude group: 'stax'
+	bndplatform.exclude group: 'org.w3c.dom'
+	bndplatform.exclude group: 'org.apache.batik'
+	bndplatform.exclude group: 'org.codehaus.woodstox'
 
 	//org.apache.geronimo.specs.geronimo-stax-api_1.0_spec
-	platform.exclude group: 'org.apache.geronimo.specs'
+	bndplatform.exclude group: 'org.apache.geronimo.specs'
 
 
 	/*
@@ -186,7 +186,7 @@ configurations {
 
 	// fix OrientDB 1.5.1 dependenies (which were manually added to the artifactory)
 	// the original verions are snapshots that no longer work with OrientDB 1.5.1
-	platform {
+	bndplatform {
 		resolutionStrategy.eachDependency { DependencyResolveDetails details ->
 			if (
 					(details.requested.group == 'com.tinkerpop.blueprints' &&
@@ -739,7 +739,7 @@ platform {
 }
 
 dependencies {
-  platform 'de.fhg.igd:osgi-util:1.0', {
+  bndplatform 'de.fhg.igd:osgi-util:1.0', {
     // exclude OSGi dependencies (we include Equinox/Eclipse through separate update site)
     exclude module: 'org.eclipse.osgi'
     exclude module: 'org.osgi.compendium'
