@@ -107,6 +107,9 @@
                 "i20150413": "wrsfkQ",
                 "i20221102": "0BDlA",
                 "i20231028": "v5pPTg"
+            },
+            "1.2.12": {
+                "i20231129": "k9AxrA"
             }
         },
         "ch.qos.logback.core": {
@@ -115,6 +118,9 @@
                 "i20150413": "D5xIsA",
                 "i20221102": "ATt53A",
                 "i20231028": "TZCFlg"
+            },
+            "1.2.12": {
+                "i20231129": "4BXjA"
             }
         },
         "colt": {
@@ -169,7 +175,8 @@
             "2.13.4": {
                 "i20220909": "9CiHhQ",
                 "i20221102": "1SmriA",
-                "i20231028": "Hna3Qg"
+                "i20231028": "Hna3Qg",
+                "i20231129": "WCxmmQ"
             },
             "2.3.0": {
                 "i20150402": "GIflmg"
@@ -583,6 +590,16 @@
                 "i20180727": "xfXAtg",
                 "i20221102": "3eTkuQ",
                 "i20231028": "yZcS8A"
+            }
+        },
+        "com.mchange.c3p0": {
+            "0.9.5.4": {
+                "i20231129": "qvhjpg"
+            }
+        },
+        "com.mchange.commons-java": {
+            "0.2.15": {
+                "i20231129": "r8Q6Aw"
             }
         },
         "com.openhtmltopdf.core": {
@@ -1199,6 +1216,11 @@
         "com.xebialabs.overthere": {
             "2.4.4": {
                 "i20150402": "RhxebA"
+            }
+        },
+        "com.zaxxer.HikariCP": {
+            "2.4.13": {
+                "i20231129": "zqt7sw"
             }
         },
         "com.zaxxer.SparseBitSet": {
@@ -2094,6 +2116,9 @@
                 "i20180427": "UwXfaw",
                 "i20221102": "Q8ADfQ",
                 "i20231028": "v7YPNw"
+            },
+            "1.7.36": {
+                "i20231129": "Wu8y9A"
             }
         },
         "jcommander": {
@@ -2144,6 +2169,9 @@
                 "i20150413": "B3TVtg",
                 "i20221102": "VlP5uQ",
                 "i20231028": "pgkFgg"
+            },
+            "1.7.36": {
+                "i20231129": "uy8Fmg"
             }
         },
         "junit": {
@@ -2187,6 +2215,9 @@
                 "i20150413": "UQn70g",
                 "i20221102": "Twkf5A",
                 "i20231028": "O3pPlg"
+            },
+            "1.7.36": {
+                "i20231129": "USpPng"
             }
         },
         "mil.nga.geopackage": {
@@ -2244,6 +2275,11 @@
                 "i20191223": "gTazJA",
                 "i20221102": "ghrXJw",
                 "i20231028": "6asfcA"
+            }
+        },
+        "mxparser": {
+            "1.2.2": {
+                "i20231129": "GM4BqA"
             }
         },
         "net.java.dev.jna.platform": {
@@ -2503,10 +2539,18 @@
                 "i20231028": "pChLtQ"
             }
         },
+        "org.apache.commons.commons-fileupload": {
+            "1.5.0": {
+                "i20231129": "xM91nQ"
+            }
+        },
         "org.apache.commons.commons-io": {
             "2.11.0": {
                 "i20221102": "dAwPBA",
                 "i20231028": "PdAOYw"
+            },
+            "2.14.0": {
+                "i20231129": "f4NA9Q"
             }
         },
         "org.apache.commons.commons-text": {
@@ -2669,6 +2713,9 @@
             },
             "2.5.0.final_20191020104435": {
                 "i20220909": "wkX3Iw"
+            },
+            "2.5.2.final_20230817170011": {
+                "i20231129": "22Um7w"
             }
         },
         "org.apache.james.apache-mime4j-core": {
@@ -3203,6 +3250,9 @@
                 "i20150413": "vgD8nQ",
                 "i20221102": "2GMgrw",
                 "i20231028": "mfgsaQ"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "Llgtcw"
             }
         },
         "org.eclipse.jetty.deploy-9": {
@@ -3211,6 +3261,9 @@
                 "i20150413": "pJbkLA",
                 "i20221102": "9lQIPg",
                 "i20231028": "WH0TA"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "BSqlIw"
             }
         },
         "org.eclipse.jetty.http-9": {
@@ -3219,6 +3272,9 @@
                 "i20150413": "LVQ4XQ",
                 "i20221102": "1DFcYA",
                 "i20231028": "OvdoGg"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "vkghNw"
             }
         },
         "org.eclipse.jetty.io-9": {
@@ -3227,6 +3283,9 @@
                 "i20150413": "9pa1hw",
                 "i20221102": "rxzZig",
                 "i20231028": "pkvlRA"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "EFlYVA"
             }
         },
         "org.eclipse.jetty.security-9": {
@@ -3235,6 +3294,9 @@
                 "i20150413": "ASnAPA",
                 "i20221102": "onPkPw",
                 "i20231028": "Ss7vQ"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "8kQKA"
             }
         },
         "org.eclipse.jetty.server-9": {
@@ -3243,6 +3305,9 @@
                 "i20150413": "PqhVxQ",
                 "i20221102": "aot5yA",
                 "i20231028": "tcqFgg"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "Vs9QvA"
             }
         },
         "org.eclipse.jetty.servlet-9": {
@@ -3251,6 +3316,9 @@
                 "i20150413": "TA2JA",
                 "i20221102": "1wVaJw",
                 "i20231028": "MWdl4Q"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "q4IovQ"
             }
         },
         "org.eclipse.jetty.util-9": {
@@ -3259,6 +3327,14 @@
                 "i20150413": "htpLg",
                 "i20221102": "bViNMQ",
                 "i20231028": "b3uY6w"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "TfLPTg"
+            }
+        },
+        "org.eclipse.jetty.util.ajax-9": {
+            "9.4.53.v20231009": {
+                "i20231129": "rjo38A"
             }
         },
         "org.eclipse.jetty.webapp-9": {
@@ -3267,6 +3343,9 @@
                 "i20150413": "2PN0BQ",
                 "i20221102": "awSYCA",
                 "i20231028": "XiWjwg"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "nBKnOQ"
             }
         },
         "org.eclipse.jetty.xml-9": {
@@ -3275,6 +3354,9 @@
                 "i20150413": "yUJp7A",
                 "i20221102": "gEeN7w",
                 "i20231028": "E6ZqQ"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "eJuIgQ"
             }
         },
         "org.eclipse.xsd": {
@@ -4145,6 +4227,9 @@
                 "i20150413": "fQ3VZg",
                 "i20221102": "kwzXLw",
                 "i20231028": "QdLi6Q"
+            },
+            "2.3.2": {
+                "i20231129": "yfuPwQ"
             }
         },
         "org.reflections": {
@@ -4465,6 +4550,9 @@
             },
             "1.28.0": {
                 "i20220909": "E16rA"
+            },
+            "2.2.0": {
+                "i20231129": "B9oixQ"
             }
         },
         "oro": {
@@ -4582,6 +4670,9 @@
                 "i20150413": "9Gj0ww",
                 "i20221102": "NlwY1Q",
                 "i20231028": "uuQkjw"
+            },
+            "1.7.36": {
+                "i20231129": "zWU13Q"
             }
         },
         "stax": {
@@ -4740,6 +4831,9 @@
                 "i20150413": "cpnYw",
                 "i20221102": "3PmLZg",
                 "i20231028": "a4aXIA"
+            },
+            "1.4.20": {
+                "i20231129": "KsEQkg"
             }
         }
     },
@@ -4758,7 +4852,8 @@
                 "i20200622": "S4UfA",
                 "i20220909": "j9NwBA",
                 "i20221102": "XMtqDA",
-                "i20231028": "O2JrvA"
+                "i20231028": "O2JrvA",
+                "i20231129": "ciVrxQ"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -4836,7 +4931,8 @@
             "5.0.0": {
                 "i20231028": "4z0ZKg",
                 "i202310281504": "mSscTA",
-                "i202310282027": "SUweBg"
+                "i202310282027": "SUweBg",
+                "i20231129": "ulKYag"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -4854,7 +4950,8 @@
                 "i20200622": "HDQAeg",
                 "i20221013": "2zUAcw",
                 "i20221102": "iA3iBA",
-                "i20231028": "t8njzA"
+                "i20231028": "t8njzA",
+                "i20231129": "Fzj4g"
             },
             "3.4.2": {
                 "i20180727": "T6dAbQ"
@@ -4875,6 +4972,9 @@
                 "i20180424": "MP0WA",
                 "i20221102": "ygv0Fg",
                 "i20231028": "Vsb0bg"
+            },
+            "9.4.53.v20231009": {
+                "i20231129": "EXQHjA"
             }
         },
         "eu.esdihumboldt.hale.platform.resources": {
@@ -4915,7 +5015,8 @@
                 "i20150612": "PxwvKw",
                 "i20180726": "QMkvNQ",
                 "i20221102": "ORcvEg",
-                "i20231028": "QGcvMg"
+                "i20231028": "QGcvMg",
+                "i20231129": "7cwtXQ"
             }
         },
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
@@ -4935,7 +5036,8 @@
                 "i20210309": "JqEX2Q",
                 "i20220909": "IYig",
                 "i20221102": "Pfwa6Q",
-                "i20231028": "rscGQ"
+                "i20231028": "rscGQ",
+                "i20231129": "K9IcJw"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -4982,7 +5084,8 @@
                 "i20221013": "LkqdwA",
                 "i20221102": "BXm1ig",
                 "i20230505": "NXC1vA",
-                "i20231028": "VYO4jQ"
+                "i20231028": "VYO4jQ",
+                "i20231129": "nAq4mQ"
             }
         },
         "platform.shared.groovy-all": {
@@ -5028,7 +5131,8 @@
                 "i20220909": "n2xxxQ",
                 "i20221102": "CSBnvA",
                 "i20231028": "7jBpFA",
-                "i202310281504": "arZp2w"
+                "i202310281504": "arZp2w",
+                "i20231129": "hsdp4A"
             }
         },
         "platform.shared.poi": {
@@ -5042,7 +5146,8 @@
             },
             "5.2.3": {
                 "i20221102": "LimWxg",
-                "i20231028": "bGXFg"
+                "i20231028": "bGXFg",
+                "i20231129": "c32XGw"
             }
         },
         "platform.shared.postgis": {
@@ -5082,6 +5187,9 @@
                 "i20180727": "75M9sA",
                 "i20221102": "lYRboA",
                 "i20231028": "uZRb4A"
+            },
+            "1.7.36": {
+                "i20231129": "QNVU7w"
             }
         },
         "platform.shared.spring.core": {
@@ -5125,7 +5233,8 @@
             },
             "5.2.0.RELEASE": {
                 "i20221102": "6VGnQ",
-                "i20231028": "nt1HpQ"
+                "i20231028": "nt1HpQ",
+                "i20231129": "0zVHrg"
             }
         },
         "platform.shared.wicket": {

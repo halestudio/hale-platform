@@ -19,7 +19,7 @@ platform {
 				instruction 'DynamicImport-Package', '*'
 			}
 		}
-		bundle 'com.thoughtworks.xstream:xstream:1.4.5', { // dependency of schemacrawler not listed in pom!
+		bundle 'com.thoughtworks.xstream:xstream:1.4.20', { // dependency of schemacrawler not listed in pom!
 			bnd {
 				optionalImport 'sun.misc'
 			}
