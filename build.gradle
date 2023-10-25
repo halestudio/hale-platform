@@ -90,8 +90,8 @@ include {
 		]
 	}
 
-	from('modules/shared/logging.gradle') {
-		slf4jAndLogback '1.7.10', '1.0.13'
+	from('modules/logging.gradle') {
+		slf4jAndLogback '1.7.36', '1.2.12'
 	}
 
 	from 'modules/shared/orientdb.gradle', {
@@ -282,7 +282,7 @@ platform {
 	bnd group: 'net.sf.trove4j', name: 'trove4j', {
 		instructions 'Eclipse-BuddyPolicy': 'registered'
 	}
-	bundle 'commons-io:commons-io:2.4'
+	bundle 'commons-io:commons-io:2.14.0'
 	// https://www.cve.org/CVERecord?id=CVE-2022-42889
 	bundle 'org.apache.commons:commons-text:1.10.0'
 	bundle 'net.sf.ehcache:ehcache-core:2.6.6'
@@ -298,10 +298,10 @@ platform {
 	bundle 'asm:asm-analysis:3.3.1'
 
 	// ivy with at least 2.4 because of bug in IvySettings
-	bundle 'org.apache.ivy:ivy:2.4.0'
+	bundle 'org.apache.ivy:ivy:2.5.2'
 
 	// web stuff
-	bundle 'commons-fileupload:commons-fileupload:1.3.1'
+	bundle 'commons-fileupload:commons-fileupload:1.5'
 	bundle 'org.openid4java:openid4java:0.9.8'
 	bundle 'net.tanesha.recaptcha4j:recaptcha4j:0.0.8'
 	bundle "org.wicketstuff:wicketstuff-html5:$wicketVersion"
@@ -322,7 +322,7 @@ platform {
 //	bundle 'com.ning:async-http-client:1.8.15'
 
 	// quartz scheduler
-	bundle 'org.quartz-scheduler:quartz:1.7.3'
+	bundle 'org.quartz-scheduler:quartz:2.3.2'
 
 	// XML
 //	bundle 'org.apache.ws.xmlschema:xmlschema-core:2.0.2'
@@ -397,10 +397,10 @@ platform {
 		}
 	}
 	// jackson 2
-	bundle 'com.fasterxml.jackson.core:jackson-core:2.3.2'
-	bundle 'com.fasterxml.jackson.core:jackson-databind:2.3.2' , {
+	bundle 'com.fasterxml.jackson.core:jackson-core:2.13.4'
+	bundle 'com.fasterxml.jackson.core:jackson-databind:2.13.4' , {
 		bnd {
-			optionalImport group: 'javax.xml'
+			optionalImport('javax.xml', '*')
 		}
 	}
 
@@ -668,7 +668,7 @@ platform {
 	}
 
 	// YAML library
-	bundle 'org.yaml:snakeyaml:1.21'
+	bundle 'org.yaml:snakeyaml:2.2'
 
 	// Pebble template engine
 	def pebbleVersion = '3.0.1'
