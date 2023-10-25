@@ -9,14 +9,16 @@
             "2.7.7": {
                 "i20150402": "jXKsKg",
                 "i20150413": "l92zMQ",
-                "i20221102": "naHXNA"
+                "i20221102": "naHXNA",
+                "i20231027": "9CDylw"
             }
         },
         "aopalliance": {
             "1.0.0": {
                 "i20150402": "dGqsGw",
                 "i20150413": "fbizIg",
-                "i20221102": "fdzXJQ"
+                "i20221102": "fdzXJQ",
+                "i20231027": "7JXhzA"
             }
         },
         "args4j": {
@@ -64,14 +66,16 @@
             "1.51.0": {
                 "i20150402": "suR2nw",
                 "i20150413": "Bm59pg",
-                "i20221102": "amhqQ"
+                "i20221102": "amhqQ",
+                "i20231027": "v97D6g"
             }
         },
         "bcprov": {
             "1.51.0": {
                 "i20150402": "Y9mBYQ",
                 "i20150413": "4HiIaA",
-                "i20221102": "YC6saw"
+                "i20221102": "YC6saw",
+                "i20231027": "bjOrA"
             }
         },
         "cal10n.api": {
@@ -85,7 +89,8 @@
             "2.2.2": {
                 "i20150402": "HwHJjA",
                 "i20150413": "oULQkw",
-                "i20221102": "TRf0lg"
+                "i20221102": "TRf0lg",
+                "i20231027": "NARJA"
             }
         },
         "ch.qos.logback.classic": {
@@ -93,6 +98,9 @@
                 "i20150402": "Or0Yig",
                 "i20150413": "wrsfkQ",
                 "i20221102": "0BDlA"
+            },
+            "1.2.12": {
+                "i20231025": "yAEl8g"
             }
         },
         "ch.qos.logback.core": {
@@ -100,6 +108,9 @@
                 "i20150402": "oGZBqQ",
                 "i20150413": "D5xIsA",
                 "i20221102": "ATt53A"
+            },
+            "1.2.12": {
+                "i20231025": "urvYQg"
             }
         },
         "colt": {
@@ -112,13 +123,15 @@
         "com.conversantmedia.disruptor": {
             "1.2.13": {
                 "i20200622": "L6jUUg",
-                "i20221102": "djH4VQ"
+                "i20221102": "djH4VQ",
+                "i20231027": "9bcryg"
             }
         },
         "com.coverity.security.coverity-escapers": {
             "1.1.1": {
                 "i20180727": "38jATQ",
-                "i20221102": "0FfkUA"
+                "i20221102": "0FfkUA",
+                "i20231027": "SHz1Gw"
             }
         },
         "com.fasterxml.jackson.core.jackson-annotations": {
@@ -173,7 +186,8 @@
                 "i20150413": "Lqkfw",
                 "i20151027": "i2kfw",
                 "i20200622": "Fakfw",
-                "i20221102": "NkjIgg"
+                "i20221102": "NkjIgg",
+                "i20231027": "N7vIgg"
             }
         },
         "com.fasterxml.jackson.datatype.jackson-datatype-json-org": {
@@ -222,13 +236,15 @@
         "com.github.albfernandez.javadbf": {
             "1.13.2": {
                 "i20221013": "5iezWA",
-                "i20221102": "ovXWw"
+                "i20221102": "ovXWw",
+                "i20231027": "YUrIg"
             }
         },
         "com.github.ben-manes.caffeine": {
             "2.6.2": {
                 "i20180727": "hhe2MQ",
-                "i20221102": "hbaNA"
+                "i20221102": "hbaNA",
+                "i20231027": "uYTow"
             }
         },
         "com.github.javaparser.javaparser-core": {
@@ -239,7 +255,8 @@
         "com.github.jnr.a64asm": {
             "1.0.0": {
                 "i20220909": "o0Qg",
-                "i20221102": "JB7jRQ"
+                "i20221102": "JB7jRQ",
+                "i20231027": "rtsLA"
             }
         },
         "com.github.jnr.constants": {
@@ -283,7 +300,8 @@
             },
             "1.3.9": {
                 "i20220909": "ubGTg",
-                "i20221102": "PwDjUQ"
+                "i20221102": "PwDjUQ",
+                "i20231027": "yb0MCA"
             }
         },
         "com.github.jnr.jffi.native": {
@@ -319,7 +337,8 @@
             "1.0.2": {
                 "i20150413": "gTKzJA",
                 "i20160531": "pwmRA",
-                "i20221102": "KJjjRw"
+                "i20221102": "KJjjRw",
+                "i20231027": "BqsFew"
             }
         },
         "com.github.sommeri.less4j": {
@@ -328,18 +347,21 @@
                 "i20150413": "zgwQQA",
                 "i20151027": "k6oQQA",
                 "i20200622": "tQEQQA",
-                "i20221102": "Jlo0Qw"
+                "i20221102": "Jlo0Qw",
+                "i20231027": "m1ibfw"
             }
         },
         "com.github.virtuald.curvesapi": {
             "1.7.0": {
-                "i20221102": "jLXXLA"
+                "i20221102": "jLXXLA",
+                "i20231027": "1nH1oA"
             }
         },
         "com.github.wetransform-os.topojson-j": {
             "1.0.0": {
                 "i20221013": "6g4SiA",
-                "i20221102": "lv82iw"
+                "i20221102": "lv82iw",
+                "i20231027": "gaE2iw"
             }
         },
         "com.google.code.findbugs.jsr305": {
@@ -354,7 +376,8 @@
         "com.google.errorprone.error_prone_annotations": {
             "2.2.0": {
                 "i20200622": "gvezJQ",
-                "i20221102": "hDvXKA"
+                "i20221102": "hDvXKA",
+                "i20231027": "sO71Dw"
             }
         },
         "com.google.gson": {
@@ -403,7 +426,8 @@
         "com.google.j2objc.annotations": {
             "1.1.0": {
                 "i20200622": "f3ezIw",
-                "i20221102": "fvXJg"
+                "i20221102": "fvXJg",
+                "i20231027": "9W3zg"
             }
         },
         "com.google.javascript.closure-compiler": {
@@ -412,28 +436,32 @@
                 "i20150413": "CuWqKA",
                 "i20151027": "XZKqKA",
                 "i20200622": "CuWqKA",
-                "i20221102": "1OzOKw"
+                "i20221102": "1OzOKw",
+                "i20231027": "9MPAA"
             }
         },
         "com.google.protobuf.java": {
             "2.4.1": {
                 "i20150402": "fnKsIQ",
                 "i20150413": "iDKzKA",
-                "i20221102": "ipbXKw"
+                "i20221102": "ipbXKw",
+                "i20231027": "ikL6mA"
             }
         },
         "com.googlecode.json-simple": {
             "1.1.0": {
                 "i20150402": "dhasHA",
                 "i20150413": "f3ezIw",
-                "i20221102": "fvXJg"
+                "i20221102": "fvXJg",
+                "i20231027": "9W3zg"
             }
         },
         "com.haleconnect.api.haleconnect-bucket-api": {
             "1.0.1": {
                 "i20170517": "LSsuw",
                 "i20200622": "7Bqsuw",
-                "i20221102": "44PQvg"
+                "i20221102": "44PQvg",
+                "i20231027": "58Qvg"
             },
             "1.0.1.SNAPSHOT": {
                 "i20170428": "LSsuw"
@@ -443,7 +471,8 @@
             "0.1.0": {
                 "i20170517": "Ausug",
                 "i20200622": "53Gsug",
-                "i20221102": "3nrQvQ"
+                "i20221102": "3nrQvQ",
+                "i20231027": "4sbQvQ"
             },
             "0.1.0.SNAPSHOT": {
                 "i20170428": "Ausug"
@@ -459,7 +488,8 @@
             "1.6.0": {
                 "i20180329": "FBKswA",
                 "i20200622": "A3iswA",
-                "i20221102": "LLQww"
+                "i20221102": "LLQww",
+                "i20231027": "AQ3Qww"
             }
         },
         "com.haleconnect.api.haleconnect-user-api": {
@@ -469,7 +499,8 @@
             "1.0.2": {
                 "i20170517": "AWqsvA",
                 "i20200622": "8MGsvA",
-                "i20221102": "6IrQvw"
+                "i20221102": "6IrQvw",
+                "i20231027": "7NbQvw"
             },
             "1.0.2.SNAPSHOT": {
                 "i20170428": "AWqsvA"
@@ -496,19 +527,22 @@
         "com.ibm.icu": {
             "59.1.0": {
                 "i20220909": "ISbIUg",
-                "i20221102": "SAPsVQ"
+                "i20221102": "SAPsVQ",
+                "i20231027": "UVkbqg"
             }
         },
         "com.j256.ormlite.core": {
             "5.1.0": {
                 "i20191223": "hnuzJw",
-                "i20221102": "iHXKg"
+                "i20221102": "iHXKg",
+                "i20231027": "65fxxw"
             }
         },
         "com.j256.ormlite.jdbc": {
             "5.1.0": {
                 "i20191223": "Gexf7g",
-                "i20221102": "xuuD8Q"
+                "i20221102": "xuuD8Q",
+                "i20231027": "jGejg"
             }
         },
         "com.jcraft.jzlib": {
@@ -521,7 +555,8 @@
                 "i20150402": "O9Cshg",
                 "i20150413": "TQzjQ",
                 "i20180727": "xfXAtg",
-                "i20221102": "3eTkuQ"
+                "i20221102": "3eTkuQ",
+                "i20231027": "S34HNg"
             }
         },
         "com.openhtmltopdf.core": {
@@ -533,7 +568,8 @@
         "com.openhtmltopdf.jsoup-dom-converter": {
             "1.0.0": {
                 "i20220909": "BUAJVg",
-                "i20221102": "ktQtWQ"
+                "i20221102": "ktQtWQ",
+                "i20231027": "xNhbDg"
             }
         },
         "com.openhtmltopdf.pdfbox": {
@@ -619,7 +655,8 @@
                 "i20150413": "yoE1eA",
                 "i20151027": "jLU1eA",
                 "i20200622": "e8E1eA",
-                "i20221102": "uNJZew"
+                "i20221102": "uNJZew",
+                "i20231027": "gSCIw"
             }
         },
         "com.squareup.okhttp": {
@@ -666,7 +703,8 @@
             "3.5.2": {
                 "i20150402": "7pG78w",
                 "i20150413": "MXbCg",
-                "i20221102": "VzXmQ"
+                "i20221102": "VzXmQ",
+                "i20231027": "dzkHXQ"
             }
         },
         "com.sun.xml.bind.jaxb-core": {
@@ -699,7 +737,8 @@
         "com.thoughtworks.qdox": {
             "1.12.1": {
                 "i20220909": "4quzVg",
-                "i20221102": "9kXWQ"
+                "i20221102": "9kXWQ",
+                "i20231027": "lHgAEA"
             }
         },
         "com.tinkerpop.blueprints.core": {
@@ -718,7 +757,8 @@
                 "i20150413": "GIJ8sA",
                 "i20151027": "3RR8sA",
                 "i20200622": "GIJ8sA",
-                "i20221102": "Fd2gsw"
+                "i20221102": "Fd2gsw",
+                "i20231027": "2mgsw"
             }
         },
         "com.tinkerpop.gremlin.groovy": {
@@ -728,7 +768,8 @@
                 "i20151027": "suguuw",
                 "i20180424": "MY0hoA",
                 "i20200622": "RpYhoA",
-                "i20221102": "ZO4uEw"
+                "i20221102": "ZO4uEw",
+                "i20231027": "nCIuEw"
             }
         },
         "com.tinkerpop.gremlin.java": {
@@ -742,14 +783,16 @@
             "2.5.0.orientDB151": {
                 "i20150402": "WEQPeg",
                 "i20150413": "OWIWgQ",
-                "i20221102": "5o6hA"
+                "i20221102": "5o6hA",
+                "i20231027": "GIRahQ"
             }
         },
         "com.typesafe.config": {
             "1.2.1": {
                 "i20150402": "orDDlg",
                 "i20150413": "dq7KnQ",
-                "i20221102": "ebruoA"
+                "i20221102": "ebruoA",
+                "i20231027": "oRYbZg"
             }
         },
         "com.vividsolutions.jts": {
@@ -761,19 +804,22 @@
         "com.vladsch.flexmark": {
             "0.64.0": {
                 "i20220909": "cW0Ew",
-                "i20221102": "HbwpAg"
+                "i20221102": "HbwpAg",
+                "i20231027": "DxMpAg"
             }
         },
         "com.vladsch.flexmark.all": {
             "0.64.0": {
                 "i20220909": "1CLYBQ",
-                "i20221102": "5qH8CA"
+                "i20221102": "5qH8CA",
+                "i20231027": "6Bn8CA"
             }
         },
         "com.vladsch.flexmark.ext-abbreviation": {
             "0.64.0": {
                 "i20220909": "qYvNyA",
-                "i20221102": "Grbxyw"
+                "i20221102": "Grbxyw",
+                "i20231027": "C1bxyw"
             }
         },
         "com.vladsch.flexmark.ext-admonition": {
@@ -803,7 +849,8 @@
         "com.vladsch.flexmark.ext-autolink": {
             "0.64.0": {
                 "i20220909": "dXzBzg",
-                "i20221102": "Zfzl0Q"
+                "i20221102": "Zfzl0Q",
+                "i20231027": "WhXl0Q"
             }
         },
         "com.vladsch.flexmark.ext-definition": {
@@ -875,7 +922,8 @@
         "com.vladsch.flexmark.ext-jekyll-front-matter": {
             "0.64.0": {
                 "i20220909": "IY3UhA",
-                "i20221102": "Gwz4hw"
+                "i20221102": "Gwz4hw",
+                "i20231027": "Hmb4hw"
             }
         },
         "com.vladsch.flexmark.ext-jekyll-tag": {
@@ -953,43 +1001,50 @@
         "com.vladsch.flexmark.html2md-converter": {
             "0.64.0": {
                 "i20220909": "vUohaw",
-                "i20221102": "48RFbg"
+                "i20221102": "48RFbg",
+                "i20231027": "AYhFbg"
             }
         },
         "com.vladsch.flexmark.jira-converter": {
             "0.64.0": {
                 "i20220909": "xCt5oQ",
-                "i20221102": "11KdpA"
+                "i20221102": "11KdpA",
+                "i20231027": "zMCdpA"
             }
         },
         "com.vladsch.flexmark.pdf-converter": {
             "0.64.0": {
                 "i20220909": "9upqSA",
-                "i20221102": "H8mOSw"
+                "i20221102": "H8mOSw",
+                "i20231027": "ggOOSw"
             }
         },
         "com.vladsch.flexmark.profile-pegdown": {
             "0.64.0": {
                 "i20220909": "twSlQ",
-                "i20221102": "4gU2mA"
+                "i20221102": "4gU2mA",
+                "i20231027": "PoA2mA"
             }
         },
         "com.vladsch.flexmark.util": {
             "0.64.0": {
                 "i20220909": "ek62w",
-                "i20221102": "UXRe3g"
+                "i20221102": "UXRe3g",
+                "i20231027": "SiRe3g"
             }
         },
         "com.vladsch.flexmark.util-ast": {
             "0.64.0": {
                 "i20220909": "xjCgqA",
-                "i20221102": "qI7Eqw"
+                "i20221102": "qI7Eqw",
+                "i20231027": "rFrEqw"
             }
         },
         "com.vladsch.flexmark.util-builder": {
             "0.64.0": {
                 "i20220909": "03oG6g",
-                "i20221102": "rOcq7Q"
+                "i20221102": "rOcq7Q",
+                "i20231027": "sLMq7Q"
             }
         },
         "com.vladsch.flexmark.util-collection": {
@@ -1007,13 +1062,15 @@
         "com.vladsch.flexmark.util-dependency": {
             "0.64.0": {
                 "i20220909": "VAQzwQ",
-                "i20221102": "eAVXxA"
+                "i20221102": "eAVXxA",
+                "i20231027": "e9FXxA"
             }
         },
         "com.vladsch.flexmark.util-format": {
             "0.64.0": {
                 "i20220909": "3VnD2A",
-                "i20221102": "zdnn2w"
+                "i20221102": "zdnn2w",
+                "i20231027": "2T3n2w"
             }
         },
         "com.vladsch.flexmark.util-html": {
@@ -1037,7 +1094,8 @@
         "com.vladsch.flexmark.util-sequence": {
             "0.64.0": {
                 "i20220909": "VAQzwQ",
-                "i20221102": "eAVXxA"
+                "i20221102": "eAVXxA",
+                "i20231027": "e9FXxA"
             }
         },
         "com.vladsch.flexmark.util-visitor": {
@@ -1049,7 +1107,8 @@
         "com.vladsch.flexmark.youtrack-converter": {
             "0.64.0": {
                 "i20220909": "4Ej9GQ",
-                "i20221102": "mCshKw"
+                "i20221102": "mCshKw",
+                "i20231027": "jZkhKw"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -1064,7 +1123,8 @@
         },
         "com.zaxxer.SparseBitSet": {
             "1.2.0": {
-                "i20221102": "ghrXJw"
+                "i20221102": "ghrXJw",
+                "i20231027": "nMgJSA"
             }
         },
         "commons-beanutils.commons-beanutils-core": {
@@ -1082,14 +1142,16 @@
                 "i20150402": "I9Ictw",
                 "i20150413": "vrgjvg",
                 "i20180424": "sacd4A",
-                "i20221102": "TEEfqQ"
+                "i20221102": "TEEfqQ",
+                "i20231027": "AbRM7A"
             }
         },
         "commons-httpclient": {
             "3.1.0": {
                 "i20150402": "LgAlBg",
                 "i20150413": "PRgsDQ",
-                "i20221102": "FfUt2A"
+                "i20221102": "FfUt2A",
+                "i20231027": "UDZbww"
             }
         },
         "concurrent": {
@@ -1097,7 +1159,8 @@
                 "i20150402": "gBasIg",
                 "i20150413": "iemzKQ",
                 "i20180726": "6H3AUg",
-                "i20221102": "2uzkVQ"
+                "i20221102": "2uzkVQ",
+                "i20231027": "MNwh2A"
             }
         },
         "de.cs3d.common.metamodel": {
@@ -1137,7 +1200,8 @@
             "1.0.0": {
                 "i20150402": "OM9h3w",
                 "i20150413": "G9ho5g",
-                "i20221102": "gMmM6Q"
+                "i20221102": "gMmM6Q",
+                "i20231027": "qFq1kQ"
             }
         },
         "de.interactive_instruments.xtraserver-config-util": {
@@ -1222,7 +1286,8 @@
             "2.0.3": {
                 "i20150402": "vXWsJw",
                 "i20150413": "4DGzLg",
-                "i20221102": "X97XMQ"
+                "i20221102": "X97XMQ",
+                "i20231027": "CIf5LA"
             }
         },
         "gnu.trove": {
@@ -1242,7 +1307,8 @@
                 "i20180424": "lYfCag"
             },
             "2.5.19": {
-                "i20221102": "MfPCig"
+                "i20221102": "MfPCig",
+                "i20231027": "3MrrMg"
             },
             "4.0.1": {
                 "i20220909": "Hto2dg"
@@ -1255,7 +1321,8 @@
         },
         "groovy-ant": {
             "2.5.19": {
-                "i20221102": "H5kXiQ"
+                "i20221102": "H5kXiQ",
+                "i20231027": "819AMQ"
             },
             "4.0.1": {
                 "i20220909": "TRyLLQ"
@@ -1263,12 +1330,14 @@
         },
         "groovy-cli-commons": {
             "2.5.19": {
-                "i20221102": "binU4w"
+                "i20221102": "binU4w",
+                "i20231027": "xvT9iw"
             }
         },
         "groovy-cli-picocli": {
             "2.5.19": {
-                "i20221102": "binU4w"
+                "i20221102": "binU4w",
+                "i20231027": "xvT9iw"
             },
             "4.0.1": {
                 "i20220909": "EpOw4A"
@@ -1276,7 +1345,8 @@
         },
         "groovy-console": {
             "2.5.19": {
-                "i20221102": "7i1Bg"
+                "i20221102": "7i1Bg",
+                "i20231027": "UmDdrg"
             },
             "4.0.1": {
                 "i20220909": "YavSOw"
@@ -1284,7 +1354,8 @@
         },
         "groovy-datetime": {
             "2.5.19": {
-                "i20221102": "CzD7EA"
+                "i20221102": "CzD7EA",
+                "i20231027": "l9sjxw"
             },
             "4.0.1": {
                 "i20220909": "hjjcCg"
@@ -1292,7 +1363,8 @@
         },
         "groovy-docgenerator": {
             "2.5.19": {
-                "i20221102": "GUDf4Q"
+                "i20221102": "GUDf4Q",
+                "i20231027": "DU0ImA"
             },
             "4.0.1": {
                 "i20220909": "bxm9Kw"
@@ -1300,7 +1372,8 @@
         },
         "groovy-groovydoc": {
             "2.5.19": {
-                "i20221102": "YzQZCw"
+                "i20221102": "YzQZCw",
+                "i20231027": "fFhBsw"
             },
             "4.0.1": {
                 "i20220909": "emF1bQ"
@@ -1308,7 +1381,8 @@
         },
         "groovy-groovysh": {
             "2.5.19": {
-                "i20221102": "oGvecw"
+                "i20221102": "oGvecw",
+                "i20231027": "lFYHKg"
             },
             "4.0.1": {
                 "i20220909": "gpoIng"
@@ -1316,7 +1390,8 @@
         },
         "groovy-jmx": {
             "2.5.19": {
-                "i20221102": "i6bzfA"
+                "i20221102": "i6bzfA",
+                "i20231027": "cPscMw"
             },
             "4.0.1": {
                 "i20220909": "eqUFIw"
@@ -1324,7 +1399,8 @@
         },
         "groovy-json": {
             "2.5.19": {
-                "i20221102": "sp7Lvw"
+                "i20221102": "sp7Lvw",
+                "i20231027": "QBD0Zw"
             },
             "4.0.1": {
                 "i20220909": "MrDg"
@@ -1332,7 +1408,8 @@
         },
         "groovy-jsr223": {
             "2.5.19": {
-                "i20221102": "J2A8cA"
+                "i20221102": "J2A8cA",
+                "i20231027": "OzhlGA"
             },
             "4.0.1": {
                 "i20220909": "EqRGHA"
@@ -1340,7 +1417,8 @@
         },
         "groovy-macro": {
             "2.5.19": {
-                "i20221102": "2T5ITg"
+                "i20221102": "2T5ITg",
+                "i20231027": "jOxw9g"
             },
             "4.0.1": {
                 "i20220909": "qCVbBg"
@@ -1348,7 +1426,8 @@
         },
         "groovy-nio": {
             "2.5.19": {
-                "i20221102": "bgpDug"
+                "i20221102": "bgpDug",
+                "i20231027": "DI9sYg"
             },
             "4.0.1": {
                 "i20220909": "D26R3A"
@@ -1356,7 +1435,8 @@
         },
         "groovy-servlet": {
             "2.5.19": {
-                "i20221102": "bX9qEQ"
+                "i20221102": "bX9qEQ",
+                "i20231027": "SWSuQ"
             },
             "4.0.1": {
                 "i20220909": "gO9atg"
@@ -1364,7 +1444,8 @@
         },
         "groovy-sql": {
             "2.5.19": {
-                "i20221102": "lnPPWA"
+                "i20221102": "lnPPWA",
+                "i20231027": "QIz4AA"
             },
             "4.0.1": {
                 "i20220909": "oGbYjQ"
@@ -1372,7 +1453,8 @@
         },
         "groovy-swing": {
             "2.5.19": {
-                "i20221102": "XtVyQ"
+                "i20221102": "XtVyQ",
+                "i20231027": "LtjcQ"
             },
             "4.0.1": {
                 "i20220909": "lwod4w"
@@ -1380,7 +1462,8 @@
         },
         "groovy-templates": {
             "2.5.19": {
-                "i20221102": "8cvkWA"
+                "i20221102": "8cvkWA",
+                "i20231027": "vR8NDw"
             },
             "4.0.1": {
                 "i20220909": "tvcelg"
@@ -1388,7 +1471,8 @@
         },
         "groovy-test": {
             "2.5.19": {
-                "i20221102": "4VyQ2A"
+                "i20221102": "4VyQ2A",
+                "i20231027": "JZK5gA"
             },
             "4.0.1": {
                 "i20220909": "kzGpog"
@@ -1396,7 +1480,8 @@
         },
         "groovy-test-junit5": {
             "2.5.19": {
-                "i20221102": "IOptDg"
+                "i20221102": "IOptDg",
+                "i20231027": "bUeVtg"
             },
             "4.0.1": {
                 "i20220909": "R3ttXg"
@@ -1404,12 +1489,14 @@
         },
         "groovy-testng": {
             "2.5.19": {
-                "i20221102": "XHxaZA"
+                "i20221102": "XHxaZA",
+                "i20231027": "8NDDA"
             }
         },
         "groovy-xml": {
             "2.5.19": {
-                "i20221102": "fhpHmQ"
+                "i20221102": "fhpHmQ",
+                "i20231027": "vHdwQQ"
             },
             "4.0.1": {
                 "i20220909": "aFqtA"
@@ -1455,13 +1542,15 @@
         "it.geosolutions.imageio-ext.geocore": {
             "1.2.1": {
                 "i20200622": "5dRxrQ",
-                "i20221102": "WOSVsA"
+                "i20221102": "WOSVsA",
+                "i20231027": "oEaVsA"
             }
         },
         "it.geosolutions.imageio-ext.streams": {
             "1.2.1": {
                 "i20200622": "KnbiQ",
-                "i20221102": "wcnjA"
+                "i20221102": "wcnjA",
+                "i20231027": "hHLjA"
             }
         },
         "it.geosolutions.imageio-ext.tiff": {
@@ -1472,7 +1561,8 @@
             },
             "1.2.1": {
                 "i20200622": "yPYjMQ",
-                "i20221102": "EIpHNA"
+                "i20221102": "EIpHNA",
+                "i20231027": "ulZHNA"
             }
         },
         "it.geosolutions.imageio-ext.utilities": {
@@ -1483,199 +1573,232 @@
             },
             "1.2.1": {
                 "i20200622": "oYa0GA",
-                "i20221102": "LpnYGw"
+                "i20221102": "LpnYGw",
+                "i20231027": "LdHYGw"
             }
         },
         "it.geosolutions.jaiext.affine.jt-affine": {
             "1.1.7": {
                 "i20200622": "wPq83w",
-                "i20221102": "R7Dg4g"
+                "i20221102": "R7Dg4g",
+                "i20231027": "wzfg4g"
             }
         },
         "it.geosolutions.jaiext.algebra.jt-algebra": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.bandcombine.jt-bandcombine": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.bandmerge.jt-bandmerge": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.bandselect.jt-bandselect": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.binarize.jt-binarize": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.border.jt-border": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.buffer.jt-buffer": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.classifier.jt-classifier": {
             "1.1.7": {
                 "i20200622": "tJuCQA",
-                "i20221102": "TumQw"
+                "i20221102": "TumQw",
+                "i20231027": "baamQw"
             }
         },
         "it.geosolutions.jaiext.colorconvert.jt-colorconvert": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.colorindexer.jt-colorindexer": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.crop.jt-crop": {
             "1.1.7": {
                 "i20200622": "jBuAg",
-                "i20221102": "u1OlAQ"
+                "i20221102": "u1OlAQ",
+                "i20231027": "NHWlAQ"
             }
         },
         "it.geosolutions.jaiext.errordiffusion.jt-errordiffusion": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.format.jt-format": {
             "1.1.7": {
                 "i20200622": "zkOBAA",
-                "i20221102": "XulAw"
+                "i20221102": "XulAw",
+                "i20231027": "ZLlAw"
             }
         },
         "it.geosolutions.jaiext.imagefunction.jt-imagefunction": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.iterators.jt-iterators": {
             "1.1.7": {
                 "i20200622": "5OjLgw",
-                "i20221102": "gZTvhg"
+                "i20221102": "gZTvhg",
+                "i20231027": "Wijvhg"
             }
         },
         "it.geosolutions.jaiext.lookup.jt-lookup": {
             "1.1.7": {
                 "i20200622": "AmuWcQ",
-                "i20221102": "xtK6dA"
+                "i20221102": "xtK6dA",
+                "i20231027": "Y4m6dA"
             }
         },
         "it.geosolutions.jaiext.mosaic.jt-mosaic": {
             "1.1.7": {
                 "i20200622": "BySBHA",
-                "i20221102": "NlylHw"
+                "i20221102": "NlylHw",
+                "i20231027": "cN2lHw"
             }
         },
         "it.geosolutions.jaiext.nullop.jt-nullop": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.orderdither.jt-orderdither": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.piecewise.jt-piecewise": {
             "1.1.7": {
                 "i20200622": "YpyCTg",
-                "i20221102": "d2mUQ"
+                "i20221102": "d2mUQ",
+                "i20231027": "kQKmUQ"
             }
         },
         "it.geosolutions.jaiext.rescale.jt-rescale": {
             "1.1.7": {
                 "i20200622": "AmuWcQ",
-                "i20221102": "xtK6dA"
+                "i20221102": "xtK6dA",
+                "i20231027": "Y4m6dA"
             }
         },
         "it.geosolutions.jaiext.rlookup.jt-rlookup": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.scale.jt-scale": {
             "1.1.7": {
                 "i20200622": "gJHRng",
-                "i20221102": "VHD1oQ"
+                "i20221102": "VHD1oQ",
+                "i20231027": "xMD1oQ"
             }
         },
         "it.geosolutions.jaiext.scale2.jt-scale2": {
             "1.1.7": {
                 "i20200622": "gJHRng",
-                "i20221102": "VHD1oQ"
+                "i20221102": "VHD1oQ",
+                "i20231027": "xMD1oQ"
             }
         },
         "it.geosolutions.jaiext.shadedrelief.jt-shadedrelief": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.stats.jt-stats": {
             "1.1.7": {
                 "i20200622": "YXu2bw",
-                "i20221102": "opXacg"
+                "i20221102": "opXacg",
+                "i20231027": "tELacg"
             }
         },
         "it.geosolutions.jaiext.translate.jt-translate": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.utilities.jt-utilities": {
             "1.1.7": {
                 "i20200622": "rVLynw",
-                "i20221102": "MEEWsQ"
+                "i20221102": "MEEWsQ",
+                "i20231027": "LKEWsQ"
             }
         },
         "it.geosolutions.jaiext.vectorbin.jt-vectorbin": {
             "1.1.7": {
                 "i20200622": "9ahvVQ",
-                "i20221102": "09uTWA"
+                "i20221102": "09uTWA",
+                "i20231027": "TP2TWA"
             }
         },
         "it.geosolutions.jaiext.warp.jt-warp": {
             "1.1.7": {
                 "i20200622": "FgeTQ",
-                "i20221102": "Aly3A"
+                "i20221102": "Aly3A",
+                "i20231027": "g5S3A"
             }
         },
         "it.geosolutions.jaiext.zonal.jt-zonal": {
             "1.1.7": {
                 "i20200622": "D2WnzQ",
-                "i20221102": "AN3L0A"
+                "i20221102": "AN3L0A",
+                "i20231027": "2evL0A"
             }
         },
         "jai.jai-codec": {
@@ -1757,14 +1880,16 @@
             "1.0.0": {
                 "i20150402": "dGqsGw",
                 "i20150413": "fbizIg",
-                "i20221102": "fdzXJQ"
+                "i20221102": "fdzXJQ",
+                "i20231027": "807zQ"
             }
         },
         "javax.mail": {
             "1.4.0": {
                 "i20150402": "IDnOMw",
                 "i20150413": "77TVOg",
-                "i20221102": "J2j5PQ"
+                "i20221102": "J2j5PQ",
+                "i20231027": "whIpqA"
             }
         },
         "javax.measure.unit-api": {
@@ -1904,7 +2029,8 @@
             },
             "4.13.2": {
                 "i20220909": "szZbA",
-                "i20221102": "0rT9bw"
+                "i20221102": "0rT9bw",
+                "i20231027": "GzQnug"
             }
         },
         "junit-jupiter-api": {
@@ -1936,63 +2062,73 @@
             "1.7.10": {
                 "i20150402": "kYH0yw",
                 "i20150413": "UQn70g",
-                "i20221102": "Twkf5A"
+                "i20221102": "Twkf5A",
+                "i20231027": "z2tD3A"
             }
         },
         "mil.nga.geopackage": {
             "3.4.0": {
                 "i20191223": "8Vc5dQ",
                 "i20200622": "NY5dQ",
-                "i20221102": "UPRdeA"
+                "i20221102": "UPRdeA",
+                "i20231027": "rFOcVg"
             }
         },
         "mil.nga.geopackage.core": {
             "3.4.0": {
                 "i20191223": "HeqG2w",
-                "i20221102": "Pcuq3g"
+                "i20221102": "Pcuq3g",
+                "i20231027": "yUDrkg"
             }
         },
         "mil.nga.oapi.features.oapi-features-json": {
             "1.0.1": {
                 "i20191223": "Z7QCA",
-                "i20221102": "EhT0Cw"
+                "i20221102": "EhT0Cw",
+                "i20231027": "xZ03BA"
             }
         },
         "mil.nga.sf": {
             "2.0.2": {
                 "i20191223": "gvOzJQ",
-                "i20221102": "hDfXKA"
+                "i20221102": "hDfXKA",
+                "i20231027": "xVUYJA"
             }
         },
         "mil.nga.sf.geojson": {
             "2.0.3": {
                 "i20191223": "0un78w",
-                "i20221102": "6RkgBQ"
+                "i20221102": "6RkgBQ",
+                "i20231027": "BwtkFA"
             }
         },
         "mil.nga.sf.proj": {
             "3.0.2": {
                 "i20191223": "tU2DyA",
-                "i20221102": "KOnyw"
+                "i20221102": "KOnyw",
+                "i20231027": "xnrqoA"
             }
         },
         "mil.nga.sf.wkb": {
             "2.0.2": {
                 "i20191223": "iKrzFA",
-                "i20221102": "PgUXJg"
+                "i20221102": "PgUXJg",
+                "i20231027": "qVNZhA"
             }
         },
         "mil.nga.tiff": {
             "2.0.1": {
                 "i20191223": "gTazJA",
-                "i20221102": "ghrXJw"
+                "i20221102": "ghrXJw",
+                "i20231027": "5QTtg"
             }
         },
         "net.java.dev.jna.platform": {
             "3.5.2": {
                 "i20150402": "sUUSaQ",
                 "i20150413": "BgcZcA",
-                "i20221102": "h4s9cw"
+                "i20221102": "h4s9cw",
+                "i20231027": "Gs9dxA"
             }
         },
         "net.java.dev.jsr-275": {
@@ -2014,7 +2150,8 @@
         "net.sf.ehcache.core": {
             "2.6.11": {
                 "i20180727": "NXPUUg",
-                "i20221102": "fRz4VQ"
+                "i20221102": "fRz4VQ",
+                "i20231027": "V4IdLg"
             },
             "2.6.6": {
                 "i20150402": "ymTNHw",
@@ -2026,13 +2163,15 @@
                 "i20150402": "uKVGhw",
                 "i20150413": "jeZNjg",
                 "i20180726": "4oRatw",
-                "i20221102": "Zedug"
+                "i20221102": "Zedug",
+                "i20231027": "8rnYg"
             }
         },
         "net.sf.geographiclib.GeographicLib-Java": {
             "1.49.0": {
                 "i20200622": "8mezXw",
-                "i20221102": "CXrXYg"
+                "i20221102": "CXrXYg",
+                "i20231027": "0nL1ig"
             }
         },
         "net.sf.json-lib": {
@@ -2046,26 +2185,30 @@
             "2.3.0": {
                 "i20160531": "Vu0EMQ",
                 "i20200622": "Wu8EMQ",
-                "i20221102": "10QFg"
+                "i20221102": "10QFg",
+                "i20231027": "4p43Gw"
             }
         },
         "net.sf.opencsv": {
             "2.3.0": {
                 "i20150402": "exysHw",
                 "i20150413": "hLazJg",
-                "i20221102": "hlrXKQ"
+                "i20221102": "hlrXKQ",
+                "i20231027": "pR70sg"
             }
         },
         "net.sf.saxon.Saxon-HE": {
             "9.9.1.4": {
                 "i20200622": "nTSzNA",
-                "i20221102": "pBjXNw"
+                "i20221102": "pBjXNw",
+                "i20231027": "WwBdg"
             }
         },
         "net.sf.ucanaccess": {
             "3.0.6": {
                 "i20160712": "s9C46A",
-                "i20221102": "qmjc6w"
+                "i20221102": "qmjc6w",
+                "i20231027": "iXkMJQ"
             }
         },
         "net.sourceforge.nekohtml": {
@@ -2074,7 +2217,8 @@
                 "i20150413": "hI0RGA"
             },
             "1.9.22": {
-                "i20221102": "C5RbVg"
+                "i20221102": "C5RbVg",
+                "i20231027": "jNSDg"
             }
         },
         "net.sourceforge.schemacrawler": {
@@ -2082,14 +2226,16 @@
                 "i20150402": "Fs5TrQ",
                 "i20150413": "915atA",
                 "i20150612": "dBNjfQ",
-                "i20221102": "bcxy8Q"
+                "i20221102": "bcxy8Q",
+                "i20231027": "HIJ9Pw"
             }
         },
         "net.tanesha.recaptcha4j": {
             "0.0.8": {
                 "i20150402": "gAysIg",
                 "i20150413": "idzKQ",
-                "i20221102": "2uLkVQ"
+                "i20221102": "2uLkVQ",
+                "i20231027": "RugIYA"
             }
         },
         "nl.javadude.scannit": {
@@ -2113,7 +2259,8 @@
             "4.0.4": {
                 "i20150402": "dEvlow",
                 "i20150413": "Uznsqg",
-                "i20221102": "GYQQvA"
+                "i20221102": "GYQQvA",
+                "i20231027": "aiQqnA"
             }
         },
         "org.antlr.runtime": {
@@ -2127,7 +2274,8 @@
             "3.2.1": {
                 "i20150402": "Mi1AeQ",
                 "i20150413": "T5HgA",
-                "i20221102": "RJBrgw"
+                "i20221102": "RJBrgw",
+                "i20231027": "suOFYw"
             }
         },
         "org.apache.ant": {
@@ -2412,7 +2560,8 @@
                 "i20150413": "VVIJ7A"
             },
             "5.2.3": {
-                "i20221102": "wjTAYg"
+                "i20221102": "wjTAYg",
+                "i20231027": "6nzvQ"
             }
         },
         "org.apache.poi.ooxml": {
@@ -2422,12 +2571,14 @@
                 "i20180424": "3gjMqg"
             },
             "5.2.3": {
-                "i20221102": "BD3IQ"
+                "i20221102": "BD3IQ",
+                "i20231027": "q88qiw"
             }
         },
         "org.apache.poi.ooxml-lite": {
             "5.2.3": {
-                "i20221102": "gyxEIQ"
+                "i20221102": "gyxEIQ",
+                "i20231027": "eCp3fA"
             }
         },
         "org.apache.poi.ooxml-schemas": {
@@ -2526,25 +2677,29 @@
                 "i20150413": "9PbBGQ"
             },
             "5.1.1": {
-                "i20221102": "4Fdfxw"
+                "i20221102": "4Fdfxw",
+                "i20231027": "iuRdw"
             }
         },
         "org.aspectj.rt": {
             "1.8.3": {
                 "i20170105": "kOezLQ",
-                "i20221102": "lSvXMA"
+                "i20221102": "lSvXMA",
+                "i20231027": "6gb66g"
             }
         },
         "org.aspectj.weaver": {
             "1.8.3": {
                 "i20170105": "kOezLQ",
-                "i20221102": "lSvXMA"
+                "i20221102": "lSvXMA",
+                "i20231027": "6gb66g"
             }
         },
         "org.checkerframework.checker-qual": {
             "2.5.2": {
                 "i20200622": "i66zKg",
-                "i20221102": "jtLXLQ"
+                "i20221102": "jtLXLQ",
+                "i20231027": "5Hf0Gg"
             }
         },
         "org.codehaus.castor.core": {
@@ -2581,7 +2736,8 @@
             },
             "0.7.1": {
                 "i20220909": "ReotgA",
-                "i20221102": "01FRgw"
+                "i20221102": "01FRgw",
+                "i20231027": "RU56Kw"
             }
         },
         "org.codehaus.jackson": {
@@ -2629,7 +2785,8 @@
             },
             "3.4.13": {
                 "i20200622": "KzIhvg",
-                "i20221102": "kdxFwQ"
+                "i20221102": "kdxFwQ",
+                "i20231027": "pRFwQ"
             },
             "3.4.2": {
                 "i20180727": "Px6lcQ"
@@ -2641,7 +2798,8 @@
             },
             "3.4.13": {
                 "i20200622": "UXNBPQ",
-                "i20221102": "oeZlQA"
+                "i20221102": "oeZlQA",
+                "i20231027": "SBJlQA"
             },
             "3.4.2": {
                 "i20180727": "tTMj7A"
@@ -2653,7 +2811,8 @@
             },
             "3.4.13": {
                 "i20200622": "LbLT8A",
-                "i20221102": "Va738w"
+                "i20221102": "Va738w",
+                "i20231027": "swH38w"
             },
             "3.4.2": {
                 "i20180727": "p9VXsg"
@@ -2665,7 +2824,8 @@
             },
             "3.4.13": {
                 "i20200622": "i0mNA",
-                "i20221102": "8cgKRg"
+                "i20221102": "8cgKRg",
+                "i20231027": "u9AKRg"
             },
             "3.4.2": {
                 "i20180727": "ea7mAg"
@@ -2689,7 +2849,8 @@
             },
             "3.4.13": {
                 "i20200622": "DAChzw",
-                "i20221102": "wVDF0g"
+                "i20221102": "wVDF0g",
+                "i20231027": "577F0g"
             },
             "3.4.2": {
                 "i20180727": "rTr2Q"
@@ -2713,7 +2874,8 @@
             },
             "3.4.13": {
                 "i20200622": "90QEDA",
-                "i20221102": "mL8oDw"
+                "i20221102": "mL8oDw",
+                "i20231027": "ToMoDw"
             },
             "3.4.2": {
                 "i20180727": "Ae8D2g"
@@ -2734,7 +2896,8 @@
         "org.deegree.junidecode": {
             "0.2.0": {
                 "i20180427": "7VnAkg",
-                "i20221102": "2pHklQ"
+                "i20221102": "2pHklQ",
+                "i20231027": "zCsIoA"
             }
         },
         "org.deegree.ogcschemas": {
@@ -2785,7 +2948,8 @@
             },
             "3.4.13": {
                 "i20200622": "NNBoUA",
-                "i20221102": "Vy2MUw"
+                "i20221102": "Vy2MUw",
+                "i20231027": "nKMUw"
             },
             "3.4.2": {
                 "i20180727": "mmv1OA"
@@ -2794,7 +2958,8 @@
         "org.eclipse.emf.common": {
             "2.15.0.v20180723-1316": {
                 "i20200622": "uloBKw",
-                "i20221102": "9jwlLg"
+                "i20221102": "9jwlLg",
+                "i20231027": "U1dMTA"
             },
             "2.6.0.v20100914-1218": {
                 "i20150402": "hcbsyQ",
@@ -2804,7 +2969,8 @@
         "org.eclipse.emf.ecore": {
             "2.15.0.v20180722-1159": {
                 "i20200622": "mrZsdg",
-                "i20221102": "8E2QeQ"
+                "i20221102": "8E2QeQ",
+                "i20231027": "A4C3lw"
             },
             "2.6.1.v20100914-1218": {
                 "i20150402": "RZlMIA",
@@ -2814,7 +2980,8 @@
         "org.eclipse.emf.ecore.xmi": {
             "2.15.0.v20180706-1146": {
                 "i20200622": "jPLeiA",
-                "i20221102": "0JECmg"
+                "i20221102": "0JECmg",
+                "i20231027": "bE4puA"
             }
         },
         "org.eclipse.gemini.blueprint.core": {
@@ -2917,7 +3084,8 @@
         "org.eclipse.xsd": {
             "2.12.0.v20160526-0356": {
                 "i20200622": "cKLYbQ",
-                "i20221102": "ofn8cA"
+                "i20221102": "ofn8cA",
+                "i20231027": "ucgjnQ"
             },
             "2.6.0.v20100914-1218": {
                 "i20150402": "liXRZg",
@@ -2934,13 +3102,15 @@
         "org.ejml.core": {
             "0.34.0": {
                 "i20200622": "2DmFA",
-                "i20221102": "CJWpw"
+                "i20221102": "CJWpw",
+                "i20231027": "wVfSow"
             }
         },
         "org.ejml.ddense": {
             "0.34.0": {
                 "i20200622": "1gjDvw",
-                "i20221102": "2annwg"
+                "i20221102": "2annwg",
+                "i20231027": "9YsQeQ"
             }
         },
         "org.fusesource.jansi": {
@@ -2959,7 +3129,8 @@
         "org.geotools.gt-app-schema-resolver": {
             "21.0.0": {
                 "i20200622": "27B7SQ",
-                "i20221102": "LqSfTA"
+                "i20221102": "LqSfTA",
+                "i20231027": "jrafTA"
             }
         },
         "org.geotools.gt-complex": {
@@ -2976,7 +3147,8 @@
             },
             "21.0.0": {
                 "i20200622": "kUTrfQ",
-                "i20221102": "hN0Pjw"
+                "i20221102": "hN0Pjw",
+                "i20231027": "i2c1mA"
             }
         },
         "org.geotools.gt-cql": {
@@ -2986,7 +3158,8 @@
             },
             "21.0.0": {
                 "i20200622": "VMgSNw",
-                "i20221102": "TDE2Og"
+                "i20221102": "TDE2Og",
+                "i20231027": "LiVcQw"
             }
         },
         "org.geotools.gt-data": {
@@ -3003,7 +3176,8 @@
             },
             "21.0.0": {
                 "i20200622": "6iIPg",
-                "i20221102": "3H1iQQ"
+                "i20221102": "3H1iQQ",
+                "i20231027": "b43ovQ"
             }
         },
         "org.geotools.gt-geojson": {
@@ -3014,13 +3188,15 @@
             },
             "21.0.0": {
                 "i20200622": "S30iCg",
-                "i20221102": "M3ZGDQ"
+                "i20221102": "M3ZGDQ",
+                "i20231027": "gDdsFg"
             }
         },
         "org.geotools.gt-geometry": {
             "21.0.0": {
                 "i20200622": "zKgenQ",
-                "i20221102": "HPlCoA"
+                "i20221102": "HPlCoA",
+                "i20231027": "TpNtaQ"
             }
         },
         "org.geotools.gt-graph": {
@@ -3037,7 +3213,8 @@
             },
             "21.0.0": {
                 "i20200622": "NDxs5Q",
-                "i20221102": "jBOQ6A"
+                "i20221102": "jBOQ6A",
+                "i20231027": "CUW28Q"
             }
         },
         "org.geotools.gt-main": {
@@ -3048,7 +3225,8 @@
             },
             "21.0.0": {
                 "i20200622": "5gdbyA",
-                "i20221102": "4j9yw"
+                "i20221102": "4j9yw",
+                "i20231027": "o9al1A"
             }
         },
         "org.geotools.gt-metadata": {
@@ -3058,7 +3236,8 @@
             },
             "21.0.0": {
                 "i20200622": "HhcW7A",
-                "i20221102": "qWg67w"
+                "i20221102": "qWg67w",
+                "i20231027": "TIhgA"
             }
         },
         "org.geotools.gt-referencing": {
@@ -3069,7 +3248,8 @@
             },
             "21.0.0": {
                 "i20200622": "op1sw",
-                "i20221102": "ZyeZtg"
+                "i20221102": "ZyeZtg",
+                "i20231027": "eTevw"
             }
         },
         "org.geotools.gt-render": {
@@ -3080,7 +3260,8 @@
             },
             "21.0.0": {
                 "i20200622": "uLXMCQ",
-                "i20221102": "HrbwDA"
+                "i20221102": "HrbwDA",
+                "i20231027": "GgYWJA"
             }
         },
         "org.geotools.gt-shapefile": {
@@ -3091,7 +3272,8 @@
             },
             "21.0.0": {
                 "i20200622": "nnzdOQ",
-                "i20221102": "MuIBSw"
+                "i20221102": "MuIBSw",
+                "i20231027": "E8nVA"
             }
         },
         "org.geotools.gt-wfs": {
@@ -3105,7 +3287,8 @@
         "org.geotools.gt-wfs-ng": {
             "21.0.0": {
                 "i20200622": "R004DQ",
-                "i20221102": "6oFcEA"
+                "i20221102": "6oFcEA",
+                "i20231027": "ySyCGQ"
             }
         },
         "org.geotools.gt-xml": {
@@ -3116,7 +3299,8 @@
             },
             "21.0.0": {
                 "i20200622": "ReqHhg",
-                "i20221102": "J2uriQ"
+                "i20221102": "J2uriQ",
+                "i20231027": "nUzRkg"
             }
         },
         "org.geotools.jdbc.gt-jdbc-oracle": {
@@ -3126,7 +3310,8 @@
             },
             "21.0.0": {
                 "i20200622": "BScpg",
-                "i20221102": "eFZiqQ"
+                "i20221102": "eFZiqQ",
+                "i20231027": "1lWIsg"
             }
         },
         "org.geotools.ogc.net.opengis.fes": {
@@ -3138,7 +3323,8 @@
             },
             "21.0.0": {
                 "i20200622": "mXnQ",
-                "i20221102": "ze7oA"
+                "i20221102": "ze7oA",
+                "i20231027": "Dmq7oA"
             }
         },
         "org.geotools.ogc.net.opengis.ows": {
@@ -3150,7 +3336,8 @@
             },
             "21.0.0": {
                 "i20200622": "cdeKjg",
-                "i20221102": "jW2ukQ"
+                "i20221102": "jW2ukQ",
+                "i20231027": "gAqukQ"
             }
         },
         "org.geotools.ogc.net.opengis.wfs": {
@@ -3162,7 +3349,8 @@
             },
             "21.0.0": {
                 "i20200622": "GmUzMg",
-                "i20221102": "K2hXNQ"
+                "i20221102": "K2hXNQ",
+                "i20231027": "sZ1XNQ"
             }
         },
         "org.geotools.ogc.org.w3.xlink": {
@@ -3174,7 +3362,8 @@
             },
             "21.0.0": {
                 "i20200622": "ujhlw",
-                "i20221102": "z2SJg"
+                "i20221102": "z2SJg",
+                "i20231027": "wgGJg"
             }
         },
         "org.geotools.xsd.gt-xsd-core": {
@@ -3186,7 +3375,8 @@
             },
             "21.0.0": {
                 "i20200622": "R4aug",
-                "i20221102": "zEkvQ"
+                "i20221102": "zEkvQ",
+                "i20231027": "GFFkxg"
             }
         },
         "org.geotools.xsd.gt-xsd-fes": {
@@ -3197,7 +3387,8 @@
             },
             "21.0.0": {
                 "i20200622": "UFdlCg",
-                "i20221102": "OBGJDQ"
+                "i20221102": "OBGJDQ",
+                "i20231027": "9XevFg"
             }
         },
         "org.geotools.xsd.gt-xsd-filter": {
@@ -3208,7 +3399,8 @@
             },
             "21.0.0": {
                 "i20200622": "U1UtBQ",
-                "i20221102": "w2pRCA"
+                "i20221102": "w2pRCA",
+                "i20231027": "itR3EQ"
             }
         },
         "org.geotools.xsd.gt-xsd-gml2": {
@@ -3219,7 +3411,8 @@
             },
             "21.0.0": {
                 "i20200622": "qbkQAg",
-                "i20221102": "U900BQ"
+                "i20221102": "U900BQ",
+                "i20231027": "80BaDg"
             }
         },
         "org.geotools.xsd.gt-xsd-gml3": {
@@ -3230,7 +3423,8 @@
             },
             "21.0.0": {
                 "i20200622": "Bkk9Jw",
-                "i20221102": "qzRhKg"
+                "i20221102": "qzRhKg",
+                "i20231027": "ZNHMw"
             }
         },
         "org.geotools.xsd.gt-xsd-ows": {
@@ -3240,7 +3434,8 @@
             },
             "21.0.0": {
                 "i20200622": "hoKatQ",
-                "i20221102": "K96uA"
+                "i20221102": "K96uA",
+                "i20231027": "M4kwQ"
             }
         },
         "org.geotools.xsd.gt-xsd-wfs": {
@@ -3251,7 +3446,8 @@
             },
             "21.0.0": {
                 "i20200622": "8QY6cg",
-                "i20221102": "VxVedQ"
+                "i20221102": "VxVedQ",
+                "i20231027": "LGOEfg"
             }
         },
         "org.glassfish.hk2.api": {
@@ -3322,7 +3518,8 @@
                 "i20150413": "IwXjQ",
                 "i20151027": "Wb8XjQ",
                 "i20200622": "6cMXjQ",
-                "i20221102": "7fw7kA"
+                "i20221102": "7fw7kA",
+                "i20231027": "I9w7kA"
             }
         },
         "org.glassfish.jersey.core.jersey-client": {
@@ -3359,7 +3556,8 @@
             "1.0.0.Final": {
                 "i20150402": "dGqsGw",
                 "i20150413": "fbizIg",
-                "i20221102": "fdzXJQ"
+                "i20221102": "fdzXJQ",
+                "i20231027": "NQrr6Q"
             }
         },
         "org.hsqldb.hsqldb": {
@@ -3372,14 +3570,16 @@
             },
             "2.4.1": {
                 "i20200622": "ou9Fdg",
-                "i20221102": "BuZpeQ"
+                "i20221102": "BuZpeQ",
+                "i20231027": "u4GfgA"
             }
         },
         "org.iq80.snappy": {
             "0.3.0": {
                 "i20150402": "d8CsHQ",
                 "i20150413": "gTSzJA",
-                "i20221102": "ghjXJw"
+                "i20221102": "ghjXJw",
+                "i20231027": "BGf4Rg"
             }
         },
         "org.jaitools.jt-utils": {
@@ -3420,7 +3620,8 @@
             "1.0.0": {
                 "i20150402": "hnbuw",
                 "i20150413": "Rc72Ag",
-                "i20221102": "ihUaFA"
+                "i20221102": "ihUaFA",
+                "i20231027": "vHRAcg"
             }
         },
         "org.jdom": {
@@ -3435,20 +3636,23 @@
             },
             "2.0.6": {
                 "i20200622": "ieezKQ",
-                "i20221102": "jKvXLA"
+                "i20221102": "jKvXLA",
+                "i20231027": "oqgYLQ"
             }
         },
         "org.jetbrains.annotations": {
             "15.0.0": {
                 "i20220909": "5HezVw",
-                "i20221102": "HvXWg"
+                "i20221102": "HvXWg",
+                "i20231027": "lqQAEQ"
             }
         },
         "org.json": {
             "20090211.0.0": {
                 "i20150402": "CSGteQ",
                 "i20150413": "LGm0gA",
-                "i20221102": "r83Ygw"
+                "i20221102": "r83Ygw",
+                "i20231027": "inIE7g"
             }
         },
         "org.jsoup": {
@@ -3465,27 +3669,32 @@
         },
         "org.junit.jupiter.junit-jupiter-api": {
             "5.4.2": {
-                "i20221102": "sRzwQw"
+                "i20221102": "sRzwQw",
+                "i20231027": "kw8ToQ"
             }
         },
         "org.junit.jupiter.junit-jupiter-engine": {
             "5.4.2": {
-                "i20221102": "56Tkpw"
+                "i20221102": "56Tkpw",
+                "i20231027": "ruEIBQ"
             }
         },
         "org.junit.platform.junit-platform-commons": {
             "1.4.2": {
-                "i20221102": "3njkow"
+                "i20221102": "3njkow",
+                "i20231027": "pbUIAQ"
             }
         },
         "org.junit.platform.junit-platform-engine": {
             "1.4.2": {
-                "i20221102": "p1zwPw"
+                "i20221102": "p1zwPw",
+                "i20231027": "iU8TnQ"
             }
         },
         "org.junit.platform.junit-platform-launcher": {
             "1.4.2": {
-                "i20221102": "3njkow"
+                "i20221102": "3njkow",
+                "i20231027": "pbUIAQ"
             }
         },
         "org.jvnet.jaxb2_commons.jaxb2-basics-runtime": {
@@ -3514,13 +3723,15 @@
         "org.lz4.lz4-java": {
             "1.4.1": {
                 "i20221013": "Uaa72g",
-                "i20221102": "cMzf3Q"
+                "i20221102": "cMzf3Q",
+                "i20231027": "PEIIlA"
             }
         },
         "org.nibor.autolink": {
             "0.6.0": {
                 "i20220909": "hnGzJw",
-                "i20221102": "iHXXKg"
+                "i20221102": "iHXXKg",
+                "i20231027": "Iaz5Tw"
             }
         },
         "org.objectweb.asm-4": {
@@ -3537,7 +3748,8 @@
         "org.objectweb.asm-9": {
             "9.2.0": {
                 "i20220909": "4OfjMQ",
-                "i20221102": "HAkHQw"
+                "i20221102": "HAkHQw",
+                "i20231027": "AC0Nlg"
             }
         },
         "org.objectweb.asm.analysis-4": {
@@ -3565,13 +3777,15 @@
         "org.objectweb.asm.tree-9": {
             "9.2.0": {
                 "i20220909": "I3Ld8Q",
-                "i20221102": "4FACAw"
+                "i20221102": "4FACAw",
+                "i20231027": "YjEIVg"
             }
         },
         "org.objectweb.asm.tree.analysis-9": {
             "9.2.0": {
                 "i20220909": "0XP4Nw",
-                "i20221102": "C8McSQ"
+                "i20221102": "C8McSQ",
+                "i20231027": "YbEinA"
             }
         },
         "org.objectweb.asm.util-4": {
@@ -3588,7 +3802,8 @@
         "org.objectweb.asm.util-9": {
             "9.2.0": {
                 "i20220909": "dTUYuA",
-                "i20221102": "9J88uw"
+                "i20221102": "9J88uw",
+                "i20231027": "nTRDDg"
             }
         },
         "org.opengis": {
@@ -3599,7 +3814,8 @@
             },
             "21.0.0": {
                 "i20200622": "IkDqrQ",
-                "i20221102": "tFYOvw"
+                "i20221102": "tFYOvw",
+                "i20231027": "qjtJ3w"
             }
         },
         "org.openid4java": {
@@ -3609,12 +3825,14 @@
                 "i20151027": "fxW3zw",
                 "i20180424": "DsueLQ",
                 "i20200622": "nwaeLQ",
-                "i20221102": "6qmf9g"
+                "i20221102": "6qmf9g",
+                "i20231027": "F83Eng"
             }
         },
         "org.opentest4j": {
             "1.1.1": {
-                "i20221102": "c5rfXA"
+                "i20221102": "c5rfXA",
+                "i20231027": "VuwEqA"
             },
             "1.2.0": {
                 "i20220909": "LVzLcQ"
@@ -3633,7 +3851,8 @@
         "org.ow2.asm.commons-9": {
             "9.2.0": {
                 "i20220909": "ACoQA",
-                "i20221102": "B440w"
+                "i20221102": "B440w",
+                "i20231027": "Efk7Tg"
             }
         },
         "org.parboiled.core": {
@@ -3720,7 +3939,8 @@
         },
         "org.sonatype.sisu.inject.cglib": {
             "2.2.1.v20090111": {
-                "i20221102": "SdT0kQ"
+                "i20221102": "SdT0kQ",
+                "i20231027": "CzcdSA"
             }
         },
         "org.springframework.aop": {
@@ -3780,7 +4000,8 @@
                 "i20200622": "iervA"
             },
             "2.3.2.RELEASE": {
-                "i20221102": "lCEIag"
+                "i20221102": "lCEIag",
+                "i20231027": "kA7cQ"
             }
         },
         "org.springframework.osgi.web.mini": {
@@ -3822,32 +4043,38 @@
         },
         "org.springframework.security.spring-security-cas": {
             "5.2.0.RELEASE": {
-                "i20221102": "Yh2ZnQ"
+                "i20221102": "Yh2ZnQ",
+                "i20231027": "gEzLWQ"
             }
         },
         "org.springframework.security.spring-security-config": {
             "5.2.0.RELEASE": {
-                "i20221102": "wQezdg"
+                "i20221102": "wQezdg",
+                "i20231027": "K7lMg"
             }
         },
         "org.springframework.security.spring-security-core": {
             "5.2.0.RELEASE": {
-                "i20221102": "cuSseQ"
+                "i20221102": "cuSseQ",
+                "i20231027": "BufeNQ"
             }
         },
         "org.springframework.security.spring-security-ldap": {
             "5.2.0.RELEASE": {
-                "i20221102": "ixozBg"
+                "i20221102": "ixozBg",
+                "i20231027": "t2Bkwg"
             }
         },
         "org.springframework.security.spring-security-openid": {
             "5.2.0.RELEASE": {
-                "i20221102": "fMb7Q"
+                "i20221102": "fMb7Q",
+                "i20231027": "K10tyA"
             }
         },
         "org.springframework.security.spring-security-web": {
             "5.2.0.RELEASE": {
-                "i20221102": "5uCsvg"
+                "i20221102": "5uCsvg",
+                "i20231027": "tu3eeg"
             }
         },
         "org.springframework.security.web": {
@@ -3858,52 +4085,62 @@
         },
         "org.springframework.spring-aop": {
             "5.2.0.RELEASE": {
-                "i20221102": "fHqgcw"
+                "i20221102": "fHqgcw",
+                "i20231027": "GMjLg"
             }
         },
         "org.springframework.spring-beans": {
             "5.2.0.RELEASE": {
-                "i20221102": "VhqJQw"
+                "i20221102": "VhqJQw",
+                "i20231027": "ZyW0yg"
             }
         },
         "org.springframework.spring-context": {
             "5.2.0.RELEASE": {
-                "i20221102": "qbuLgg"
+                "i20221102": "qbuLgg",
+                "i20231027": "uoq3CQ"
             }
         },
         "org.springframework.spring-context-support": {
             "5.2.0.RELEASE": {
-                "i20221102": "IDfBag"
+                "i20221102": "IDfBag",
+                "i20231027": "3tzs8Q"
             }
         },
         "org.springframework.spring-core": {
             "5.2.0.RELEASE": {
-                "i20221102": "ip7XKw"
+                "i20221102": "ip7XKw",
+                "i20231027": "2qECwQ"
             }
         },
         "org.springframework.spring-expression": {
             "5.2.0.RELEASE": {
-                "i20221102": "VhqJQw"
+                "i20221102": "VhqJQw",
+                "i20231027": "ZyW0yg"
             }
         },
         "org.springframework.spring-jcl": {
             "5.2.0.RELEASE": {
-                "i20221102": "ip7XKw"
+                "i20221102": "ip7XKw",
+                "i20231027": "2qECwQ"
             }
         },
         "org.springframework.spring-tx": {
             "5.2.0.RELEASE": {
-                "i20221102": "fHqgcw"
+                "i20221102": "fHqgcw",
+                "i20231027": "GMjLg"
             }
         },
         "org.springframework.spring-web": {
             "5.2.0.RELEASE": {
-                "i20221102": "fHqgcw"
+                "i20221102": "fHqgcw",
+                "i20231027": "GMjLg"
             }
         },
         "org.springframework.spring-webmvc": {
             "5.2.0.RELEASE": {
-                "i20221102": "EH8MVw"
+                "i20221102": "EH8MVw",
+                "i20231027": "OOo33g"
             }
         },
         "org.springframework.transaction": {
@@ -3928,49 +4165,56 @@
             "1.1.0": {
                 "i20150402": "dhasHA",
                 "i20150413": "f3ezIw",
-                "i20221102": "fvXJg"
+                "i20221102": "fvXJg",
+                "i20231027": "hCn9hA"
             }
         },
         "org.webjars.bootstrap": {
             "2.3.2": {
                 "i20150402": "fnCsIQ",
                 "i20150413": "iDCzKA",
-                "i20221102": "ipTXKw"
+                "i20221102": "ipTXKw",
+                "i20231027": "gcv5mQ"
             }
         },
         "org.webjars.jquery": {
             "1.9.0": {
                 "i20150402": "g3asJA",
                 "i20150413": "jWzKw",
-                "i20221102": "kPPXLg"
+                "i20221102": "kPPXLg",
+                "i20231027": "J6r75A"
             }
         },
         "org.webjars.jquerypp": {
             "1.0.0.b2": {
                 "i20150402": "dGqsGw",
                 "i20150413": "fbizIg",
-                "i20221102": "fdzXJQ"
+                "i20221102": "fdzXJQ",
+                "i20231027": "UF9NQ"
             }
         },
         "org.webjars.locator": {
             "0.1.0": {
                 "i20150402": "6MexDw",
                 "i20150413": "jeS4Fg",
-                "i20221102": "ScLcGQ"
+                "i20221102": "ScLcGQ",
+                "i20231027": "0mPvlQ"
             }
         },
         "org.webjars.modernizr": {
             "2.6.2.1": {
                 "i20150402": "g3SsJA",
                 "i20150413": "jW2zKw",
-                "i20221102": "kPHXLg"
+                "i20221102": "kPHXLg",
+                "i20231027": "pjL0zw"
             }
         },
         "org.wicketstuff.html5": {
             "6.10.0": {
                 "i20150402": "2OqsUQ",
                 "i20150413": "5jqzWA",
-                "i20221102": "p7XWw"
+                "i20221102": "p7XWw",
+                "i20231027": "xRHi9g"
             }
         },
         "org.xerial.sqlite-jdbc": {
@@ -4003,7 +4247,8 @@
         },
         "picocli": {
             "4.3.2": {
-                "i20221102": "uofRvg"
+                "i20221102": "uofRvg",
+                "i20231027": "ZsL6hg"
             },
             "4.6.3": {
                 "i20220909": "k4qtvw"
@@ -4013,7 +4258,8 @@
             "1.2.0": {
                 "i20150402": "O0S6hQ",
                 "i20150413": "efvBjA",
-                "i20221102": "q73ljw"
+                "i20221102": "q73ljw",
+                "i20231027": "5WHuNg"
             }
         },
         "postgresql": {
@@ -4070,7 +4316,8 @@
         "si.uom.si-units-java8": {
             "0.7.1": {
                 "i20200622": "9Vt7Mg",
-                "i20221102": "DKyfNQ"
+                "i20221102": "DKyfNQ",
+                "i20231027": "GqCfNQ"
             }
         },
         "slf4j.api": {
@@ -4196,7 +4443,8 @@
                 "i20200622": "5InBwg"
             },
             "2.12.2": {
-                "i20221102": "Lazlxw"
+                "i20221102": "Lazlxw",
+                "i20231027": "yQ8Ofg"
             },
             "2.9.1": {
                 "i20150402": "hs6sJg",
@@ -4224,7 +4472,8 @@
             "1.1.3.1": {
                 "i20150402": "exSsHw",
                 "i20150413": "hK6zJg",
-                "i20221102": "hlLXKQ"
+                "i20221102": "hlLXKQ",
+                "i20231027": "N1r7Ng"
             }
         },
         "xpp3.xpp3_min": {
@@ -4232,7 +4481,8 @@
                 "i20150402": "fL6sIA",
                 "i20150413": "hmuzJw",
                 "i20180726": "5PAUA",
-                "i20221102": "1q7kUw"
+                "i20221102": "1q7kUw",
+                "i20231027": "BR5NVg"
             }
         },
         "xstream": {
@@ -4257,7 +4507,8 @@
                 "i20180727": "YznE1w",
                 "i20200622": "S4UfA",
                 "i20220909": "j9NwBA",
-                "i20221102": "XMtqDA"
+                "i20221102": "XMtqDA",
+                "i20231027": "spxqgw"
             }
         },
         "com.xebialabs.cloud.overcast": {
@@ -4331,6 +4582,10 @@
                 "i20221013": "9WDrEw",
                 "i20221102": "HL7mg",
                 "i20230505": "25P8Gg"
+            },
+            "5.0.0": {
+                "i20231027": "5G0JIw",
+                "i202310271542": "hQJMQ"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -4347,7 +4602,8 @@
             "3.4.13": {
                 "i20200622": "HDQAeg",
                 "i20221013": "2zUAcw",
-                "i20221102": "iA3iBA"
+                "i20221102": "iA3iBA",
+                "i20231027": "jcniZg"
             },
             "3.4.2": {
                 "i20180727": "T6dAbQ"
@@ -4394,6 +4650,9 @@
             "4.1.0": {
                 "i20210309": "T37Guw",
                 "i20220816": "ESzIjw"
+            },
+            "5.0.0": {
+                "i20231027": "gLfKAA"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
@@ -4402,7 +4661,8 @@
                 "i20150413": "PrMvKg",
                 "i20150612": "PxwvKw",
                 "i20180726": "QMkvNQ",
-                "i20221102": "ORcvEg"
+                "i20221102": "ORcvEg",
+                "i20231027": "PwsvJw"
             }
         },
         "eu.esdihumboldt.hale.platform.wicket-bootstrap": {
@@ -4421,7 +4681,8 @@
                 "i20200622": "F70X1Q",
                 "i20210309": "JqEX2Q",
                 "i20220909": "IYig",
-                "i20221102": "Pfwa6Q"
+                "i20221102": "Pfwa6Q",
+                "i20231027": "ctAbPQ"
             }
         },
         "eu.esdihumboldt.hale.platform.zest": {
@@ -4434,7 +4695,8 @@
         "io.pebbletemplates.pebble": {
             "3.0.1": {
                 "i20180727": "F00jA",
-                "i20221102": "BGESg"
+                "i20221102": "BGESg",
+                "i20231027": "CnQWA"
             }
         },
         "platform.shared.gemini-blueprint": {
@@ -4464,7 +4726,8 @@
                 "i20200622": "PnCdmQ",
                 "i20221013": "LkqdwA",
                 "i20221102": "BXm1ig",
-                "i20230505": "NXC1vA"
+                "i20230505": "NXC1vA",
+                "i20231027": "6TK3RA"
             }
         },
         "platform.shared.groovy-all": {
@@ -4489,7 +4752,8 @@
                 "i20151027": "QIVHZA",
                 "i20180411": "Uh0pWQ",
                 "i20200622": "PcdHYA",
-                "i20221102": "NF5HRA"
+                "i20221102": "NF5HRA",
+                "i20231027": "PXtHYA"
             }
         },
         "platform.shared.orientdb.graphdb": {
@@ -4507,7 +4771,8 @@
                 "i20180727": "nihyIg",
                 "i20200622": "Cu9x9w",
                 "i20220909": "n2xxxQ",
-                "i20221102": "CSBnvA"
+                "i20221102": "CSBnvA",
+                "i20231027": "JkVoHg"
             }
         },
         "platform.shared.poi": {
@@ -4520,7 +4785,8 @@
                 "i20200622": "xqQsQ"
             },
             "5.2.3": {
-                "i20221102": "LimWxg"
+                "i20221102": "LimWxg",
+                "i20231027": "RjuW4g"
             }
         },
         "platform.shared.postgis": {
@@ -4546,6 +4812,9 @@
             "4.1.0": {
                 "i20210309": "5kkZAQ",
                 "i20221102": "5ggYQ"
+            },
+            "5.0.0": {
+                "i20231027": "5ggYQ"
             }
         },
         "platform.shared.slf4jlogback": {
@@ -4555,7 +4824,9 @@
                 "i20170105": "7MQ9oQ",
                 "i20180427": "7mY9qg",
                 "i20180727": "75M9sA",
-                "i20221102": "lYRboA"
+                "i20221102": "lYRboA",
+                "i20231025": "oAhbrA",
+                "i20231027": "lYRboA"
             }
         },
         "platform.shared.spring.core": {
@@ -4567,7 +4838,8 @@
                 "i20180727": "oSk3tA"
             },
             "5.2.0.RELEASE": {
-                "i20221102": "koAs5Q"
+                "i20221102": "koAs5Q",
+                "i20231027": "lPAs8w"
             }
         },
         "platform.shared.spring.modules": {
@@ -4580,7 +4852,8 @@
                 "i20180727": "MZPHSA"
             },
             "5.2.0.RELEASE": {
-                "i20221102": "XV3FjQ"
+                "i20221102": "XV3FjQ",
+                "i20231027": "prF0w"
             }
         },
         "platform.shared.spring.security": {
@@ -4596,7 +4869,8 @@
                 "i20200622": "hOjMtA"
             },
             "5.2.0.RELEASE": {
-                "i20221102": "6VGnQ"
+                "i20221102": "6VGnQ",
+                "i20231027": "kbtHNw"
             }
         },
         "platform.shared.wicket": {
@@ -4606,7 +4880,8 @@
                 "i20170105": "GtV1qw",
                 "i20180427": "G3t1tA",
                 "i20180727": "HAB1ug",
-                "i20221102": "7dd1dQ"
+                "i20221102": "7dd1dQ",
+                "i20231027": "3R1gw"
             }
         },
         "platform.shared.xs": {
@@ -4634,7 +4909,8 @@
                 "i20150413": "kq2IMA",
                 "i20151027": "ufGIMA",
                 "i20200622": "kq2IMA",
-                "i20221102": "4Vu5XA"
+                "i20221102": "4Vu5XA",
+                "i20231027": "CK65XA"
             }
         },
         "eu.esdihumboldt.hale.server.webjars": {
@@ -4657,6 +4933,9 @@
             "4.1.0": {
                 "i20210309": "dYHAMQ",
                 "i20221102": "W5DkNA"
+            },
+            "5.0.0": {
+                "i20231027": "W5LkNA"
             }
         },
         "javax.annotation.extensions": {
@@ -4670,7 +4949,8 @@
             "3.4.0": {
                 "i20200114": "Gnfvdw",
                 "i20200622": "NhLvdw",
-                "i20221102": "Wp8TiQ"
+                "i20221102": "Wp8TiQ",
+                "i20231027": "9zATiQ"
             }
         },
         "org.apache.poi": {
@@ -4682,7 +4962,8 @@
                 "i20200622": "9vse1Q"
             },
             "5.2.3": {
-                "i20221102": "tUuzw"
+                "i20221102": "tUuzw",
+                "i20231027": "Yi8uzw"
             }
         },
         "org.deegree": {
@@ -4691,7 +4972,8 @@
             },
             "3.4.13": {
                 "i20200622": "kpmzoQ",
-                "i20221102": "6G21Xg"
+                "i20221102": "6G21Xg",
+                "i20231027": "dfK1Xg"
             },
             "3.4.2": {
                 "i20180727": "rurzjA"
@@ -4707,7 +4989,8 @@
             },
             "21.0.0.combined": {
                 "i20200622": "5n5yg",
-                "i20221102": "WIMd3A"
+                "i20221102": "WIMd3A",
+                "i20231027": "uOod3A"
             }
         },
         "org.postgresql.jdbc": {
