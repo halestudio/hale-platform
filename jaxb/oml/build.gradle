@@ -10,6 +10,9 @@ dependencies {
 
 // https://github.com/bndtools/bnd/blob/master/gradle-plugins/README.md#replacing-use-of-gradles-deprecated-osgi-plugin
 jar {
-	bnd('Bundle-Name': 'Ontology Mapping Language Model',
-	'Bundle-SymbolicName': 'eu.esdihumboldt.hale.io.oml.model.jaxb')
+	bundle {
+		bnd('Bundle-Name': 'Ontology Mapping Language Model',
+		'Bundle-SymbolicName': 'eu.esdihumboldt.hale.io.oml.model.jaxb',
+		'Export-Package': "eu.esdihumboldt.hale.io.oml.internal.model.generated.oml.*;version=$version")
+	}
 }
