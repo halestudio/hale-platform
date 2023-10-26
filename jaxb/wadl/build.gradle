@@ -10,6 +10,9 @@ dependencies {
 
 // https://github.com/bndtools/bnd/blob/master/gradle-plugins/README.md#replacing-use-of-gradles-deprecated-osgi-plugin
 jar {
-	bnd('Bundle-Name': 'WADL Model',
-	'Bundle-SymbolicName': 'eu.esdihumboldt.hale.server.api.wadl.model.jaxb')
+	bundle {
+		bnd('Bundle-Name': 'WADL Model',
+		'Bundle-SymbolicName': 'eu.esdihumboldt.hale.server.api.wadl.model.jaxb',
+		'Export-Package': "eu.esdihumboldt.hale.server.api.wadl.internal.generated.*;version=$version")
+	}
 }

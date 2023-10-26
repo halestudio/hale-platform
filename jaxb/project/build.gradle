@@ -11,9 +11,12 @@ dependencies {
 
 // https://github.com/bndtools/bnd/blob/master/gradle-plugins/README.md#replacing-use-of-gradles-deprecated-osgi-plugin
 jar {
-	bnd('Bundle-Name': 'HALE Project Format Model',
-	'Bundle-SymbolicName': 'eu.esdihumboldt.hale.common.core.io.project.model.jaxb',
-	'Bundle-License': 'http://www.gnu.org/licenses/lgpl.html;description=Lesser General Public License (LGPL) Version 3',
-	'Bundle-Vendor': 'data harmonisation panel',
-	'Require-Bundle': 'org.glassfish.jaxb.runtime')
+	bundle {
+		bnd('Bundle-Name': 'HALE Project Format Model',
+		'Bundle-SymbolicName': 'eu.esdihumboldt.hale.common.core.io.project.model.jaxb',
+		'Bundle-License': 'http://www.gnu.org/licenses/lgpl.html;description=Lesser General Public License (LGPL) Version 3',
+		'Bundle-Vendor': 'data harmonisation panel',
+		'Require-Bundle': 'org.glassfish.jaxb.runtime',
+		'Export-Package': "eu.esdihumboldt.hale.common.core.io.project.model.internal.generated.*;version=$version")
+	}
 }
