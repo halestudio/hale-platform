@@ -239,6 +239,7 @@ platform {
 				'org.xml.sax.*',
 				'javax.activation.*',
 				'com.sun.xml.internal.*',
+				'sun.nio.*',
 				// cal10n.api
 				'javax.tools.*',
 				'javax.lang.model.*',
@@ -725,6 +726,11 @@ platform {
 	// force correct package export versions for sqlite-jdbc
 	bnd group: 'org.xerial', name: 'sqlite-jdbc', {
 		instruction 'Export-Package', "*;version=$version"
+	}
+
+	bnd group: 'jline', name: 'jline', {
+		// make some imports optional which showed up after upgrading bnd
+		optionalImport 'sun.misc', 'com.cloudius.util'
 	}
 
 	// library fixes
