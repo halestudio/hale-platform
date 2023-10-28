@@ -4835,7 +4835,8 @@
             },
             "5.0.0": {
                 "i20231028": "4z0ZKg",
-                "i202310281504": "mSscTA"
+                "i202310281504": "mSscTA",
+                "i202310282027": "SUweBg"
             }
         },
         "eu.esdihumboldt.hale.platform.cs3d-map": {
@@ -4903,7 +4904,8 @@
                 "i20220816": "ESzIjw"
             },
             "5.0.0": {
-                "i20231028": "gLfKAA"
+                "i20231028": "gLfKAA",
+                "i202310282027": "pAKJA"
             }
         },
         "eu.esdihumboldt.hale.platform.schemacrawler": {
