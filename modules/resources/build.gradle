@@ -153,6 +153,41 @@ task downloadInspireSchemas() {
 		}
 		// delete remainder
 		delete(new File(temporaryDir, 'application-schemas-main'))
+
+		/*
+		 * The website does redirect for some schemas to a subfolder with older versions.
+		 * For example `hy-p/3.0/HydroPhysicalWaters.xsd` is redirected to `2021.1/hy-p/3.0/HydroPhysicalWaters.xsd`
+		 * The resource bundles don't know about these redirects, the file from the original folder is accessed.
+		 * Loading the full schema may fail though, because some schema have been removed from the root and are only
+		 * available in folders representing older versions.
+		 * Examples:
+		 * - `lc/0.0/LandCover.xsd`
+		 * - `wfd/0.0/WaterFrameworkDirective.xsd`
+		 *
+		 * Since we don't know the exact redirection rules we attempt to have a copy of al schemas in the root, in
+		 * their respective newest version, by copying newer versions over older versions.
+		 */
+		def tempRoot = new File(temporaryDir, 'tmp-schemas')
+		def versions = ['2021.1', '2021.2', '2022.1', '2022.2']
+		// copy all versions in order
+		versions.each { v ->
+			copy {
+				from new File(temporaryDir, "schemas/$v")
+				into tempRoot
+				include '**/*'
+			}
+		}
+		// copy current root
+		copy {
+			from new File(temporaryDir, "schemas")
+			into tempRoot
+			include '**/*'
+		}
+		// delete old root
+		delete(new File(temporaryDir, 'schemas'))
+		// rename
+		ant.move(file: tempRoot, tofile: new File(temporaryDir, 'schemas'))
+
 		// add fixups
 		copy {
 			from new File(projectDir, 'inspire-fixup')
