@@ -1,0 +1,90 @@
+/**
+ * Adds a combined geotools bundle and an opengis bundle to the platform.
+ * 
+ * @param geotoolsVersion version of Geotools dependencies
+ * @param modules the list of geotools modules to add (in group org.geotools)
+ * @param bundleVersion a version for the merged bundle
+ */
+def geotools(String geotoolsVersion = '10.4',
+	List<String> modules = [
+		'gt-api',
+		'gt-cql',
+		'gt-epsg-hsql',
+		'gt-geojson',
+		'gt-main',
+		'gt-shapefile'
+	], String bundleVersion = geotoolsVersion + '.0.combined') {
+	
+	repositories {
+		maven {
+			url 'https://repo.osgeo.org/repository/release/'
+		}
+//		mavenCentral()
+	}
+	
+	platform {
+	        bnd group: 'xpp3', name: 'xpp3_min', {
+	                instruction '-removeheaders', 'Require-Capability'
+	        }
+
+		feature id: 'platform.shared.geotools',
+				name: 'Geotools',
+				version: geotoolsVersion, {
+			// opengis
+			plugin "org.geotools:gt-opengis:${geotoolsVersion}", {
+				bnd {
+					symbolicName = 'org.opengis'
+				}
+			}
+			
+			// geotools dependencies
+			modules.each {
+				if (it != 'gt-opengis') {
+					plugin "org.geotools:${it}:${geotoolsVersion}"
+				}
+				else if (it == 'geotools') {
+					plugin "org.getools:${it}:${geotoolsVersion}", {
+						exclude group: 'com.github.spotbugs', module 'spotbugs-annotation'
+					}
+				}
+			}
+			
+			// geotools bundle
+			merge {
+				match {
+					it.group != null && it.group.startsWith('org.geotools') && it.name != 'gt-opengis'
+				}
+				
+				bnd {
+					symbolicName = 'org.geotools'
+					bundleName = 'Geotools'
+					version = bundleVersion
+					instruction 'Export-Package', "org.geotools.*;version=$bundleVersion"
+					instruction 'Private-Package', '*'
+					
+					def tokenizedVersion = geotoolsVersion.tokenize('.|-')
+					def majorVersion = tokenizedVersion[0] as int
+					def jtsGeomPackage = (majorVersion < 20) ? 'com.vividsolutions.jts.geom' : 'org.locationtech.jts.geom'
+
+					prependImport(
+						// import eclipse xsd/emf w/o version (as the dependency does not export them)
+						'org.eclipse.xsd.*', 'org.eclipse.emf.*,',
+						// add missing imports that result in class loading issues
+						jtsGeomPackage // because the package is also included in the bundle! (EmptyGeometry)
+					)
+					//optional import instr oracle.jdbc
+					optionalImport(
+						'oracle.*'
+					)
+				}
+			}
+			
+			// geotools depends on log4j
+			plugin group: 'log4j', name: 'log4j'
+
+		}
+	}
+}
+
+// default configuration	
+geotools()
