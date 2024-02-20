@@ -54,8 +54,6 @@ include {
 
 	from 'modules/shared/adaptions' // all adaptions
 
-	from 'modules/resources' // resource bundles
-
 	from('modules/geotools.gradle') {
 		geotools geotoolsVersion, [
 			'geotools',
